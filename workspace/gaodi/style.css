@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, body > * {
+    color: white;
+    font-size: 16px;
+    min-width: 900px;
+    line-height: 1.5em;
+}
+
+
+p {
+    margin: 1rem 0;
+    word-spacing: .5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+nav {
+    z-index: 1000;
+    color: #b24e56;
+    font-weight: bold;
+    font-size: 22px;
+    height: 3vh;
+    padding: 2vh;
+    width: 96vw;
+    position: fixed;
+    top: 0;
+}
+
+nav>a {
+    margin-left: 16px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.bigframe {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.frame {
+    margin-top: 7vh;
+    background: #f5f581;
+    height: 25vh;
+    position: relative;
+    overflow: hidden;
+}
+
+article {
+    height: 67vh;
+}
+
+article h1 {
+    text-align: center;
+    font-size: 3em;
+    padding: .5em 0 1.5em 0;
+}
+
+article .content {
+    overflow-y: hidden;
+}
+
+article .content p {
+    width: 68vw;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+
+.gallary {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.gallary > div {
+    flex-grow: 1;
+    margin: 36px;
+    box-sizing: border-box;
+}
+
+img.fluit {
+    width: 100%;
+    height: 100%;
+}
+
+.gallary img.fluit {
+    transition: transform 1s linear;
+}
+
+.gallary img.fluit:hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+
+.box {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    
+}
+
+.box h4 {
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    height: 2em;
+    pointer-events: none;
+}
+
+.full-curtain {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+@keyframes heart {
+    from {
+        transform: translate(0 ,0)
+    }
+
+    to {
+        transform: translate(0 ,20px)        
+    }
+}
+
+@keyframes heart-leas {
+    from {
+        transform: translate(-10px, -10px)
+    }
+
+    to {
+        transform: translate(10px ,10px)    
+    }
+}
+
+.heart-ami {
+    animation: heart 1.3s ease-in-out infinite alternate;
+}
+
+.heart-leas-ami {
+    animation: heart-leas 1.3s ease-in-out infinite alternate;
+}
+
+
+.ami-reverse {
+    animation-direction: alternate-reverse;
+}
+
+img.pos {
+    display: block;
+    position: absolute;
+}
+
+
+img.logo-center-pos {
+    height: 200%;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+
+img.log-right-pos {
+    height: 50%;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: auto;
+    right: 10vw;
+}
+
+.head-bg {
+    background: url(./img/blue_circle.svg) no-repeat, black;
+    background-size: 200px;
+    background-position: -100px -100px;
+}
+
+.egg {
+    position: absolute;
+    left: 55px;
+    top: 55px;
+    width: 30px;
+}
+
+.ag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: auto;
+    width: 400px;
+}
+
+.c1 {
+    width: 600px;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: auto;   
+}
+
+.c1-1 {
+    width: 600px;
+    transform: translate(0, 30%);
+}
+
+.c1-2 {
+    position: absolute;
+    width: 40px;
+    left: -100%;
+    top: 80%;
+}
+
+.c1-3 {
+    position: absolute;
+    width: 60px;
+    left: 70%;
+    top: 25%;
+}
+
+.c1  h4 {
+    position: absolute;
+    width: 12em;
+    font-size: 2rem;
+    color: #b24e56;
+    left: 90%;
+    top: 80%;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.show-works {
+    padding: 4vmin 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    visibility: hidden;
+}
+
+
+.show-works > h3 {
+    color: #5c7ee4;
+    padding: 4vmin;
+}
+
+.head-text {
+    width: 80vw;
+    margin: 2em auto;
+}
+
+.column {
+    display: flex;
+    justify-content: left;
+    flex-flow: row nowrap;
+    height: 92vh;
+}
+
+.column > * {
+    flex: 1;
+}
+
+.c-bg-1 {
+    background: url(./img/blue_circle.svg) no-repeat,
+                url(./img/blue_circle.svg) no-repeat,
+                url(./img/yellow-circle.svg) no-repeat;
+    background-size:  15%, 5%, 80%;
+    background-position: 90% 20%, 10% 70%, center bottom;
+    width: 50%;
+}
+.back-btn:hover {
+    color: #b24e56;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-bottom: 0;
+}
+
+.row  .work-1 {
+    flex: auto;
+}
+
+.work-1 {
+    overflow: hidden;
+    z-index: 100;
+    background: url(./img/122.png) no-repeat, url(./img/yellow-circle.svg) no-repeat;
+    background-size: 25%, 40%;
+    background-position: 20% bottom, 12% 20px;
+}
+
+.work-1 h2 {
+    z-index: 99999;
+    padding-top: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.work-1 p {
+    width: 50%;
+    float: right;
+    box-sizing: content-box;
+}
+
+.work-1-c1 {
+    width: 45%;
+    z-index: -1;
+    height: 80%;
+}
+
+.work1-c-1 {
+    position: absolute;
+    width: 40px;
+    bottom: 20px;
+    left: 200px;
+}
+
+.work1-c-2 {
+    position: absolute;
+    width: 120px;
+    left: 40%;
+    top: 36%;
+    z-index: -1;
+}
+
+#work2 .text-box{
+    padding: 0 4%;
+    position: relative;
+    flex: 3;
+}
+
+#work2 h2 {
+    position: absolute;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 400px;
+    line-height: 400px;
+    background: url(./img/red-circle.svg) no-repeat;
+    background-size: 50%;
+    background-position: left 120px;
+}
+
+#work2 .work2-bg {
+    flex: 2;
+    background: url(./img/800px-Casa_Batllo_Overview_Barcelona_Spain_cut22.png) no-repeat, url(./img/blue_circle.svg) no-repeat;
+    background-size: 100%, 200%;
+    background-position: center bottom, center bottom;
+}
+
+
+.work-3 {
+    padding-top: 60px;
+}
+
+.work-3 h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom:60px;
+}
+
+.work-3 p {
+    padding: 0 5%;
+    margin-bottom: 1rem;
+}
+
+.work-3-c-1 {
+    width: 100px;
+    bottom: 100px;
+    right: -50px;
+}
+
+.work-3-c-2 {
+    width: 40px;
+    top: 34%;
+    left: 2%;
+}
+
+.work-3-c-3 {
+    width: 120px;
+    right: -60px;
+    top: 30px;
+}
+
+
+.rel {
+    position: relative;
+    background: url(./img/10241.png) no-repeat, url(./img/red-circle.svg) no-repeat;
+    background-size: 100%, 120% 80%;
+    background-position: center bottom, center 120%;
+}
+
+a.hover {
+    color: #5c7ee4;
+}

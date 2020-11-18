@@ -1,0 +1,109 @@
+{
+    "version": "5",
+    "minVersion": "5",
+    "assets": [
+        "images/heart.png.image.json"
+    ],
+    "entities": [
+        {
+            "uuid": "80919155-4b39-4ea7-90e3-eb7a1296606e",
+            "__class": "@egret/engine/GameEntity",
+            "components": [
+                {
+                    "uuid": "946e67f0-a4b2-4f37-9a68-407abf155393"
+                },
+                {
+                    "uuid": "2963ca1d-2bcc-4c2b-9187-1f2784a8d2fb"
+                }
+            ]
+        },
+        {
+            "uuid": "cc7a4384-3036-4ccf-9529-b890acff14b3",
+            "__class": "@egret/engine/GameEntity",
+            "components": [
+                {
+                    "uuid": "ba81a60f-9013-48cd-bb73-867934b46003"
+                },
+                {
+                    "uuid": "fc9e0b69-2eac-48e0-ba65-7ec2f93b5903"
+                },
+                {
+                    "uuid": "8effba7e-5849-4222-a468-c94490993cb9"
+                }
+            ]
+        },
+        {
+            "uuid": "5824a46b-ccf7-49b4-a06a-fe7e5ce5f3f0",
+            "__class": "@egret/engine/GameEntity",
+            "components": [
+                {
+                    "uuid": "85721aa0-ddeb-4c31-b9f3-12818d3ebe77"
+                },
+                {
+                    "uuid": "abe4ac67-c859-4db3-9811-37f7c5200746"
+                },
+                {
+                    "uuid": "c4f7e112-22e1-47ab-b581-8e13cb162db2"
+                }
+            ]
+        }
+    ],
+    "components": [
+        {
+            "uuid": "946e67f0-a4b2-4f37-9a68-407abf155393",
+            "__class": "@egret/engine/TreeNode",
+            "name": "Root",
+            "children": [
+                {
+                    "uuid": "ba81a60f-9013-48cd-bb73-867934b46003"
+                }
+            ]
+        },
+        {
+            "uuid": "ba81a60f-9013-48cd-bb73-867934b46003",
+            "__class": "@egret/engine/TreeNode",
+            "name": "Stage2D",
+            "children": [
+                {
+                    "uuid": "85721aa0-ddeb-4c31-b9f3-12818d3ebe77"
+                }
+            ]
+        },
+        {
+            "uuid": "85721aa0-ddeb-4c31-b9f3-12818d3ebe77",
+            "__class": "@egret/engine/TreeNode",
+            "name": "Bitmap"
+        },
+        {
+            "uuid": "abe4ac67-c859-4db3-9811-37f7c5200746",
+            "__class": "@egret/egret2d/Transform2D",
+            "localPosition": [
+                370.7666802406311,
+                229.20122051239014
+            ]
+        },
+        {
+            "uuid": "c4f7e112-22e1-47ab-b581-8e13cb162db2",
+            "__class": "@egret/egret2d/Bitmap",
+            "width": 56,
+            "height": 74,
+            "texture": {
+                "__asset": 0
+            }
+        },
+        {
+            "uuid": "fc9e0b69-2eac-48e0-ba65-7ec2f93b5903",
+            "__class": "@egret/egret2d/ConstantAdapter"
+        },
+        {
+            "uuid": "8effba7e-5849-4222-a468-c94490993cb9",
+            "__class": "@egret/egret2d/Stage2D",
+            "stageWidth": 847,
+            "stageHeight": 505
+        },
+        {
+            "uuid": "2963ca1d-2bcc-4c2b-9187-1f2784a8d2fb",
+            "__class": "@egret/engine/Scene"
+        }
+    ]
+}

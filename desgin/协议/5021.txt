@@ -1,0 +1,39 @@
+5021 NPC特殊事件后续选择 
+        /// <summary>
+        /// 选择结果 0=是，1=否
+        /// </summary>
+        int Code = 0;
+
+5022 返回NPC特殊事件后续选择结果
+        /// <summary>
+        /// 0=成功 1=无后续事件选择 2=上传数据有误
+        /// </summary>
+        public byte Code = 0;
+        /// <summary>
+        /// 当前体力值
+        /// </summary>
+        public int CurrentPowerValue = 0;
+        /// <summary>
+        /// 更新体力值时间点
+        /// </summary>
+        public string RefreshPowerValueTime = "";
+        /// <summary>
+        /// 停留点事件Id
+        /// </summary>
+        public int EventID = 0;
+        /// <summary>
+        /// 产生的体力点
+        /// </summary>
+        public int PowerValue = 0;
+        /// <summary>
+        /// 产生费用
+        /// </summary>
+        public int Money = 0;
+        /// <summary>
+        /// 产生的经验
+        /// </summary>
+        public int Exp = 0;
+        /// <summary>
+        /// 产生的钻石
+        /// </summary>
+        public int Diamonds = 0;

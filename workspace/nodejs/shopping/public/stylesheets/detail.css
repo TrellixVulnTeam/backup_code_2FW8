@@ -1,0 +1,27 @@
+.max {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.detail-header {
+  margin-top: 12px;
+}
+
+.product-img {
+  object-fit: cover; 
+}
+
+.controls {
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+
+.controls > * {
+  margin-bottom: 20px;
+}
+
+.price > strong {
+  font-size: 2rem;
+  color: brown;
+}

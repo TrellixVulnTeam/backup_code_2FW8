@@ -1,0 +1,202 @@
+{
+  "1": {
+    "ID": 1,
+    "Name": "简易房",
+    "Attribute": 0,
+    "Money": 100,
+    "UnlockLevel": 1,
+    "UnlockPropID": 0
+  },
+  "2": {
+    "ID": 2,
+    "Name": "舒适房",
+    "Attribute": 0,
+    "Money": 200,
+    "UnlockLevel": 10,
+    "UnlockPropID": 0
+  },
+  "3": {
+    "ID": 3,
+    "Name": "豪华房",
+    "Attribute": 0,
+    "Money": 300,
+    "UnlockLevel": 20,
+    "UnlockPropID": 0
+  },
+  "4": {
+    "ID": 4,
+    "Name": "复式房",
+    "Attribute": 0,
+    "Money": 400,
+    "UnlockLevel": 30,
+    "UnlockPropID": 0
+  },
+  "5": {
+    "ID": 5,
+    "Name": "太空舱",
+    "Attribute": 0,
+    "Money": 500,
+    "UnlockLevel": 40,
+    "UnlockPropID": 0
+  },
+  "6": {
+    "ID": 6,
+    "Name": "杂货店",
+    "Attribute": 1,
+    "Money": 100,
+    "UnlockLevel": 1,
+    "UnlockPropID": 0
+  },
+  "7": {
+    "ID": 7,
+    "Name": "彩票店",
+    "Attribute": 3,
+    "Money": 100,
+    "UnlockLevel": 1,
+    "UnlockPropID": 0
+  },
+  "8": {
+    "ID": 8,
+    "Name": "奶茶店",
+    "Attribute": 2,
+    "Money": 100,
+    "UnlockLevel": 1,
+    "UnlockPropID": 0
+  },
+  "9": {
+    "ID": 9,
+    "Name": "花店",
+    "Attribute": 4,
+    "Money": 100,
+    "UnlockLevel": 1,
+    "UnlockPropID": 0
+  },
+  "10": {
+    "ID": 10,
+    "Name": "五金店",
+    "Attribute": 1,
+    "Money": 200,
+    "UnlockLevel": 10,
+    "UnlockPropID": 0
+  },
+  "11": {
+    "ID": 11,
+    "Name": "药店",
+    "Attribute": 3,
+    "Money": 200,
+    "UnlockLevel": 10,
+    "UnlockPropID": 0
+  },
+  "12": {
+    "ID": 12,
+    "Name": "面包店",
+    "Attribute": 2,
+    "Money": 200,
+    "UnlockLevel": 10,
+    "UnlockPropID": 0
+  },
+  "13": {
+    "ID": 13,
+    "Name": "化妆店",
+    "Attribute": 4,
+    "Money": 200,
+    "UnlockLevel": 10,
+    "UnlockPropID": 0
+  },
+  "14": {
+    "ID": 14,
+    "Name": "建材店",
+    "Attribute": 1,
+    "Money": 300,
+    "UnlockLevel": 20,
+    "UnlockPropID": 0
+  },
+  "15": {
+    "ID": 15,
+    "Name": "游戏店",
+    "Attribute": 3,
+    "Money": 300,
+    "UnlockLevel": 20,
+    "UnlockPropID": 0
+  },
+  "16": {
+    "ID": 16,
+    "Name": "饮料店",
+    "Attribute": 2,
+    "Money": 300,
+    "UnlockLevel": 20,
+    "UnlockPropID": 0
+  },
+  "17": {
+    "ID": 17,
+    "Name": "成人用品店",
+    "Attribute": 4,
+    "Money": 300,
+    "UnlockLevel": 20,
+    "UnlockPropID": 0
+  },
+  "18": {
+    "ID": 18,
+    "Name": "体育用品店",
+    "Attribute": 1,
+    "Money": 400,
+    "UnlockLevel": 30,
+    "UnlockPropID": 0
+  },
+  "19": {
+    "ID": 19,
+    "Name": "手机店",
+    "Attribute": 3,
+    "Money": 400,
+    "UnlockLevel": 30,
+    "UnlockPropID": 0
+  },
+  "20": {
+    "ID": 20,
+    "Name": "冰淇淋店",
+    "Attribute": 2,
+    "Money": 400,
+    "UnlockLevel": 30,
+    "UnlockPropID": 0
+  },
+  "21": {
+    "ID": 21,
+    "Name": "理发店",
+    "Attribute": 4,
+    "Money": 400,
+    "UnlockLevel": 30,
+    "UnlockPropID": 0
+  },
+  "22": {
+    "ID": 22,
+    "Name": "电器店",
+    "Attribute": 1,
+    "Money": 500,
+    "UnlockLevel": 40,
+    "UnlockPropID": 0
+  },
+  "23": {
+    "ID": 23,
+    "Name": "电脑店",
+    "Attribute": 3,
+    "Money": 500,
+    "UnlockLevel": 40,
+    "UnlockPropID": 0
+  },
+  "24": {
+    "ID": 24,
+    "Name": "水果店",
+    "Attribute": 2,
+    "Money": 500,
+    "UnlockLevel": 40,
+    "UnlockPropID": 0
+  },
+  "25": {
+    "ID": 25,
+    "Name": "男装店",
+    "Attribute": 4,
+    "Money": 500,
+    "UnlockLevel": 40,
+    "UnlockPropID": 0
+  }
+}

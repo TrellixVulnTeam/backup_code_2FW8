@@ -1,0 +1,33 @@
+.card-img {
+  padding: 24px;
+}
+
+.price {
+  color: #b12755;
+}
+
+.product-title {
+  border-bottom: 1px solid black;
+}
+
+.product-info {
+  list-style-position: inside;
+  padding: 12px 0;
+}
+
+.siema {
+  height: 360px;
+  background-color: white;
+  margin: 24px 0;
+}
+
+.item {
+  height: 360px;
+  text-align: center;
+}
+
+.siema-img {
+  object-fit: cover;
+  height: 100%;
+
+}

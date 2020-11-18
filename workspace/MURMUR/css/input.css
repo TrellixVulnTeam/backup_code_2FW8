@@ -1,0 +1,106 @@
+button.btn {
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: .4em 1.2em;
+    transition: color .4s ease,background-color .4s ease;
+}
+
+
+* {
+    outline: none;
+}
+
+button.btn:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+input[type="range"].range {
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .5);
+    line-height: 1.5    em;
+    color: white;
+    padding: 0 .4em;
+    box-sizing: content-box;
+}
+
+input[type="range"].range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: white;
+    border:1px solid #babbbc;
+}
+
+button.image-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    -webkit-appearance: none;
+    border: 2px solid white;
+    background: transparent;
+}
+
+button.image-btn:hover {
+    background: rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+
+.i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: 80% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+.i-trash {
+    background-image: url(../img/trash.png);
+}
+
+.none-border-btn {
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: .4rem 1.2rem;
+    background: none;
+    font-weight: bold;
+}
+
+.none-border-btn:hover {
+    background: rgba(255, 255, 255, .5);
+    cursor: pointer;
+}
+
+.none-border-btn.focus {
+    background: rgba(255, 255, 255, .5);
+    cursor: pointer;
+}
+
+full-btn {
+
+}
+
+.num-input {
+    color: white;
+    width: 3.4rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-radius: 12%;
+    border: 1px solid rgba(255, 255, 255, .5);
+    background: transparent;
+    margin: 0 .4rem;
+    text-align: right;
+}

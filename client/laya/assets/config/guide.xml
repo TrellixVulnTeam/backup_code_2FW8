@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!--
+id 一个ID对应一个引导类型，说明见文档
+level 触发引导的主角等级
+stepid 步骤编号
+direct 步骤箭头方向，0，无箭头 1，左，2，右，3.下。4.上
+posx 箭头横坐标
+posy 箭头纵坐标
+msg 对话文本
+-->
+
+    <!--入驻引导-->
+    <guide id="1">
+        <step stepid="1" pic="1" msg="歡迎來到挖礦星球遊戲，我是愛醬~是最可愛的遊戲引導員哦。星鑽是非常珍貴的資源，分佈在星際之中，讓我們去探索星球找尋星鑽吧！"/>
+        <step stepid="2" pic="1" msg="這是目前已被發現蘊藏星鑽的星球，不同的星球產量不同，注意選擇哦！" direct="3"/>
+        <step stepid="3" pic="1" msg="這是星球的資料，記錄星球星鑽的產量和產出時間，選擇一顆適合的星球入駐吧。" direct="3"/>
+        <step stepid="4" pic="1" direct="4" radius="150"/>
+        <step stepid="5" pic="1" direct="4" radius="150"/>
+        <step stepid="6" pic="1" direct="4" radius="150"/>
+    </guide>
+    <!--设置矿机-->
+    <guide id="2" nextGuide="3">
+        <step stepid="1" pic="1" msg="在入駐完成後，入駐禮包將會贈送一台礦機，讓我們先啓動礦機吧。"/>
+        <step stepid="2" pic="1" direct="3"/>
+        <step stepid="3" pic="1" direct="3"/>
+        <step stepid="4" pic="1" direct="3"/>
+    </guide>
+    <!--挖矿引导-->
+    <guide id="3"  nextGuide="9">
+        <step stepid="1" pic="1" msg="礦機啓動後，勤勞的小黃人將自動開始爲你挖礦。接下來讓我爲你介紹遊戲的功能吧。" direct="3"/>
+        <step stepid="2" pic="1" msg="礦機可以在星球挖到金幣和星鑽。星磚每個星球的産量都是固定的，一旦産量爲零，星球也就告竭了，無法再挖礦了。" direct="3"/>
+        <step stepid="3" pic="1" msg="這裏顯示你上一輪獲得的星鑽和金幣數量，星球每10分鍾結算一次。" direct="3"/>
+        <step stepid="4" pic="1" msg="前10名的玩家可以平分80%的星鑽，剩余20%的星鑽根據挖力分給剩余玩家。" direct="3"/>
+        <step stepid="5" pic="1" msg="這裏記錄星球的礦工總數，你的上一輪排名、當前挖力和能源情況。" direct="3"/>
+        <step stepid="6" pic="1" msg="一個星球能容納的礦工總數有限，一旦超過人數上限，後面的人將無法進入挖礦隊伍，只能獲得金幣，要特別注意哦。" direct="3"/>
+		<step stepid="7" pic="1" msg="礦機的挖力越高，排名越高，結算時獲得的星鑽也越多，挖力可以通過購買礦機和提升挖機等級進行提升。" direct="3"/>
+    </guide>
+    <!--工厂引导-->
+    <guide id="4" nextGuide="5">
+        <step stepid="1" pic="1" msg="剛才擊敗的怪物掉落了一些金幣，我們可以用這些金幣提升一下我們的挖力，讓我們前往工廠把礦機升級吧。"/>
+        <step stepid="2" pic="1" direct="3"/>
+        <step stepid="3" pic="1" msg="礦機的等級每提升1級，挖力會根據自身的礦機數量進行疊加哦，現在讓我們進行升級吧。" direct="3"/>
+        <step stepid="4" pic="1" msg="" direct="3"/>
+        <step stepid="5" pic="1" msg="礦機提升後，能源消耗也會加大，也是根據礦機數量進行疊加哦。讓我們返回挖礦界面看看吧。" direct="3"/>
+        <step stepid="6" pic="1" msg="" direct="3"/>
+    </guide>
+    <!--能源引导-->
+    <guide id="5">
+        <step stepid="1" pic="1" msg="挖力提升後，能源好像有點不夠用啦。能源不足的話，是會掉出星鑽隊伍，無法再獲得星鑽哦。"/>
+        <step stepid="2" pic="1" msg="能源系統可以不斷産出能源，我們可以前往能源系統，獲取能源。點擊能源按鈕。"/>
+        <step stepid="3" pic="1" direct="3"/>
+        <step stepid="4" pic="1" direct="3"/>
+        <step stepid="5" pic="1" msg="能源是定時産出，有存儲上限的哦，記得過一段時間就來收取一次能源哦，現在讓我們返回挖礦看看礦機是否還缺能源？"/>
+        <step stepid="6" pic="1" direct="3"/>
+        <step stepid="7" pic="1" msg="現在挖機的能源暫時夠用了，補充能源後，如果當前挖礦隊伍還有空位，就會提示正在進入挖礦隊伍，過2輪結算後，就可以在結算界面上看到你挖到的的星鑽啦。"/>
+    </guide>
+    <!--结算引导-->
+    <guide id="6">
+        <step stepid="1" pic="1" msg="又到了一輪結算時間點了，快來看看這次又獲得了多少星鑽啦。"/>
+        <step stepid="2" pic="1" direct="3"/>
+        <step stepid="3" pic="1" msg="再這裏你可以查看當前一輪的星鑽獎勵數量和分配方案。還有當前星球前20名玩家的挖力情況哦。現在讓我們去看看其他玩家的星鑽獎勵吧。"/>
+        <step stepid="4" pic="1" direct="3"/>
+        <step stepid="5" pic="1" direct="3"/>
+        <step stepid="6" pic="1" msg="在這裏，你可以看到上上一輪整個星球所有玩家獲得的星鑽獎勵詳情哦。注意排行榜時間延遲了20分鍾，只能看到上上輪的信息。"/>
+		<step stepid="7" pic="1" msg="本次結算，系統額外贈送你一顆星鑽哦，快去“資料”界面，提取成CPC吧。"/>
+    </guide>
+    <!--商城引导-->
+    <guide id="7">
+        <step stepid="1" pic="1" msg="入駐的星球，會在這裏顯示星球的信息。包括星球開放時間，結束時間，每日産出星鑽和剩余星鑽。"/>
+        <step stepid="2" pic="1" msg="星球之間相互獨立，除了星際幣，礦機、能源、金幣將不能在其他星球使用，要特別注意哦。"/>
+        <step stepid="3" pic="1" msg="當資源不足時，可以在商店購買資源，注意要在當前星球下進行購買哦，不然會買在其他星球了。讓我們購買一次金幣吧。"/>
+        <step stepid="4" pic="1" direct="3"/>
+        <step stepid="5" pic="1" direct="3"/>
+        <step stepid="6" pic="1" direct="3"/>
+        <step stepid="7" pic="1" msg="商店除了出售金幣和能源外，每天還會限量出售礦機。"/>
+        <step stepid="8" pic="1" direct="3"/>
+        <step stepid="9" pic="1" msg="礦機有數量限制，賣完後直到下次時間點重新刷新，價格還會根據出售的速度動態調整，漲價或者降價。所以如果有余力的話，可以買一些存起來當做備用。"/>
+    </guide>
+    <!--提取引导-->
+    <guide id="8">
+        <step stepid="1" pic="1" msg="哇，你已經有1顆星鑽啦，可以把星鑽提取成CPC，轉到你自己的錢包哦。讓我教你如何提取吧。"/>
+        <step stepid="2" pic="1" msg="在資料界面中，在輸入框輸入1以上的數字，只要你的星礦大于1以上，點擊星礦提取按鈕，就可以將星鑽轉化成CPC，提取到你注冊賬號的錢包了。"/>
+        <step stepid="3" pic="1" msg="提取一次試試吧，提取錢包，不需要任何手續費哦，注意只能輸入1以上的數字。"/>
+        <step stepid="4" pic="1" direct="3"/>
+    </guide>
+    <!--小怪物引导-->
+    <guide id="9" nextGuide="4">
+        <step stepid="1" pic="1" msg="快看，好像挖到一個寶箱了，快點擊寶箱看看。"/>
+        <step stepid="2" pic="1"  direct="4"/>
+        <step stepid="3" pic="1" msg="選擇一個錘子，對寶箱進行攻擊，在限時時間內擊敗寶箱怪，即可獲得獎勵。快試試你的手速吧。"/>
+        <step stepid="4" pic="1" direct="3"/>
+    </guide>
+</root>

@@ -1,0 +1,11 @@
+<%- include('./layout/header.html') -%>
+
+<h3 class="tag-title">Glorious history </h3>
+<div class="row">
+  <% historys.forEach(function(h){ %>
+  <%-include("./section/history-card.html",{title: h.title, img: h.img, desc: h.desc})%>
+  <% }); %>
+
+</div>
+
+<%- include('./layout/footer.html') -%>

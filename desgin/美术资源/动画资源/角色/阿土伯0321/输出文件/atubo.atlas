@@ -1,0 +1,90 @@
+
+atubo.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chutou
+  rotate: false
+  xy: 423, 31
+  size: 71, 95
+  orig: 71, 95
+  offset: 0, 0
+  index: -1
+huzi
+  rotate: false
+  xy: 205, 13
+  size: 57, 21
+  orig: 57, 21
+  offset: 0, 0
+  index: -1
+maozi
+  rotate: false
+  xy: 2, 54
+  size: 172, 72
+  orig: 172, 72
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 312, 58
+  size: 109, 68
+  orig: 109, 68
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 176, 36
+  size: 134, 90
+  orig: 134, 90
+  offset: 0, 0
+  index: -1
+yanjing
+  rotate: false
+  xy: 312, 44
+  size: 63, 12
+  orig: 63, 12
+  offset: 0, 0
+  index: -1
+youjiao
+  rotate: true
+  xy: 57, 18
+  size: 34, 53
+  orig: 34, 53
+  offset: 0, 0
+  index: -1
+youkuguan
+  rotate: false
+  xy: 264, 3
+  size: 41, 31
+  orig: 41, 31
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: true
+  xy: 377, 13
+  size: 43, 44
+  orig: 43, 44
+  offset: 0, 0
+  index: -1
+zuojiao
+  rotate: true
+  xy: 2, 17
+  size: 35, 53
+  orig: 35, 53
+  offset: 0, 0
+  index: -1
+zuokuguan
+  rotate: false
+  xy: 161, 2
+  size: 42, 32
+  orig: 42, 32
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: true
+  xy: 112, 14
+  size: 38, 47
+  orig: 38, 47
+  offset: 0, 0
+  index: -1

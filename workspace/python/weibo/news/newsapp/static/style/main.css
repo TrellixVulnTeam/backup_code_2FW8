@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a, a:link, a:active, a:hover, a:visited {
+  color: inherit;
+  outline: none;
+  padding: auto 1rem;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #ffba51;
+}
+
+body {
+  background: #efefef;
+  margin: 0;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: white;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.wrapper>header {
+  background: #f45a8d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper>header>h1 {
+  font-size: 1.5rem;
+  line-height: 2;
+  padding-left: 1rem;
+}
+
+.wrapper>header>nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+main {
+  padding: 10px;
+}
+
+.btn-3d {
+  /* font-size: 1rem; */
+  padding: .4em 1em;
+  color: white;
+  background: #ff4351;
+  border: none;
+  border-radius: .1em;
+  outline: none;
+  box-shadow: 0px .4em 0 #ff1022;
+}
+
+.btn-3d:hover {
+  cursor: pointer;
+}
+
+.btn-3d:active {
+  box-shadow: 0px .1em 0 #ff1022;
+  transform: translateY(.3em);
+}
+
+.textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 5px solid wheat;
+  height: 140px;
+  outline: none;
+  padding: .5rem;
+  font-size: 1.3rem;
+}
+
+.tag-title {
+  border-left: .5rem solid #f45a8d;
+  padding-left: .2rem;
+  margin: 1rem auto;
+}
+
+.tweet-list {
+  list-style-type: none;
+}
+
+.tweet {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  transition: transform .2s linear;
+  box-shadow: #efefef 10px 10px 10px;
+  margin-bottom: 1.5rem;
+}
+
+.tweet:hover {
+  transform: translateY(-5px);
+  box-shadow: #efefef 10px 15px 10px;
+  cursor: pointer;
+}
+
+.tweet>h5 {
+  font-size: 1.2rem;
+}
+
+.tweet>p.content {
+  padding: 1.2rem 0;
+}
+
+.tweet>p.backup {
+  font-size: .7rem;
+  color: #ccc;
+}
+
+#user-drop-list {
+  padding-left: 6px;
+  padding-right: 6px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#user-drop-list:hover>.drop-list {
+  display: block;
+  cursor: pointer;
+}
+
+.drop-list {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid white;
+  background: #f45a8d;
+  left: 0;
+}
+
+.drop-list>li {
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.drop-list>li:hover {
+  background: chocolate;
+}
+
+.input-box {
+  border: 1px solid #efefef;
+  line-height: 1.2;
+  font-size: 1.5rem;
+  padding: 4px;
+  outline: none;
+}
+
+.form-box {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.manage-tweets {
+  border-collapse: collapse;
+  border-spacing: 10px 10px;
+  width: 100%;
+}
+
+.manage-tweets>thead {
+  border-bottom: 2px #ccc solid;
+}
+
+.manage-tweets tr {
+  border-bottom: 1px #ccc solid;
+}
+
+.manage-tweets td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.manage-tweets td.content {
+  width: 300px;
+}
+
+.search-control {
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  width: 446px;
+  margin-bottom: 24px;
+}
+
+.search-control .input-box {
+  box-sizing: border-box;
+}
+
+.search-control .submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: url(/static/img/search.png) no-repeat center center;
+}
+
+.search-control .submit:hover {
+  cursor: pointer;
+}
+
+.center-title {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+.center-title>h4 {
+  border-bottom: 4px steelblue solid;
+}
+
+.notify-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 20px;
+  z-index: 9999;
+}
+
+.notify {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: #aaa 2px 2px 2px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  animation: move-in .5s ease;
+  color: #444444;
+  z-index: 9999;
+
+}
+
+@keyframes move-in {
+  0% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,28 @@
+<%- include('./layout/header.html') -%>
+<div class="fl">
+  <h3 class="tag-title">Poem</h3>
+  <% poems.forEach(function(c){ %>
+  <div class="row full-card">
+    <div class="col-md-4">
+      <img src="<%= '../../images/' + c.img %>" alt="" class="img-fluid">
+    </div>
+    <div class="col-md-8 content">
+      <h3 class="full-card-title"><%= c.title %></h3>
+      <p>
+        <%= c.desc %>
+      </p>
+    </div>
+  </div>
+  <% }) %>
+</div>
+
+<div class="fl">
+  <h3 class="tag-title">Calligraphy</h3>
+  <div class="row">
+    <% calligraphys.forEach(function(h){ %>
+    <%-include("./section/history-card.html",{title: h.title, img: h.img, desc: h.desc})%>
+    <% }); %>
+  </div>
+</div>
+
+<%- include('./layout/footer.html') -%>

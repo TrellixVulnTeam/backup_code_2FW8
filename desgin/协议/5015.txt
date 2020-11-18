@@ -1,0 +1,90 @@
+5015 取用户房产列表
+5016 返回用户房产列表
+        /// <summary>
+        /// 商铺列表
+        /// </summary>
+        public List<ShopInfo> ShopList = new List<ShopInfo>();
+        /// <summary>
+        /// 出租列表
+        /// </summary>
+        public List<CZInfo> CZList = new List<CZInfo>();
+
+
+    /// <summary>
+    /// 商铺信息
+    /// </summary>
+    public class ShopInfo
+    {
+        /// <summary>
+        /// id
+        /// </summary>
+        public string Id = "";
+        /// <summary>
+        /// 类型编码
+        /// </summary>
+        public string TypeCode = "";
+        /// <summary>
+        /// 名称
+        /// </summary>
+        public string Name = "";
+        /// <summary>
+        /// 等级
+        /// </summary>
+        public int Level = 0;
+        /// <summary>
+        /// 收入
+        /// </summary>
+        public int InCome = 0;
+        /// <summary>
+        /// 价值
+        /// </summary>
+        public int Value = 0;
+        /// <summary>
+        /// 租金
+        /// </summary>
+        public int ZMoney = 0;
+        /// <summary>
+        /// 店铺数
+        /// </summary>
+        public int ShopNum = 0;
+    }
+
+
+    /// <summary>
+    /// 出租信息
+    /// </summary>
+    public class CZInfo
+    {
+        /// <summary>
+        /// id
+        /// </summary>
+        public string Id = "";
+        /// <summary>
+        /// 类型编码
+        /// </summary>
+        public string TypeCode = "";
+        /// <summary>
+        /// 名称
+        /// </summary>
+        public string Name = "";
+        /// <summary>
+        /// 等级
+        /// </summary>
+        public int Level = 0;
+        /// <summary>
+        /// 收入
+        /// </summary>
+        public int InCome = 0;
+        /// <summary>
+        /// 价值
+        /// </summary>
+        public int Value = 0;
+        /// <summary>
+        /// 出租数
+        /// </summary>
+        public int CZNum = 0;
+        /// <summary>
+        /// 总房数
+        /// </summary>
+        public int TotalNum = 0;
+    }

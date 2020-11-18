@@ -1,0 +1,44 @@
+5027 重新定位
+
+5028 返回重新定位位置信息
+
+        /// <summary>
+        /// 0=成功 1=不进行处理
+        /// </summary>
+        public byte Code = 0;
+        /// <summary>
+        /// 起点X坐标
+        /// </summary>
+        public double StartXPoint = 0;
+        /// <summary>
+        /// 起点Y坐标
+        /// </summary>
+        public double StartYPoint = 0;
+        /// <summary>
+        /// 终点X坐标
+        /// </summary>
+        public double EndXPoint = 0;
+        /// <summary>
+        /// 终点Y坐标
+        /// </summary>
+        public double EndYPoint = 0;
+        /// <summary>
+        /// 当前X坐标
+        /// </summary>
+        public double CurrentXPoint = 0;
+        /// <summary>
+        /// 当前Y坐标
+        /// </summary>
+        public double CurrentYPoint = 0;
+        /// <summary>
+        /// 停留点位置
+        /// </summary>
+        public int StopEventNum = 0;
+        /// <summary>
+        /// 当前路线终点X坐标
+        /// </summary>
+        public double CurrentEndXPoint = 0;
+        /// <summary>
+        /// 当前路线终点Y坐标
+        /// </summary>
+        public double CurrentEndYPoint = 0;

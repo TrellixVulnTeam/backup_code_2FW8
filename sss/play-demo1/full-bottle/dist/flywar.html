@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>demo</title>
+</head>
+
+<body>
+  <script type="text/javascript" src="main.bundle.js"></script>
+</body>
+<script>
+  //配置式的游戏引擎
+  //使用该游戏引擎实现画布编辑部分
+  runGame({
+    defaultScene: "default",
+    objects: {
+      "sunce": {
+        type: "Sprite",
+        args: [100, 100, "player_down"],
+        events: [
+          {
+            type: "keyPressed",
+            callback: function (keycode) {
+              if (keycode === 90) {
+                /**
+                 * 需要拥有公共可调用的方法
+                 **/
+                //实例化一个对象
+                //args包含基本的数据
+                /**
+                 * Instance应该掌握 当前所在的场景及位置
+                 * 应该在game中实现
+                 * */
+                // Instance(objectName, args);
+                // this.game.instance(objectName, args)
+
+                //暂停执行(秒)
+                //适合做cd冷却
+                // Sleep(second);
+                this.game.instance("bullet", {
+                  x: this.position.x,
+                  y: this.position.y,
+                })
+              }
+            }
+          }
+        ],
+        propertys: {
+          "width": 640,
+          "height": 480,
+          "shapeColor": "#ffffff",
+          "x": 320,
+          "y": 240,
+        },
+        behaviors: [
+          {
+            type: "Direction4",
+            args: {
+              leftAnim: "player_left",
+              rightAnim: "player_right",
+              upAnim: "player_up",
+              downAnim: "player_down",
+              speed: 6
+            }
+          },
+          {
+            type: "BoundToLayout",
+            args: {}
+          },
+        ],
+      },
+      "bullet": {
+        type: "Sprite",
+        args: [0, 0, "bullet"],
+        events: [
+        ],
+        propertys: {
+          "width": 640,
+          "height": 480,
+          "shapeColor": "#ffffff",
+          "x": 320,
+          "y": 240,
+        },
+        behaviors: [
+          {
+            type: "DestoryByOutSide",
+            args: {}
+          },
+          {
+            type: "Bullet",
+            args: {
+              speedX: 0,
+              speedY: -10
+            }
+          }
+        ],
+      }
+    },
+    scenes: {
+      "default": {
+        childs: [{
+          type: "sunce",
+          /**
+           *每个实例化的对象有不一样的非公共属性
+           **/
+        }]
+      }
+    },
+    animations: {
+      "player_down": {
+        frames: [
+          "./imgs/sc_01.png",
+          "./imgs/sc_02.png",
+          "./imgs/sc_03.png",
+        ],
+        frameDelay: 8,
+      },
+      "player_left": {
+        frames: [
+          "./imgs/sc_04.png",
+          "./imgs/sc_05.png",
+          "./imgs/sc_06.png",
+        ],
+        frameDelay: 8,
+      },
+      "player_right": {
+        frames: [
+          "./imgs/sc_07.png",
+          "./imgs/sc_08.png",
+          "./imgs/sc_09.png",
+        ],
+        frameDelay: 8,
+      },
+      "player_up": {
+        frames: [
+          "./imgs/sc_10.png",
+          "./imgs/sc_11.png",
+          "./imgs/sc_12.png",
+        ],
+        frameDelay: 8,
+      },
+      "bullet": {
+        frames: [
+          "./imgs/bullet.png",
+        ],
+        frameDelay: 8,
+      }
+    },
+    cameraOptions: {
+      isActive: true,
+      events: [
+        {
+          type: "mouseCenterHolder",
+          callback: function () {
+            this.position.x += Mouse.movedX;
+            this.position.y += Mouse.movedY;
+          }
+        },
+      ]
+    },
+    options: {
+      background: "#acafb3",
+    }
+  });
+
+</script>
+
+</html>

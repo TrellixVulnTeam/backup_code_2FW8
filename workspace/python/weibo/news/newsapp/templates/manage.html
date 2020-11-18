@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="tag-title">My Tweets Manage</h1>
+<table class="manage-tweets">
+  <thead>
+    <tr>
+      <td>content</td>
+      <td>create time</td>
+      <td>action</td>
+    </tr>
+  </thead>
+  <tbody id="tweets">
+    {% for tweet in tweets %}
+    <tr data-tweetid="{{tweet.id}}">
+      <td class="content">
+        {{tweet.content}}
+      </td>
+      <td>
+        {{tweet.create_time}}
+      </td>
+      <td>
+        <button class="btn-3d">Delete</button>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
+
+{% block script %}
+<script src="{{ url_for('static', filename='script/fetchAction.js') }}"></script>
+<script>
+  window.addEventListener('load', onLoad)
+</script>
+{% endblock %}

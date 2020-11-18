@@ -1,0 +1,139 @@
+5005 取用户信息
+
+5006 用户信息
+        /// <summary>
+        /// 玩家昵称
+        /// </summary>
+        public string NikName = "";
+        /// <summary>
+        /// 玩家头象
+        /// </summary>
+        public int UserImg = 0;
+        /// <summary>
+        /// 姓别 1男 2女
+        /// </summary>
+        public int Sex = 0;
+        /// <summary>
+        /// 经验
+        /// </summary>
+        public int Exp = 0;
+        /// <summary>
+        /// 级别
+        /// </summary>
+        public int Level = 1;
+        /// <summary>
+        /// 签名
+        /// </summary>
+        public string Signature = "";
+        /// <summary>
+        /// 年龄
+        /// </summary>
+        public int Age = 0;
+        /// <summary>
+        /// 省份
+        /// </summary>
+        public string Province = "";
+        /// <summary>
+        /// 城市
+        /// </summary>
+        public string City = "";
+        /// <summary>
+        /// 好友数量
+        /// </summary>
+        public int FriendsNum = 0;
+        /// <summary>
+        /// 人气值
+        /// </summary>
+        public int PopularityValue = 0;
+        /// <summary>
+        /// 房产总价值
+        /// </summary>
+        public int TotalHouseValue = 0;
+        /// <summary>
+        /// 房产数量
+        /// </summary>
+        public int HouseNum = 0;
+        /// <summary>
+        /// 累计分红
+        /// </summary>
+        public int TotalBonus = 0;
+        /// <summary>
+        /// 昨日分红
+        /// </summary>
+        public int YestodayBonus = 0;
+        /// <summary>
+        /// 钻石
+        /// </summary>
+        public int Diamonds = 0;
+        /// <summary>
+        /// 钞票
+        /// </summary>
+        public int Money = 0;
+        /// <summary>
+        /// 当前X坐标
+        /// </summary>
+        public double CurrentXPoint = 0;
+        /// <summary>
+        /// 当前Y坐标
+        /// </summary>
+        public double CurrentYPoint = 0;
+        /// <summary>
+        /// 体力值
+        /// </summary>
+        public int PowerValue = 0;
+        /// <summary>
+        /// 更新体力值时间点
+        /// </summary>
+        public string RefreshPowerValueTime = "";
+        /// <summary>
+        /// 服务器时间
+        /// </summary>
+        public string ServerTime = "";
+        /// <summary>
+        /// 停留点与xy坐标点距离
+        /// </summary>
+        public int StopEventNum = 0;
+        /// <summary>
+        /// 神灵状态（事件状态,剩余步数）
+        /// </summary>
+        public string GodsState = "";
+        /// <summary>
+        /// 提取房产收入时间间隔
+        /// </summary>
+        public int GetHouseMoneyTime = 0;
+        /// <summary>
+        /// 点赞用户id
+        /// </summary>
+        public List<int> AddBest = new List<int>();
+        /// <summary>
+        /// 用户id
+        /// </summary>
+        public int UserId = 0;
+        /// <summary>
+        /// 入住房产ID
+        /// </summary>
+        public string LZHouseID = "";
+        /// <summary>
+        /// 入住楼层ID
+        /// </summary>
+        public int LZFloorID = 0;
+        /// <summary>
+        /// 线路终点X坐标
+        /// </summary>
+        public double EndXPoint = 0;
+        /// <summary>
+        /// 线路终点Y坐标
+        /// </summary>
+        public double EndYPoint = 0;
+
+
+
+
+
+
+
+
+
+
+
+

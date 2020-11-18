@@ -1,0 +1,8 @@
+POST http://127.0.0.1:5000/project/
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzU1NTQ0NDAsIm5iZiI6MTU3NTU1NDQ0MCwianRpIjoiNDlhYjg3YjgtMzcwNy00M2FiLThhZTItMjBkZjcwOWUyNzE4IiwiaWRlbnRpdHkiOiJsaW5kYUBhYmMuY29tIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjEsInVzZXJuYW1lIjoibGluZGFcbiIsImVtYWlsIjoibGluZGFAYWJjLmNvbSJ9fQ.XwrRcx25nEQniaiSDzwmzlZ1UFalYu7wbAlyVSr8V1w
+
+{
+  "name": "sadasd",
+  "json": "{}}"
+}

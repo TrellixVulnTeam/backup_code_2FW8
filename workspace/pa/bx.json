@@ -1,0 +1,12 @@
+{
+    "oppose_right": {
+        "status": "none",
+        "score": "low"
+    },
+    "algorithm_right": {
+        "sarcasm": "none"
+    },
+    "is_answer_oppose_reason_visiable": false,
+    "is_answer_rewardable": false,
+    "is_creator": true
+}

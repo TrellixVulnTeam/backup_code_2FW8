@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="tag-title">Welcome New User</h1>
+	<p class="form-box">Enter your details and register here</p>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p class="form-box">
+            {{ form.username.label }}<br>
+            {{ form.username(size=32, class="input-box") }}
+			
+			{% for error in form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+			
+        </p>
+		<p class="form-box">
+            {{ form.email.label }}<br>
+            {{ form.email(size=32, class="input-box") }}
+			
+			{% for error in form.email.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+			
+        </p>
+        <p class="form-box">
+            {{ form.password.label }}<br>
+            {{ form.password(size=35, class="input-box") }}
+			
+			{% for error in form.password.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+			
+        </p>
+		<p class="form-box">
+            {{ form.password2.label }}<br>
+            {{ form.password2(size=35, class="input-box") }}
+			
+			{% for error in form.password2.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit(class="btn-3d") }}</p>
+    </form>
+{% endblock %}

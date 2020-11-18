@@ -1,0 +1,3 @@
+﻿  calc.cpp
+D:\workspace\c\四则运算\四则运算\四则运算\calc.cpp(210,30): warning C4018: “<=”: 有符号/无符号不匹配
+  四则运算.vcxproj -> D:\workspace\c\四则运算\四则运算\Debug\四则运算.exe

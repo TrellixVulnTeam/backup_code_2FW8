@@ -1,0 +1,672 @@
+//style
+body{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.segment {
+	width: 100%;
+	height: 55vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	h1{
+		color: #2d2d2d;
+		font-size: 4.2vw;
+		font-weight: 600;
+		text-align: center;
+	}
+	
+	&.top {
+		background-image: url(../images/banner-bg.png);
+		header {
+			position: absolute;
+			height: 4.9vw;
+			display: flex;
+			padding: 30px 30px;
+			left{
+				height: 4.2vw;
+				width:16.8vw ;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+		.banner {			
+			justify-content: space-around;
+			display: flex;
+			flex-direction: row;
+			height: 55vw;
+			left{
+				position: absolute;
+				left: 6.9vw;
+				top: 14.8vw;
+				flex-direction: column;
+				display: flex;
+				h1{
+					color: white;
+					font-size: 5.6vw;
+					font-weight: 600;
+					margin: 1vw;
+				}
+				h2{
+					color: rgb(255, 213, 74);
+					font-size: 3.5vw;
+					font-weight: 600;
+					margin: 1vw;
+				}
+				.button-group{
+					display: flex;
+					flex-direction: row;
+				}				
+			}	
+			right{
+				position: absolute;
+				right: 3.5vw;
+				top: 5vw;
+				width: 49.2vw;
+				height: 55.6vw;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-image: url(../images/tangtang.png);
+			}
+		}		
+	}
+	&.teacher{
+		h1{
+			margin-bottom: 0;
+		}
+		background: linear-gradient(to bottom right,#F7F6FE , #EDEFFC);
+		padding: 2.8vw 0;
+		position: relative;
+		height: 50vw;
+		>.content{
+			flex-direction: row;
+			color: #2d2d2d;
+			.jam-tangtang{
+				position: absolute;
+				bottom: -0.5vw;
+				left: 5vw;
+				width: 52.8vw;
+				height: 39.7vw;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-image: url(../images/jam.png);
+			}
+			.teacher-introducion{
+				position: absolute;
+				bottom: 10vw;
+				right: 5vw;
+				display: flex;
+				flex-direction: column;
+				// padding: 1.4vw 2.1vw;
+				h1{
+					margin-left: 0;
+					font-size: 3.3vw;
+					font-weight: 600;
+					text-align: left;		
+				}
+				h2{
+					// margin-left: 0;
+					font-size: 2.2vw;
+					font-weight: 500;
+					text-align: left;	
+					line-height: 5vw;	
+				}
+			}	
+		}
+	}
+	&.lesson{
+		position: relative;
+		height: 100vw;
+		background: linear-gradient(to bottom right,rgb(170, 222, 255) , rgb(118, 200, 255));
+		overflow: hidden;
+		h1{
+			margin-bottom: 0;
+		}
+		h2{
+			margin-bottom: 5vw;
+			font-size: 2vw;
+			font-weight: 500;
+			text-align: center;
+			color: #F5A623;
+		}
+		.modular{
+			position: absolute;
+			top: -10vw;
+			z-index: 0;
+			width: 100vw;
+			height: 256vw;
+			background-image: url(../images/modular.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		h1{
+			color: white;
+		}
+		>.content{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			left{
+				margin: auto 0;
+				.card{
+					height: 100%;
+					margin: 0 4vw;
+					padding: 0 5vw;
+					h1{
+						margin: 0 auto;
+						color: #2d2d2d;
+						width: 30vw;
+						font-size: 2vw;
+						font-weight: 600;
+						font-family: Arial, Helvetica, sans-serif;
+					}
+					h2{
+						color:  rgb(95, 95, 95);
+						line-height: 2vw;
+						text-align: center;
+						width: 30vw;
+						font-size: 1vw;
+						font-weight: 500;
+						font-family: Arial, Helvetica, sans-serif;
+					}
+				}
+			}
+			right{
+				margin: 2vw;
+				position: relative;
+				width: 31.25vw;
+				height: 23.4vw;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-image: url(../images/ipad-air.png);	
+				.ipad{
+					position: absolute;
+					width: 23.5vw;
+					height: 18.4vw;
+					top: 1.3vw;
+					left: 3.8vw;
+					border-color: white;
+					background-repeat: no-repeat;
+					background-size: contain;
+					z-index: 0;
+					}
+			}
+		}
+	}
+	&.learn-coding{
+		background: linear-gradient(to bottom right,#F7F6FE , #EDEFFC);
+		padding: 2.8vw 0;
+		>.content{
+			display: flex;
+			flex-direction: row;
+			color: #2d2d2d;
+			padding: 0 4vw;
+			margin-top: 8vw;
+			h1{
+				font-size: 1.7vw;
+				font-weight: 500;
+				margin: 0 0 4vw 0;
+			}
+			left{
+				margin: 0 4vw;
+				.picture{
+					margin: 0 auto;
+					height: 27.9vw;
+					width: 29vw;
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-image: url(../images/advantage1.png);	
+				}
+			}
+			right{
+				width: 50vw;
+				.advantage-group{
+					padding: 0 auto;
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					div{
+						height: 5.6vw;
+						width: 23.6vw;
+						background-repeat: no-repeat;
+						background-size: contain;
+						margin: 0 0 5vw 0;
+					}
+				}
+			}
+	
+		}
+	}
+	&.IMPAct{
+		background:white;
+		padding: 2.8vw 0;
+		height: 84vw;
+		display: flex;
+		flex-direction: column;
+		h1{
+			margin-bottom: 0;
+		}
+		>.content{
+			top{
+				display: flex;
+				flex-direction: row;
+				div{
+					height: 49.65vw;
+					width: 33.4vw;
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+			}
+			bottom{
+				width: 100vw;
+				height: 18.3vw;
+				display: flex;
+				background: #6A3C92;
+				div{
+					margin: 3.3vw 0 0 1.2vw;
+					width: 30.8vw;
+					height: 10.4vw;
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+			}
+		}
+	}
+	&.kids-work{
+		background: white;
+		padding: 2.8vw 0;
+		height: 46.5vw;
+		>.content{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin: 5vw 0 0 0;
+			.card-2{
+				width: 26.7vw;
+				border-radius: 1.4vw;
+				margin: 2vw ;
+				padding: 0;
+				box-shadow: 0 0 1vw rgba(0, 0, 0, 0.15);
+			}
+			.card-info{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.card-info .h3{
+				font-size: 1.5vw;
+				margin: 1vw 1.4vw;
+				color: #F5A623;
+			}
+			.card-2 .h4{
+				font-size: 1vw;
+				margin: 1vw 1.4vw 0;
+				color: #525252;
+			}
+		}
+	}
+	&.download{
+		position: relative;
+		background-color: #269AEB;
+		padding: 2.8vw 0;
+		height: 42.5vw;
+		// .line{
+		// 	position: absolute;
+		// 	right: 0;
+		// 	top: 4vw;
+		// 	width: 36.7vw;
+		// 	height: 23.1vw;
+		// 	background-repeat: no-repeat;
+		// 	background-size: contain;
+		// 	background-image: url(../images/line.png);
+		// }
+		// .scratch{
+		// 	position: absolute;
+		// 	left: 0;
+		// 	bottom: -4vw;
+		// 	width: 31.6vw;
+		// 	height: 23.1vw;
+		// 	background-repeat: no-repeat;
+		// 	background-size: contain;
+		// 	background-image: url(../images/scratch.png);
+		// }
+		// .block{
+		// 	position: absolute;
+		// 	left: 2vw;
+		// 	top: 2vw;
+		// 	width: 30vw;
+		// 	height: 15.5vw;
+		// 	background-repeat: no-repeat;
+		// 	background-size: contain;
+		// 	background-image: url(../images/block.png);
+		// }
+
+		h1{
+			color:white;
+		}
+		>.content{
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			.app-download{
+				bottom: 5vw;
+				right: 10vw;
+				position: absolute;
+				justify-content: left;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				.title{
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					margin: 0 0 3vw 0;
+					h1{
+						font-size: 3vw;
+						color: white;
+						line-height: 2vw;
+					}
+				}
+				.logo{
+					margin:0 2vw 0 0 ;
+					width: 7vw;
+					height: 7vw;
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-image: url(../images/candy-code.png);
+				}
+				.card-group{
+					display: flex;
+					flex-direction: column;
+					.card{
+						border-style: solid;
+						border-color: rgba(255, 255, 255, 0.3);
+						border-width: 1px 0 0 0;
+						padding: 2vw 0;
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						.button{
+							height: 40px;
+							margin: 0;
+							h3{
+								line-height: 40px;
+							}
+						}
+						.text-group{
+							display: flex;
+							flex-direction: column;
+							justify-content: left;
+							margin: 0 5vw;
+							h1{
+								margin: 0 ;
+								font-size: 2vw;
+								font-weight: 500;
+								color: white;
+							}
+							h2{
+								margin: 0 ;
+								font-size: 1vw;
+								font-weight: 400;
+								color: white;
+							}	
+						}
+						.apple{
+							width: 4vw;
+							height: 4vw;
+							background-repeat: no-repeat;
+							background-size: contain;
+							background-image: url(../images/apple.png);	
+						}
+						.android{
+							width: 4vw;
+							height: 4vw;
+							background-repeat: no-repeat;
+							background-size: contain;
+							background-image: url(../images/android.png);	
+						}	
+					}
+					
+				}
+			}	
+			.ipad{
+				z-index: 1;
+				position: absolute;
+				bottom: 0vw;
+				left: 5vw;
+				width: 46.7vw;
+				height: 33.4vw;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-image: url(../images/ipad.png);	
+			}	
+
+		}
+	}
+	&.prize{
+		background: linear-gradient(to bottom right,#F7F6FE , #EDEFFC);
+		position: relative;
+		padding: 2.8vw 0;
+		height: 35vw;
+		.content{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin: 5vw;
+			.card-group{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.card{
+					background-repeat: no-repeat;
+					background-size: contain;
+					width: 20.8vw;
+					height: 8.3vw;	
+					&.good-design{
+						background-image: url(../images/good-design.png);
+					}
+					&.gess{
+						background-image: url(../images/gess.png);
+					}
+					&.csta{
+						background-image: url(../images/csta.png);
+					}
+					&.ngs{
+						background-image: url(../images/ngs.png);
+					}	
+				}
+				>h1{
+					text-align: center;
+					font-size: 1.5vw;
+					width: 18vw;
+					margin: 3vw 0;
+					color: #4e4e4e;
+				}
+			}	
+		}
+	}
+	&.code-an-hour{
+		position: relative;
+		padding: 2.8vw 0;
+		height: 65vw;
+		.content{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin: 5vw;
+			align-items: center;
+			.certificate-of-merit{
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 62.5vw;
+				height: 37.5vw;
+				background-image: url(../images/certificate-of-merit.png);	
+			}
+			>h1{
+				font-size:2vw ;
+				margin: 3vw 0;
+				text-align: center;
+				width: 80vw;
+				font-weight: 500;
+				line-height: 3vw;
+				color: red($color: #4e4e4e);
+			}
+		}
+	}
+}
+.remarks{
+	background-color: #9CC2FF;
+	color: white;
+	padding: 3vw 3vw;
+	// margin-bottom: 8vw;
+	.tinkamo-logo{
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 13.9vw;
+		height: 4.3vw;
+		background-image: url(../images/tinkamo-logo.png);	
+	}
+	p{
+		margin: 4vw 0;
+		line-height: 3vw;
+		font-size: 1.5vw;
+	}
+	.content{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	right{
+		display: flex;
+		flex-direction: row;
+		.code{
+			margin: 2vw;
+			align-items: center;
+			.consultation{
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 10vw;
+				height: 10vw;
+				background-image: url(../images/consultation.png);			
+			}
+			.official-account{
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 10vw;
+				height: 10vw;
+				background-image: url(../images/official-account.png);				
+			}
+			p{
+				margin: 1vw 0;
+				text-align: center;
+				font-size: 1.5vw;
+				font-family: Arial, Helvetica, sans-serif;
+				font-weight: 500;
+				color: white;
+			}
+		}
+	}
+}
+.shop{
+	z-index: 99;
+	position: relative;
+	height: 12vw;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: red;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0 10vw;
+	.content{
+		position: absolute;
+		left: 10vw;
+		padding: 0 2vw;
+		h1{
+			font-size: 2vw;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: 600;
+		}
+		p{
+			font-size: 1vw;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: 500;
+		}	
+	}
+	.shop-code{
+		position: absolute;
+		right: 30vw ;
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 8vw;
+		height: 8vw;
+		background-image: url(../images/shop-code.png);				
+	}
+}
+.button{
+	// line-height: 60px;
+	// text-align: center;
+	height: 60px;
+	width: auto;
+	border-radius: 30px;
+	padding: 0 20px;
+	margin: 20px 40px 0 0 ;
+	h3{
+		text-align: center;
+		line-height: 60px;
+		color: white;
+		font-size: 20px;
+		font-weight: 600;
+		margin: auto 10px;
+	}
+}
+
+.orange{
+	background-color: #F5A623;
+}
+.emerald-green{
+	background-color: #17C7D9;
+}
+.white{
+
+	background-color: white;
+}
+//img
+.jam{
+	background-image: url(../images/jam.png);
+}
+.logo{
+	background-image: url(../images/logo.png);
+}
+.advantage-1{
+	background-image: url(../images/advantage-1.png);	
+}
+.advantage-2{
+	background-image: url(../images/advantage-2.png);	
+}
+.advantage-3{
+	background-image: url(../images/advantage-3.png);	
+}
+.advantage-4{
+	background-image: url(../images/advantage-4.png);	
+}
+.advantage-5{
+	background-image: url(../images/advantage-5.png);	
+}
+.ignite{
+	background-image: url(../images/ignite.png);
+}
+.metamorph{
+	background-image: url(../images/metamorph.png);
+}
+.professional{
+	background-image: url(../images/professional.png);
+}
+.act{
+	background-image: url(../images/act.png);
+}

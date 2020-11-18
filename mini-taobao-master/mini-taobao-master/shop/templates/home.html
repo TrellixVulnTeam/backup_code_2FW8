@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<script src={{url_for('static', filename='js/siema.min.js')}}></script>
+<script>
+    window.addEventListener('load', function () {
+        new Siema();
+    })
+</script>
+{% endblock %}
+
+{% block content %}
+
+<div class="siema">
+    {% for product in products[:3] %}
+    <div class="item">
+        <img class="siema-img" src={{url_for("static", filename='images/' + product.image) }} alt="" />
+    </div>
+    {% endfor %}
+</div>
+<div class="content-section">
+    <h1>Products</h1>
+</div>
+<div>
+    {% if products %}
+    {% for product in products %}
+
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src={{ url_for("static", filename='images/' + product.image) }} class="card-img" />
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title"><a href={{ url_for("product_detail",id= product.id) }}>
+                            {{ product.name }}</a><br></h5>
+                    <p class="card-text">Price: <span class="price">${{ product.price }}</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+    {% else %}
+    <div class="content-section">
+        <h1>今天的商品都被买走了 下次早点过来吧！</h1>
+    </div>
+    {% endif %}
+
+</div>
+
+
+
+{% endblock content %}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>合计项目</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background: #efefef;
+    }
+
+    .wrapper {
+      width: 600px;
+      margin: 0 auto;
+      margin-top: 20px;
+      background: white;
+      border-radius: 4px;
+      padding: 12px;
+    }
+
+    .input-number {
+      width: 100%;
+      resize: none;
+      outline: none;
+      box-sizing: border-box;
+      padding: 8px;
+    }
+
+    .input-number:hover {}
+
+    .generator {
+      width: 100%;
+      padding: 4px;
+      text-align: center;
+      outline: none;
+      background: palevioletred;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      color: white;
+    }
+
+    .generator:hover {
+      cursor: pointer;
+      /* transform: translateY(-4px); */
+    }
+
+    ul.show-numbers {
+      list-style: none;
+    }
+
+    ul.show-numbers li {
+      border: 1px solid #ccc;
+      display: inline-block;
+      margin: 4px 12px;
+      border: none;
+      background-color: seagreen;
+      color: white;
+      padding: .2em .5em;
+      min-width: 2rem;
+      text-align: center;
+    }
+
+    ul.show-numbers li h6 {
+      border-bottom: 1px solid white;
+    }
+  </style>
+</head>
+<div class="wrapper">
+  <h3>输入数据</h3>
+  <textarea name="" id="" cols="30" rows="10" class="input-number"></textarea>
+  <button class="generator">计算</button>
+  <section id="answer"></section>
+  <section class="state"></section>
+</div>
+
+<body>
+</body>
+<script>
+  class GNum {
+    static gUnits = { "个": -1, "十": -2, "百": -3, "千": -4, "万": -5 }
+    static gUnitOrder = ["万", "千", "百", "十", "个"];
+    constructor(numStr, units = ["万", "千", "百", "十", "个"]) {
+      this.num = {};
+
+      if (typeof numStr === 'object') {
+        this.num = numStr;
+        return;
+      }
+
+      if (typeof units === 'string') {
+        units = units.split("")
+      }
+      // console.log(numStr);
+      units.forEach((unit) => {
+        this.num[unit] = numStr.substr(GNum.gUnits[unit], 1)
+      });
+    }
+
+    //链式写法
+    getSection(units) {
+      return new GNum(this.value, units);
+    }
+
+    //将缺失位补全
+    supply(supplyNums) {
+      let currUnits = Object.keys(this.num);
+      let noHasUnit = GNum.gUnitOrder.filter(v => currUnits.indexOf(v) === -1)
+      if (typeof supplyNums === 'string') {
+        supplyNums = supplyNums.split("")
+      }
+
+      let rnum = Object.assign({}, this.num)
+      for (let i = 0; i < supplyNums.length && i < noHasUnit.length; i++) {
+        rnum[noHasUnit[i]] = supplyNums[i]
+      }
+
+      return new GNum(rnum)
+    }
+
+    supplyAll() {
+      let currUnits = Object.keys(this.num);
+      let noHasUnit = GNum.gUnitOrder.filter(v => currUnits.indexOf(v) === -1)
+      let len = noHasUnit.length
+      let count = Math.pow(10, len)
+
+      return new Array(count).fill(1).map((_, index) => {
+        let cNum = ("0".repeat(len) + index).slice(-len)
+        return this.supply(cNum)
+      })
+    }
+
+    get value() {
+      return GNum.gUnitOrder.map(v => this.num[v]).join("")
+    }
+  }
+
+  const units = [
+    "万", "千", "百", "十", "个"
+  ];
+  function strToDom(strDom) {
+    const div = document.createElement('div')
+    div.innerHTML = strDom
+    return div.children[0]
+  }
+
+  /**
+    返回一维数组
+  **/
+  function expand(arr, deep) {
+    if (deep === 1) {
+      return arr.map(v => [v])
+    }
+
+    const rs = []
+    arr.forEach((v, i) => {
+      expand(arr, deep - 1).forEach(s => {
+        rs.push([v, ...s])
+      })
+    })
+
+    return rs
+
+  }
+
+  function getValues(value) {
+    return value.split("\n").map(item => {
+      const items = /(\d\|)+\d/.exec(item);
+
+      if (items !== null) {
+        return items[0].split("|").join("");
+      }
+
+      return "00000";
+    });
+  }
+  function groupby(objs) {
+    let rs = new Map();
+    for (let obj of objs) {
+      if (!rs.has(obj.date)) {
+        rs.set(obj.date, [])
+      }
+
+      rs.get(obj.date).push(obj.value)
+    }
+
+    return rs
+  }
+
+  const btn = document.querySelector(".generator");
+  const text = document.querySelector(".input-number")
+  const answer = document.querySelector("#answer");
+
+  function getMapAllData(map) {
+    let s = []
+    for (let v of map.values()) {
+      s.push(...v)
+    }
+
+    return s
+  }
+
+  function compareNums(arr) {
+    return arr.map(v => [v,
+      new Set(v.split("")).size === 3
+      // true
+    ])
+  }
+
+  let seqs = [
+    '万千百',
+    '万千十',
+    '万千个',
+    '千百十',
+    '千百个',
+    '千十个',
+    '百十个',
+  ]
+
+
+  function mAllNum(num) {
+    let obj = new GNum(num)
+    return seqs.map(seq => obj.getSection(seq))
+  }
+
+  function pz(nums) {
+    let [f, ...r] = nums
+
+    if (r.length == 0) {
+      return f
+    }
+
+    let pzr = pz(r)
+    return f.reduce((a, v) => {
+      a.push(pzr.map(rv => [v, rv].flat(Infinity)))
+      return a
+    }, [])
+  }
+
+  function ms(num) {
+    for (let key of Object.has(num)) {
+      if (unitNum[n] != null) {
+        return null
+      }
+
+      unitNum[n] = n
+    }
+  }
+
+  function matchHasB(nums) {
+    let unitNum = {
+      '万': null, '千': null, '百': null, '十': null, '个': null,
+    }
+    // console.log(nums);
+    for (let v of nums) {
+
+      for (let key of Object.keys(v.num)) {
+        let value = v.num[key]
+        if (unitNum[key] !== null) {
+          if (value !== unitNum[key]) {
+            //冲突
+            return null
+          }
+        }
+
+        unitNum[key] = value
+      }
+    }
+    return unitNum
+  }
+
+  /**
+  返回一维数组
+**/
+  function expand(arr, deep) {
+    if (deep === 1) {
+      return arr.map(v => [v])
+    }
+
+    const rs = []
+    arr.forEach((v, i) => {
+      let na = [...arr].slice(i)
+      expand(na, deep - 1).forEach(s => {
+        rs.push([v, ...s])
+      })
+    })
+
+    return rs
+  }
+
+  let a = []
+  btn.addEventListener('click', function () {
+    let flags = []
+    const arr = getValues(text.value)
+    let b = []
+    answer.innerHTML = ""
+    let patchNums = []
+    let ps = expand(arr, 3)
+    console.log(ps)
+    let bs = ps.map(mAllNum)
+    console.log(bs)
+    
+    // let pzs = pz(bs)
+    // console.log(pzs);
+
+    // patchNums.push(...pzs.map(b => matchHasB(b))
+    //   .filter(obj => obj !== null)
+    //   .map(v => {
+    //     return new GNum(v).supplyAll()
+    //   })
+    // )
+
+    answer.innerHTML = patchNums.flat(Infinity).map(v => v.value).join(",&nbsp;")
+  })
+
+
+</script>
+
+</html>

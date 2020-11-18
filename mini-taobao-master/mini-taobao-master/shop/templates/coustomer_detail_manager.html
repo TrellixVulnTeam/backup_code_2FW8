@@ -1,0 +1,7 @@
+{% extends "account_layout.html" %}
+{% block info %}
+    <h1>
+        Shipping Address Manager</h1><br>
+    <a href={{ url_for("new_customer_detail") }}>Add New Shipping Address</a><br>
+    <a href={{ url_for("show_customer_detail") }}>View all addresses</a><br>
+{% endblock info %}

@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/toastify.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    block head
+  body
+    #app.container-fluid.d-flex.flex-column
+      nav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+        a.navbar-brand(href="/") Shopping
+        .collapse.navbar-collapse#navbarColor01
+        if user
+          div #{user.username}
+          a.btn.btn-primary(href="/auth/logout") logout
+        else
+          a.btn.btn-primary(href="/auth/login") login
+          a.btn.btn-success(href="/auth/signup") signup
+
+      block content
+      include ./sections/footer.jade
+
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+  script(src='/javascripts/toastify.js')
+  script(src='/javascripts/bootstrap.min.js')
+  script(src='/javascripts/common.js')
+  block script

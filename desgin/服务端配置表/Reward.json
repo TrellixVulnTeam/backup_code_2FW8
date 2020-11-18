@@ -1,0 +1,68 @@
+{
+  "1": {
+    "ID": 1,
+    "ModeType": 1,
+    "RelationID": 1,
+    "Reward": [{"Type":2,"Num":5}]
+  },
+  "2": {
+    "ID": 2,
+    "ModeType": 1,
+    "RelationID": 2,
+    "Reward": [{"Type":2,"Num":5}]
+  },
+  "3": {
+    "ID": 3,
+    "ModeType": 1,
+    "RelationID": 3,
+    "Reward": [{"Type":2,"Num":5}]
+  },
+  "4": {
+    "ID": 4,
+    "ModeType": 1,
+    "RelationID": 4,
+    "Reward": [{"Type":2,"Num":5}]
+  },
+  "5": {
+    "ID": 5,
+    "ModeType": 1,
+    "RelationID": 5,
+    "Reward": [{"Type":2,"Num":5}]
+  },
+  "6": {
+    "ID": 6,
+    "ModeType": 1,
+    "RelationID": 6,
+    "Reward": [{"Type":2,"Num":5}]
+  },
+  "7": {
+    "ID": 7,
+    "ModeType": 1,
+    "RelationID": 7,
+    "Reward": [{"Type":2,"Num":5}]
+  },
+  "8": {
+    "ID": 8,
+    "ModeType": 1,
+    "RelationID": 8,
+    "Reward": [{"Type":2,"Num":5}]
+  },
+  "9": {
+    "ID": 9,
+    "ModeType": 1,
+    "RelationID": 9,
+    "Reward": [{"Type":2,"Num":5}]
+  },
+  "10": {
+    "ID": 10,
+    "ModeType": 2,
+    "RelationID": 0,
+    "Reward": [{"Type":2,"Num":1}]
+  },
+  "11": {
+    "ID": 11,
+    "ModeType": 2,
+    "RelationID": 0,
+    "Reward": [{"Type":3,"Num":1000}]
+  }
+}

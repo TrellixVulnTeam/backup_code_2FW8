@@ -1,0 +1,23 @@
+extends layout
+block head
+  link(rel='stylesheet', href='/stylesheets/detail.css')
+
+block content
+  main.d-flex.flex-grow-1.max
+    .row.detail-header
+      .col-md-5
+        img.img-fluid(src="/uploads/#{img}")
+      .col-md-7.controls
+          h2 #{name}
+          div.price
+            span Price:&nbsp;
+            strong #{price}
+          div
+            if user
+              button#add-to-market.btn.btn-lg.btn-primary(data-pid="#{id}") Add To Market
+            a.btn.btn-lg.btn-success.ml-4(href="/shopping") Back
+            if user && user.isAdmin
+              a.btn.btn-lg.btn-danger.ml-4(href="/shopping/delete/?id=#{id}") Delete
+
+block script
+  script(src='/javascripts/cart.js')

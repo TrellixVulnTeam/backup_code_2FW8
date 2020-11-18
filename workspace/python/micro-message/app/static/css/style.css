@@ -1,0 +1,46 @@
+.card {
+  padding: 6px 12px;
+  margin: 12px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px #efefef;
+  transition: all ease .3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 10px 10px #efefef;
+}
+
+.card>.time {
+  color: #aaaaaa;
+}
+
+.like-hover-btn {
+  background-color: #337ab7;
+}
+
+.like-hover-btn:hover {
+  background-color: #337ab7;
+}
+
+.like-hover-btn:focus {
+  background-color: #337ab7;
+}
+
+.comments {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.comments > li {
+  display: block;
+  border-top: 1px solid #efefef;
+  padding: 8px 12px;
+}
+
+.comments h5 {
+  font-weight: bold;
+}

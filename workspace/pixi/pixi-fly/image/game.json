@@ -1,0 +1,71 @@
+{"frames": {
+
+"bullet.png":
+{
+	"frame": {"x":0,"y":0,"w":15,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":15,"h":30},
+	"sourceSize": {"w":15,"h":30}
+},
+"enemy_01.png":
+{
+	"frame": {"x":15,"y":0,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+"enemy_02.png":
+{
+	"frame": {"x":143,"y":0,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+"enemy_03.png":
+{
+	"frame": {"x":271,"y":0,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+"enemy_04.png":
+{
+	"frame": {"x":399,"y":0,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+"enemy_bullet.png":
+{
+	"frame": {"x":527,"y":0,"w":13,"h":22},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":13,"h":22},
+	"sourceSize": {"w":13,"h":22}
+},
+"player.png":
+{
+	"frame": {"x":540,"y":0,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+}},
+"animations": {
+	"enemy": ["enemy_01.png","enemy_02.png","enemy_03.png","enemy_04.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "game.png",
+	"format": "RGBA8888",
+	"size": {"w":668,"h":128},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0b457f4163b7a8e0284bba438e110d7b:768f3f715f400ab54c82f6eeebd111cd:fc2835210f98bae8e8c1b7f0a84c9321$"
+}
+}

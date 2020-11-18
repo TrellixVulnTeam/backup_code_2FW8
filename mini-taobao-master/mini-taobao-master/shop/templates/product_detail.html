@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="row">
+  <div class="col-md-4">
+    <img src={{ url_for("static", filename='images/' + product.image) }} class="card-img">
+  </div>
+  <div class="col-md-8">
+    <div class="product-title">
+      <h4>{{product.name}}</h4>
+      <div>Category: {{product.sort}}</div>
+      <div>Price: <span class="price">{{product.price}}</span></div>
+    </div>
+    <div>
+      <ul class="product-info">
+        {% for d in  product.detail.split('.')%}
+        <li>{{d}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <a class="btn btn-outline-warning" href={{ url_for("add_product_shopping_car",id=product.id) }} role="button">Buy</a>
+</div>
+<!-- <h1>商品</h1>
+
+<div class="content-section">
+  <a href={{ url_for("product_detail",id= product.id) }}> 商品名称：{{ product.name }}</a><br>
+  <a>商品类别：{{ product.sort }}</a><br>
+  <a>商品价格：{{ product.price }}</a><br>
+  <a>商品细节：{{ product.detail }}</a><br>
+  <a>商品剩余库存量：{{ product.product_count }}</a><br>
+
+  {% if current_user.table_name =="Customer" %}
+  <br><a href={{ url_for("add_product_shopping_car",id=product.id) }}>我想购买它</a>
+  {% endif %}
+</div> -->
+
+{% endblock %}

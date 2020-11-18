@@ -1,0 +1,13 @@
+D:\workspace\xarmain\Awesoome\Awesoome\Awesoome\bin\Debug\netstandard2.0\Awesoome.deps.json
+D:\workspace\xarmain\Awesoome\Awesoome\Awesoome\bin\Debug\netstandard2.0\Awesoome.dll
+D:\workspace\xarmain\Awesoome\Awesoome\Awesoome\bin\Debug\netstandard2.0\ref\Awesoome.dll
+D:\workspace\xarmain\Awesoome\Awesoome\Awesoome\bin\Debug\netstandard2.0\Awesoome.pdb
+D:\workspace\xarmain\Awesoome\Awesoome\Awesoome\obj\Debug\netstandard2.0\Awesoome.csprojAssemblyReference.cache
+D:\workspace\xarmain\Awesoome\Awesoome\Awesoome\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\workspace\xarmain\Awesoome\Awesoome\Awesoome\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\workspace\xarmain\Awesoome\Awesoome\Awesoome\obj\Debug\netstandard2.0\Awesoome.AssemblyInfoInputs.cache
+D:\workspace\xarmain\Awesoome\Awesoome\Awesoome\obj\Debug\netstandard2.0\Awesoome.AssemblyInfo.cs
+D:\workspace\xarmain\Awesoome\Awesoome\Awesoome\obj\Debug\netstandard2.0\XamlC.stamp
+D:\workspace\xarmain\Awesoome\Awesoome\Awesoome\obj\Debug\netstandard2.0\Awesoome.dll
+D:\workspace\xarmain\Awesoome\Awesoome\Awesoome\obj\Debug\netstandard2.0\ref\Awesoome.dll
+D:\workspace\xarmain\Awesoome\Awesoome\Awesoome\obj\Debug\netstandard2.0\Awesoome.pdb

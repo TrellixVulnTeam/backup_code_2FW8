@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    <div id="app">
+        <nav>
+            <h1 class="title">MY PETS</h1>
+            <ul class="nav">
+                <li>
+                    <a href="{{ url_for('index') }}">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('cat') }}">
+                    Cat
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('dog') }}">
+                    Dog
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('family') }}">
+                    Family
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+{% block footer %}
+{% endblock %}
+</html>

@@ -1,0 +1,7 @@
+{% extends "account_layout.html" %}
+{% block info %}
+    <a href={{ url_for("customer_detail_manager",username=current_user.username) }}>Shipping Address</a><br>
+    <a href={{ url_for("security_check") }}>My Details</a><a>
+    <!-- <a href={{ url_for("customer_order_manager") }}>My Orders</a><br> -->
+
+{% endblock info %}

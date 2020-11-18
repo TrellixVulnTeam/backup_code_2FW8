@@ -1,0 +1,7 @@
+POST  http://127.0.0.1:5000/project/update/1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzU1MzM0ODcsIm5iZiI6MTU3NTUzMzQ4NywianRpIjoiNmUwNTc5YTktMjI3YS00OTJhLTk4ZmUtZjNhMThhN2U5Zjg4IiwiZXhwIjoxNTc1NTM0Mzg3LCJpZGVudGl0eSI6ImxpbmRhQGFiYy5jb20iLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MSwidXNlcm5hbWUiOiJsaW5kYVxuIiwiZW1haWwiOiJsaW5kYUBhYmMuY29tIn19.l4Oa-hw8BrTgAizNKUhgDSeeaNei_ETaFgo693GKdDg
+
+{
+  "is_publish": true
+}

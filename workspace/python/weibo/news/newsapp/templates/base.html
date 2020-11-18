@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/mystyle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/main.css') }}">
+</head>
+
+<body>
+    <div id="notifys" class="notify-box">
+    </div>
+    <div class="wrapper">
+        <header>
+            <h1>micro weibo</h1>
+            <nav>
+                <a class="nav_link" href="/index">ground</a>
+                {%if current_user.is_authenticated %}
+                <a class="nav_link" href="/send-tweet">send</a>
+                <div id="user-drop-list">
+                    HI, {{ current_user.username }}!
+                    <ul class="drop-list">
+                        <li><a href="/logout">✖Logout</a></li>
+                        <li><a href="/manage">Manager</a></li>
+                    </ul>
+                </div>
+                {% else %}
+                <a class="nav_link" href="/login">login</a>
+                <a class="nav_link" href="/signup">signup</a>
+                {% endif %}
+                {% block nav %}{% endblock %}
+            </nav>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+    <!-- {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %} -->
+</body>
+<script src="{{url_for('static', filename='script/notify.js')}}"></script>
+{% block script %}{% endblock %}
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<script>
+    {% for message in messages %}
+    notify('{{message}}')
+    {% endfor %}
+</script>
+{% endif %}
+{% endwith %}
+
+</html>

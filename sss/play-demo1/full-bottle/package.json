@@ -1,0 +1,26 @@
+{
+  "name": "full-bottle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cmu-eberly-center/p5": "^0.8.0",
+    "@cmu-eberly-center/p5.play": "^1.2.0",
+    "@material-ui/core": "^4.5.1",
+    "p5": "^0.10.2"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
+  }
+}

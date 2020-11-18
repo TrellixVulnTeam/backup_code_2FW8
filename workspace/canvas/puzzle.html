@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+</body>
+<script>
+    const canvas = document.querySelector("#canvas")
+    const c = canvas.getContext('2d')
+    c.font = "48px serif"
+    c.textAlign = 'center'
+    let map = [1, 2, 3, 4, 5, 6, 7, 8, 0]
+
+    function draw() {
+        c.clearRect(0, 0, 300, 300)
+        for (let i = 0; i < map.length; i++) {
+            let x = (i % 3) * 100 + 50
+            let y = Math.floor(i / 3) * 100 + 50
+            if (map[i]) c.fillText(map[i], x, y)
+        }
+    }
+
+    document.addEventListener('keydown', e => {
+        let zero = map.indexOf(0)
+        let next = 0
+        switch (e.keyCode) {
+            //left
+            case 37:
+                next = zero + 1
+                if (next % 3 < zero % 3) {
+                    return
+                }
+                break;
+            //up
+            case 38:
+                next = zero + 3
+                if(next > 8) {
+                    return
+                }
+                break;
+            //right
+            case 39:
+                next = zero - 1
+                if (next % 3 >= zero % 3) {
+                   return
+                }
+
+                break;
+            //down
+            case 40:
+                next = zero - 3
+                if(next < 0) {
+                    return
+                }
+                break;
+
+        }
+        [map[zero], map[next]] = [map[next], map[zero]]
+        draw()
+    })
+
+    draw()
+</script>
+
+</html>

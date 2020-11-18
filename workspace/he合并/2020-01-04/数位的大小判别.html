@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>合计项目</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background: #efefef;
+    }
+
+    .wrapper {
+      width: 600px;
+      margin: 0 auto;
+      margin-top: 20px;
+      background: white;
+      border-radius: 4px;
+      padding: 12px;
+    }
+
+    .input-number {
+      width: 100%;
+      resize: none;
+      outline: none;
+      box-sizing: border-box;
+      padding: 8px;
+    }
+
+    .input-number:hover {}
+
+    .generator {
+      width: 100%;
+      padding: 4px;
+      text-align: center;
+      outline: none;
+      background: palevioletred;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      color: white;
+    }
+
+    .generator:hover {
+      cursor: pointer;
+      /* transform: translateY(-4px); */
+    }
+
+    ul.show-numbers {
+      list-style: none;
+    }
+
+    ul.show-numbers li {
+      border: 1px solid #ccc;
+      display: inline-block;
+      margin: 4px 12px;
+      border: none;
+      background-color: seagreen;
+      color: white;
+      padding: .2em .5em;
+      min-width: 2rem;
+      text-align: center;
+    }
+
+    ul.show-numbers li h6 {
+      border-bottom: 1px solid white;
+    }
+
+    details {
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      padding: .5em .5em 0;
+      margin-top: 20px;
+    }
+
+    summary {
+      font-weight: bold;
+      margin: -.5em -.5em 0;
+      padding: .5em;
+    }
+
+    details[open] {
+      padding: .5em;
+    }
+
+    details[open] summary {
+      border-bottom: 1px solid #aaa;
+      margin-bottom: .5em;
+    }
+
+    .flexbox {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flexbox > div {
+      width: 53px;
+    }
+  </style>
+</head>
+<div class="wrapper">
+  <h3>输入数据</h3>
+  <textarea name="" id="" cols="30" rows="10" class="input-number"></textarea>
+  <section>
+    <label for="n">前n个数</label>
+    <input type="number" value="48" id="n" />
+  </section>
+
+  <button class="generator">计算</button>
+
+  <section id="answer"></section>
+  <section class="state"></section>
+  <!-- <details class="menu" open>
+    <summary>菜单1</summary>
+    <ul>
+      <li><a href="#">子菜单1</a></li>
+      <li><a href="#">子菜单2</a></li>
+    </ul>
+  </details> -->
+</div>
+
+<body>
+</body>
+<script>
+  class GNum {
+    static gUnits = { "个": -1, "十": -2, "百": -3, "千": -4, "万": -5 }
+    static gUnitOrder = ["万", "千", "百", "十", "个"];
+    constructor(numStr, units = ["万", "千", "百", "十", "个"]) {
+      this.num = {};
+
+      if (typeof numStr === 'object') {
+        this.num = numStr;
+        return;
+      }
+
+      if (typeof units === 'string') {
+        units = units.split("")
+      }
+      // console.log(numStr);
+
+      units.forEach((unit) => {
+        this.num[unit] = numStr.substr(GNum.gUnits[unit], 1)
+      });
+    }
+
+    //链式写法
+    getSection(units) {
+      return new GNum(this.value, units);
+    }
+
+    //将缺失位补全
+    supply(supplyNums) {
+      let currUnits = Object.keys(this.num);
+      let noHasUnit = GNum.gUnitOrder.filter(v => currUnits.indexOf(v) === -1)
+      if (typeof supplyNums === 'string') {
+        supplyNums = supplyNums.split("")
+      }
+
+      let rnum = Object.assign({}, this.num)
+      for (let i = 0; i < supplyNums.length && i < noHasUnit.length; i++) {
+        rnum[noHasUnit[i]] = supplyNums[i]
+      }
+
+      return new GNum(rnum)
+    }
+
+    supplyAll() {
+      let currUnits = Object.keys(this.num);
+      let noHasUnit = GNum.gUnitOrder.filter(v => currUnits.indexOf(v) === -1)
+      let len = noHasUnit.length
+      let count = Math.pow(10, len)
+
+      return new Array(count).fill(1).map((_, index) => {
+        let cNum = ("0".repeat(len) + index).slice(-len)
+        return this.supply(cNum)
+      })
+    }
+
+    get value() {
+      return GNum.gUnitOrder.map(v => this.num[v]).join("")
+    }
+  }
+
+  const units = [
+    "万", "千", "百", "十", "个"
+  ];
+  function strToDom(strDom) {
+    const div = document.createElement('div')
+    div.innerHTML = strDom
+    return div.children[0]
+  }
+
+  function expand(rs) {
+
+    const [fKey, ...restKeys] = Object.keys(rs)
+    return rs[fKey].map((v, i) => {
+      return [v, ...restKeys.map(k => rs[k][i])]
+    })
+  }
+
+
+  function getValues(value) {
+    return value.split("\n").map(item => {
+      const items = /(\d\|)+\d/.exec(item);
+      const date = /(\d{4})-(\d{2})-(\d{2})/.exec(item);
+
+      if (items !== null) {
+        return {
+          date: date[0],
+          value: items[0].split("|").join(""),
+        }
+      }
+
+      return {
+        date: "0000-00-00",
+        value: "00000",
+      }
+    });
+  }
+
+  function groupby(objs) {
+    let rs = {}
+    for (let obj of objs) {
+      if (!Reflect.has(rs, obj.date)) {
+        rs[obj.date] = []
+      }
+
+      rs[obj.date].push(obj.value)
+    }
+
+    return rs
+  }
+
+  const btn = document.querySelector(".generator");
+  const text = document.querySelector(".input-number")
+  const answer = document.querySelector("#answer");
+  const nInput = document.querySelector("#n")
+
+  function getMapAllData(map) {
+    let s = []
+    for (let v of map.values()) {
+      s.push(...v)
+    }
+
+    return s
+  }
+
+  function getKeyToLastData(findDate, datas) {
+    let rd = []
+    let isFind = false
+    for (let key in datas) {
+      if (key === findDate) {
+        isFind = true
+      }
+
+      if (isFind) {
+        rd.push(...datas[key])
+      }
+    }
+
+    return rd
+  }
+
+  function isMatchRepeat(num) {
+    num = String(num).split("")
+    let size = num.filter(v => parseInt(v) < 5).length
+    if (size === num.length) {
+      return "小"
+    }
+
+    if (size === 0) {
+      return "大"
+    }
+
+    return 0
+  }
+
+  let details = (title) => `
+    <details class="menu">
+      <summary>${title}</summary>
+      <p class="content">
+
+      </p>
+    </details>
+  `
+
+  btn.addEventListener('click', function () {
+    let flags = []
+    let allDataMap = new Map()
+    let valMaps = groupby(getValues(text.value))
+    let allDetails = strToDom(`<div></div>`)
+    let num = nInput.value
+    console.log(num);
+
+    answer.innerHTML = ""
+
+    for (let key in valMaps) {
+      const detailDom = strToDom(details(key))
+
+      let dContent = detailDom.querySelector(".content")
+      detailDom.addEventListener('toggle', function () {
+        if (detailDom.open) {
+          let d = []
+          if (allDataMap.has(key)) {
+            d = allDataMap.get(key)
+          } else {
+            d = showAnswer(getKeyToLastData(key, valMaps).slice(0, num))
+            allDataMap.set(key, d)
+          }
+          dContent.innerHTML = d
+        } else {
+          dContent.innerHTML = "这里是空的！"
+        }
+      })
+      allDetails.appendChild(detailDom)
+    }
+
+    answer.appendChild(allDetails)
+  })
+
+  function showAnswer(arr) {
+
+    let flags = []
+    console.log(arr);
+
+    for (let i = 0; i < arr.length; i++) {
+      let f = isMatchRepeat(arr[i])
+      flags.push(f)
+    }
+
+    let hasSCount = flags.filter(v => v=='小').length
+    let hasMCount = flags.filter(v => v=='大').length
+    let has0Count = flags.filter(v => v=='0').length
+
+
+    return `
+      <div style="margin-top: 20px;">
+          <section class="flexbox">
+            ${flags.map((f, i) => `<div>${("00" + (i + 1)).slice(-2)}: ${f}&nbsp;&nbsp;</div>`).join("")}
+          </section> 
+          <strong>小: ${hasSCount}  大: ${hasMCount}  0:${has0Count}</strong>
+        </table>
+      </div>
+    `
+  }
+
+  // document.querySelector(".menu").addEventListener('toggle', ()=>{
+  //   console.log("open")
+  // })
+
+</script>
+
+</html>

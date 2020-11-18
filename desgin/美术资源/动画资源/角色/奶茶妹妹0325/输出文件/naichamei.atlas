@@ -1,0 +1,97 @@
+
+naichamei.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bizi
+  rotate: true
+  xy: 2, 2
+  size: 10, 13
+  orig: 10, 13
+  offset: 0, 0
+  index: -1
+naicha
+  rotate: false
+  xy: 110, 14
+  size: 37, 66
+  orig: 37, 66
+  offset: 0, 0
+  index: -1
+shenti01
+  rotate: false
+  xy: 2, 14
+  size: 106, 66
+  orig: 106, 66
+  offset: 0, 0
+  index: -1
+shenti02
+  rotate: false
+  xy: 154, 95
+  size: 98, 39
+  orig: 98, 39
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 302, 168
+  size: 116, 84
+  orig: 116, 84
+  offset: 0, 0
+  index: -1
+toufa
+  rotate: false
+  xy: 154, 136
+  size: 146, 116
+  orig: 146, 116
+  offset: 0, 0
+  index: -1
+toufa03
+  rotate: false
+  xy: 2, 82
+  size: 150, 170
+  orig: 150, 170
+  offset: 0, 0
+  index: -1
+yanjing
+  rotate: false
+  xy: 420, 215
+  size: 82, 37
+  orig: 82, 37
+  offset: 0, 0
+  index: -1
+youjiao
+  rotate: true
+  xy: 463, 179
+  size: 34, 47
+  orig: 34, 47
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: false
+  xy: 420, 171
+  size: 41, 42
+  orig: 41, 42
+  offset: 0, 0
+  index: -1
+zuiba
+  rotate: false
+  xy: 302, 150
+  size: 29, 16
+  orig: 29, 16
+  offset: 0, 0
+  index: -1
+zuojiao
+  rotate: true
+  xy: 463, 143
+  size: 34, 47
+  orig: 34, 47
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: true
+  xy: 254, 97
+  size: 37, 45
+  orig: 37, 45
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,42 @@
+POST https://m.ctrip.com/restapi/soa2/12455/json/LegendOwnerDetail?_fxpcqlniredt=09031107110690501469
+
+{
+    "ownerid": "$$3588873",
+    "pid": 229036403,
+    "head": {
+        "cid": "09031107110690501469",
+        "ctok": "",
+        "cver": "1.0",
+        "lang": "01",
+        "sid": "8888",
+        "syscode": "09",
+        "auth": "",
+        "xsid": "",
+        "extension": [
+            {
+                "name": "webp",
+                "value": "1"
+            },
+            {
+                "name": "cityid",
+                "value": ""
+            },
+            {
+                "name": "platform",
+                "value": "pc"
+            },
+            {
+                "name": "source",
+                "value": "2"
+            },
+            {
+                "name": "pagecode",
+                "value": "10650016818"
+            },
+            {
+                "name": "module",
+                "value": "11"
+            }
+        ]
+    }
+}

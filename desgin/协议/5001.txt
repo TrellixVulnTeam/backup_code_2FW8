@@ -1,0 +1,20 @@
+5001 修改用户信息
+        /// <summary>
+        /// 操作类型 1=修改用户性别和头像 2=用户昵称 3=修改用户性别和头像+用户昵称
+        /// </summary>
+        public int OperCode = 0;
+        /// <summary>
+        /// 用户角色类型 1=男2=女3=男4=女
+        /// </summary>
+        public byte UserType = 0;
+        /// <summary>
+        /// 用户昵称（20长度）
+        /// </summary>
+        public string NikeName = "";   
+
+
+5002登录应答
+        /// <summary>
+        /// 状态码 0=成功 1=失败
+        /// </summary>
+        public int Code = 0;

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>test-vue-route</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>Hello Vue Route!</h1>
+        <p>
+            <router-link to="/foo">foo</router-link>
+            <router-link to="/bar">bar</router-link>
+        </p>
+        <router-view></router-view>
+    </div>
+</body>
+<script>
+    const foo = {template: "<h2>foo</h2>"}
+    const bar = {template: "<h2>bar</h2>"}
+
+    let routes = [
+        {path: "/foo", component: foo},
+        {path: "/bar", component: bar},
+    ]
+
+    const router = new VueRouter({routes})
+
+    const app = new Vue({
+        el: "#app",
+        router
+    })
+</script>
+
+</html>

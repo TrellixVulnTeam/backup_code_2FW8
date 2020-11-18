@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body::before {
+            content: 'mobile';
+            display: none;
+        }
+
+        @media screen and (min-width: 30rem) {
+            body::before {
+                content: 'large-mobile';
+            }
+        }
+
+        @media screen and (min-width: 70rem) {
+            body::before {
+                content: 'desktop';
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<script>
+function getBackpoint() {
+    return getComputedStyle(document.querySelector('body'), ':before')
+        .getPropertyValue('content')
+}
+
+</script>
+
+</html>

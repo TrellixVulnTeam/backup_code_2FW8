@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+{{inputValue}}
+<view class="main">
+  <view wx:for="{{items}}" class="item" wx:key="id">
+      <view><text>{{item.name}} {{item.price}}</text></view>
+      <view class="right">
+        <button data-id="{{item.id}}" size="mini" bindtap="div">-</button>
+        <div class="center-text"><text>{{item.num}}</text></div>
+        <button data-id="{{item.id}}" size="mini" bindtap="inc">+</button>
+      </view>
+  </view>
+</view>
+<view class="form">
+  <input bindinput="bindKeyInput" type="number" placeholder="输入金额"/>
+  <button bindtap="generatorAnswer" size="mini" type="primary">计算</button>
+</view>
+</view>

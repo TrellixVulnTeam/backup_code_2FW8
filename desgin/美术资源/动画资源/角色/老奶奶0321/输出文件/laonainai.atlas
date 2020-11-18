@@ -1,0 +1,104 @@
+
+laonainai.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bianzi
+  rotate: false
+  xy: 355, 70
+  size: 53, 54
+  orig: 53, 54
+  offset: 0, 0
+  index: -1
+guaizhang
+  rotate: true
+  xy: 410, 81
+  size: 43, 60
+  orig: 43, 60
+  offset: 0, 0
+  index: -1
+liuhai
+  rotate: false
+  xy: 141, 47
+  size: 104, 77
+  orig: 104, 77
+  offset: 0, 0
+  index: -1
+shenti01
+  rotate: false
+  xy: 247, 59
+  size: 106, 65
+  orig: 106, 65
+  offset: 0, 0
+  index: -1
+taitouwen
+  rotate: false
+  xy: 399, 13
+  size: 34, 23
+  orig: 34, 23
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 4
+  size: 137, 120
+  orig: 137, 120
+  offset: 0, 0
+  index: -1
+yanjing
+  rotate: false
+  xy: 141, 22
+  size: 88, 23
+  orig: 88, 23
+  offset: 0, 0
+  index: -1
+youjiao
+  rotate: true
+  xy: 247, 23
+  size: 34, 43
+  orig: 34, 43
+  offset: 0, 0
+  index: -1
+youkuguan
+  rotate: false
+  xy: 355, 28
+  size: 42, 40
+  orig: 42, 40
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: true
+  xy: 410, 38
+  size: 41, 42
+  orig: 41, 42
+  offset: 0, 0
+  index: -1
+zuiba
+  rotate: false
+  xy: 141, 2
+  size: 55, 18
+  orig: 55, 18
+  offset: 0, 0
+  index: -1
+zuojiao
+  rotate: true
+  xy: 292, 23
+  size: 34, 43
+  orig: 34, 43
+  offset: 0, 0
+  index: -1
+zuokuguan
+  rotate: false
+  xy: 454, 38
+  size: 41, 40
+  orig: 41, 40
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: false
+  xy: 472, 80
+  size: 37, 44
+  orig: 37, 44
+  offset: 0, 0
+  index: -1

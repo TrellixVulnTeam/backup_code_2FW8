@@ -1,0 +1,19 @@
+extends layout
+block head
+  link(rel='stylesheet', href='/stylesheets/index.css')
+
+block content
+  .row.gallery
+    .col-12.col-sm-3
+      include ./sections/project-list.jade
+    .col-12.col-sm-7.offset-sm-1
+      .carousel.slide(data-ride="carousel")
+        .carousel-inner
+          .carousel-item.active
+            img(src="images/s.jpg").d-block.w-100
+    
+  .row.cards
+    each v in [1, 2, 3]
+      .col-md-4
+        .show-image
+          img.img-fluid(src='images/' + v + '.jpg')

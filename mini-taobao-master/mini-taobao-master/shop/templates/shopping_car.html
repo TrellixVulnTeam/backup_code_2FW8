@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+    <h1>My Shopping Car</h1><br>
+</div>
+{% if orderdetails %}
+
+{% for detail in orderdetails %}
+<div class="content-section">
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <img src={{url_for("static", filename='images/' + detail.product.image) }} alt="" class="card-img">
+            </div>
+            <div class="col-md-10">
+                <h5>{{ detail.product.name }}</h5><br>
+                <a>Price: ${{ detail.product.price }}</a><br>
+                <a>Count: {{ detail.product_count}}</a><br>
+                <div>
+                    <a
+                        href={{ url_for("delete_product_from_shopping_car",id=detail.product.id) }}>Delete&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href={{ url_for("add_by_10",id=detail.product.id) }}>Add 10&nbsp;&nbsp;&nbsp;&nbsp; </a>
+                    <a href={{ url_for("add_by_1",id=detail.product.id) }}>Add 1 &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href={{ url_for("delete_by_1",id=detail.product.id) }}>1 reduction &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href={{ url_for("delete_by_10",id=detail.product.id) }}>10 reduction&nbsp;&nbsp;&nbsp;&nbsp; </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endfor %}
+<div class="content-section">
+    {%  if customer_detail_default %}
+    <a href={{  url_for("customer_detail_manager",username=current_user.username)}}>The default address has been set</a><br>
+    {% else %}
+    <a href={{  url_for("customer_detail_manager",username=current_user.username)}}>The preset address has not been set Go to settings</a><br>
+    {% endif %}
+    <font size="5" color="green">
+
+        <a
+            href={{ url_for("confirm_order",id =shopping_car.id) }}>Payment has been made, confirm order<a>&nbsp;&nbsp;&nbsp;&nbsp;Total Price: ${{ shopping_car.total_price }}</a></a>
+    </font><br>
+</div>
+{% else %}
+<div class="content-section">
+    <a href={{ url_for("home") }}>Your shopping cart is empty!</a>
+</div>
+{% endif %}
+{% endblock %}

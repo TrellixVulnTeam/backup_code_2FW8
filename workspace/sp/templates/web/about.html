@@ -1,0 +1,19 @@
+{% extends "web/base.html" %}
+{% block title %}首页{% endblock %}
+{% block detial %}
+<link rel="stylesheet" href="/static/web/css/index.css">
+<link rel="stylesheet" href="/static/web/css/slide.css">
+<div class="container">
+    <article>
+      <h2>关于本站</h2>
+      <p>二手交易网顾名思义就是一个提供给个人或商家发布二手物品交易信息的网络平台，一般为免费发布。二手商品交易网是电子商务的一种具体应用，是一个虚拟化的市场，借助Internet为买卖双方提供一个快捷方便的交易平台。</p>
+    </article>
+</div>
+
+<script src="/static/web/js/index.js"></script>
+<script>
+    $(function () {
+        $('#slide3d').slideCarsousel({ slideType: '3d', indicatorEvent: 'mouseover' });
+    });
+</script>
+{% endblock %}

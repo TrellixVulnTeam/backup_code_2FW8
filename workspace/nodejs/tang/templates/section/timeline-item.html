@@ -1,0 +1,13 @@
+<% if (!isNull) { %>
+<li class="active">
+  <div class="king-card">
+    <img src="<%= '../../images/' + img %>" alt="" />
+    <h6><%= name %></h6>
+    <p><%= time %></p>
+  </div>
+</li>
+<%} else {%>
+<li>
+  <div class="king-card"></div>
+</li>
+<% } %>

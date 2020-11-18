@@ -1,0 +1,83 @@
+
+naichadian.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fangjian
+  rotate: false
+  xy: 2, 263
+  size: 759, 213
+  orig: 759, 213
+  offset: 0, 0
+  index: -1
+guashi
+  rotate: false
+  xy: 2, 87
+  size: 88, 94
+  orig: 88, 94
+  offset: 0, 0
+  index: -1
+men
+  rotate: false
+  xy: 763, 292
+  size: 130, 184
+  orig: 130, 184
+  offset: 0, 0
+  index: -1
+naicha01
+  rotate: false
+  xy: 438, 220
+  size: 80, 41
+  orig: 80, 41
+  offset: 0, 0
+  index: -1
+naicha02
+  rotate: false
+  xy: 362, 202
+  size: 74, 59
+  orig: 74, 59
+  offset: 0, 0
+  index: -1
+paizi01
+  rotate: false
+  xy: 92, 125
+  size: 106, 56
+  orig: 106, 56
+  offset: 0, 0
+  index: -1
+paizi02
+  rotate: false
+  xy: 253, 205
+  size: 107, 56
+  orig: 107, 56
+  offset: 0, 0
+  index: -1
+paizi03
+  rotate: false
+  xy: 2, 183
+  size: 249, 78
+  orig: 249, 78
+  offset: 0, 0
+  index: -1
+yizi01
+  rotate: false
+  xy: 895, 392
+  size: 87, 84
+  orig: 87, 84
+  offset: 0, 0
+  index: -1
+yizi02
+  rotate: false
+  xy: 2, 2
+  size: 87, 83
+  orig: 87, 83
+  offset: 0, 0
+  index: -1
+zuozi
+  rotate: true
+  xy: 895, 298
+  size: 92, 68
+  orig: 92, 68
+  offset: 0, 0
+  index: -1

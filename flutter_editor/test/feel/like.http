@@ -1,0 +1,8 @@
+POST http://127.0.0.1:5000/api/feel/like/1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzYyMDkzNzQsIm5iZiI6MTU3NjIwOTM3NCwianRpIjoiODNhMzNlMWUtZGYxOC00MmJlLWIyMjMtNTc1ZjE1YjUxOTQ4IiwiaWRlbnRpdHkiOiJsaW5kYUBhYmMuY29tIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjEsInVzZXJuYW1lIjoibGluZGEiLCJlbWFpbCI6ImxpbmRhQGFiYy5jb20ifX0.TNyIxlleyKRjgWb65rJInTGVWuk-MKnN7SNBnzuDF_8
+
+{
+  "name": "sadasd",
+  "json": "{}}"
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小题11</title>
+  <style>
+    textarea {
+      display: block;
+      margin: 12px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <h1>输入</h1>
+    <textarea v-for="(v, i) in a.arrs" v-model="a.arrs[i]"></textarea>
+    <button @click="addInput">添加</button>
+    <button @click="removeInput">删除</button>
+    <button @click="calc">计算</button>
+    <button class="btn" data-clipboard-target="#answer">
+      复制
+    </button>
+    <h2>结果</h2>
+    <div>总数量: {{answer.length}}</div>
+    <div id="answer">{{answer.join(", ")}}</div>
+
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script>
+  new ClipboardJS(".btn");
+  new Vue({
+    el: '#app',
+    data: {
+      a: {
+        arrs: [],
+      },
+      answer: []
+    },
+    methods: {
+      addInput() {
+        this.a.arrs.push('')
+      },
+      removeInput() {
+        this.a.arrs.pop()
+      },
+      calc() {
+        let allNums = this.a.arrs.join(",").split(",").map(v => parseInt(v))
+        allNums = Array.from(new Set(allNums)).sort((a,b) => a-b)
+        console.log(allNums);
+        
+        let results = []
+        let index = 0;
+        for (let i = 0; i < 10000; i++) {
+          if (i == allNums[index]) {
+            index++
+          } else {
+            results.push(("0000" + i).slice(-4))
+          }
+        }
+        this.answer = results
+      }
+    }
+  })
+</script>
+
+</html>

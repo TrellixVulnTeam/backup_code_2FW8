@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover, a:active, a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#app {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav > h1.title {
+    line-height: 2.5em;
+    border-bottom: 4px solid #32373c;
+}
+
+nav > ul.nav > li {
+
+    display: inline-block;
+    min-width: 2.5em;
+    text-align: center;
+}
+
+nav > ul.nav > li:hover {
+    background: #32373c;
+    color: white;
+    cursor: pointer;
+}
+
+nav > ul.nav > li > a {
+    padding: .5em 1em;
+    display: block;
+}
+
+.swiper{
+    width: 800px;
+    height: 480px;
+    margin:40px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    left: 0;
+    transition: left 1s linear;
+}
+
+.swiper > ul > li {
+    width: 100%;
+    height: 100%;
+    flex: 0 0 100%;
+}
+
+.swiper > ul > li > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallerys {
+    display: flex;
+    padding: 12px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallerys > div.gallery {
+    flex: 0 0 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+.gallerys > div.gallery > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

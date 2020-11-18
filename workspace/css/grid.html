@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            grid-auto-columns: 50px;
+            grid-auto-rows: 50px;
+        }
+
+        .container>div {
+            background: palevioletred;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .other-item-a {
+            grid-column-start: 1;
+            grid-row-start: 4;
+        }
+
+        .other-item-b {
+            grid-column-start: 2;
+            grid-row-start: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div class="other-item-a">
+            10
+        </div>
+        <div class="other-item-b">
+            11
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+5029 取顾客列表
+        /// <summary>
+        /// 取房产ID
+        /// </summary>
+        public string HouseID = "";
+        /// <summary>
+        /// 楼层ID
+        /// </summary>
+        public int FloorID = 0;
+
+5030 返回顾客列表
+        /// <summary>
+        /// 刷新顾客时间
+        /// </summary>
+        public string AddBuyerTime = "";
+        /// <summary>
+        /// 顾客列表
+        /// </summary>
+        public List<SendBuyerInfo> BuyerList = new List<SendBuyerInfo>();
+
+
+    /// <summary>
+    /// 顾客信息
+    /// </summary>
+    [Serializable]
+    public class BuyerInfo
+    {
+        /// <summary>
+        /// 顾客类型ID
+        /// </summary>
+        public int TypeID = 0;
+        /// <summary>
+        /// 奖励类型(0=满意度 1=经验 2=钻石 3=钞票)
+        /// </summary>
+        public int RewordType = 0;
+        /// <summary>
+        /// 奖励值
+        /// </summary>
+        public int RewordValue = 0;
+     }
+

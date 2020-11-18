@@ -1,0 +1,18 @@
+{
+  "file": [
+	{ "url": "config/server.json" },
+	{ "url": "config/notice.json" },
+	{ "url": "config/HouseType.json" },
+	{ "url": "config/HouseSkin.json" },
+	{ "url": "config/StopPointEvent.json" },
+	{ "url": "config/UserGrowUp.json"},
+	{ "url": "config/PlayerTalk.json"},
+	{ "url": "config/GameChest.json"},
+	{ "url": "config/Buyer.json"},
+	{ "url": "config/WorkerGrowUp.json"},
+	{ "url": "config/ShopType.json"},
+	{ "url": "config/ShopGrowUp.json"},
+	{ "url": "config/DisableWords.json"},
+	{ "url": "config/UserName.json"}
+  ]
+}

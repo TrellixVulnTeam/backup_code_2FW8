@@ -1,0 +1,7 @@
+PUT http://127.0.0.1:5000/project/2
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzU1MTkxMzcsIm5iZiI6MTU3NTUxOTEzNywianRpIjoiZWMyZGI1MDMtOThkNS00MmRhLWJmMDEtYjU3YjM3MmI5ODA4IiwiZXhwIjoxNTc1NTIwMDM3LCJpZGVudGl0eSI6ImxpbmRhQGFiYy5jb20iLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MSwidXNlcm5hbWUiOiJsaW5kYVxuIiwiZW1haWwiOiJsaW5kYUBhYmMuY29tIn19.6dhh9YYBELzcexkU4ulTN4qdJ5HjrUBrK3O7CAztm5s
+
+{
+  "json": "{\"msg\": \"hello!\"}"
+}

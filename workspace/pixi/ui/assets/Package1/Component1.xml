@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,400">
+  <displayList>
+    <component id="n0_ai02" name="n0" src="ai020" fileName="Button/Button.xml" pkg="2yz50c70" xy="83,266">
+      <Button title="hello!"/>
+    </component>
+    <component id="n1_ai02" name="n1" src="ai022k" fileName="Input/TextInput.xml" pkg="2yz50c70" xy="83,230">
+      <Label title="asdasd"/>
+    </component>
+    <component id="n2_ai02" name="n2" src="ai022k" fileName="Input/TextInput.xml" pkg="2yz50c70" xy="83,192">
+      <Label title="asdasd"/>
+    </component>
+  </displayList>
+</component>

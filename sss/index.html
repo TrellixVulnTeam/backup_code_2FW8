@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .sub {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #000;
+      position: fixed;
+      left: 200px;
+      top: 200px;
+    }
+
+    .sub > header {
+      height: 2em;
+      line-height: 2em;
+      width: 100%;
+      background: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="sub" class="sub">
+    <header  draggable="true">title</header>
+  </div>
+</body>
+<script>
+  const sub = document.getElementById("sub");
+  const header = sub.querySelector("header");
+  // sub.addEventListener('dragstart', handle_drag);
+  header.addEventListener('drag', handle_drag);
+  sub.addEventListener('dragend', handle_drag);
+  function handle_drag(e) {
+    sub.style.left = `${e.clientX}px`;
+    sub.style.top = `${e.clientY}px`;
+  }
+</script>
+
+</html>

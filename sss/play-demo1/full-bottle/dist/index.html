@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>demo</title>
+</head>
+
+<body>
+  <script type="text/javascript" src="main.bundle.js"></script>
+</body>
+<script>
+  //配置式的游戏引擎
+  //使用该游戏引擎实现画布编辑部分
+  runGame({
+    defaultScene: "default",
+    objects: {
+      "dlam": {
+        type: "Sprite",
+        args: [100, 100, null],
+        events: [
+          {
+            type: 'keyIsDown',
+            callback: function (keycode) {
+              if (keycode == 37) {
+                this.position.x -= 2;
+              } else if (keycode == 38) {
+                this.position.y -= 2;
+              } else if (keycode == 39) {
+                this.position.x += 2;
+              } else if (keycode == 40) {
+                this.position.y += 2;
+              }
+            }
+          },
+        ],
+        propertys: {
+          "width": 640,
+          "height": 480,
+          "shapeColor": "#ffffff",
+          "x": 320,
+          "y": 240,
+        },
+        behaviors: [
+          "Direction4"
+        ]
+      }
+    },
+    scenes: {
+      "default": {
+        childs: [{
+          type: "dlam",
+          /**
+           *每个实例化的对象有不一样的非公共属性
+           **/
+        }]
+      }
+    },
+    animations: {
+      "player": {
+        frames: [
+          "./imgs/p1.png",
+          "./imgs/p2.png",
+          "./imgs/p3.png",
+          "./imgs/p4.png"
+        ],
+        frameDelay: 8,
+      }
+    },
+    cameraOptions: {
+      isActive: true,
+      events: [
+        {
+          type: "mouseCenterHolder",
+          callback: function () {
+            this.position.x += Mouse.movedX;
+            this.position.y += Mouse.movedY;
+          }
+        }
+      ]
+    },
+    options: {
+      background: "#acafb3",
+    }
+  });
+
+</script>
+
+</html>

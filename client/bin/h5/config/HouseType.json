@@ -1,0 +1,826 @@
+{
+  "060000": {
+    "HouseType": "060000",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060100": {
+    "HouseType": "060100",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060101": {
+    "HouseType": "060101",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060102": {
+    "HouseType": "060102",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060103": {
+    "HouseType": "060103",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060200": {
+    "HouseType": "060200",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060201": {
+    "HouseType": "060201",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060202": {
+    "HouseType": "060202",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060300": {
+    "HouseType": "060300",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060301": {
+    "HouseType": "060301",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060302": {
+    "HouseType": "060302",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060303": {
+    "HouseType": "060303",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060304": {
+    "HouseType": "060304",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060305": {
+    "HouseType": "060305",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060306": {
+    "HouseType": "060306",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060307": {
+    "HouseType": "060307",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060308": {
+    "HouseType": "060308",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060400": {
+    "HouseType": "060400",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060401": {
+    "HouseType": "060401",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060402": {
+    "HouseType": "060402",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060403": {
+    "HouseType": "060403",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060404": {
+    "HouseType": "060404",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060405": {
+    "HouseType": "060405",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060406": {
+    "HouseType": "060406",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060407": {
+    "HouseType": "060407",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060408": {
+    "HouseType": "060408",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060409": {
+    "HouseType": "060409",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060411": {
+    "HouseType": "060411",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060413": {
+    "HouseType": "060413",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060414": {
+    "HouseType": "060414",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060415": {
+    "HouseType": "060415",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060500": {
+    "HouseType": "060500",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060501": {
+    "HouseType": "060501",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060502": {
+    "HouseType": "060502",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060600": {
+    "HouseType": "060600",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060601": {
+    "HouseType": "060601",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060602": {
+    "HouseType": "060602",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060603": {
+    "HouseType": "060603",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060604": {
+    "HouseType": "060604",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060605": {
+    "HouseType": "060605",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060606": {
+    "HouseType": "060606",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060700": {
+    "HouseType": "060700",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060701": {
+    "HouseType": "060701",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060702": {
+    "HouseType": "060702",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060703": {
+    "HouseType": "060703",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060704": {
+    "HouseType": "060704",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060705": {
+    "HouseType": "060705",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060706": {
+    "HouseType": "060706",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060800": {
+    "HouseType": "060800",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060900": {
+    "HouseType": "060900",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060901": {
+    "HouseType": "060901",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060902": {
+    "HouseType": "060902",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060903": {
+    "HouseType": "060903",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060904": {
+    "HouseType": "060904",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060905": {
+    "HouseType": "060905",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060906": {
+    "HouseType": "060906",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "060907": {
+    "HouseType": "060907",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061000": {
+    "HouseType": "061000",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061001": {
+    "HouseType": "061001",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061100": {
+    "HouseType": "061100",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061101": {
+    "HouseType": "061101",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061102": {
+    "HouseType": "061102",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061103": {
+    "HouseType": "061103",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061104": {
+    "HouseType": "061104",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061200": {
+    "HouseType": "061200",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061201": {
+    "HouseType": "061201",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061202": {
+    "HouseType": "061202",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061203": {
+    "HouseType": "061203",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061204": {
+    "HouseType": "061204",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061205": {
+    "HouseType": "061205",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061206": {
+    "HouseType": "061206",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061207": {
+    "HouseType": "061207",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061208": {
+    "HouseType": "061208",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061209": {
+    "HouseType": "061209",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061210": {
+    "HouseType": "061210",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061211": {
+    "HouseType": "061211",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061212": {
+    "HouseType": "061212",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061213": {
+    "HouseType": "061213",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061214": {
+    "HouseType": "061214",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061300": {
+    "HouseType": "061300",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061301": {
+    "HouseType": "061301",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061302": {
+    "HouseType": "061302",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061400": {
+    "HouseType": "061400",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "061401": {
+    "HouseType": "061401",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "100000": {
+    "HouseType": "100000",
+    "TypeName": "House",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "100100": {
+    "HouseType": "100100",
+    "TypeName": "House",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "100101": {
+    "HouseType": "100101",
+    "TypeName": "House",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "100102": {
+    "HouseType": "100102",
+    "TypeName": "House",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "100103": {
+    "HouseType": "100103",
+    "TypeName": "House",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "100104": {
+    "HouseType": "100104",
+    "TypeName": "House",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "100105": {
+    "HouseType": "100105",
+    "TypeName": "House",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "100200": {
+    "HouseType": "100200",
+    "TypeName": "House",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "100201": {
+    "HouseType": "100201",
+    "TypeName": "House",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "120100": {
+    "HouseType": "120100",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "120200": {
+    "HouseType": "120200",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "120201": {
+    "HouseType": "120201",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "120202": {
+    "HouseType": "120202",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "120203": {
+    "HouseType": "120203",
+    "TypeName": "Shop",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "120300": {
+    "HouseType": "120300",
+    "TypeName": "House",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "120301": {
+    "HouseType": "120301",
+    "TypeName": "House",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "120302": {
+    "HouseType": "120302",
+    "TypeName": "House",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "120303": {
+    "HouseType": "120303",
+    "TypeName": "House",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  },
+  "120304": {
+    "HouseType": "120304",
+    "TypeName": "House",
+    "HouseLayer": 10,
+    "HouseLayerLimt": 30,
+    "CHMoney": 100,
+    "AHMoney": 10
+  }
+}

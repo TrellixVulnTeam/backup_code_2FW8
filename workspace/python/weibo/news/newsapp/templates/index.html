@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="" method="post" novalidate class="search-control">
+    <div>
+        {{ form.hidden_tag() }}
+        {{ form.search(size=32, class="input-box") }}
+        {{ form.submit(class="submit") }}
+    </div>
+</form>
+<div class="center-title">
+    <h4>{{tweet_title}}</h4>
+</div>
+<ul class="tweet-list">
+    {% for tweet in tweets %}
+    <li class="tweet">
+        <h5>{{tweet.user.username}} </h5>
+        <p class="content">{{tweet.content}}</p>
+        <p class="backup">{{tweet.create_time}}</p>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

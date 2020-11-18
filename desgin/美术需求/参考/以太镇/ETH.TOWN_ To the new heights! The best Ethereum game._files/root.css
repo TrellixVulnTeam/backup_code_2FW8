@@ -1,0 +1,13 @@
+body {
+    background-color: #90a6df;
+    color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+
+    background-image: url('https://assets.eth.town/presale/bg4.jpg');
+    background-size: cover;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+
+    font-family: "Dosis", Helvetica, sans-serif;
+}

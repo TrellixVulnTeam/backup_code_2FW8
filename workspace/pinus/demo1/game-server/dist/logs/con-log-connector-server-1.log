@@ -1,0 +1,1195 @@
+[2019-05-09T08:57:12.845] [INFO] pinus - [connector-server-1 application.js] application inited: "connector-server-1"
+[2019-05-09T08:57:13.083] [INFO] pinus - [connector-server-1 application.js] "connector-server-1" enter before start...
+[2019-05-09T08:57:13.084] [INFO] pinus - [connector-server-1 application.js] "connector-server-1" enter after start...
+[2019-05-09T08:57:13.100] [INFO] pinus-admin - [connector-server-1 consoleService.js] try to connect master: "connector", "127.0.0.1", 3005
+[2019-05-09T08:57:13.165] [INFO] pinus - [connector-server-1 application.js] "connector-server-1" enter after start...
+[2019-05-09T08:57:13.170] [INFO] pinus - [connector-server-1 application.js] "connector-server-1" finish start
+[2019-05-09T08:57:13.170] [INFO] pinus - [connector-server-1 application.js] "connector-server-1" startup in 131 ms
+[2019-05-09T08:57:13.177] [WARN] logger - [connector-server-1 console] after start all server, use route dictionary :
+ connector.entryHandler.entry
+connector.entryHandler.publish
+connector.entryHandler.subscribe
+[2019-05-09T08:57:26.881] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 1
+[2019-05-09T08:57:26.892] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"msg":"game server is ok."}, receivers: [1], opts: {"type":"response"}
+[2019-05-09T09:05:02.978] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 2
+[2019-05-09T09:05:02.982] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 2, route: connector.entryHandler.entry, msg: {"code":200,"msg":"game server is ok."}, receivers: [2], opts: {"type":"response"}
+[2019-05-09T09:05:07.771] [INFO] pinus - [connector-server-1 heartbeat.js] client 1 heartbeat timeout.
+[2019-05-09T09:05:07.772] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 1,uid:null,reason:undefined
+[2019-05-09T09:11:11.942] [DEBUG] pinus - [connector-server-1 monitorwatcher.js] connector-server-1 receive removeServer signal: {"action":"removeServer","id":"master-server-1"}
+[2019-05-09T11:15:08.994] [INFO] pinus - [connector-server-1 application.js] application inited: "connector-server-1"
+[2019-05-09T11:15:09.021] [INFO] pinus - [connector-server-1 application.js] "connector-server-1" enter before start...
+[2019-05-09T11:15:09.022] [INFO] pinus - [connector-server-1 application.js] "connector-server-1" enter after start...
+[2019-05-09T11:15:09.035] [INFO] pinus-admin - [connector-server-1 consoleService.js] try to connect master: "connector", "127.0.0.1", 3005
+[2019-05-09T11:15:09.097] [INFO] pinus - [connector-server-1 application.js] "connector-server-1" enter after start...
+[2019-05-09T11:15:09.101] [INFO] pinus - [connector-server-1 application.js] "connector-server-1" finish start
+[2019-05-09T11:15:09.101] [INFO] pinus - [connector-server-1 application.js] "connector-server-1" startup in 93 ms
+[2019-05-09T11:15:09.106] [WARN] logger - [connector-server-1 console] after start all server, use route dictionary :
+ connector.entryHandler.entry
+connector.entryHandler.publish
+[2019-05-09T11:15:13.568] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 1
+[2019-05-09T11:15:49.080] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 58308
+[2019-05-09T11:15:49.081] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 1,uid:null,reason:{}
+[2019-05-09T11:15:49.994] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 2
+[2019-05-09T11:16:01.309] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 2,uid:null,reason:1001
+[2019-05-09T11:16:02.291] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 3
+[2019-05-09T11:16:02.442] [ERROR] pinus - [connector-server-1 connector.js] invalid route string. route : "connector"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:420:20)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)
+    at Object.default_1 [as default] (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:56:9)
+    at WebSocket.<anonymous> (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\hybridsocket.ts:55:24)
+    at WebSocket.emit (events.js:193:13)
+    at Receiver._receiver.onmessage (D:\workspace\pinus\demo1\game-server\node_modules\ws\lib\WebSocket.js:141:47)
+    at Receiver.dataMessage (D:\workspace\pinus\demo1\game-server\node_modules\ws\lib\Receiver.js:380:14)
+    at Receiver.getData (D:\workspace\pinus\demo1\game-server\node_modules\ws\lib\Receiver.js:330:12)
+    at Receiver.startLoop (D:\workspace\pinus\demo1\game-server\node_modules\ws\lib\Receiver.js:165:16)
+    at Receiver.add (D:\workspace\pinus\demo1\game-server\node_modules\ws\lib\Receiver.js:139:10)
+    at Socket._ultron.on (D:\workspace\pinus\demo1\game-server\node_modules\ws\lib\WebSocket.js:138:22)
+    at Socket.emit (events.js:193:13)
+    at addChunk (_stream_readable.js:295:12)
+[2019-05-09T11:16:12.652] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 58406
+[2019-05-09T11:16:12.653] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 3,uid:null,reason:{}
+[2019-05-09T11:16:13.499] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 4
+[2019-05-09T11:16:13.568] [WARN] pinus - [connector-server-1 handlerService.js] could not find handler for routeRecord: {"route":"connector.handler.entryHandler","serverType":"connector","handler":"handler","method":"entryHandler"}
+[2019-05-09T11:16:13.587] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.handler.entryHandler"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:16:13.594] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{}] to resolve unknown exception: sessionId:{"id":4,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.handler.entryHandler
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:16:13.596] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.handler.entryHandler, msg: {"code":500}, receivers: [4], opts: {"type":"response"}
+[2019-05-09T11:16:21.329] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 58440
+[2019-05-09T11:16:21.330] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 4,uid:null,reason:{}
+[2019-05-09T11:16:22.164] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 5
+[2019-05-09T11:16:22.211] [WARN] pinus - [connector-server-1 handlerService.js] could not find handler for routeRecord: {"route":"connector.handler.entryHandler","serverType":"connector","handler":"handler","method":"entryHandler"}
+[2019-05-09T11:16:22.213] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.handler.entryHandler"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:16:22.215] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{}] to resolve unknown exception: sessionId:{"id":5,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.handler.entryHandler
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:16:22.216] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.handler.entryHandler, msg: {"code":500}, receivers: [5], opts: {"type":"response"}
+[2019-05-09T11:17:32.673] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 58466
+[2019-05-09T11:17:32.674] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 5,uid:null,reason:{}
+[2019-05-09T11:17:33.467] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 6
+[2019-05-09T11:17:33.515] [WARN] pinus - [connector-server-1 handlerService.js] could not find handler for routeRecord: {"route":"connector.handler.entryHandler","serverType":"connector","handler":"handler","method":"entryHandler"}
+[2019-05-09T11:17:33.516] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.handler.entryHandler"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:17:33.518] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{}] to resolve unknown exception: sessionId:{"id":6,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.handler.entryHandler
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:17:33.520] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.handler.entryHandler, msg: {"code":500}, receivers: [6], opts: {"type":"response"}
+[2019-05-09T11:17:46.250] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 58580
+[2019-05-09T11:17:46.252] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 6,uid:null,reason:{}
+[2019-05-09T11:17:47.051] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 7
+[2019-05-09T11:17:47.134] [WARN] pinus - [connector-server-1 handlerService.js] could not find handler for routeRecord: {"route":"connector.handler.entryHandler","serverType":"connector","handler":"handler","method":"entryHandler"}
+[2019-05-09T11:17:47.136] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.handler.entryHandler"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:17:47.138] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{}] to resolve unknown exception: sessionId:{"id":7,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.handler.entryHandler
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:17:47.139] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.handler.entryHandler, msg: {"code":500}, receivers: [7], opts: {"type":"response"}
+[2019-05-09T11:17:53.411] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 58617
+[2019-05-09T11:17:53.411] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 7,uid:null,reason:{}
+[2019-05-09T11:17:54.418] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 8
+[2019-05-09T11:17:54.481] [WARN] pinus - [connector-server-1 handlerService.js] could not find handler for routeRecord: {"route":"connector.handler.entryHandler","serverType":"connector","handler":"handler","method":"entryHandler"}
+[2019-05-09T11:17:54.483] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.handler.entryHandler"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:17:54.485] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{}] to resolve unknown exception: sessionId:{"id":8,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.handler.entryHandler
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:17:54.486] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.handler.entryHandler, msg: {"code":500}, receivers: [8], opts: {"type":"response"}
+[2019-05-09T11:18:13.075] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 58635
+[2019-05-09T11:18:13.075] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 8,uid:null,reason:{}
+[2019-05-09T11:18:13.926] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 9
+[2019-05-09T11:18:13.971] [WARN] pinus - [connector-server-1 handlerService.js] could not find handler for routeRecord: {"route":"connector.handler.entryHandler","serverType":"connector","handler":"handler","method":"entryHandler"}
+[2019-05-09T11:18:13.973] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.handler.entryHandler"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:18:13.975] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{}] to resolve unknown exception: sessionId:{"id":9,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.handler.entryHandler
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:18:13.976] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.handler.entryHandler, msg: {"code":500}, receivers: [9], opts: {"type":"response"}
+[2019-05-09T11:18:21.033] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 58675
+[2019-05-09T11:18:21.034] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 9,uid:null,reason:{}
+[2019-05-09T11:18:21.800] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 10
+[2019-05-09T11:18:21.864] [WARN] pinus - [connector-server-1 handlerService.js] could not find handler for routeRecord: {"route":"connector.handler.entryHandler","serverType":"connector","handler":"handler","method":"entryHandler"}
+[2019-05-09T11:18:21.867] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.handler.entryHandler"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:18:21.869] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{}] to resolve unknown exception: sessionId:{"id":10,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.handler.entryHandler
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:18:21.869] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.handler.entryHandler, msg: {"code":500}, receivers: [10], opts: {"type":"response"}
+[2019-05-09T11:18:49.035] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 58701
+[2019-05-09T11:18:49.036] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 10,uid:null,reason:{}
+[2019-05-09T11:18:50.897] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 11
+[2019-05-09T11:18:50.993] [WARN] pinus - [connector-server-1 handlerService.js] could not find handler for routeRecord: {"route":"connector.handler.entryHandler","serverType":"connector","handler":"handler","method":"entryHandler"}
+[2019-05-09T11:18:50.994] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.handler.entryHandler"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:18:50.996] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{}] to resolve unknown exception: sessionId:{"id":11,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.handler.entryHandler
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:18:50.997] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.handler.entryHandler, msg: {"code":500}, receivers: [11], opts: {"type":"response"}
+[2019-05-09T11:20:15.566] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 58762
+[2019-05-09T11:20:15.567] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 11,uid:null,reason:{}
+[2019-05-09T11:20:16.459] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 12
+[2019-05-09T11:20:16.524] [WARN] pinus - [connector-server-1 handlerService.js] could not find handler for routeRecord: {"route":"connector.handler.entryHandler","serverType":"connector","handler":"handler","method":"entryHandler"}
+[2019-05-09T11:20:16.525] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.handler.entryHandler"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:20:16.528] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{}] to resolve unknown exception: sessionId:{"id":12,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.handler.entryHandler
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:20:16.529] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.handler.entryHandler, msg: {"code":500}, receivers: [12], opts: {"type":"response"}
+[2019-05-09T11:20:33.669] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 58905
+[2019-05-09T11:20:33.670] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 12,uid:null,reason:{}
+[2019-05-09T11:20:34.495] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 13
+[2019-05-09T11:20:34.535] [WARN] pinus - [connector-server-1 handlerService.js] could not find handler for routeRecord: {"route":"connector.handler.entryHandler","serverType":"connector","handler":"handler","method":"entryHandler"}
+[2019-05-09T11:20:34.536] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.handler.entryHandler"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:20:34.539] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{"rid":"king","username":"linda"}] to resolve unknown exception: sessionId:{"id":13,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.handler.entryHandler
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:20:34.540] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.handler.entryHandler, msg: {"code":500}, receivers: [13], opts: {"type":"response"}
+[2019-05-09T11:20:48.418] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 58946
+[2019-05-09T11:20:48.418] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 13,uid:null,reason:{}
+[2019-05-09T11:20:49.273] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 14
+[2019-05-09T11:20:49.342] [WARN] pinus - [connector-server-1 handlerService.js] could not find handler for routeRecord: {"route":"connector.handler.entryHandler","serverType":"connector","handler":"handler","method":"entryHandler"}
+[2019-05-09T11:20:49.345] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.handler.entryHandler"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:20:49.347] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{"rid":"king","username":"linda"}] to resolve unknown exception: sessionId:{"id":14,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.handler.entryHandler
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:20:49.347] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.handler.entryHandler, msg: {"code":500}, receivers: [14], opts: {"type":"response"}
+[2019-05-09T11:24:09.094] [ERROR] pinus-admin - [connector-server-1 mqttClient.js] mqtt rpc client checkKeepAlive error timeout for 120000Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at MqttClient.checkKeepAlive (D:\workspace\pinus\demo1\game-server\node_modules\pinus-admin\lib\protocol\mqtt\mqttClient.ts:221:28)
+    at Timeout._onTimeout (D:\workspace\pinus\demo1\game-server\node_modules\pinus-admin\lib\protocol\mqtt\mqttClient.ts:207:18)
+    at listOnTimeout (internal/timers.js:535:17)
+    at processTimers (internal/timers.js:479:7)
+[2019-05-09T11:32:11.689] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 58989
+[2019-05-09T11:32:11.690] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 14,uid:null,reason:{}
+[2019-05-09T11:32:12.592] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 15
+[2019-05-09T11:32:12.665] [WARN] pinus - [connector-server-1 handlerService.js] could not find handler for routeRecord: {"route":"connector.handler.enter","serverType":"connector","handler":"handler","method":"enter"}
+[2019-05-09T11:32:12.666] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.handler.enter"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:32:12.668] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{"rid":"king","username":"linda"}] to resolve unknown exception: sessionId:{"id":15,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.handler.enter
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:32:12.668] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.handler.enter, msg: {"code":500}, receivers: [15], opts: {"type":"response"}
+[2019-05-09T11:38:59.844] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 15,uid:null,reason:1001
+[2019-05-09T11:39:03.392] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 16
+[2019-05-09T11:39:03.422] [WARN] pinus - [connector-server-1 handlerService.js] could not find the method enter in handler: entryHandler
+[2019-05-09T11:39:03.423] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.entryHandler.enter"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:39:03.426] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{"rid":"king","username":"linda"}] to resolve unknown exception: sessionId:{"id":16,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.entryHandler.enter
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:39:03.427] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.enter, msg: {"code":500}, receivers: [16], opts: {"type":"response"}
+[2019-05-09T11:39:03.438] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 16,uid:null,reason:1001
+[2019-05-09T11:39:06.368] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 17
+[2019-05-09T11:39:06.383] [WARN] pinus - [connector-server-1 handlerService.js] could not find the method enter in handler: entryHandler
+[2019-05-09T11:39:06.387] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.entryHandler.enter"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:39:06.389] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{"rid":"king","username":"linda"}] to resolve unknown exception: sessionId:{"id":17,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.entryHandler.enter
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:39:06.389] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.enter, msg: {"code":500}, receivers: [17], opts: {"type":"response"}
+[2019-05-09T11:39:12.252] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 61177
+[2019-05-09T11:39:12.252] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 17,uid:null,reason:{}
+[2019-05-09T11:39:12.963] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 18
+[2019-05-09T11:39:12.969] [WARN] pinus - [connector-server-1 handlerService.js] could not find the method enter in handler: entryHandler
+[2019-05-09T11:39:12.971] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.entryHandler.enter"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:39:12.973] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{"rid":"king","username":"linda"}] to resolve unknown exception: sessionId:{"id":18,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.entryHandler.enter
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:39:12.974] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.enter, msg: {"code":500}, receivers: [18], opts: {"type":"response"}
+[2019-05-09T11:39:23.663] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 61218
+[2019-05-09T11:39:23.664] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 18,uid:null,reason:{}
+[2019-05-09T11:39:24.401] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 19
+[2019-05-09T11:39:24.446] [WARN] pinus - [connector-server-1 handlerService.js] could not find the method enter in handler: entryHandler
+[2019-05-09T11:39:24.447] [ERROR] pinus - [connector-server-1 handlerService.js] [handleManager]: fail to find handler for "connector.entryHandler.enter"Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:73:20)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+[2019-05-09T11:39:24.449] [ERROR] pinus - [connector-server-1 server.js] connector-server-1 no default error handler msg[{"rid":"king","username":"linda"}] to resolve unknown exception: sessionId:{"id":19,"frontendId":"connector-server-1","uid":null,"settings":{}} , error stack: Error: fail to find handler for connector.entryHandler.enter
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:38)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+    at ConnectorComponent.handleMessage (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:423:21)
+    at HybridSocket.socket.on (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\connector.ts:318:18)
+    at HybridSocket.emit (events.js:193:13)
+    at handleData (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\connectors\common\handler.ts:45:12)Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at handleError (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:334:16)
+    at D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:429:17
+    at Object.invokeCallback (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\util\utils.ts:25:20)
+    at HandlerService.handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\handlerService.ts:74:19)
+    at handle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:426:29)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at doHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:439:5)
+    at dispatch (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:131:17)
+    at next (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:67:17)
+    at FilterService.beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\common\service\filterService.ts:82:9)
+    at beforeFilter (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:294:12)
+    at Server.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\server\server.ts:136:9)
+    at ServerComponent.globalHandle (D:\workspace\pinus\demo1\game-server\node_modules\pinus\lib\components\server.ts:77:21)
+[2019-05-09T11:39:24.450] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.enter, msg: {"code":500}, receivers: [19], opts: {"type":"response"}
+[2019-05-09T11:39:36.310] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 61264
+[2019-05-09T11:39:36.310] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 19,uid:null,reason:{}
+[2019-05-09T11:39:37.103] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 20
+[2019-05-09T11:39:37.144] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:39:37.147] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [20], opts: {"type":"response"}
+[2019-05-09T11:39:58.554] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 20,uid:linda*king,reason:1001
+[2019-05-09T11:39:59.329] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 21
+[2019-05-09T11:39:59.376] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:39:59.376] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [21], opts: {"type":"response"}
+[2019-05-09T11:40:03.916] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 61342
+[2019-05-09T11:40:03.917] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 21,uid:linda*king,reason:{}
+[2019-05-09T11:40:04.720] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 22
+[2019-05-09T11:40:04.730] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:40:04.731] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [22], opts: {"type":"response"}
+[2019-05-09T11:40:12.764] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 61364
+[2019-05-09T11:40:12.765] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 22,uid:linda*king,reason:{}
+[2019-05-09T11:40:13.565] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 23
+[2019-05-09T11:40:13.629] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:40:13.629] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [23], opts: {"type":"response"}
+[2019-05-09T11:40:42.139] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 61391
+[2019-05-09T11:40:42.139] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 23,uid:linda*king,reason:{}
+[2019-05-09T11:40:42.968] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 24
+[2019-05-09T11:40:43.022] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:40:43.022] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [24], opts: {"type":"response"}
+[2019-05-09T11:54:10.711] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 24,uid:linda*king,reason:1001
+[2019-05-09T11:54:14.391] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 25
+[2019-05-09T11:54:14.403] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:54:14.404] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [25], opts: {"type":"response"}
+[2019-05-09T11:54:38.715] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 63349
+[2019-05-09T11:54:38.716] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 25,uid:linda*king,reason:{}
+[2019-05-09T11:54:43.374] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 26
+[2019-05-09T11:54:43.403] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:54:43.404] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [26], opts: {"type":"response"}
+[2019-05-09T11:56:03.815] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 63402
+[2019-05-09T11:56:03.816] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 26,uid:linda*king,reason:{}
+[2019-05-09T11:56:04.698] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 27
+[2019-05-09T11:56:04.740] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:56:04.741] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [27], opts: {"type":"response"}
+[2019-05-09T11:56:14.886] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 63637
+[2019-05-09T11:56:14.887] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 27,uid:linda*king,reason:{}
+[2019-05-09T11:56:15.769] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 28
+[2019-05-09T11:56:15.815] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:56:15.816] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [28], opts: {"type":"response"}
+[2019-05-09T11:56:46.228] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 63672
+[2019-05-09T11:56:46.228] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 28,uid:linda*king,reason:{}
+[2019-05-09T11:56:47.016] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 29
+[2019-05-09T11:56:47.021] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:56:47.022] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [29], opts: {"type":"response"}
+[2019-05-09T11:56:54.041] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 63767
+[2019-05-09T11:56:54.042] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 29,uid:linda*king,reason:{}
+[2019-05-09T11:56:54.851] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 30
+[2019-05-09T11:56:54.893] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:56:54.893] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [30], opts: {"type":"response"}
+[2019-05-09T11:56:56.273] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 30,uid:linda*king,reason:1001
+[2019-05-09T11:56:57.071] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 31
+[2019-05-09T11:56:57.084] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:56:57.085] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [31], opts: {"type":"response"}
+[2019-05-09T11:57:04.159] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 63799
+[2019-05-09T11:57:04.159] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 31,uid:linda*king,reason:{}
+[2019-05-09T11:57:05.079] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 32
+[2019-05-09T11:57:05.124] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:57:05.125] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [32], opts: {"type":"response"}
+[2019-05-09T11:57:15.596] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 32,uid:linda*king,reason:1001
+[2019-05-09T11:57:16.376] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 33
+[2019-05-09T11:57:16.414] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:57:16.414] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [33], opts: {"type":"response"}
+[2019-05-09T11:57:27.768] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 63860
+[2019-05-09T11:57:27.769] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 33,uid:linda*king,reason:{}
+[2019-05-09T11:57:28.559] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 34
+[2019-05-09T11:57:28.611] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:57:28.611] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [34], opts: {"type":"response"}
+[2019-05-09T11:57:42.466] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 63891
+[2019-05-09T11:57:42.466] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 34,uid:linda*king,reason:{}
+[2019-05-09T11:57:43.244] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 35
+[2019-05-09T11:57:43.286] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:57:43.287] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [35], opts: {"type":"response"}
+[2019-05-09T11:58:09.689] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 63940
+[2019-05-09T11:58:09.689] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 35,uid:linda*king,reason:{}
+[2019-05-09T11:58:14.365] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 36
+[2019-05-09T11:58:14.373] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T11:58:14.373] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [36], opts: {"type":"response"}
+[2019-05-09T12:00:45.699] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 36,uid:linda*king,reason:1001
+[2019-05-09T12:00:49.368] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 37
+[2019-05-09T12:00:49.382] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:00:49.383] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [37], opts: {"type":"response"}
+[2019-05-09T12:02:06.757] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 37,uid:linda*king,reason:1001
+[2019-05-09T12:02:11.365] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 38
+[2019-05-09T12:02:11.379] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:02:11.379] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [38], opts: {"type":"response"}
+[2019-05-09T12:02:54.679] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 64673
+[2019-05-09T12:02:54.680] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 38,uid:linda*king,reason:{}
+[2019-05-09T12:02:58.366] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 39
+[2019-05-09T12:02:58.376] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:02:58.377] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [39], opts: {"type":"response"}
+[2019-05-09T12:03:02.682] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 64761
+[2019-05-09T12:03:02.692] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 39,uid:linda*king,reason:{}
+[2019-05-09T12:03:06.367] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 40
+[2019-05-09T12:03:06.384] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:03:06.385] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [40], opts: {"type":"response"}
+[2019-05-09T12:04:21.707] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 64785
+[2019-05-09T12:04:21.707] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 40,uid:linda*king,reason:{}
+[2019-05-09T12:04:25.367] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 41
+[2019-05-09T12:04:25.381] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:04:25.381] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [41], opts: {"type":"response"}
+[2019-05-09T12:04:28.380] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 41,uid:linda*king,reason:1001
+[2019-05-09T12:04:31.393] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 42
+[2019-05-09T12:04:31.399] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:04:31.400] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [42], opts: {"type":"response"}
+[2019-05-09T12:04:49.139] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 64935
+[2019-05-09T12:04:49.140] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 42,uid:linda*king,reason:{}
+[2019-05-09T12:04:53.370] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 43
+[2019-05-09T12:04:53.393] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:04:53.394] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [43], opts: {"type":"response"}
+[2019-05-09T12:05:38.704] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 43,uid:linda*king,reason:1001
+[2019-05-09T12:05:43.369] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 44
+[2019-05-09T12:05:43.403] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:05:43.404] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [44], opts: {"type":"response"}
+[2019-05-09T12:06:07.697] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 65113
+[2019-05-09T12:06:07.697] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 44,uid:linda*king,reason:{}
+[2019-05-09T12:06:12.371] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 45
+[2019-05-09T12:06:12.407] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:06:12.407] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [45], opts: {"type":"response"}
+[2019-05-09T12:06:25.459] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 65170
+[2019-05-09T12:06:25.476] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 45,uid:linda*king,reason:{}
+[2019-05-09T12:06:39.376] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 46
+[2019-05-09T12:06:39.391] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:06:39.393] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [46], opts: {"type":"response"}
+[2019-05-09T12:07:02.717] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 46,uid:linda*king,reason:1001
+[2019-05-09T12:07:10.371] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 47
+[2019-05-09T12:07:10.397] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:07:10.398] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [47], opts: {"type":"response"}
+[2019-05-09T12:10:28.717] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 65288
+[2019-05-09T12:10:28.718] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 47,uid:linda*king,reason:{}
+[2019-05-09T12:10:37.375] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 48
+[2019-05-09T12:10:37.386] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:10:37.386] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [48], opts: {"type":"response"}
+[2019-05-09T12:10:40.383] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 49278
+[2019-05-09T12:10:40.383] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 48,uid:linda*king,reason:{}
+[2019-05-09T12:10:48.368] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 49
+[2019-05-09T12:10:48.378] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:10:48.378] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [49], opts: {"type":"response"}
+[2019-05-09T12:10:51.396] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 49,uid:linda*king,reason:1001
+[2019-05-09T12:10:58.373] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 50
+[2019-05-09T12:10:58.402] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:10:58.403] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [50], opts: {"type":"response"}
+[2019-05-09T12:11:10.678] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 49330
+[2019-05-09T12:11:10.679] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 50,uid:linda*king,reason:{}
+[2019-05-09T12:11:18.366] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 51
+[2019-05-09T12:11:18.379] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:11:18.379] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [51], opts: {"type":"response"}
+[2019-05-09T12:11:40.697] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 49373
+[2019-05-09T12:11:40.699] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 51,uid:linda*king,reason:{}
+[2019-05-09T12:11:49.366] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 52
+[2019-05-09T12:11:49.377] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:11:49.378] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [52], opts: {"type":"response"}
+[2019-05-09T12:11:58.688] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 49433
+[2019-05-09T12:11:58.689] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 52,uid:linda*king,reason:{}
+[2019-05-09T12:12:05.367] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 53
+[2019-05-09T12:12:05.377] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:12:05.377] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [53], opts: {"type":"response"}
+[2019-05-09T12:12:13.694] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 49464
+[2019-05-09T12:12:13.695] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 53,uid:linda*king,reason:{}
+[2019-05-09T12:12:24.366] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 54
+[2019-05-09T12:12:24.376] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:12:24.377] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [54], opts: {"type":"response"}
+[2019-05-09T12:12:26.381] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 49502
+[2019-05-09T12:12:26.382] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 54,uid:linda*king,reason:{}
+[2019-05-09T12:12:27.128] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 55
+[2019-05-09T12:12:29.378] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 56
+[2019-05-09T12:12:29.391] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:12:29.392] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [56], opts: {"type":"response"}
+[2019-05-09T12:12:33.219] [INFO] pinus - [connector-server-1 heartbeat.js] client 55 heartbeat timeout.
+[2019-05-09T12:12:33.219] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 55,uid:null,reason:undefined
+[2019-05-09T12:12:57.013] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 56,uid:linda*king,reason:1001
+[2019-05-09T12:12:57.651] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 57
+[2019-05-09T12:12:57.831] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 58
+[2019-05-09T12:12:57.841] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:12:57.842] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [58], opts: {"type":"response"}
+[2019-05-09T12:13:03.767] [INFO] pinus - [connector-server-1 heartbeat.js] client 57 heartbeat timeout.
+[2019-05-09T12:13:03.769] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 57,uid:null,reason:undefined
+[2019-05-09T12:13:25.313] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 49588
+[2019-05-09T12:13:25.313] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 58,uid:linda*king,reason:{}
+[2019-05-09T12:13:26.018] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 59
+[2019-05-09T12:13:26.104] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 60
+[2019-05-09T12:13:26.189] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*king
+[2019-05-09T12:13:26.189] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*king"}}, receivers: [60], opts: {"type":"response"}
+[2019-05-09T12:13:32.078] [INFO] pinus - [connector-server-1 heartbeat.js] client 59 heartbeat timeout.
+[2019-05-09T12:13:32.079] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 59,uid:null,reason:undefined
+[2019-05-09T12:13:35.959] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 49647
+[2019-05-09T12:13:35.960] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 60,uid:linda*king,reason:{}
+[2019-05-09T12:13:36.677] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 61
+[2019-05-09T12:14:23.547] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 61,uid:null,reason:1001
+[2019-05-09T12:14:24.282] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 62
+[2019-05-09T12:14:50.770] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 62,uid:null,reason:1001
+[2019-05-09T12:14:51.525] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 63
+[2019-05-09T12:14:53.883] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 49827
+[2019-05-09T12:14:53.890] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 63,uid:null,reason:{}
+[2019-05-09T12:14:54.696] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 64
+[2019-05-09T12:15:08.200] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 49836
+[2019-05-09T12:15:08.200] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 64,uid:null,reason:{}
+[2019-05-09T12:15:08.958] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 65
+[2019-05-09T12:15:10.328] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 49869
+[2019-05-09T12:15:10.328] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 65,uid:null,reason:{}
+[2019-05-09T12:15:11.401] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 66
+[2019-05-09T12:15:32.115] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 49880
+[2019-05-09T12:15:32.116] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 66,uid:null,reason:{}
+[2019-05-09T12:15:32.832] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 67
+[2019-05-09T12:16:38.093] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 49927
+[2019-05-09T12:16:38.094] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 67,uid:null,reason:{}
+[2019-05-09T12:16:39.045] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 68
+[2019-05-09T12:16:40.486] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 50054
+[2019-05-09T12:16:40.502] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 68,uid:null,reason:{}
+[2019-05-09T12:16:41.182] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 69
+[2019-05-09T12:16:41.217] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: undefined*undefined
+[2019-05-09T12:16:41.218] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"undefined*undefined"}}, receivers: [69], opts: {"type":"response"}
+[2019-05-09T12:16:53.354] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 50064
+[2019-05-09T12:16:53.354] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 69,uid:undefined*undefined,reason:{}
+[2019-05-09T12:16:54.013] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 70
+[2019-05-09T12:16:54.117] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*12321
+[2019-05-09T12:16:54.117] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*12321"}}, receivers: [70], opts: {"type":"response"}
+[2019-05-09T12:17:17.675] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 50097
+[2019-05-09T12:17:17.675] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 70,uid:linda*12321,reason:{}
+[2019-05-09T12:17:18.383] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 71
+[2019-05-09T12:17:18.444] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*12321
+[2019-05-09T12:17:18.445] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*12321"}}, receivers: [71], opts: {"type":"response"}
+[2019-05-09T12:17:43.439] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 71,uid:linda*12321,reason:1001
+[2019-05-09T12:17:44.260] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 72
+[2019-05-09T12:17:44.373] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*12321
+[2019-05-09T12:17:44.374] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*12321"}}, receivers: [72], opts: {"type":"response"}
+[2019-05-09T12:17:48.035] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 50203
+[2019-05-09T12:17:48.035] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 72,uid:linda*12321,reason:{}
+[2019-05-09T12:17:48.718] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 73
+[2019-05-09T12:17:48.764] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*12321
+[2019-05-09T12:17:48.765] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*12321"}}, receivers: [73], opts: {"type":"response"}
+[2019-05-09T12:18:08.460] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 50216
+[2019-05-09T12:18:08.461] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 73,uid:linda*12321,reason:{}
+[2019-05-09T12:18:09.388] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 74
+[2019-05-09T12:18:09.811] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*12321
+[2019-05-09T12:18:09.811] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*12321"}}, receivers: [74], opts: {"type":"response"}
+[2019-05-09T12:18:13.010] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 74,uid:linda*12321,reason:1001
+[2019-05-09T12:18:13.699] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 75
+[2019-05-09T12:18:13.770] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*12321
+[2019-05-09T12:18:13.771] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*12321"}}, receivers: [75], opts: {"type":"response"}
+[2019-05-09T12:18:41.273] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 75,uid:linda*12321,reason:1001
+[2019-05-09T12:18:41.993] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 76
+[2019-05-09T12:18:42.060] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*12321
+[2019-05-09T12:18:42.063] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*12321"}}, receivers: [76], opts: {"type":"response"}
+[2019-05-09T12:18:57.053] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 76,uid:linda*12321,reason:1001
+[2019-05-09T12:18:57.763] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 77
+[2019-05-09T12:18:57.963] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*12321
+[2019-05-09T12:18:57.965] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*12321"}}, receivers: [77], opts: {"type":"response"}
+[2019-05-09T12:19:01.861] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 77,uid:linda*12321,reason:1001
+[2019-05-09T12:19:02.896] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 78
+[2019-05-09T12:19:03.174] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*12321
+[2019-05-09T12:19:03.175] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*12321"}}, receivers: [78], opts: {"type":"response"}
+[2019-05-09T12:27:07.437] [DEBUG] pinus - [connector-server-1 switcher.js] connection error:read ECONNRESET, the remote ip is ::ffff:127.0.0.1 && port is 50382
+[2019-05-09T12:27:07.437] [DEBUG] pinus - [connector-server-1 sessionService.js] session on [connector-server-1] is closed with session id: 78,uid:linda*12321,reason:{}
+[2019-05-09T12:27:08.329] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] getSession session is created with session id: 79
+[2019-05-09T12:27:08.398] [DEBUG] pinus - [connector-server-1 connector.js] session on [connector-server-1] bind with uid: linda*12321
+[2019-05-09T12:27:08.398] [DEBUG] pinus - [connector-server-1 connector.js] [connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"data":{"uid":"linda*12321"}}, receivers: [79], opts: {"type":"response"}

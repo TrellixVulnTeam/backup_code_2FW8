@@ -1,0 +1,30 @@
+1000
+token验证登陆
+        /// <summary>
+        /// 登录token
+        /// </summary>
+        public string token = "";
+        /// <summary>
+        /// 当前X坐标
+        /// </summary>
+        public int CurrentXPoint = 0;
+        /// <summary>
+        /// 当前Y坐标
+        /// </summary>
+        public int CurrentYPoint = 0;
+
+2000
+ 登录应答
+        /// <summary>
+        /// 用户ID
+        /// </summary>
+        public int Code = 0;
+        /// <summary>
+        /// 令牌
+        /// </summary>
+        public string Token = "";
+        /// <summary>
+        /// 是否第一次登陆
+        /// </summary>
+        public byte isfirstlogin = 0;
+

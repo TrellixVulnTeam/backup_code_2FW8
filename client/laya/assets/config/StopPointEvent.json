@@ -1,0 +1,170 @@
+{
+  "1": {
+    "ID": 1,
+    "Type": 0,
+    "SecondType": 0,
+    "Name": "无事件",
+    "content": 0
+  },
+  "2": {
+    "ID": 2,
+    "Type": 1,
+    "SecondType": 0,
+    "Name": "房产过路费",
+    "content": {"Reward":"欢迎房东","Loss":"这是别人的地盘"}
+  },
+  "3": {
+    "ID": 3,
+    "Type": 2,
+    "SecondType": 1,
+    "Name": "邪恶老奶奶",
+    "content": {"Name":"老奶奶","Skin":"6","Talk":"帮帮我，我摔倒了。","Button":["好滴","再见"],"Result":["扶起老奶奶，被讹诈。","增长了一些见识"],"Pic":["result001","result000"]}
+  },
+  "4": {
+    "ID": 4,
+    "Type": 2,
+    "SecondType": 2,
+    "Name": "善良老奶奶",
+    "content": {"Name":"老奶奶","Skin":"6","Talk":"帮帮我，我摔倒了。","Button":["好滴","再见"],"Result":["好人有好报。","增长了一些见识"],"Pic":["result002","result000"]}
+  },
+  "5": {
+    "ID": 5,
+    "Type": 2,
+    "SecondType": 3,
+    "Name": "邪恶男孩",
+    "content": {"Name":"男孩","Skin":"9","Talk":"我把买课本的钱弄丢了，5555~","Button":["资助他","置之不理"],"Result":["被坑了……","增长了一些见识"],"Pic":["result003","result000"]}
+  },
+  "6": {
+    "ID": 6,
+    "Type": 2,
+    "SecondType": 4,
+    "Name": "善良男孩",
+    "content": {"Name":"男孩","Skin":"9","Talk":"我把买课本的钱弄丢了，5555~","Button":["资助他","置之不理"],"Result":["得到回报","增长了一些见识"],"Pic":["result002","result000"]}
+  },
+  "7": {
+    "ID": 7,
+    "Type": 3,
+    "SecondType": 1,
+    "Name": "财神",
+    "content": {"Name":"财神","Skin":"caishen","Talk":"我会让你财源滚滚！","Text":"·附身时获得很多钱。n·附身期间，走到其他玩家的房产，无损失。","Appear":"财神显灵n免于损失"}
+  },
+  "8": {
+    "ID": 8,
+    "Type": 3,
+    "SecondType": 2,
+    "Name": "穷神",
+    "content": {"Name":"穷神","Skin":"shuaishen","Talk":"你要过苦日子了……","Text":"·附身时损失很多钱。n·附身期间，走到其他玩家的房产，双倍损失。","Appear":"穷神显灵n加倍损失"}
+  },
+  "9": {
+    "ID": 9,
+    "Type": 4,
+    "SecondType": 1,
+    "Name": "看恐怖片被吓晕。",
+    "content": 0
+  },
+  "10": {
+    "ID": 10,
+    "Type": 4,
+    "SecondType": 2,
+    "Name": "参加转发活动，中了锦鲤大奖！",
+    "content": 0
+  },
+  "11": {
+    "ID": 11,
+    "Type": 4,
+    "SecondType": 3,
+    "Name": "你家小狗随地大小便，被没收作案工具。",
+    "content": 0
+  },
+  "12": {
+    "ID": 12,
+    "Type": 4,
+    "SecondType": 4,
+    "Name": "殴打恐怖片主角，赔偿医药费。",
+    "content": 0
+  },
+  "13": {
+    "ID": 13,
+    "Type": 4,
+    "SecondType": 5,
+    "Name": "修个眉毛，意外成为网红。",
+    "content": 0
+  },
+  "14": {
+    "ID": 14,
+    "Type": 5,
+    "SecondType": 1,
+    "Name": "",
+    "content": 0
+  },
+  "15": {
+    "ID": 15,
+    "Type": 5,
+    "SecondType": 2,
+    "Name": "",
+    "content": 0
+  },
+  "16": {
+    "ID": 16,
+    "Type": 5,
+    "SecondType": 3,
+    "Name": "",
+    "content": 0
+  },
+  "17": {
+    "ID": 17,
+    "Type": 5,
+    "SecondType": 4,
+    "Name": "",
+    "content": 0
+  },
+  "18": {
+    "ID": 18,
+    "Type": 5,
+    "SecondType": 5,
+    "Name": "",
+    "content": 0
+  },
+  "19": {
+    "ID": 19,
+    "Type": 6,
+    "SecondType": 1,
+    "Name": "游乐场_天降宝箱",
+    "content": 0
+  },
+  "20": {
+    "ID": 20,
+    "Type": 7,
+    "SecondType": 1,
+    "Name": "",
+    "content": 0
+  },
+  "21": {
+    "ID": 21,
+    "Type": 7,
+    "SecondType": 2,
+    "Name": "",
+    "content": 0
+  },
+  "22": {
+    "ID": 22,
+    "Type": 7,
+    "SecondType": 3,
+    "Name": "",
+    "content": 0
+  },
+  "23": {
+    "ID": 23,
+    "Type": 7,
+    "SecondType": 4,
+    "Name": "",
+    "content": 0
+  },
+  "24": {
+    "ID": 24,
+    "Type": 8,
+    "SecondType": 1,
+    "Name": "",
+    "content": 0
+  }
+}

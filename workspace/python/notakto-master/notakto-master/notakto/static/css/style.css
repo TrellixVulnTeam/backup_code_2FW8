@@ -1,0 +1,49 @@
+img#hslogo {
+    float: right;
+    margin: 8px;
+    width: 85px;
+}
+
+body {
+    background: khaki;
+    margin: 15px;
+}
+
+div#frame {
+    display: block;
+}
+
+div.boards {
+    position: relative;
+    margin: 5px;
+    display: inline-block;
+    /*float: left;*/
+}
+
+div#0 {
+    float: left;
+}
+
+.disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.statuses {
+    font-size: 1.5em;
+    /* 40px/16=2.5em */
+}
+
+.rules {
+    font-size: 2em;
+    display: block;
+}
+
+span.emphasized {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+canvas.dead {
+   opacity: 0.5;
+}

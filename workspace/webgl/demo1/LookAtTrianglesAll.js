@@ -1,0 +1,164 @@
+// LookAtTriangles.js (c) 2012 matsuda
+// Vertex shader program
+var VSHADER_SOURCE =
+  'attribute vec4 a_Position;\n' +
+  'attribute vec4 a_Color;\n' +
+  'uniform mat4 u_MvpMatrix;\n' +
+  'varying vec4 v_Color;\n' +
+  'void main() {\n' +
+  '  gl_Position = u_MvpMatrix * a_Position;\n' +
+  '  v_Color = a_Color;\n' +
+  '}\n';
+
+// Fragment shader program
+var FSHADER_SOURCE =
+  '#ifdef GL_ES\n' +
+  'precision mediump float;\n' +
+  '#endif\n' +
+  'varying vec4 v_Color;\n' +
+  'void main() {\n' +
+  '  gl_FragColor = v_Color;\n' +
+  '}\n';
+
+let eyeX = 0.20
+let eyeY = 0.25
+let eyeZ = 0.25
+
+main()
+function main() {
+  // Retrieve <canvas> element
+  var canvas = document.getElementById('canvas');
+
+  // Get the rendering context for WebGL
+  var gl = getWebGLContext(canvas);
+  gl.enable(gl.DEPTH_TEST)
+  if (!gl) {
+    console.log('Failed to get the rendering context for WebGL');
+    return;
+  }
+
+  // Initialize shaders
+  if (!initShaders(gl, VSHADER_SOURCE, FSHADER_SOURCE)) {
+    console.log('Failed to intialize shaders.');
+    return;
+  }
+
+  // Set the vertex coordinates and color (the blue triangle is in the front)
+  var n = initVertexBuffers(gl);
+  if (n < 0) {
+    console.log('Failed to set the vertex information');
+    return;
+  }
+
+  // Specify the color for clearing <canvas>
+  gl.clearColor(0, 0, 0, 1);
+
+  // // Get the storage location of u_ViewMatrix
+  // u_ViewMatrix = gl.getUniformLocation(gl.program, 'u_ViewMatrix');
+  // viewMatrix = new Matrix4();
+  // if (!u_ViewMatrix) { 
+  //   console.log('Failed to get the storage locations of u_ViewMatrix');
+  //   return;
+  // }
+
+  draw(gl, n)
+
+  window.addEventListener('keydown', e => keyword(e, gl, n))
+}
+
+function keyword(e, gl, n) {
+  console.log(e.keyCode);
+
+  if (e.keyCode == 39) {
+    eyeX += 0.01
+
+  } else if (e.keyCode == 37) {
+    eyeX -= 0.01
+  }
+  draw(gl, n)
+}
+
+function initVertexBuffers(gl) {
+  var verticesColors = new Float32Array([
+    // Vertex coordinates and color
+    0.0, 1.0, -4.0, 0.4, 1.0, 0.4, // The back green one
+    -0.5, -1.0, -4.0, 0.4, 1.0, 0.4,
+    0.5, -1.0, -4.0, 1.0, 0.4, 0.4,
+
+    0.0, 1.0, -2.0, 1.0, 1.0, 0.4, // The middle yellow one
+    -0.5, -1.0, -2.0, 1.0, 1.0, 0.4,
+    0.5, -1.0, -2.0, 1.0, 0.4, 0.4,
+
+    0.0, 1.0, 0.0, 0.4, 0.4, 1.0,  // The front blue one 
+    -0.5, -1.0, 0.0, 0.4, 0.4, 1.0,
+    0.5, -1.0, 0.0, 1.0, 0.4, 0.4,
+  ]);
+  var n = 9;
+
+  // Create a buffer object
+  var vertexColorbuffer = gl.createBuffer();
+  if (!vertexColorbuffer) {
+    console.log('Failed to create the buffer object');
+    return -1;
+  }
+
+  // Write the vertex coordinates and color to the buffer object
+  gl.bindBuffer(gl.ARRAY_BUFFER, vertexColorbuffer);
+  gl.bufferData(gl.ARRAY_BUFFER, verticesColors, gl.STATIC_DRAW);
+
+  var FSIZE = verticesColors.BYTES_PER_ELEMENT;
+  // Assign the buffer object to a_Position and enable the assignment
+  var a_Position = gl.getAttribLocation(gl.program, 'a_Position');
+  if (a_Position < 0) {
+    console.log('Faile d to get the storage location of a_Position');
+    return -1;
+  }
+  gl.vertexAttribPointer(a_Position, 3, gl.FLOAT, false, FSIZE * 6, 0);
+  gl.enableVertexAttribArray(a_Position);
+
+  // Assign the buffer object to a_Color and enable the assignment
+  var a_Color = gl.getAttribLocation(gl.program, 'a_Color');
+  if (a_Color < 0) {
+    console.log('Failed to get the storage location of a_Color');
+    return -1;
+  }
+  gl.vertexAttribPointer(a_Color, 3, gl.FLOAT, false, FSIZE * 6, FSIZE * 3);
+  gl.enableVertexAttribArray(a_Color);
+
+  // Unbind the buffer object
+  gl.bindBuffer(gl.ARRAY_BUFFER, null);
+
+  return n;
+}
+
+function draw(gl, n) {
+  //投影
+  let projMatrix = new Matrix4()
+  projMatrix.setPerspective(30, canvas.width / canvas.height, 1, 100)
+
+  //观察矩阵
+  let viewMatrix = new Matrix4()
+  viewMatrix.setLookAt(-eyeX, 0, 5, 0, 0, -100, 0, 1, 0)
+
+  //模型矩阵
+  let modelMatrix = new Matrix4()
+  modelMatrix.setTranslate(0.5, 0, 0)
+
+  let mvpMatrix = new Matrix4()
+  mvpMatrix.set(projMatrix).multiply(viewMatrix).multiply(modelMatrix)
+
+
+  //缩小一半视野
+  // projMatrix.setOrtho(-0.5, 0.5, -0.5, 0.5, 0.5, 3.0)
+  var u_MvpMatrix = gl.getUniformLocation(gl.program, 'u_MvpMatrix')
+  gl.uniformMatrix4fv(u_MvpMatrix, false, mvpMatrix.elements)
+  gl.clear(gl.COLOR_BUFFER_BIT);
+
+  gl.drawArrays(gl.TRIANGLES, 0, n);
+
+  // modelMatrix.setTranslate(-0.75, 0, 0)
+  // mvpMatrix.set(projMatrix).multiply(viewMatrix).multiply(modelMatrix)
+
+  // gl.uniformMatrix4fv(u_MvpMatrix, false, mvpMatrix.elements)
+  // gl.drawArrays(gl.TRIANGLES, 0, n);
+}

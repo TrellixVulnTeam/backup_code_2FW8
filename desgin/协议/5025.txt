@@ -1,0 +1,37 @@
+ 5025 获得奖励
+        /// <summary>
+        /// 模块类型 1=宝箱
+        /// </summary>
+        public int Type = 0;
+        /// <summary>
+        /// 宝箱Id(id,状态（0=成功 1=失败）;)
+        /// </summary>
+        public string IDListStr = "";
+
+
+ 5026 返回奖励数据
+        /// <summary>
+        /// 0=成功 1=没触发此事件 2=上传数据不对
+        /// </summary>
+        public int Code = 0;
+        /// <summary>
+        /// 宝箱数据
+        /// </summary>
+        public List<RewardInfo> RewardList = new List<RewardInfo>();
+
+
+    /// <summary>
+    /// 奖励信息
+    /// </summary>
+    [Serializable]
+    public class RewardInfo
+    {
+        /// <summary>
+        /// 奖励类型
+        /// </summary>
+        public int Type = 0;
+        /// <summary>
+        /// 奖励数量
+        /// </summary>
+        public int Num = 0;
+    }

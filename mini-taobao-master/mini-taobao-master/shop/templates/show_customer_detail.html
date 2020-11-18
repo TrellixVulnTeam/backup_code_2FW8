@@ -1,0 +1,31 @@
+{% extends "account_layout.html" %}
+{% block info %}
+    <h1>My Shipping Address</h1><br>
+    {% if details %}
+        <a href={{ url_for("new_customer_detail") }}>Continue add address</a>
+        {% for detail in details %}
+            <div>
+            <a>----------------------------------------------</a><br>
+                {% if detail.is_default == 1%}
+                    <a >This is your default address</a><br><br>
+                {% else %}
+                    <a href={{ url_for("set_customer_detail_default",id=detail.id) }}>set as Default address</a><br><br>
+                {% endif %}
+                <a >Consignee:{{ detail.consignee }}</a><br>
+                <a >Address:{{ detail.address }}</a><br>
+                <a >Telephone:{{ detail.telephone }}
+
+                    <a href={{ url_for("update_customer_detail",id=detail.id) }}>Change address</a>
+                    <a href={{ url_for("delete_customer_detail",id=detail.id) }}>Delete address</a>
+
+                </a><br>
+            <a>----------------------------------------------</a><br>
+            <br>
+            <br>
+            </div>
+        {% endfor %}
+        {% else %}
+        <a href={{ url_for("new_customer_detail") }}>No shipping address has been added -> Add address</a>
+    {% endif %}
+    
+{% endblock info %}

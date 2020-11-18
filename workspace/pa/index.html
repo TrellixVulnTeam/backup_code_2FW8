@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+<body>
+    <!-- <script src="./ajax_promise.js"></script> -->
+    <!-- <script src="./notification_wrapper.js"></script> -->
+    <script src="./promise_sequence.js"></script>
+    <script>
+        function pa(num) {
+            return new Promise(resolve => {
+                console.log(num)
+                resolve(num)
+            })
+        }
+        sequence([pa.bind(null, 1), pa.bind(null, 2), pa.bind(null, 3)]).then(s => {
+            console.log(s)
+        })
+    </script>
+</body>
+</html>

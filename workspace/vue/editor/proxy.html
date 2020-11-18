@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="./src/styles/markdownstyle/avenue.css" />
+</head>
+
+<body id="wrapper">
+  <script>
+    window.addEventListener('message', e => {
+      document.body.innerHTML = e.data;
+    })  
+  </script>
+</body>
+
+</html>

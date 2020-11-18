@@ -1,0 +1,32 @@
+.sf-menu a {
+	position:absolute;
+	top:-999px;
+	display:none
+}
+
+.h1 {
+    color: #fffeff;
+    text-shadow: 0px 2px 2px rgb(146, 109, 46);
+    font-family: 'Times New Roman', Georgia, sans-serif;
+    font-size: 4.4rem;
+    margin-top: 10rem;
+    margin-bottom: 1.5rem;
+}
+/*.sf-menu>li>ul>li {*/
+/*	float:none;*/
+/*	position:static*/
+/*}*/
+.sf-menu>a {
+    float: left;
+    font-weight: 300;
+    position: relative;
+    font-size: 24px;
+    line-height: 52px;
+}
+
+.header {
+	background-image: url('../img/rainbow-header-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: contain;
+}

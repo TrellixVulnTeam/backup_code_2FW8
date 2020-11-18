@@ -1,0 +1,1029 @@
+/* body::-webkit-scrollbar {
+    width: 0;
+} */
+
+body {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.segment {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden
+}
+
+.segment h1 {
+    color: #2d2d2d;
+    font-size: 4.2vw;
+    font-weight: 600;
+    text-align: center
+}
+
+.segment.top {
+    background-image: url(../images/banner-bg.png);
+    z-index: -11;
+}
+
+.segment.top header {
+    position: absolute;
+    height: 4.9vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 30px 30px
+}
+
+.segment.top header left {
+    height: 4.2vw;
+    width: 16.8vw;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.segment.top .banner {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 65vw;
+    position: relative;
+}
+
+.segment.top .banner>.button-group {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4vw 0;
+    background-color: rgba(30, 128, 197, .5);
+}
+
+.segment.top .banner left {
+    position: absolute;
+    left: 6.9vw;
+    top: 14.8vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.segment.top .banner left h1 {
+    color: white;
+    font-size: 5.6vw;
+    font-weight: 600;
+    margin: 1vw
+}
+
+.title-img {
+    width: 50vw;
+    margin-bottom: 5vw;
+}
+
+.segment.top .banner left h2 {
+    color: white;
+    font-size: 3.5vw;
+    font-weight: 600;
+    margin: 1vw
+}
+
+.segment.top .banner left .button-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    z-index: 999;
+}
+
+.segment.top .banner right {
+    position: absolute;
+    right: 3.5vw;
+    width: 49.2vw;
+    height: 55.6vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/tangtang.png);
+    z-index: -7;
+}
+
+.segment.teacher {
+    background: -webkit-gradient(linear, left top, right bottom, from(#F7F6FE), to(#EDEFFC));
+    background: linear-gradient(to bottom right, #F7F6FE, #EDEFFC);
+    padding: 2.8vw 0;
+    position: relative;
+    height: 60vw
+}
+
+.segment.teacher h1 {
+    margin-bottom: 0
+}
+
+.segment.teacher>.content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    color: #2d2d2d
+}
+
+.segment.teacher>.content .jam-tangtang {
+    margin: 0 auto;
+}
+
+.segment.teacher .teacher-introducion {
+    position: absolute;
+    right: -4vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 12px;
+    padding-bottom: 48px;
+    background-color: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.segment.teacher .teacher-introducion h1 {
+    margin-left: 0;
+    font-size: 3.3vw;
+    font-weight: 600;
+    text-align: left;
+}
+
+.segment.teacher .teacher-introducion h2 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-align: left;
+    line-height: 5vw;
+    color: #2d2d2d;
+}
+
+.teacher-introducion {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.segment.lesson {
+    position: relative;
+    /* height: 100vw; */
+    /* background: -webkit-gradient(linear, left top, right bottom, from(#aadeff), to(#76c8ff));
+    background: linear-gradient(to bottom right, #aadeff, #76c8ff); */
+    /* overflow: hidden */
+    background-color: #269AEB;
+}
+
+.segment.lesson>h1 {
+    margin-bottom: 0;
+}
+
+.segment.lesson>h2 {
+    margin-bottom: 5vw;
+    font-size: 2vw;
+    font-weight: 500;
+    text-align: center;
+    color: #fff
+}
+
+.segment.lesson .modular {
+    z-index: -999;
+    position: absolute;
+    top: -10vw;
+    z-index: 0;
+    width: 100vw;
+    height: 256vw;
+    background-image: url(../images/modular.png);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.segment.lesson h1 {
+    color: white
+}
+
+.segment.lesson>.content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.segment.lesson>.content left {
+    margin: auto 0;
+    display: flex;
+}
+
+.segment.lesson>.content left .card {
+    height: 100%;
+    margin: 0 4vw;
+    padding: 0 5vw;
+}
+
+.segment.lesson>.content left:first-child .card {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.segment.lesson>.content left:last-child .card {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.segment.lesson>.content left .card h1 {
+    margin: 0 auto;
+    color: white;
+    width: 30vw;
+    font-size: 2vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.segment.lesson>.content left .card h2 {
+    color: white;
+    /* line-height: 2vw; */
+    /* text-align: center; */
+    width: 30vw;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.segment.lesson>.content right {
+    margin: 2vw;
+    position: relative;
+    width: 31.25vw;
+    height: 23.4vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/ipad-air.png)
+}
+
+.segment.lesson>.content right .ipad {
+    position: absolute;
+    width: 23.5vw;
+    height: 18.4vw;
+    top: 1.3vw;
+    left: 3.8vw;
+    border-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0
+}
+
+.segment.learn-coding {
+    background: -webkit-gradient(linear, left top, right bottom, from(#F7F6FE), to(#EDEFFC));
+    background: linear-gradient(to bottom right, #F7F6FE, #EDEFFC);
+    padding: 2.8vw 0
+}
+
+.segment.learn-coding>.content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    color: #2d2d2d;
+    padding: 0 4vw;
+    margin-top: 8vw
+}
+
+.segment.learn-coding>.content h1 {
+    font-size: 1.7vw;
+    font-weight: 500;
+    margin: 0 0 4vw 0
+}
+
+h2.s-title {
+    font-size: 2vw;
+    color: rgb(112, 109, 112);
+    text-align: center;
+}
+
+img.s-img {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.segment.learn-coding>.content left {
+    margin: 0 4vw
+}
+
+.center-image {
+    margin: 0 auto;
+    display: block;
+}
+
+.segment.learn-coding>.content left .picture {
+    margin: 0 auto;
+    height: 27.9vw;
+    width: 29vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/advantage1.png)
+}
+
+.segment.learn-coding>.content right {
+    width: 50vw
+}
+
+.advantage-group {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vw 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .advantage-group {
+        justify-content: center;
+    }
+    .acard {
+        width: 20vw;
+    }
+}
+
+.acard { 
+    padding: 1.5vw 3vw;
+}
+
+.acard img {
+    text-align: center;
+}
+
+.ss {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.sss {
+    position: relative;
+    padding-top: 10vw;
+}
+
+.clear {
+    clear: both;
+}
+
+/* .segment.learn-coding>.content right .advantage-group div {
+    height: 5.6vw;
+    width: 23.6vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 0 5vw 0
+} */
+
+.segment.IMPAct {
+    background: white;
+    padding: 2.8vw 0;
+    height: 84vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.segment.IMPAct h1 {
+    margin-bottom: 0
+}
+
+.segment.IMPAct>.content top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    /* display: flex; */
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.segment.IMPAct>.content top div {
+    height: 49.65vw;
+    width: 33.4vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.segment.IMPAct>.content bottom {
+    width: 100vw;
+    height: 18.3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #6A3C92
+}
+
+.segment.IMPAct>.content bottom div {
+    margin: 3.3vw 0 0 1.2vw;
+    width: 30.8vw;
+    height: 10.4vw;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.segment.kids-work {
+    background: white;
+    padding: 2.8vw 0;
+    /* height: 46.5vw; */
+}
+
+/* .segment.kids-work::after {
+    content: ' ';
+    display: block;
+    visibility: visible;
+    clear: both;
+} */
+
+.segment.kids-work>.content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 5vw 0 0 0
+}
+
+.segment.kids-work>.content .card-2 {
+    width: 26.7vw;
+    border-radius: 1.4vw;
+    margin: 2vw;
+    padding: 0;
+    -webkit-box-shadow: 0 0 1vw rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.15)
+}
+
+.segment.kids-work>.content .card-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #f7f7f7;
+    padding: 1vw;
+}
+
+.segment.kids-work>.content .card-info .h3 {
+    color: #F5A623;
+    font-size: 1.5vw;
+}
+
+/**媒体查询**/
+
+@media only screen and (min-width: 576px) {
+    .segment.download>.content .app-download .title {
+        margin: 0 0 3vw 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .segment.download>.content .app-download .title {
+        margin: 0 auto;
+    }
+}
+
+.segment.kids-work>.content .card-2 .h4 {
+    font-size: 1vw;
+    margin: 1vw 1.4vw 0;
+    color: #525252
+}
+
+.segment.download {
+    position: relative;
+    background-color: #269AEB;
+    padding: 2.8vw 0;
+    height: 42.5vw;
+    overflow: visible;
+}
+
+img.ipad {
+    width: 36vw;
+    position: absolute;
+    bottom: -6vw;
+    left: 6vw;
+}
+
+.segment.download h1 {
+    color: white
+}
+
+.segment.download>.content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.segment.download>.content .app-download {
+    bottom: 5vw;
+    right: 10vw;
+    position: absolute;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    overflow: visible;
+}
+
+.segment.download>.content .app-download .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.segment.download>.content .app-download .title h1 {
+    font-size: 3vw;
+    color: white;
+    line-height: 2vw
+}
+
+.segment.download>.content .app-download .logo {
+    margin: 0 2vw 0 0;
+    width: 7vw;
+    height: 7vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/candy-code.png)
+}
+
+.segment.download>.content .app-download .card-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.segment.download>.content .app-download .card-group .card {
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-width: 1px 0 0 0;
+    padding: 2vw 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.segment.download>.content .app-download .card-group .card .button {
+    height: 2vw;
+    margin: 0
+}
+
+.segment.download>.content .app-download .card-group .card .button h3 {
+    line-height: 2vw;
+    font-size: 1.6vw;
+}
+
+.segment.download>.content .app-download .card-group .card .text-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    margin: 0 5vw
+}
+
+.segment.download>.content .app-download .card-group .card .text-group h1 {
+    margin: 0;
+    font-size: 2vw;
+    font-weight: 500;
+    color: white
+}
+
+.segment.download>.content .app-download .card-group .card .text-group h2 {
+    margin: 0;
+    font-size: 1vw;
+    font-weight: 400;
+    color: white
+}
+
+.segment.download>.content .app-download .card-group .card .apple {
+    width: 4vw;
+    height: 4vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/apple.png)
+}
+
+.segment.download>.content .app-download .card-group .card .android {
+    width: 4vw;
+    height: 4vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/android.png)
+}
+
+.segment.download>.content .ipad {
+    z-index: 1;
+    position: absolute;
+    bottom: -12vw;
+    left: 5vw;
+    width: 46.7vw;
+    height: 33.4vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/ipad.png)
+}
+
+.segment.prize {
+    /* background: -webkit-gradient(linear, left top, right bottom, from(#F7F6FE), to(#EDEFFC)); */
+    /* background: linear-gradien   t(to bottom right, #F7F6FE, #EDEFFC); */
+    position: relative;
+    padding: 2.8vw 0;
+}
+
+.segment.prize .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 5vw
+}
+
+.segment.prize .content .card-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.segment.prize .content .card-group .card {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20.8vw;
+    height: 8.3vw
+}
+
+.segment.prize .content .card-group .card.good-design {
+    background-image: url(../images/good-design.png)
+}
+
+.segment.prize .content .card-group .card.gess {
+    background-image: url(../images/gess.png)
+}
+
+.segment.prize .content .card-group .card.csta {
+    background-image: url(../images/csta.png)
+}
+
+.segment.prize .content .card-group .card.ngs {
+    background-image: url(../images/ngs.png)
+}
+
+.segment.prize .content .card-group>h1 {
+    text-align: center;
+    font-size: 1.5vw;
+    width: 18vw;
+    margin: 3vw 0;
+    color: #4e4e4e
+}
+
+.segment.code-an-hour {
+    position: relative;
+    padding: 2.8vw 0;
+}
+
+.segment.code-an-hour .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 5vw;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.segment.code-an-hour .content .certificate-of-merit {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 62.5vw;
+    height: 37.5vw;
+    background-image: url(../images/certificate-of-merit.png)
+}
+
+.segment.code-an-hour .content>h1 {
+    font-size: 2vw;
+    margin: 3vw 0;
+    text-align: center;
+    width: 80vw;
+    font-weight: 500;
+    color: 78
+}
+
+.remarks {
+    background-color: #9CC2FF;
+    color: white;
+    padding: 3vw 3vw
+}
+
+.remarks .tinkamo-logo {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13.9vw;
+    height: 4.3vw;
+    background-image: url(../images/tinkamo-logo.png)
+}
+
+.remarks p {
+    margin: 4vw 0;
+    font-size: 1.5vw
+}
+
+.remarks .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.remarks right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.remarks right .code {
+    margin: 2vw;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.remarks right .code .consultation {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10vw;
+    height: 10vw;
+    background-image: url(../images/consultation.png)
+}
+
+.remarks right .code .official-account {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10vw;
+    height: 10vw;
+    background-image: url(../images/official-account.png)
+}
+
+.remarks right .code p {
+    margin: 1vw 0;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: white
+}
+
+.shop {
+    z-index: 99;
+    position: relative;
+    height: 12vw;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: red;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 10vw
+}
+
+.shop .content {
+    position: absolute;
+    left: 10vw;
+    padding: 0 2vw
+}
+
+.shop .content h1 {
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600
+}
+
+.shop .content p {
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500
+}
+
+.shop .shop-code {
+    position: absolute;
+    right: 30vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 8vw;
+    height: 8vw;
+    background-image: url(../images/shop-code.png)
+}
+
+.button {
+    height: 3vw;
+    display: inline-block;
+    border-radius: 30px;
+    padding: .2vw 1vw;
+    margin: 1vw 2vw 0 0;
+    width: 12vw;
+}
+
+.button h3 {
+    text-align: center;
+    line-height: 3vw;
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    margin: auto .5vw
+}
+
+.orange {
+    background-color: #F5A623
+}
+
+.emerald-green {
+    background-color: #17C7D9
+}
+
+.white {
+    background-color: white
+}
+
+.jam {
+    background-image: url(../images/jam.png)
+}
+
+.logo {
+    background-image: url(../images/logo.png)
+}
+
+.advantage-1 {
+    background-image: url(../images/advantage-1.png)
+}
+
+.advantage-2 {
+    background-image: url(../images/advantage-2.png)
+}
+
+.advantage-3 {
+    background-image: url(../images/advantage-3.png)
+}
+
+.advantage-4 {
+    background-image: url(../images/advantage-4.png)
+}
+
+.advantage-5 {
+    background-image: url(../images/advantage-5.png)
+}
+
+.ignite {
+    background-image: url(../images/ignite.png)
+}
+
+.metamorph {
+    background-image: url(../images/metamorph.png)
+}
+
+.professional {
+    background-image: url(../images/professional.png)
+}
+
+.act {
+    background-image: url(../images/act.png)
+}
+
+a.nonestyle, a.nonestyle:hover, a.nonestyle:active, a.nonestyle:link, a.nonestyle:visited {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+.teacher-introducion h2 {
+    margin: 0;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Show</title>
+    <style>
+        .box {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 256px);
+            grid-template-rows: repeat(2, 256px);
+            grid-row-gap: 12px;
+            grid-column-gap: 12px;
+        }
+
+        .card {
+            width: 256px;
+            height: 256px;
+            border: 1px solid #e6e6e6;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card::before,
+        .card::after {
+            width: 200%;
+            height: 200%;
+            position: absolute;
+            content: " ";
+            display: block;
+            background: rgba(255, 0, 0, .25);
+            transform: rotate(45deg);
+            transition: all .6s ease-out;
+        }
+
+        .card::before {
+            left: -200%;
+            top: -200%;
+        }
+
+        .card::after {
+            right: -200%;
+            bottom: -200%;
+        }
+
+        .card:hover::before {
+            left: -110%;
+            top: -110%;
+        }
+
+        .card:hover::after {
+            right: -110%;
+            bottom: -110%;
+        }
+
+        .info {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            padding: 0;
+            background: rgba(0, 0, 0, .5);
+            margin: auto;
+            width: 100%;
+            color: white;
+            text-align: center;
+            transition: all .4s linear;
+            transform: rotate(90deg);
+            height: 0;
+            overflow: hidden;
+        }
+
+        .info h2 {
+            margin: 0;
+            padding: .3em 0;
+            border-bottom: 2px solid white;
+        }
+
+        .card>.info>.content {
+            padding: .4em 2em;
+            line-height: 1.7em;
+            overflow: hidden;
+        }
+
+        .card:hover>.info {
+            height: 60%;
+            transform: rotate(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+
+        <div class="container">
+            <div class="card">
+                <img
+                    src="https://www.goodfreephotos.com/albums/people/beautiful-girl-with-long-hair-and-pretty-eyes.jpg" />
+                <div class="info">
+                    <h2>魔力唇彩</h2>
+                    <div class="content">嘴唇的诱惑嘴唇的诱惑嘴唇的诱惑</div>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://www.goodfreephotos.com/albums/people/beautiful-girl-with-long-hair-and-pretty-eyes.jpg" />
+                <div class="info">
+                    <h2>魔力唇彩</h2>
+                    <div class="content">嘴唇的诱惑嘴唇的诱惑嘴唇的诱惑</div>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://www.goodfreephotos.com/albums/people/beautiful-girl-with-long-hair-and-pretty-eyes.jpg" />
+                <div class="info">
+                    <h2>魔力唇彩</h2>
+                    <div class="content">嘴唇的诱惑嘴唇的诱惑嘴唇的诱惑</div>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://www.goodfreephotos.com/albums/people/beautiful-girl-with-long-hair-and-pretty-eyes.jpg" />
+                <div class="info">
+                    <h2>魔力唇彩</h2>
+                    <div class="content">嘴唇的诱惑嘴唇的诱惑嘴唇的诱惑</div>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://www.goodfreephotos.com/albums/people/beautiful-girl-with-long-hair-and-pretty-eyes.jpg" />
+                <div class="info">
+                    <h2>魔力唇彩</h2>
+                    <div class="content">嘴唇的诱惑嘴唇的诱惑嘴唇的诱惑</div>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://www.goodfreephotos.com/albums/people/beautiful-girl-with-long-hair-and-pretty-eyes.jpg" />
+                <div class="info">
+                    <h2>魔力唇彩</h2>
+                    <div class="content">嘴唇的诱惑嘴唇的诱惑嘴唇的诱惑</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

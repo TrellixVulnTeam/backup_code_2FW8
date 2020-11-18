@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .drag {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #000;
+      display: inline-block;
+    }
+
+    .drop {
+      width: 500px;
+      height: 500px;
+      border: 1px solid #000;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .scaler {
+      border: 1px solid #298df8;
+      width: 200px;
+      height: 200px;
+      position: relative;
+    }
+
+    .scaler>* {
+      position: absolute;
+      background: white;
+
+    }
+
+    .tl {
+      left: -7px;
+      top: -7px;
+      cursor: nw-resize;
+    }
+
+    .tr {
+      left: calc(100% - 7px);
+      top: -7px;
+      cursor: ne-resize;
+    }
+
+    .bl {
+      left: -7px;
+      top: calc(100% - 7px);
+      cursor: ne-resize;
+    }
+
+    .br {
+      left: calc(100% - 7px);
+      top: calc(100% - 7px);
+      cursor: nw-resize;
+    }
+
+    .t {
+      left: calc(50% - 7px);
+      top: -7px;
+      cursor: n-resize;
+    }
+
+    .b {
+      left: calc(50% - 7px);
+      top: calc(100% - 7px);
+      cursor: n-resize;
+    }
+
+    .l {
+      left: -7px;
+      top: calc(50% - 7px);
+      cursor: e-resize;
+    }
+
+    .r {
+      left: calc(100% - 7px);
+      top: calc(50% - 7px);
+      cursor: e-resize;
+    }
+
+    .cir {
+      border-radius: 100%;
+      width: 7px;
+      height: 7px;
+      margin-left: 3px;
+      margin-top: 3px;
+      border: 1px solid #298df8;
+    }
+
+    .circle {
+      width: 7px;
+      height: 7px;
+      border-radius: 100%;
+      border: 1px solid #298df8;
+      margin-left: 3px;
+      margin-top: 3px;
+    }
+
+    .nw-resize {
+      cursor: nw-resize;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="scaler" class="scaler">
+    <div class="tl" data-scalex="-1" data-scaley="-1">
+      <div class="circle"></div>
+    </div>
+    <div class="tr" data-scalex="1" data-scaley="-1">
+      <div class="circle"></div>
+    </div>
+    <div class="bl" data-scalex="-1" data-scaley="1">
+      <div class="circle"></div>
+    </div>
+    <div class="br" data-scalex="1" data-scaley="1">
+      <div class="circle"></div>
+    </div>
+    <div class="t" data-scalex="0" data-scaley="-1">
+      <div class="circle"></div>
+    </div>
+    <div class="b" data-scalex="0" data-scaley="1">
+      <div class="circle"></div>
+    </div>
+    <div class="l" data-scalex="-1" data-scaley="0">
+      <div class="circle"></div>
+    </div>
+    <div class="r" data-scalex="1" data-scaley="0">
+      <div class="circle"></div>
+    </div>
+  </div>
+  <!-- <div id="drop" class="drop">
+
+  </div> -->
+
+
+</body>
+<script>
+  // let dropBox = document.getElementById('drop');
+  let scaler = document.getElementById('scaler');
+
+  // let img;
+  // let lx = 0;
+  // let ly = 0;
+  // img = new Image();
+  // img.src = "./imgs/button.jpg";
+  // img.style.position = "absolute";
+  // img.draggable = false;
+  // dropBox.appendChild(img);
+
+
+  // img.onmousedown = event => {
+  //   const ox = event.layerX;
+  //   const oy = event.layerY;
+  //   img.onmousemove = event => {
+  //     const x = event.clientX;
+  //     const y = event.clientY;
+  //     const lx = x - ox;
+  //     const ly = y - oy;
+
+  //     img.style.left = lx + "px";
+  //     img.style.top = ly + "px";
+  //   }
+
+  //   img.onmouseup = () => {
+  //     img.onmousemove = null;
+  //     img.onmouseup = null;
+  //   }
+  // }
+
+  function getElementLeft(element) {
+    var actualLeft = element.offsetLeft;
+    var current = element.offsetParent;
+
+    while (current !== null) {
+      actualLeft += current.offsetLeft;
+      current = current.offsetParent;
+    }
+
+    return actualLeft;
+  }
+
+  function getElementTop(element) {
+    var actualTop = element.offsetTop;
+    var current = element.offsetParent;
+
+    while (current !== null) {
+      actualTop += current.offsetTop;
+      current = current.offsetParent;
+    }
+
+    return actualTop;
+  }
+
+  let isScale = null;
+  function scalerEve(elem, scaleX, scaleY) {
+    elem.onmousedown = e => {
+      isScale = {
+        elem,
+        scaleX,
+        scaleY,
+      };
+    }
+  }
+
+  window.addEventListener('mousemove', e => {
+    if (!isScale) return;
+
+    const { elem, scaleX, scaleY } = isScale;
+    const ex = getElementLeft(elem);
+    const ey = getElementTop(elem);
+    console.log(ex, ey);
+
+    const x = e.clientX;
+    const y = e.clientY;
+    console.log(scaleX, scaleY);
+
+    const sx = (x - ex) * scaleX;
+    const sy = (y - ey) * scaleY;
+    scaler.style.width = scaler.clientWidth + sx + "px";
+    scaler.style.height = scaler.clientHeight + sy + "px";
+  })
+
+  window.addEventListener('mouseup', e => {
+    isScale = null;
+  });
+
+  const cirs = document.querySelectorAll("#scaler > *");
+
+  for (let i = 0; i < cirs.length; i++) {
+    const cir = cirs[i]
+    scalerEve(cir, parseInt(cir.dataset.scalex),
+      parseInt(cir.dataset.scaley));
+  }
+
+
+</script>
+
+</html>

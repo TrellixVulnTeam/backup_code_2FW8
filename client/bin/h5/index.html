@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='renderer' content='webkit'>
+    <meta name='viewport'
+          content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'/>
+    <meta name='apple-mobile-web-app-capable' content='yes'/>
+    <meta name='full-screen' content='true'/>
+    <meta name='x5-fullscreen' content='true'/>
+    <meta name='360-fullscreen' content='true'/>
+    <meta http-equiv='expires' content='0'/>
+    <meta name='laya' screenorientation='landscape'/>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta http-equiv='expires' content='0'/>
+    <meta http-equiv='Cache-Control' content='no-siteapp'/>
+
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
+    <link rel="stylesheet" type="text/css" href="https://a.amap.com/jsapi_demos/static/demo-center/css/prety-json.css">
+    <style>
+        html,
+        body,
+        #container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .amap-logo {
+            display: none;
+            opacity: 0 !important;
+        }
+
+        .amap-copyright {
+            opacity: 0;
+        }
+
+    </style>
+    <title>地图富翁</title>
+</head>
+
+
+<div id="container" style="position:absolute"></div>
+<script src="https://webapi.amap.com/maps?v=1.4.12&key=36e94527631c387587dbc2486242d88f"></script>
+<body style='margin:0;overflow-x:hidden;overflow-y:hidden;background-color: #000;' onload="onLoaded()"
+      onresize="onResize()">
+<script>
+    function onResize() {
+        var winHeight = 0;
+        var winWidth = 0;
+        winHeight = document.body.clientHeight;
+        winWidth = document.body.clientWidth;
+        //DIV高度为浏览器窗口的高度
+        if (winHeight / winWidth >= 1920 / 1080) {
+            winHeight = winWidth * 1920 / 1080;
+        } else {
+            if (navigator.userAgent.indexOf("Mobile") > -1) {
+                // winHeight = winWidth*1920/1080;
+            } else {
+                winWidth = 1080 / 1920 * winHeight;
+            }
+        }
+        document.getElementById("container").style.width = winWidth + "px";
+        document.getElementById("container").style.height = winHeight + "px";
+        document.getElementById("container").style.left = (document.body.clientWidth - winWidth) / 2 + "px";
+        document.getElementById("container").style.top = (document.body.clientHeight - winHeight) / 2 + "px";
+    }
+
+    onResize();
+    // 初始化地图
+    var map;
+
+    function loadMap() {
+        map = new AMap.Map("container", {
+            resizeEnable: false,
+            jogEnable: false,   //地图是否使用缓动效果，默认值为true
+            animateEnable: false,  //地图平移过程中是否使用动画
+            dragEnable: false,
+            zoom: 17,
+            features: ["bg", "building", "road"],
+            showIndoorMap: false,
+            doubleClickZoom: false,
+            keyboardEnable: false,
+            scrollWheel: false,
+            touchZoom: false,
+            showBuildingBlock: false,
+            preloadMode: false,
+            // rotateEnable:true,
+            // viewMode:'3D',
+            // pitch:60,
+            // rotation:0,
+            // resizeEnable: true,
+            // pitchEnable:true,
+            // expandZoomRange:true,
+        });
+    }
+
+    loadMap();
+
+    function onLoaded() {
+    }
+
+    function lnglatToPoint(lng, lat) {
+        if (isNaN(lng) || isNaN(lat)) {
+            debugger;
+        }
+        var pixel = map.lnglatTocontainer({Q: lat, R: lng, lat: lat, lng: lng});
+        return pixel;
+    }
+
+    function moveMapBy(x, y) {
+        if (isNaN(x) || isNaN(y)) {
+            debugger;
+        }
+        map.panBy(x, y);
+    }
+
+    function moveMapTo(x, y) {
+        if (isNaN(x) || isNaN(y)) {
+            debugger;
+        }
+        map.panTo(x, y);
+    }
+
+    function setCenter(lng, lat) {
+        if (isNaN(lng) || isNaN(lat)) {
+            debugger;
+        }
+        map.setCenter([lng, lat]);
+    }
+
+    function zoomOut() {
+        map.zoomOut();
+    }
+
+    function getMapCenter() {
+        return map.getCenter();
+    }
+
+    var pathDic = {};
+
+    function drawPath(obj) {
+        if (!pathDic[obj.key]) {
+            pathDic[obj.key] = obj.path;
+            var polyline = new AMap.Polyline({
+                path: obj.path,            // 设置线覆盖物路径
+                showDir: false,
+                strokeColor: '#3366cc',   // 线颜色
+                strokeWeight: 8,           // 线宽
+            });
+            map.add(polyline);
+        }
+    }
+
+    function getCity(callFun) {
+        map.getCity(callFun);
+    }
+</script>
+</body>
+<script src='Main.max.js' loader='laya'></script>
+</html>

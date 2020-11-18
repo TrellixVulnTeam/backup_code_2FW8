@@ -1,0 +1,9 @@
+.fade-enter-active {
+    transition: height .2s linear;
+    
+}
+
+.fade-enter
+{
+    height: 0;
+}

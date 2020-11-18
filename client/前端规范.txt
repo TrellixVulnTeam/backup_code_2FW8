@@ -1,0 +1,19 @@
+命名规范
+1.  V_开头的为视图   例如 V_Home  
+2.  Config开头的为配置   例如 ConfigMonster
+3.  C_开头的为网络层   例如 C_User
+4.  D_开头的为数据      例如D_Mining
+5.  Packet_开头的为socket封包  例如Packet_User
+能过PacketPacker,PacketUnPacker注册封包解包
+
+CONST_EVENT.as
+游戏内部事件，通过EventCenter发送事件
+CONSET_FILE.as
+文件名放这边，方便以后做多语言
+Language.as
+语言描述放这边，方便以后翻译
+
+配置目录
+laya\assets\config
+config.json 配置列表，新增的配置要在里面加一条
+GameConfig.as   初始化配置

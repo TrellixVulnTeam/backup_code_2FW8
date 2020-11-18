@@ -1,0 +1,123 @@
+[
+  {
+    "resident": "225.82",
+    "tourist_trips": "109.31",
+    "tourist_income": "1.84",
+    "tourist_trips_avg": 0.48,
+    "tourist_income_avg": 81.48,
+    "gdp": "198.44\u4ebf",
+    "gdp_per_capita": 8787.53,
+    "village_avg_money": 20151.0,
+    "year": 2014,
+    "cityname": "\u548c\u7530\u5730\u533a"
+  },
+  {
+    "resident": "232.43",
+    "tourist_trips": "80.0",
+    "tourist_income": "3.55",
+    "tourist_trips_avg": 0.34,
+    "tourist_income_avg": 152.73,
+    "gdp": "233.86\u4ebf",
+    "gdp_per_capita": 10061.52,
+    "village_avg_money": 22468.0,
+    "year": 2015,
+    "cityname": "\u548c\u7530\u5730\u533a"
+  },
+  {
+    "resident": "244.98",
+    "tourist_trips": "122.5",
+    "tourist_income": "19.6",
+    "tourist_trips_avg": 0.5,
+    "tourist_income_avg": 800.07,
+    "gdp": "236.33\u4ebf",
+    "gdp_per_capita": 9646.91,
+    "village_avg_money": 24466.0,
+    "year": 2016,
+    "cityname": "\u548c\u7530\u5730\u533a"
+  },
+  {
+    "resident": "252.28",
+    "tourist_trips": "140.87",
+    "tourist_income": "22.91",
+    "tourist_trips_avg": 0.56,
+    "tourist_income_avg": 908.12,
+    "gdp": "268.26\u4ebf",
+    "gdp_per_capita": 10633.42,
+    "village_avg_money": 26496.0,
+    "year": 2017,
+    "cityname": "\u548c\u7530\u5730\u533a"
+  },
+  {
+    "resident": "253.05",
+    "tourist_trips": "213.26",
+    "tourist_income": null,
+    "tourist_trips_avg": 0.84,
+    "tourist_income_avg": null,
+    "gdp": "305.57\u4ebf",
+    "gdp_per_capita": 12075.48,
+    "village_avg_money": 28610.0,
+    "year": 2018,
+    "cityname": "\u548c\u7530\u5730\u533a"
+  }
+,
+  {
+    "resident": "317.55",
+    "tourist_trips": "1934.55",
+    "tourist_income": "204.0",
+    "tourist_trips_avg": 6.09,
+    "tourist_income_avg": 6424.19,
+    "gdp": "920.83\u4ebf",
+    "gdp_per_capita": 28997.95,
+    "village_avg_money": 10730.0,
+    "year": 2014,
+    "cityname": "\u897f\u85cf"
+  },
+  {
+    "resident": "323.97",
+    "tourist_trips": "2072.72",
+    "tourist_income": "281.92",
+    "tourist_trips_avg": 6.4,
+    "tourist_income_avg": 8702.04,
+    "gdp": "1026.39\u4ebf",
+    "gdp_per_capita": 31681.64,
+    "village_avg_money": 12254.0,
+    "year": 2015,
+    "cityname": "\u897f\u85cf"
+  },
+  {
+    "resident": "330.54",
+    "tourist_trips": "1555.34",
+    "tourist_income": "330.75",
+    "tourist_trips_avg": 4.71,
+    "tourist_income_avg": 10006.35,
+    "gdp": "1150.07\u4ebf",
+    "gdp_per_capita": 34793.67,
+    "village_avg_money": 13639.0,
+    "year": 2016,
+    "cityname": "\u897f\u85cf"
+  },
+  {
+    "resident": "337.15",
+    "tourist_trips": "2561.43",
+    "tourist_income": "379.37",
+    "tourist_trips_avg": 7.6,
+    "tourist_income_avg": 11252.26,
+    "gdp": "1310.63\u4ebf",
+    "gdp_per_capita": 38873.8,
+    "village_avg_money": 15457.0,
+    "year": 2017,
+    "cityname": "\u897f\u85cf"
+  },
+  {
+    "resident": "343.82",
+    "tourist_trips": "3368.73",
+    "tourist_income": "490.14",
+    "tourist_trips_avg": 9.8,
+    "tourist_income_avg": 14255.72,
+    "gdp": "1477.63\u4ebf",
+    "gdp_per_capita": 42976.85,
+    "village_avg_money": 17286.0,
+    "year": 2018,
+    "cityname": "\u897f\u85cf"
+  }
+]

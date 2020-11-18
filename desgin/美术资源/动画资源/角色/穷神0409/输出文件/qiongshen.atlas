@@ -1,0 +1,97 @@
+
+qiongshen.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bianzi
+  rotate: true
+  xy: 2, 39
+  size: 87, 135
+  orig: 87, 135
+  offset: 0, 0
+  index: -1
+huzi
+  rotate: true
+  xy: 139, 60
+  size: 66, 40
+  orig: 66, 40
+  offset: 0, 0
+  index: -1
+shenti01
+  rotate: false
+  xy: 183, 193
+  size: 106, 60
+  orig: 106, 60
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 128
+  size: 179, 125
+  orig: 179, 125
+  offset: 0, 0
+  index: -1
+wan
+  rotate: false
+  xy: 183, 152
+  size: 56, 39
+  orig: 56, 39
+  offset: 0, 0
+  index: -1
+yanjing
+  rotate: false
+  xy: 2, 2
+  size: 97, 35
+  orig: 97, 35
+  offset: 0, 0
+  index: -1
+youjiao
+  rotate: true
+  xy: 241, 157
+  size: 34, 47
+  orig: 34, 47
+  offset: 0, 0
+  index: -1
+youkuguan
+  rotate: false
+  xy: 291, 215
+  size: 51, 38
+  orig: 51, 38
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: true
+  xy: 183, 109
+  size: 41, 42
+  orig: 41, 42
+  offset: 0, 0
+  index: -1
+zuiba
+  rotate: false
+  xy: 101, 24
+  size: 22, 13
+  orig: 22, 13
+  offset: 0, 0
+  index: -1
+zuojiao
+  rotate: true
+  xy: 397, 219
+  size: 34, 47
+  orig: 34, 47
+  offset: 0, 0
+  index: -1
+zuokuguan
+  rotate: false
+  xy: 344, 215
+  size: 51, 38
+  orig: 51, 38
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: true
+  xy: 446, 216
+  size: 37, 44
+  orig: 37, 44
+  offset: 0, 0
+  index: -1

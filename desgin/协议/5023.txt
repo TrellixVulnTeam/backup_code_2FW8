@@ -1,0 +1,16 @@
+5023 取游乐场数据
+        /// <summary>
+        /// 游戏类型 1=接宝箱
+        /// </summary>
+        public int Type = 0;
+
+
+5024 返回游乐场数据
+        /// <summary>
+        /// 0=成功 1=没触发此事件
+        /// </summary>
+        public int Code = 0;
+        /// <summary>
+        /// 宝箱数据
+        /// </summary>
+        public List<int> BoxList = new List<int>();

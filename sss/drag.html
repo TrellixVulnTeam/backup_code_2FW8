@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .drag {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #000;
+      display: inline-block;
+    }
+
+    .drop {
+      width: 500px;
+      height: 500px;
+      border: 1px solid #000;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="drag">
+    <img ondragstart="dragstart_handler(event)" src="./imgs/xbxx.jpg" alt="">
+  </div>
+  <div class="drop" ondrop="drop_handler(event)" ondragover="dragover_handler(event)" onmousemove="hm(event)">
+  </div>
+</body>
+<script>
+
+  let img = new Image();
+  img.src = "./imgs/button.jpg";
+  let dragflag = null;
+  let lx = 0;
+  let ly = 0;
+
+  function dragstart_handler(e) {
+    e.dataTransfer.setData("type", "ssss");
+    e.dataTransfer.setDragImage(img, 10, 10);
+  }
+
+  function dragover_handler(ev) {
+    ev.preventDefault();
+    ev.dataTransfer.dropEffect = "copy";
+  }
+
+  function drop_handler(e) {
+    e.preventDefault();
+    const d = e.dataTransfer.getData("type");
+    if (d !== 'ssss') return;
+
+    let img;
+    img = new Image();
+    img.src = "./imgs/button.jpg";
+    img.style.position = "absolute";
+    img.style.left = e.layerX + "px";
+    img.style.top = e.layerY + "px";
+    img.draggable = false;
+    e.target.appendChild(img);
+
+    img.onmousedown = event => {
+      dragflag = img;
+      lx = event.layerX;
+      ly = event.layerY;
+    }
+
+    img.onmouseup = event => {
+      dragflag = null;
+    }
+  }
+
+  function throttle(func, minsecond) {
+    let flag = true;
+
+    return function () {
+      if (flag) {
+        func(...arguments);
+        flag = false;
+        setTimeout(() => {
+          flag = true
+        }, minsecond);
+      }
+    }
+  }
+
+
+  function handleMove(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    if (dragflag !== null) {
+      let left = event.layerX - lx + "px";
+      let top = event.layerY - ly + "px";
+      dragflag.style.left = left;
+      dragflag.style.top = top;
+      console.log(event.layerX, event.layerY, lx, l);
+    }
+  }
+
+  const hm = throttle(handleMove, 33)
+</script>
+
+</html>

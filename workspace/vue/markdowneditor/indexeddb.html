@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <script>
+        //返回IDBRequest对象,该对象有三种事件error、success、upgradeneeded处理打开数据库的操作结果。
+        let req = indexedDB.open('test')
+
+        req.onerror = event => {
+            console.log("打开数据库出错")
+        }
+        let db;
+        req.onsuccess = event => {
+            db = req.result
+            console.log("打开数据库成功")
+
+            add("张三", 33)
+            add("约翰", 23)
+            add("亚伯", 24)
+            add("诺亚", 21)
+        }
+
+        //数据库第一次打开(即新建时触发该事件)
+        req.onupgradeneeded = event => {
+            db = event.target.result
+            let st = db.createObjectStore('person', {
+                keyPath: "id",
+                autoIncrement: true,
+            })
+            //三个参数分别为索引名称、索引所在的属性、配置对象
+            st.createIndex('name', 'name', { unique: true });
+        }
+
+       function add(name, age) {
+           //写入数据需要新建一个事务。新建时必须指定表格名称和操作模式（"只读"或"读写"）。
+            let request = db.transaction(["person"], "readwrite")
+                // /建事务以后，通过IDBTransaction.objectStore(name)方法，拿到 IDBObjectStore 对象
+                .objectStore('person')
+                //再通过表格对象的add()方法，向表格写入一条记录。
+                .add({
+                    name: name,
+                    age: age,
+                })
+
+            request.onsuccess = () => {
+                console.log("数据插入成功!");
+            }
+
+            request.onerror = () => {
+                console.log("数据插入失败!");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+
+chushi.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guochan
+  rotate: true
+  xy: 390, 58
+  size: 67, 92
+  orig: 67, 92
+  offset: 0, 0
+  index: -1
+huzi
+  rotate: false
+  xy: 2, 10
+  size: 57, 18
+  orig: 57, 18
+  offset: 0, 0
+  index: -1
+maozi
+  rotate: false
+  xy: 136, 46
+  size: 145, 79
+  orig: 145, 79
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 283, 59
+  size: 105, 66
+  orig: 105, 66
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 30
+  size: 132, 95
+  orig: 132, 95
+  offset: 0, 0
+  index: -1
+yanjing
+  rotate: false
+  xy: 136, 32
+  size: 60, 12
+  orig: 60, 12
+  offset: 0, 0
+  index: -1
+youjiao
+  rotate: true
+  xy: 198, 10
+  size: 34, 47
+  orig: 34, 47
+  offset: 0, 0
+  index: -1
+youkuguan
+  rotate: false
+  xy: 247, 2
+  size: 41, 42
+  orig: 41, 42
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: false
+  xy: 290, 15
+  size: 41, 42
+  orig: 41, 42
+  offset: 0, 0
+  index: -1
+zuojiao
+  rotate: true
+  xy: 423, 22
+  size: 34, 47
+  orig: 34, 47
+  offset: 0, 0
+  index: -1
+zuokuguan
+  rotate: false
+  xy: 333, 15
+  size: 41, 42
+  orig: 41, 42
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: true
+  xy: 376, 19
+  size: 37, 45
+  orig: 37, 45
+  offset: 0, 0
+  index: -1

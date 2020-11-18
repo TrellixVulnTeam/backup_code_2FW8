@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>合计项目</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background: #efefef;
+    }
+
+    .wrapper {
+      width: 600px;
+      margin: 0 auto;
+      margin-top: 20px;
+      background: white;
+      border-radius: 4px;
+      padding: 12px;
+    }
+
+    .input-number {
+      width: 100%;
+      resize: none;
+      outline: none;
+      box-sizing: border-box;
+      padding: 8px;
+    }
+
+    .input-number:hover {}
+
+    .generator {
+      width: 100%;
+      padding: 4px;
+      text-align: center;
+      outline: none;
+      background: palevioletred;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      color: white;
+    }
+
+    .generator:hover {
+      cursor: pointer;
+      /* transform: translateY(-4px); */
+    }
+
+    ul.show-numbers {
+      list-style: none;
+    }
+
+    ul.show-numbers li {
+      border: 1px solid #ccc;
+      display: inline-block;
+      margin: 4px 12px;
+      border: none;
+      background-color: seagreen;
+      color: white;
+      padding: .2em .5em;
+      min-width: 2rem;
+      text-align: center;
+    }
+
+    ul.show-numbers li h6 {
+      border-bottom: 1px solid white;
+    }
+  </style>
+</head>
+<div class="wrapper">
+  <h3>输入数据</h3>
+  <textarea name="" id="" cols="30" rows="10" class="input-number"></textarea>
+  <!-- <div> -->
+  <!-- <label for="num">前几个数</label> -->
+  <!-- <input id="num" name="num" type="number" value="10" /> -->
+  <!-- </div> -->
+  <button class="generator">计算</button>
+  <section id="answer"></section>
+  <section class="state"></section>
+</div>
+
+<body>
+</body>
+<script>
+  class GNum {
+    static gUnits = { "个": -1, "十": -2, "百": -3, "千": -4, }
+    static gUnitOrder = ["千", "百", "十", "个"];
+    constructor(numStr, units = ["千", "百", "十", "个"]) {
+      this.num = {};
+
+      if (typeof numStr === 'object') {
+        this.num = numStr;
+        return;
+      }
+
+      if (typeof units === 'string') {
+        units = units.split("")
+      }
+      // console.log(numStr);
+
+      units.forEach((unit) => {
+        this.num[unit] = numStr.substr(GNum.gUnits[unit], 1)
+      });
+    }
+
+    //链式写法
+    getSection(units) {
+      return new GNum(this.value, units);
+    }
+
+    //将缺失位补全
+    supply(supplyNums) {
+      let currUnits = Object.keys(this.num);
+      let noHasUnit = GNum.gUnitOrder.filter(v => currUnits.indexOf(v) === -1)
+      if (typeof supplyNums === 'string') {
+        supplyNums = supplyNums.split("")
+      }
+
+      let rnum = Object.assign({}, this.num)
+      for (let i = 0; i < supplyNums.length && i < noHasUnit.length; i++) {
+        rnum[noHasUnit[i]] = supplyNums[i]
+      }
+
+      return new GNum(rnum)
+    }
+
+    supplyAll() {
+      let currUnits = Object.keys(this.num);
+      let noHasUnit = GNum.gUnitOrder.filter(v => currUnits.indexOf(v) === -1)
+      let len = noHasUnit.length
+      let count = Math.pow(10, len)
+
+      return new Array(count).fill(1).map((_, index) => {
+        let cNum = ("0".repeat(len) + index).slice(-len)
+        return this.supply(cNum)
+      })
+    }
+
+    merge(otherNum) {
+      let newNum = new GNum({ ...this.num, ...otherNum.num })
+      return newNum
+    }
+
+    get value() {
+      return GNum.gUnitOrder.map(v => this.num[v]).join("")
+    }
+  }
+
+  function GNumCalcInters(a, b) {
+    let s = ("0".repeat(2) + calcInters(a, b)).slice(-2).split("")
+    let keys = Object.keys(a.num)
+    let sb = {}
+    while (s.length > 0) {
+      sb[keys.shift()] = s.shift()
+    }
+
+    return new GNum(sb)
+  }
+
+  function mergeNum(nums) {
+    let results = []
+    nums = nums.map(n => new GNum(n))
+    let units = [["千百", "十个"], ["千十", "百个"], ["千个", "百十"]]
+    units.forEach(unit => {
+      results.push(...mergeIter(nums, unit))
+    })
+
+    return results
+  }
+
+  function fl(arrs) {
+    let arr = arrs.shift()
+
+    if (arrs.length <= 0) {
+      return arr
+    }
+
+    let r = fl(arrs)
+    let a = arr.map(a => r.map(b => a.merge(b))).flat()
+    return a
+  }
+
+  function mergeIter(nums, unit) {
+    let uNums = unit.map(u => nums.map(num => num.getSection(u)).flat())
+    console.log([...uNums]);
+    uNums = uNums.map(u => repeatCalc(u, GNumCalcInters))
+    console.log([...uNums]);
+
+    return fl(uNums)
+  }
+
+  let res = [
+    "万千百十",
+    "万千百个",
+    "万千十个",
+    "万百十个",
+    "千百十个",
+  ]
+
+  function classifyNum(nums) {
+    let unitOfNum = {}
+
+    // nums = nums.map((n) => n.split(""))
+    for (let key in GNum.gUnits) {
+      let value = GNum.gUnits[key]
+      unitOfNum[key] = nums.map((n) => n.substr(value, 1))
+    }
+
+    return unitOfNum
+  }
+
+  function generateAllNum(nums) {
+    nums = nums.map(n => new GNum(n))
+    let allNum = [];
+    [["千百", "十个"], ["千十", "百个"], ["千个", "百十"]].forEach(units => {
+      nums.forEach(num => {
+        allNum.push(...num.getSection(units).supplyAll())
+      })
+    })
+
+    return allNum.map(n => n.value)
+  }
+
+  function calcInters(a, b) {
+    return (parseInt(a.value) + parseInt(b.value)) % 100
+  }
+
+  function repeatCalc(arr, func) {
+    let result = []
+    for (let i = 0; i < arr.length - 1; i++) {
+      result.push(func(arr[i], arr[i + 1]))
+    }
+    return result
+  }
+
+
+  function strToDom(strDom) {
+    const div = document.createElement('div')
+    div.innerHTML = strDom
+    return div.children[0]
+  }
+
+  function getValues(value) {
+    return value.split("\n").map(item => {
+      const items = /(\d\|)+\d/.exec(item);
+
+      if (items !== null) {
+        return items[0].split("|").join("");
+      }
+
+      return "00000";
+    });
+  }
+
+  function inters() {
+
+  }
+
+  const btn = document.querySelector(".generator");
+  const text = document.querySelector(".input-number")
+  const answer = document.querySelector("#answer");
+  const state = document.querySelector(".state");
+  const numInput = document.querySelector("#num");
+
+  btn.addEventListener('click', function () {
+    let flags = []
+    const arr = text.value.split(",")
+    answer.innerHTML = mergeNum(arr).flat().map(n => n.value).join(", ")
+  })
+
+</script>
+
+</html>

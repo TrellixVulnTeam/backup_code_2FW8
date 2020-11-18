@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ButtonSkin"   width="1280"  height="720" currentState="down" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="down,up,disabled"  width.down="250" height.down="72" width.up="250" height.up="72" width.disabled="250" height.disabled="72">
+	<e:Image width="250" height="72" includeIn="disabled" x="0" y="0" source="button_normal_png"/>
+	<e:Image width="250" height="72" includeIn="up" x="0" y="0" source="button_normal_png"/>
+	<e:Image width="250" height="72" includeIn="down" source="button_dd_png" source.up="button_normal_png"/>
+	<e:Label id="labelDisplay" text="Label" x="35.763" y="11.754" anchorOffsetX="0" width="179.257" anchorOffsetY="0" height="47.135" verticalAlign="middle" textAlign="center"/>
+</e:Skin>

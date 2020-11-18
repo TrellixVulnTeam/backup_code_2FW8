@@ -1,0 +1,104 @@
+
+suohalaotou.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bizi
+  rotate: false
+  xy: 194, 26
+  size: 51, 38
+  orig: 51, 38
+  offset: 0, 0
+  index: -1
+shenti01
+  rotate: false
+  xy: 139, 66
+  size: 106, 60
+  orig: 106, 60
+  offset: 0, 0
+  index: -1
+shuangseqiu
+  rotate: false
+  xy: 365, 56
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+shuangseqiu02
+  rotate: false
+  xy: 139, 12
+  size: 53, 52
+  orig: 53, 52
+  offset: 0, 0
+  index: -1
+taitouwen
+  rotate: false
+  xy: 324, 103
+  size: 42, 23
+  orig: 42, 23
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 2
+  size: 135, 124
+  orig: 135, 124
+  offset: 0, 0
+  index: -1
+yanjing
+  rotate: false
+  xy: 247, 100
+  size: 75, 26
+  orig: 75, 26
+  offset: 0, 0
+  index: -1
+youjiao
+  rotate: false
+  xy: 290, 51
+  size: 34, 47
+  orig: 34, 47
+  offset: 0, 0
+  index: -1
+youkuguan
+  rotate: false
+  xy: 368, 96
+  size: 41, 30
+  orig: 41, 30
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: false
+  xy: 247, 56
+  size: 41, 42
+  orig: 41, 42
+  offset: 0, 0
+  index: -1
+zuiba
+  rotate: true
+  xy: 326, 8
+  size: 47, 32
+  orig: 47, 32
+  offset: 0, 0
+  index: -1
+zuojiao
+  rotate: false
+  xy: 290, 2
+  size: 34, 47
+  orig: 34, 47
+  offset: 0, 0
+  index: -1
+zuokuguan
+  rotate: false
+  xy: 247, 24
+  size: 41, 30
+  orig: 41, 30
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: false
+  xy: 326, 57
+  size: 37, 44
+  orig: 37, 44
+  offset: 0, 0
+  index: -1

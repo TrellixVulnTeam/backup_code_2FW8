@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        img {
+            width: 64px;
+            height: 64px;
+        }
+    </style>
+</head>
+<body>
+    <input id="uploadImage" type="file" />
+    <script src="./main.js"></script>
+    <script>
+        const uploadImage = document.querySelector("#uploadImage")
+        const reader = new FileReader()
+
+        reader.addEventListener('load', (e) => {
+            const item = ImagesShow.addImage(e.target.result)
+            document.body.appendChild(item)
+        })
+
+        uploadImage.addEventListener('change', e => {
+            for (let file of uploadImage.files) {
+                const image = reader.readAsDataURL(file)
+            }
+            uploadImage.value = ""
+        })
+
+
+    </script>
+</body>
+</html>

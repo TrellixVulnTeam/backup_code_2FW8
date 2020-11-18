@@ -1,0 +1,8 @@
+<svg version="1.1"
+     baseProfile="full"
+     width="200" height="200"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <circle cx="100" cy="100" r="100" fill="#5d7dea" />
+  <circle cx = "10" cy="50" r="10" fill="#cd9da7" />
+</svg>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">皇家施华洛婚纱摄影自助报价系统</h1>
+    </header>
+    <main>
+        <form method="post" name="myform" id="myform">
+
+            <h3>选择您想要的风格(可多选)</h3>
+
+            <section class="item-list">
+
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/1.jpg" alt="">
+                        <div class="choose"><input type="checkbox" id="c1" value="轻奢电影系列" name="entry"><label
+                                for="c1"><span></span>选项1</label></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/2.jpg" alt="">
+                        <div class="choose"><input type="checkbox" id="c2" value="高定系列" name="entry"><label
+                                for="c2"><span></span>选项2</label></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/3.jpg" alt="">
+                        <div class="choose"><input type="checkbox" id="c3" value="定制旅拍系列"  name="entry"><label
+                                for="c3"><span></span>选项3</label></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/4.jpg" alt="">
+                        <div class="choose"><input type="checkbox" id="c4" value="大旅行家系列" name="entry"><label
+                                for="c4"><span></span>选项4</label></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/5.jpg" alt="">
+                        <div class="choose"><input type="checkbox" id="c5" value="有氧森系" name="entry"><label
+                                for="c5"><span></span>选项5</label></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/6.jpg" alt="">
+                        <div class="choose"><input type="checkbox" id="c6" value="英伦系列" name="entry"><label
+                                for="c6"><span></span>选项6</label></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/7.jpg" alt="">
+                        <div class="choose"><input type="checkbox" id="c7" value="国风系列" name="entry"><label
+                                for="c7"><span></span>选项7</label></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/8.jpg" alt="">
+                        <div class="choose"><input type="checkbox" id="c8" value="教堂系列" name="entry"><label
+                                for="c8"><span></span>选项8</label></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/9.jpg" alt="">
+                        <div class="choose"><input type="checkbox" id="c9" value="水系列" name="entry"><label
+                                for="c9"><span></span>选项9</label></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/10.jpg" alt="">
+                        <div class="choose"><input type="checkbox" id="c10" value="浪漫法爱" name="entry"><label
+                                for="c10"><span></span>选项10</label></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/11.jpg" alt="">
+                        <div class="choose"><input type="checkbox" id="c11" value="夜景系列" name="entry"><label
+                                for="c11"><span></span>选项11</label></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/12.jpg" alt="">
+                        <div class="choose"><input type="checkbox" id="c12" value="花海系列" name="entry"><label
+                                for="c12"><span></span>选项12</label></div>
+                    </div>
+                </div>
+            </section>
+
+            <h3>请选出您的预拍时间</h3>
+            <section class="item-list">
+                <div class="item">
+                    <div class="choose">
+                        <input id="r1" type="radio" name="ra" />
+                        <label for="r1"><span></span>三个月以内(急)</label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="choose">
+                        <input id="r2" type="radio" name="ra" />
+                        <label for="r2"><span></span>半年左右</label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="choose">
+                        <input id="r3" type="radio" name="ra" />
+                        <label for="r3"><span></span>一年以内</label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="choose">
+                        <input id="r4" type="radio" name="ra" />
+                        <label for="r4"><span></span>预计明年拍</label>
+                    </div>
+                </div>
+            </section>
+
+            <h3>姓名</h3>
+            <input name="truename" id="truename" class="people" type="text" />
+
+            <h3>接受报价的手机/微信</h3>
+            <input name="tel" id="tel" class="phone" type="text" />
+
+            <button type="button" name="dosubmit" id="dosubmit" class="btn" onclick="addDq();">获取报价</button>
+        </form>
+    </main>
+</body>
+<script type="text/javascript">
+    //document.body.onselectstart = document.body.oncontextmenu = function() { return false; } 
+    function addDq() {
+        var t = $('#truename').val() ? $('#truename').val() : ' ';
+        var truename = document.getElementById("truename");
+        truename.value = t;
+        obj = document.getElementsByName("entry");
+        check_val = [];
+        for (k in obj) {
+            if (obj[k].checked)
+                check_val.push(obj[k].value);
+        }
+        if ($('#tel').val() == '') {
+            alert('请输入手机号码！');
+            $("#tel").focus();
+            return false;
+        }
+        var telephone = $('#tel').val();
+        var reg = /^(1+\d{10})$/;
+        if (!reg.test(telephone)) {
+            alert('请输入正确的手机号码！');
+            $("#tel").focus();
+            return false;
+        }
+        var option = $("#myform").serialize();
+        $.ajax({
+            url: 'http://www.swrow.com/index.php?m=formguide&c=indexcj&a=baidu&formid=14&siteid=2&callback=?',
+            type: "GET",
+            data: option,
+            dataType: "json",
+            cache: false,
+            async: false,
+            error: function () {
+                alert('网络出错了！');
+                return false;
+            },
+            success: function (data) {
+                var result = data;
+                if (result == 2) {
+                    alert("提交成功！\n稍后客服将与您取得联系！");
+                } else {
+                    if (result == 3) {
+                        alert("您已经提交过了！");
+                    } else {
+                        alert("网络错误！");
+                    }
+                }
+
+            }
+        });
+    }
+</script>
+
+</html>

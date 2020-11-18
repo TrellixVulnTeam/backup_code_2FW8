@@ -1,0 +1,39 @@
+9801
+获取Token和目标GS地址
+
+        /// <summary>
+        /// 1=Android;2=IOS;
+        /// </summary>
+        public byte ConnectType = 0;
+        /// <summary>
+        /// 客户端设备号
+        /// </summary>
+        public string DeviceCode = "";
+        /// <summary>
+        /// 第三方令牌(自身带类型，如@facebook)
+        /// </summary>
+        public string ThirdId = "";
+        /// <summary>
+        /// 用于验证ThirdId的附加验证码
+        /// </summary>
+        public string SessionKey = "";
+
+
+9802
+下发Token和目标GS信息
+
+
+        /// <summary>
+        /// Client登录令牌
+        /// </summary>
+        public string Token = "";
+        /// <summary>
+        /// 目标GS地址
+        /// </summary>
+        public string ServerIP = "";
+        /// <summary>
+        /// 目标GS守护端口
+        /// </summary>
+        public int ServerPort = 0;
+
+

@@ -1,0 +1,41 @@
+
+mumen.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+M00
+  rotate: true
+  xy: 2, 24
+  size: 151, 259
+  orig: 151, 259
+  offset: 0, 0
+  index: -1
+M01
+  rotate: true
+  xy: 466, 44
+  size: 131, 181
+  orig: 131, 181
+  offset: 0, 0
+  index: -1
+M03
+  rotate: true
+  xy: 263, 24
+  size: 151, 201
+  orig: 151, 201
+  offset: 0, 0
+  index: -1
+MB01
+  rotate: false
+  xy: 649, 155
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+MB02
+  rotate: false
+  xy: 2, 2
+  size: 35, 20
+  orig: 35, 20
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,18 @@
+5013 设置建筑外观
+
+        /// <summary>
+        /// 房产id
+        /// </summary>
+        public string HouseId = "";
+        /// <summary>
+        /// 房产外观编号
+        /// </summary>
+        public int ImgId = 0;
+
+
+5014返回设置建筑外观状态
+
+        /// <summary>
+        /// 0=成功 1=没有设置权限 2=该建筑点末激活 3=钻石不够
+        /// </summary>
+        public byte Code = 0;

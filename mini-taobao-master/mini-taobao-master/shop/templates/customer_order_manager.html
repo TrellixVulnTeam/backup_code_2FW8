@@ -1,0 +1,7 @@
+{% extends "account_layout.html" %}
+{% block info %}
+    <h1> My Orders Manager</h1><br>
+    <a href={{ url_for("waitting_orders") }}> Order waiting for delivery</a><br><br>
+    <a href={{ url_for("traning_orders") }}> Waiting to confirm the receipt of the order</a><br><br>
+    <a href={{ url_for("completed_orders") }}> Order to complete the transaction</a><br><br>
+{% endblock info %}

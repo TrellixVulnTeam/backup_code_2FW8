@@ -1,0 +1,206 @@
+5003 取地图建筑点和线路
+        /// <summary>
+        /// 当前X坐标
+        /// </summary>
+        public int CurrentXPoint = 0;
+        /// <summary>
+        /// 当前Y坐标
+        /// </summary>
+        public int CurrentYPoint = 0;
+
+
+5004返回地图建筑点和线路
+
+
+        /// <summary>
+        /// 0=成功 1=失败
+        /// </summary>
+        public byte Code = 0;
+        /// <summary>
+        /// 当前X坐标
+        /// </summary>
+        public double CurrentXPoint = 0;
+        /// <summary>
+        /// 当前Y坐标
+        /// </summary>
+        public double CurrentYPoint = 0;
+        /// <summary>
+        /// 线路起点X坐标
+        /// </summary>
+        public double StartXPoint = 0;
+        /// <summary>
+        /// 线路起点Y坐标
+        /// </summary>
+        public double StartYPoint = 0;
+        /// <summary>
+        /// 线路终点X坐标
+        /// </summary>
+        public double EndXPoint = 0;
+        /// <summary>
+        /// 线路终点Y坐标
+        /// </summary>
+        public double EndYPoint = 0;
+        /// <summary>
+        /// 返回当前屏幕路线(x,y|x,y)
+        /// </summary>
+        public List<string> RouteStr = new List<string>();
+
+
+5009返回地图建筑
+        /// <summary>
+        /// 0=成功 1=失败
+        /// </summary>
+        public byte Code = 0;
+        /// <summary>
+        /// 当前X坐标
+        /// </summary>
+        public double CurrentXPoint = 0;
+        /// <summary>
+        /// 当前Y坐标
+        /// </summary>
+        public double CurrentYPoint = 0;
+        /// 返回当前地图的周围最多20个位标点
+        /// </summary>
+        public List<MapHouseInfo> MapHouseList = new List<MapHouseInfo>();
+
+
+5010 返回两点之间的停留点事件ID
+        /// <summary>
+        /// 0=成功 1=失败
+        /// </summary>
+        public byte Code = 0;
+        /// <summary>
+        /// 返回当前地图两点间事件id
+        /// </summary>
+        public List<SendMTPSEInfo> MapTwoPointEventList = new List<SendMTPSEInfo>();
+
+
+
+    /// <summary>
+    /// 地图建筑点信息
+    /// </summary>
+    [Serializable]
+    public class MapHouseInfo
+    {
+        /// <summary>
+        /// 建筑点id
+        /// </summary>
+        public string Id = "";
+        /// <summary>
+        /// 建筑点名称
+        /// </summary>
+        public string Name = "";
+        /// <summary>
+        /// 建筑点类型名称
+        /// </summary>
+        public string Type = "";
+        /// <summary>
+        /// 建筑点类型编码
+        /// </summary>
+        public string TypeCode = "";
+        /// <summary>
+        /// 当前X坐标
+        /// </summary>
+        public double CurrentXPoint = 0;
+        /// <summary>
+        /// 当前Y坐标
+        /// </summary>
+        public double CurrentYPoint = 0;
+        /// <summary>
+        /// 是否已被创建(0=未被创建 1=已创建)
+        /// </summary>
+        public byte IsCreate = 0;
+        /// <summary>
+        /// 建筑外观
+        /// </summary>
+        public int Img = 0;
+
+    }
+
+
+
+    /// <summary>
+    /// 两点之间的停留点事件
+    /// </summary>
+    [Serializable]
+    public class SendMTPSEInfo
+    {
+        /// <summary>
+        /// 两坐标点
+        /// </summary>
+        public string TwoPointStr = "";
+        /// <summary>
+        /// 两点之间停留点事件id(x,y,id;)
+        /// </summary>
+        public string EventIDList = "";
+    }
+
+
+5040 下发当前地图玩家列表数据
+        /// <summary>
+        /// 用户列表数据
+        /// </summary>
+        public List<MapUserInfo> UserList = new List<MapUserInfo>();
+
+    /// <summary>
+    /// 地图用户信息
+    /// </summary>
+    [Serializable]
+    public class MapUserInfo
+    {
+        /// <summary>
+        /// 用户id
+        /// </summary>
+        public int UserId = 0;
+        /// <summary>
+        /// 玩家昵称
+        /// </summary>
+        public string Nikename = "";
+        /// <summary>
+        /// 玩家头象
+        /// </summary>
+        public int UserImg = 0;
+        /// <summary>
+        /// 姓别 1男 2女
+        /// </summary>
+        public int Sex = 0;
+        /// <summary>
+        /// 级别
+        /// </summary>
+        public int Level = 1;
+        /// <summary>
+        /// 起始X坐标
+        /// </summary>
+        public double StartXPoint = 0;
+        /// <summary>
+        /// 起始Y坐标
+        /// </summary>
+        public double StartYPoint = 0;
+        /// <summary>
+        /// 起始停留点
+        /// </summary>
+        public int StartStopEventPoint = 0;
+        /// <summary>
+        /// 终点X坐标
+        /// </summary>
+        public double EndXPoint = 0;
+        /// <summary>
+        /// 终点Y坐标
+        /// </summary>
+        public double EndYPoint = 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

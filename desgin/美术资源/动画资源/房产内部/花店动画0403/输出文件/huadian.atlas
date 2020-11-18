@@ -1,0 +1,83 @@
+
+huadian.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fangjian
+  rotate: false
+  xy: 2, 284
+  size: 759, 213
+  orig: 759, 213
+  offset: 0, 0
+  index: -1
+hua1
+  rotate: false
+  xy: 763, 368
+  size: 192, 129
+  orig: 192, 129
+  offset: 0, 0
+  index: -1
+hua2
+  rotate: false
+  xy: 763, 285
+  size: 90, 81
+  orig: 90, 81
+  offset: 0, 0
+  index: -1
+hua3
+  rotate: false
+  xy: 2, 89
+  size: 192, 129
+  orig: 192, 129
+  offset: 0, 0
+  index: -1
+hua4
+  rotate: true
+  xy: 957, 377
+  size: 120, 65
+  orig: 120, 65
+  offset: 0, 0
+  index: -1
+hua5
+  rotate: false
+  xy: 382, 94
+  size: 113, 124
+  orig: 113, 124
+  offset: 0, 0
+  index: -1
+hualan1
+  rotate: false
+  xy: 2, 2
+  size: 71, 85
+  orig: 71, 85
+  offset: 0, 0
+  index: -1
+hualan2
+  rotate: false
+  xy: 855, 285
+  size: 71, 81
+  orig: 71, 81
+  offset: 0, 0
+  index: -1
+hualan3
+  rotate: false
+  xy: 497, 133
+  size: 71, 85
+  orig: 71, 85
+  offset: 0, 0
+  index: -1
+huateng
+  rotate: false
+  xy: 2, 220
+  size: 595, 62
+  orig: 595, 62
+  offset: 0, 0
+  index: -1
+men
+  rotate: true
+  xy: 196, 88
+  size: 130, 184
+  orig: 130, 184
+  offset: 0, 0
+  index: -1

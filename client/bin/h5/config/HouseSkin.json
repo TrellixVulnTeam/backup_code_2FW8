@@ -1,0 +1,92 @@
+[
+  {
+    "SkinId": 1001,
+    "HouseTypeName": "Shop",
+    "SkinLv": 1
+  },
+  {
+    "SkinId": 1001,
+    "HouseTypeName": "Shop",
+    "SkinLv": 2
+  },
+  {
+    "SkinId": 1001,
+    "HouseTypeName": "Shop",
+    "SkinLv": 3
+  },
+  {
+    "SkinId": 1002,
+    "HouseTypeName": "Shop",
+    "SkinLv": 1
+  },
+  {
+    "SkinId": 1002,
+    "HouseTypeName": "Shop",
+    "SkinLv": 2
+  },
+  {
+    "SkinId": 1002,
+    "HouseTypeName": "Shop",
+    "SkinLv": 3
+  },
+  {
+    "SkinId": 2001,
+    "HouseTypeName": "Building",
+    "SkinLv": 1
+  },
+  {
+    "SkinId": 2001,
+    "HouseTypeName": "Building",
+    "SkinLv": 2
+  },
+  {
+    "SkinId": 2001,
+    "HouseTypeName": "Building",
+    "SkinLv": 3
+  },
+  {
+    "SkinId": 2002,
+    "HouseTypeName": "Building",
+    "SkinLv": 1
+  },
+  {
+    "SkinId": 2002,
+    "HouseTypeName": "Building",
+    "SkinLv": 2
+  },
+  {
+    "SkinId": 2002,
+    "HouseTypeName": "Building",
+    "SkinLv": 3
+  },
+  {
+    "SkinId": 3001,
+    "HouseTypeName": "House",
+    "SkinLv": 1
+  },
+  {
+    "SkinId": 3001,
+    "HouseTypeName": "House",
+    "SkinLv": 2
+  },
+  {
+    "SkinId": 3001,
+    "HouseTypeName": "House",
+    "SkinLv": 3
+  },
+  {
+    "SkinId": 3002,
+    "HouseTypeName": "House",
+    "SkinLv": 1
+  },
+  {
+    "SkinId": 3002,
+    "HouseTypeName": "House",
+    "SkinLv": 2
+  },
+  {
+    "SkinId": 3002,
+    "HouseTypeName": "House",
+    "SkinLv": 3
+  }
+]

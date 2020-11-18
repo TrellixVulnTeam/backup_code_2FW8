@@ -1,0 +1,9 @@
+<%- include('./layout/header.html') -%>
+<div class="box-wrapper">
+  <% arts.forEach(function(a){ %>
+    <div>
+      <img src="<%='../../images/' + a.img %>" alt="" class="img-fluid">
+    </div>
+  <% }); %>
+</div>
+<%- include('./layout/footer.html') -%>

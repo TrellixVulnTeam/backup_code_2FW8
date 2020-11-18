@@ -1,0 +1,7 @@
+<%- include('./layout/header.html') -%>
+<ul class="timeline">
+  <% kings.forEach(function(k){ %>
+  <%-include("./section/timeline-item.html",{name: k.name, time: k.time, img: k.img, isNull: k.isNull || false})%>
+  <% }); %>
+</ul>
+<%- include('./layout/footer.html') -%>

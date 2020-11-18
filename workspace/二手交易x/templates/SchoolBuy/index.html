@@ -1,0 +1,28 @@
+{% extends "SchoolBuy/base.html" %}
+{% block title %}首页{% endblock %}
+{% block detial %}
+<link rel="stylesheet" href="/static/SchoolBuy/css/index.css">
+<link rel="stylesheet" href="/static/SchoolBuy/css/slide.css">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1 class="logo">二手交易</h1>
+        </div>
+    </div>
+    <form class="row" method="get" action="/all/">
+        <div class="col-md-6 col-md-offset-2">
+            <input name="name" type="text" class="form-control input-lg" placeholder="输入需要查询的关键词">
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-default input-lg">搜索</button>
+        </div>
+    </form>
+</div>
+
+<script src="/static/SchoolBuy/js/index.js"></script>
+<script>
+    $(function () {
+        $('#slide3d').slideCarsousel({ slideType: '3d', indicatorEvent: 'mouseover' });
+    });
+</script>
+{% endblock %}

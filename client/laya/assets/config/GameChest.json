@@ -1,0 +1,103 @@
+{
+  "type": {
+    "1": {
+      "ID": 1,
+      "Pic": 101,
+      "Skin": 1,
+      "Speed": 150,
+      "Reward": "1,50",
+      "Probability": 20
+    },
+    "2": {
+      "ID": 2,
+      "Pic": 102,
+      "Skin": 1,
+      "Speed": 150,
+      "Reward": "1,20",
+      "Probability": 10
+    },
+    "3": {
+      "ID": 3,
+      "Pic": 103,
+      "Skin": 1,
+      "Speed": 300,
+      "Reward": "1,20",
+      "Probability": 10
+    },
+    "4": {
+      "ID": 4,
+      "Pic": 104,
+      "Skin": 1,
+      "Speed": 150,
+      "Reward": "1,20",
+      "Probability": 10
+    },
+    "5": {
+      "ID": 5,
+      "Pic": 105,
+      "Skin": 2,
+      "Speed": 300,
+      "Reward": "1,20",
+      "Probability": 10
+    },
+    "6": {
+      "ID": 6,
+      "Pic": 106,
+      "Skin": 2,
+      "Speed": 150,
+      "Reward": "1,20",
+      "Probability": 10
+    },
+    "7": {
+      "ID": 7,
+      "Pic": 107,
+      "Skin": 2,
+      "Speed": 150,
+      "Reward": "1,20",
+      "Probability": 10
+    },
+    "8": {
+      "ID": 8,
+      "Pic": 108,
+      "Skin": 3,
+      "Speed": 200,
+      "Reward": "1,20",
+      "Probability": 10
+    },
+    "9": {
+      "ID": 9,
+      "Pic": 109,
+      "Skin": 3,
+      "Speed": 150,
+      "Reward": "1,20",
+      "Probability": 10
+    }
+  },
+  "weight": [
+  {
+    "time": 1,
+    "num": 1
+  },
+  {
+    "time": 20,
+    "num": 10
+  },
+  {
+    "time": 20,
+    "num": 15
+  },
+  {
+    "time": 20,
+    "num": 20
+  },
+  {
+    "time": 20,
+    "num": 30
+  },
+  {
+    "time": 20,
+    "num": 25
+  }
+],
+  "times": 20
+}

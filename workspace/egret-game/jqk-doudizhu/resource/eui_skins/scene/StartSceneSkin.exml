@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="StartSceneSkin"
+	 width="1280"
+	height="720" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="BG" width="1278.228" height="1278.228" x="1.245" y="-280.636" anchorOffsetX="0" anchorOffsetY="0" source="start_jpg"/>
+	<e:Image width="328.062" height="119.766" source="editable_box_png" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0"/>
+	<e:EditableText id="username" width="262.701" height="71.564" text="请输入你的名字" anchorOffsetX="0" verticalAlign="middle" textAlign="center" size="24" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0"/>
+	<e:Button id="next" label="开始游戏" y="457.196" skinName="ButtonSkin" horizontalCenter="0"/>
+</e:Skin>

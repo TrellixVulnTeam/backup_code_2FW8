@@ -1,0 +1,90 @@
+
+touzigundong.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/01
+  rotate: false
+  xy: 620, 316
+  size: 157, 155
+  orig: 157, 155
+  offset: 0, 0
+  index: -1
+images/02
+  rotate: false
+  xy: 620, 159
+  size: 157, 155
+  orig: 157, 155
+  offset: 0, 0
+  index: -1
+images/03
+  rotate: false
+  xy: 779, 316
+  size: 157, 155
+  orig: 157, 155
+  offset: 0, 0
+  index: -1
+images/04
+  rotate: false
+  xy: 779, 159
+  size: 157, 155
+  orig: 157, 155
+  offset: 0, 0
+  index: -1
+images/05
+  rotate: false
+  xy: 620, 2
+  size: 157, 155
+  orig: 157, 155
+  offset: 0, 0
+  index: -1
+images/06
+  rotate: false
+  xy: 779, 2
+  size: 157, 155
+  orig: 157, 155
+  offset: 0, 0
+  index: -1
+images/mohudetouzi/01-1
+  rotate: false
+  xy: 2, 269
+  size: 204, 202
+  orig: 204, 202
+  offset: 0, 0
+  index: -1
+images/mohudetouzi/02-1
+  rotate: false
+  xy: 2, 65
+  size: 204, 202
+  orig: 204, 202
+  offset: 0, 0
+  index: -1
+images/mohudetouzi/03-1
+  rotate: false
+  xy: 208, 269
+  size: 204, 202
+  orig: 204, 202
+  offset: 0, 0
+  index: -1
+images/mohudetouzi/04-1
+  rotate: false
+  xy: 208, 65
+  size: 204, 202
+  orig: 204, 202
+  offset: 0, 0
+  index: -1
+images/mohudetouzi/05-1
+  rotate: false
+  xy: 414, 269
+  size: 204, 202
+  orig: 204, 202
+  offset: 0, 0
+  index: -1
+images/mohudetouzi/06-1
+  rotate: false
+  xy: 414, 65
+  size: 204, 202
+  orig: 204, 202
+  offset: 0, 0
+  index: -1

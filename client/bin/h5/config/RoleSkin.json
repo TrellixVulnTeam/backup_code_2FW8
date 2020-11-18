@@ -1,0 +1,86 @@
+{
+  "sunxiaomei": {
+    "Skin": "sunxiaomei",
+    "Name": "孙小美",
+    "Gender": 2,
+    "Age": 2
+  },
+  "atubo": {
+    "Skin": "atubo",
+    "Name": "阿土伯",
+    "Gender": 1,
+    "Age": 3
+  },
+  "caishen": {
+    "Skin": "caishen",
+    "Name": "财神",
+    "Gender": 1,
+    "Age": 3
+  },
+  "qiongshen": {
+    "Skin": "qiongshen",
+    "Name": "穷神",
+    "Gender": 1,
+    "Age": 4
+  },
+  "1": {
+    "Skin": 1,
+    "Name": "包租婆",
+    "Gender": 2,
+    "Age": 3
+  },
+  "2": {
+    "Skin": 2,
+    "Name": "梭哈老头",
+    "Gender": 1,
+    "Age": 4
+  },
+  "3": {
+    "Skin": 3,
+    "Name": "小天",
+    "Gender": 2,
+    "Age": 3
+  },
+  "4": {
+    "Skin": 4,
+    "Name": "颖宝",
+    "Gender": 2,
+    "Age": 3
+  },
+  "5": {
+    "Skin": 5,
+    "Name": "厨师",
+    "Gender": 1,
+    "Age": 3
+  },
+  "6": {
+    "Skin": 6,
+    "Name": "老奶奶",
+    "Gender": 2,
+    "Age": 4
+  },
+  "7": {
+    "Skin": 7,
+    "Name": "女服务员",
+    "Gender": 2,
+    "Age": 3
+  },
+  "8": {
+    "Skin": 8,
+    "Name": "梭哈老头",
+    "Gender": 1,
+    "Age": 4
+  },
+  "9": {
+    "Skin": 9,
+    "Name": "小男孩",
+    "Gender": 1,
+    "Age": 1
+  },
+  "10": {
+    "Skin": 10,
+    "Name": "员工10",
+    "Gender": 1,
+    "Age": 1
+  }
+}

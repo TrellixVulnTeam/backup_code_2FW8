@@ -1,0 +1,7 @@
+POST http://127.0.0.1:5000/api/comment/add/1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzYwODk0NDMsIm5iZiI6MTU3NjA4OTQ0MywianRpIjoiYmNlZGJkOWEtMDc3Yy00ZWY4LTgxOTAtODljMWRlYmM2ZWQ0IiwiaWRlbnRpdHkiOiJsaW5kYUBhYmMuY29tIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjEsInVzZXJuYW1lIjoibGluZGEiLCJlbWFpbCI6ImxpbmRhQGFiYy5jb20ifX0.Dop7DDlZzsMhOmHoB6ZaJdhxjtWLnIz1FhIwzD-CU1I
+
+{
+  "message": "hello! the first comment!"
+}

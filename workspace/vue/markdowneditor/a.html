@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <style>
+        .pd {
+            padding: 25px;
+            font-size: 1.5em;
+            line-height: 1.5;
+        }
+
+        .dj {
+            position: fixed;
+            overflow-y: scroll;
+            background: rgba(0, 0, 0, .25);
+        }
+
+        .dj::-webkit-scrollbar {
+            display: none;
+        }
+
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        .status {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            height: 25px;
+            line-height: 25px;
+            text-indent: 1em;
+            background: #eee8d5;
+            color: #586e75;
+        }
+
+        .status>span {
+            margin: 0 .5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <v-app>
+            <v-container style="padding: 0" fill-height fluid>
+                <v-layout wrap>
+                    <v-flex class="pd" md6 xs12>
+                        <div contenteditable style="width: 100%; height: 100%; outline: none;"></div>
+                    </v-flex>
+                    <v-flex class="pd" md6 xs12>
+                    </v-flex>
+                </v-layout>
+                <div v-if="stateShow" class="status">
+                    <span><strong>Markdown</strong></span>
+                    <span><strong>1985</strong>bytes</span>
+                    <span><strong>2345</strong>words</span>
+                    <span><strong>100</strong>lines</span>
+                </div>
+            </v-container>
+            <v-fab-transition>
+                <v-speed-dial fixed right bottom open-on-hover>
+                    <template v-slot:activator>
+                        <v-btn @click="show=!show" :color="show ? 'red darken-2' : 'blue darken-2'" dark fab>
+                            <v-icon v-if="show">close</v-icon>
+                            <v-icon>settings</v-icon>
+                        </v-btn>
+                    </template>
+                </v-speed-dial>
+            </v-fab-transition>
+            <transition name="slide-y-transition">
+                <v-container v-if="show" class="dj" fill-height fluid>
+                    <v-layout row wrap>
+                        <v-flex pa-1 md3 sm12 xs12 style="max-height: 95%; overflow: hidden;">
+                            <v-card style="height: 100%;">
+                                <v-card-title>
+                                    <h3>文章列表</h3>
+                                </v-card-title>
+                                <v-list style="height: calc(100% - 56px);overflow:scroll;">
+                                    <template v-for="item in items">
+                                        <v-list-tile avatar @click="" :key="item.title">
+                                            <v-list-tile-content>
+                                                <v-list-tile-title v-text="item.title"></v-list-tile-title>
+                                            </v-list-tile-content>
+
+                                            <v-list-tile-action @click="handleClick">
+                                                <v-icon>delete</v-icon>
+                                            </v-list-tile-action>
+                                        </v-list-tile>
+                                        <v-divider :key="item.index">
+                                        </v-divider>
+                                    </template>
+
+                                </v-list>
+                            </v-card>
+                        </v-flex>
+                        <v-flex pa-1 md3 sm12 xs12>
+                            <v-card>
+                                <v-card-title primary-title>
+                                    <h3>编辑器设置</h3>
+                                </v-card-title>
+
+                                <v-card-text>
+                                    <v-checkbox v-model="stateShow" label="状态栏"></v-checkbox>
+                                    <v-select :items="selectItems" label="编辑区主题"></v-select>
+                                    <v-select :items="selectItems" label="显示区主题"></v-select>
+                                </v-card-text>
+                            </v-card>
+                        </v-flex>
+                        <v-flex pa-1 md3 sm12 xs12>
+                            <v-card>
+                                <v-card-title primary-title>
+                                    <h3>当前文档动作</h3>
+                                </v-card-title>
+
+                                <v-card-text>
+                                    <v-btn color="success" block>
+                                        <v-icon>star</v-icon>
+                                        导出为pdf
+                                    </v-btn>
+                                    <v-btn color="success" block>
+                                        <v-icon>star</v-icon>
+                                        导出为md文件
+                                    </v-btn>
+                                </v-card-text>
+                            </v-card>
+                        </v-flex>
+                    </v-layout>
+                </v-container>
+            </transition>
+
+        </v-app>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                show: true,
+                stateShow: true,
+                items: [
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Photos', subtitle: 'Jan 9, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Recipes', subtitle: 'Jan 17, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Work', subtitle: 'Jan 28, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Photos1', subtitle: 'Jan 9, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Recipes1', subtitle: 'Jan 17, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Work1', subtitle: 'Jan 28, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Photos2', subtitle: 'Jan 9, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Recipes2', subtitle: 'Jan 17, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Work2', subtitle: 'Jan 28, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Photos3', subtitle: 'Jan 9, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Recipes3', subtitle: 'Jan 17, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Work3', subtitle: 'Jan 28, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Photos4', subtitle: 'Jan 9, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Recipes4', subtitle: 'Jan 17, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Work4', subtitle: 'Jan 28, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Photos5', subtitle: 'Jan 9, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Recipes5', subtitle: 'Jan 17, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Work5', subtitle: 'Jan 28, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Photos6', subtitle: 'Jan 9, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Recipes6', subtitle: 'Jan 17, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Work6', subtitle: 'Jan 28, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Photos7', subtitle: 'Jan 9, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Recipes7', subtitle: 'Jan 17, 2014' },
+                    { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Work7', subtitle: 'Jan 28, 2014' },
+
+                ],
+                selectItems: [
+                    "Github", "Light +", "Monokai"
+                ]
+            },
+            methods: {
+                handleClick() {
+                    console.log('hello')
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

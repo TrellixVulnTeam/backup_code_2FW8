@@ -1,0 +1,123 @@
+<!-- index.html——应用首页广场-->
+
+<!--形参列表: 
+    title -- 页面标题，类型为str (该参数为基模板base_navigation_bar.html所接受的参数)
+    users=[{'username'(str): '用户名', 'email'(str): '邮箱'}] -- 用于首页推荐的用户
+    posts=[{'author'(str):'用户名', 'time'(str):'时间', 'body'(str):动态文字}] -- 用于首页的推荐的微博
+-->
+
+<!-- 1. 继承base_navigation_bar.html实现基本导航栏 -->
+{% extends "base_navigation_bar.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block content %}
+
+<style>
+    /* Custom Styles */
+    ul.nav-tabs {
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+
+    ul.nav-tabs li {
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+
+    ul.nav-tabs li:first-child {
+        border-top: none;
+    }
+
+    ul.nav-tabs li a {
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+
+    ul.nav-tabs li.active a,
+    ul.nav-tabs li.active a:hover {
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+
+    ul.nav-tabs li:first-child a {
+        border-radius: 4px 4px 0 0;
+    }
+
+    ul.nav-tabs li:last-child a {
+        border-radius: 0 0 4px 4px;
+    }
+
+    ul.nav-tabs.affix {
+        top: 30px;
+        /* Set the top position of pinned element */
+    }
+</style>
+
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy">
+    <div class="container">
+        <div class="jumbotron">
+            <h3>Square</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <h3 id="section-1">The latest Message</h3>
+                <p>
+                    {% if posts %}
+                    {% for post in posts %}
+                    <div class="card">
+                        <h3><a href="{{url_for('homepage', username=post.author)}}">{{post.author}}</a></h3>
+                        <p>{{post.body}}</p>
+                        <p class="time">{{post.timestamp}}</p>
+                        <p>
+                            <button type="button"
+                                class="btn btn-default likes {{'like-hover-btn' if current_user.is_authenticated and post.is_like_by_user(current_user.id) else ''}}"
+                                data-postid="{{post.id}}">
+                                <span class="glyphicon glyphicon-thumbs-up " aria-hidden="true"></span>
+                                <span class="content">{{post.get_likes()}}</span>
+                            </button>
+
+                            <a href="{{url_for('detail', post_id=post.id)}}" class="btn btn-default"
+                                role="button">Look</a>
+                        </p>
+                    </div>
+                    {% endfor %}
+                    {% else %}
+                    <p>No Message</p>
+
+                    {% endif %}
+                </p>
+                <hr>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+
+    {% block script %}
+    <script>
+        let likeBtns = document.querySelectorAll(".likes");
+        likeBtns.forEach(btn => {
+            const content = btn.querySelector(".content");
+            btn.addEventListener('click', e => {
+                fetchLike(btn.dataset.postid).then(({ error, is_like, likes }) => {
+                    if (error) return
+                    if (is_like) {
+                        btn.classList.add('like-hover-btn');
+                    } else {
+                        btn.classList.remove('like-hover-btn');
+                    }
+                    content.innerText = likes
+                })
+            })
+        });
+    </script>
+    {% endblock %}

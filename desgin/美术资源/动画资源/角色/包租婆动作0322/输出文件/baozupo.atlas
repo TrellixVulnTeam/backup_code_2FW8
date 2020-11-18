@@ -1,0 +1,153 @@
+
+baozupo.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bizi
+  rotate: false
+  xy: 206, 9
+  size: 59, 31
+  orig: 59, 31
+  offset: 0, 0
+  index: -1
+faka01
+  rotate: false
+  xy: 887, 78
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+faka02
+  rotate: false
+  xy: 648, 44
+  size: 50, 40
+  orig: 50, 40
+  offset: 0, 0
+  index: -1
+faka03
+  rotate: false
+  xy: 836, 77
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: -1
+faka04
+  rotate: false
+  xy: 274, 18
+  size: 50, 41
+  orig: 50, 41
+  offset: 0, 0
+  index: -1
+faka05
+  rotate: false
+  xy: 326, 18
+  size: 47, 41
+  orig: 47, 41
+  offset: 0, 0
+  index: -1
+faka06
+  rotate: false
+  xy: 937, 79
+  size: 49, 47
+  orig: 49, 47
+  offset: 0, 0
+  index: -1
+faka07
+  rotate: false
+  xy: 783, 84
+  size: 51, 42
+  orig: 51, 42
+  offset: 0, 0
+  index: -1
+shenti01
+  rotate: false
+  xy: 405, 59
+  size: 105, 67
+  orig: 105, 67
+  offset: 0, 0
+  index: -1
+shenti02
+  rotate: false
+  xy: 596, 86
+  size: 103, 40
+  orig: 103, 40
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 158, 42
+  size: 114, 84
+  orig: 114, 84
+  offset: 0, 0
+  index: -1
+toufa01
+  rotate: false
+  xy: 2, 10
+  size: 154, 116
+  orig: 154, 116
+  offset: 0, 0
+  index: -1
+toufa02
+  rotate: false
+  xy: 274, 61
+  size: 129, 65
+  orig: 129, 65
+  offset: 0, 0
+  index: -1
+tuoxie
+  rotate: true
+  xy: 512, 64
+  size: 62, 82
+  orig: 62, 82
+  offset: 0, 0
+  index: -1
+xiangyan
+  rotate: false
+  xy: 596, 60
+  size: 50, 24
+  orig: 50, 24
+  offset: 0, 0
+  index: -1
+yanjing
+  rotate: false
+  xy: 701, 91
+  size: 80, 35
+  orig: 80, 35
+  offset: 0, 0
+  index: -1
+youjiao
+  rotate: false
+  xy: 988, 77
+  size: 34, 49
+  orig: 34, 49
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: true
+  xy: 426, 15
+  size: 42, 44
+  orig: 42, 44
+  offset: 0, 0
+  index: -1
+zuiba
+  rotate: true
+  xy: 472, 10
+  size: 47, 29
+  orig: 47, 29
+  offset: 0, 0
+  index: -1
+zuojiao
+  rotate: true
+  xy: 375, 22
+  size: 35, 49
+  orig: 35, 49
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: true
+  xy: 158, 2
+  size: 38, 46
+  orig: 38, 46
+  offset: 0, 0
+  index: -1

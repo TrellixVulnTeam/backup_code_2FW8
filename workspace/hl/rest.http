@@ -1,0 +1,51 @@
+POST https://m.ctrip.com/restapi/soa2/12455/prod/json/searchProduct?_fxpcqlniredt=09031107110690501469 HTTP/1.1
+
+{
+    "pindex": 35,
+    "pSize": 30,
+    "orderBy": 0,
+    "conds": [
+        {
+            "cond": "date",
+            "value": "2019-07-03,2019-07-04"
+        }
+    ],
+    "cityid": 14,
+    "cityname": "苏州",
+    "head": {
+        "cid": "09031107110690501469",
+        "ctok": "", 
+        "cver": "1.0",
+        "lang": "01",
+        "sid": "8888",
+        "syscode": "09",
+        "auth": "",
+        "xsid": "",
+        "extension": [
+            {
+                "name": "webp",
+                "value": "1"
+            },
+            {
+                "name": "cityid",
+                "value": ""
+            },
+            {
+                "name": "platform",
+                "value": "pc"
+            },
+            {
+                "name": "source",
+                "value": "2"
+            },
+            {
+                "name": "pagecode",
+                "value": "10650016817"
+            },
+            {
+                "name": "module",
+                "value": "11"
+            }
+        ]
+    }
+}

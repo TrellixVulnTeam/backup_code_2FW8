@@ -1,0 +1,19 @@
+<!--pages/result.wxml-->
+<view class="container">
+
+  <view class="main">
+    <view class="answer" wx:for="{{plans}}" wx:key="index">
+      <h2>方案{{index + 1}}</h2>
+      <view class="money">
+        花费:
+        <text>{{item.money}}</text>
+      </view>
+      <view class="boxs">
+        <div class="box" wx:for="{{item.items}}" wx:key="id">
+          {{item.name}} * {{item.num}}
+        </div>
+      </view>
+
+    </view>
+  </view>
+</view>

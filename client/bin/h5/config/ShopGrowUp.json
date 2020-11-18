@@ -1,0 +1,602 @@
+{
+  "1": {
+    "Level": 1,
+    "ExpOrMoney": 10000,
+    "ShopIncome": 10,
+    "ShopSkin": 1
+  },
+  "2": {
+    "Level": 2,
+    "ExpOrMoney": 11000,
+    "ShopIncome": 10,
+    "ShopSkin": 1
+  },
+  "3": {
+    "Level": 3,
+    "ExpOrMoney": 12000,
+    "ShopIncome": 10,
+    "ShopSkin": 1
+  },
+  "4": {
+    "Level": 4,
+    "ExpOrMoney": 13000,
+    "ShopIncome": 10,
+    "ShopSkin": 1
+  },
+  "5": {
+    "Level": 5,
+    "ExpOrMoney": 14000,
+    "ShopIncome": 10,
+    "ShopSkin": 1
+  },
+  "6": {
+    "Level": 6,
+    "ExpOrMoney": 15000,
+    "ShopIncome": 10,
+    "ShopSkin": 1
+  },
+  "7": {
+    "Level": 7,
+    "ExpOrMoney": 16000,
+    "ShopIncome": 10,
+    "ShopSkin": 1
+  },
+  "8": {
+    "Level": 8,
+    "ExpOrMoney": 17000,
+    "ShopIncome": 11,
+    "ShopSkin": 1
+  },
+  "9": {
+    "Level": 9,
+    "ExpOrMoney": 18000,
+    "ShopIncome": 11,
+    "ShopSkin": 1
+  },
+  "10": {
+    "Level": 10,
+    "ExpOrMoney": 19000,
+    "ShopIncome": 11,
+    "ShopSkin": 1
+  },
+  "11": {
+    "Level": 11,
+    "ExpOrMoney": 20000,
+    "ShopIncome": 11,
+    "ShopSkin": 2
+  },
+  "12": {
+    "Level": 12,
+    "ExpOrMoney": 21000,
+    "ShopIncome": 11,
+    "ShopSkin": 2
+  },
+  "13": {
+    "Level": 13,
+    "ExpOrMoney": 22000,
+    "ShopIncome": 11,
+    "ShopSkin": 2
+  },
+  "14": {
+    "Level": 14,
+    "ExpOrMoney": 23000,
+    "ShopIncome": 11,
+    "ShopSkin": 2
+  },
+  "15": {
+    "Level": 15,
+    "ExpOrMoney": 24000,
+    "ShopIncome": 11,
+    "ShopSkin": 2
+  },
+  "16": {
+    "Level": 16,
+    "ExpOrMoney": 25000,
+    "ShopIncome": 12,
+    "ShopSkin": 2
+  },
+  "17": {
+    "Level": 17,
+    "ExpOrMoney": 26000,
+    "ShopIncome": 12,
+    "ShopSkin": 2
+  },
+  "18": {
+    "Level": 18,
+    "ExpOrMoney": 27000,
+    "ShopIncome": 12,
+    "ShopSkin": 2
+  },
+  "19": {
+    "Level": 19,
+    "ExpOrMoney": 28000,
+    "ShopIncome": 12,
+    "ShopSkin": 2
+  },
+  "20": {
+    "Level": 20,
+    "ExpOrMoney": 29000,
+    "ShopIncome": 12,
+    "ShopSkin": 2
+  },
+  "21": {
+    "Level": 21,
+    "ExpOrMoney": 30000,
+    "ShopIncome": 12,
+    "ShopSkin": 3
+  },
+  "22": {
+    "Level": 22,
+    "ExpOrMoney": 31000,
+    "ShopIncome": 12,
+    "ShopSkin": 3
+  },
+  "23": {
+    "Level": 23,
+    "ExpOrMoney": 32000,
+    "ShopIncome": 12,
+    "ShopSkin": 3
+  },
+  "24": {
+    "Level": 24,
+    "ExpOrMoney": 33000,
+    "ShopIncome": 12,
+    "ShopSkin": 3
+  },
+  "25": {
+    "Level": 25,
+    "ExpOrMoney": 34000,
+    "ShopIncome": 12,
+    "ShopSkin": 3
+  },
+  "26": {
+    "Level": 26,
+    "ExpOrMoney": 35000,
+    "ShopIncome": 12,
+    "ShopSkin": 3
+  },
+  "27": {
+    "Level": 27,
+    "ExpOrMoney": 36000,
+    "ShopIncome": 12,
+    "ShopSkin": 3
+  },
+  "28": {
+    "Level": 28,
+    "ExpOrMoney": 37000,
+    "ShopIncome": 12,
+    "ShopSkin": 3
+  },
+  "29": {
+    "Level": 29,
+    "ExpOrMoney": 38000,
+    "ShopIncome": 13,
+    "ShopSkin": 3
+  },
+  "30": {
+    "Level": 30,
+    "ExpOrMoney": 39000,
+    "ShopIncome": 13,
+    "ShopSkin": 3
+  },
+  "31": {
+    "Level": 31,
+    "ExpOrMoney": 40000,
+    "ShopIncome": 13,
+    "ShopSkin": 4
+  },
+  "32": {
+    "Level": 32,
+    "ExpOrMoney": 41000,
+    "ShopIncome": 13,
+    "ShopSkin": 4
+  },
+  "33": {
+    "Level": 33,
+    "ExpOrMoney": 42000,
+    "ShopIncome": 13,
+    "ShopSkin": 4
+  },
+  "34": {
+    "Level": 34,
+    "ExpOrMoney": 43000,
+    "ShopIncome": 13,
+    "ShopSkin": 4
+  },
+  "35": {
+    "Level": 35,
+    "ExpOrMoney": 44000,
+    "ShopIncome": 13,
+    "ShopSkin": 4
+  },
+  "36": {
+    "Level": 36,
+    "ExpOrMoney": 45000,
+    "ShopIncome": 13,
+    "ShopSkin": 4
+  },
+  "37": {
+    "Level": 37,
+    "ExpOrMoney": 46000,
+    "ShopIncome": 13,
+    "ShopSkin": 4
+  },
+  "38": {
+    "Level": 38,
+    "ExpOrMoney": 47000,
+    "ShopIncome": 13,
+    "ShopSkin": 4
+  },
+  "39": {
+    "Level": 39,
+    "ExpOrMoney": 48000,
+    "ShopIncome": 13,
+    "ShopSkin": 4
+  },
+  "40": {
+    "Level": 40,
+    "ExpOrMoney": 49000,
+    "ShopIncome": 13,
+    "ShopSkin": 4
+  },
+  "41": {
+    "Level": 41,
+    "ExpOrMoney": 50000,
+    "ShopIncome": 13,
+    "ShopSkin": 5
+  },
+  "42": {
+    "Level": 42,
+    "ExpOrMoney": 51000,
+    "ShopIncome": 13,
+    "ShopSkin": 5
+  },
+  "43": {
+    "Level": 43,
+    "ExpOrMoney": 52000,
+    "ShopIncome": 13,
+    "ShopSkin": 5
+  },
+  "44": {
+    "Level": 44,
+    "ExpOrMoney": 53000,
+    "ShopIncome": 13,
+    "ShopSkin": 5
+  },
+  "45": {
+    "Level": 45,
+    "ExpOrMoney": 54000,
+    "ShopIncome": 14,
+    "ShopSkin": 5
+  },
+  "46": {
+    "Level": 46,
+    "ExpOrMoney": 55000,
+    "ShopIncome": 14,
+    "ShopSkin": 5
+  },
+  "47": {
+    "Level": 47,
+    "ExpOrMoney": 56000,
+    "ShopIncome": 14,
+    "ShopSkin": 5
+  },
+  "48": {
+    "Level": 48,
+    "ExpOrMoney": 57000,
+    "ShopIncome": 14,
+    "ShopSkin": 5
+  },
+  "49": {
+    "Level": 49,
+    "ExpOrMoney": 58000,
+    "ShopIncome": 14,
+    "ShopSkin": 5
+  },
+  "50": {
+    "Level": 50,
+    "ExpOrMoney": 59000,
+    "ShopIncome": 14,
+    "ShopSkin": 5
+  },
+  "51": {
+    "Level": 51,
+    "ExpOrMoney": 60000,
+    "ShopIncome": 14,
+    "ShopSkin": 6
+  },
+  "52": {
+    "Level": 52,
+    "ExpOrMoney": 61000,
+    "ShopIncome": 14,
+    "ShopSkin": 6
+  },
+  "53": {
+    "Level": 53,
+    "ExpOrMoney": 61999,
+    "ShopIncome": 14,
+    "ShopSkin": 6
+  },
+  "54": {
+    "Level": 54,
+    "ExpOrMoney": 62999,
+    "ShopIncome": 14,
+    "ShopSkin": 6
+  },
+  "55": {
+    "Level": 55,
+    "ExpOrMoney": 63999,
+    "ShopIncome": 14,
+    "ShopSkin": 6
+  },
+  "56": {
+    "Level": 56,
+    "ExpOrMoney": 64999,
+    "ShopIncome": 14,
+    "ShopSkin": 6
+  },
+  "57": {
+    "Level": 57,
+    "ExpOrMoney": 65999,
+    "ShopIncome": 14,
+    "ShopSkin": 6
+  },
+  "58": {
+    "Level": 58,
+    "ExpOrMoney": 66999,
+    "ShopIncome": 14,
+    "ShopSkin": 6
+  },
+  "59": {
+    "Level": 59,
+    "ExpOrMoney": 67999,
+    "ShopIncome": 14,
+    "ShopSkin": 6
+  },
+  "60": {
+    "Level": 60,
+    "ExpOrMoney": 68999,
+    "ShopIncome": 14,
+    "ShopSkin": 6
+  },
+  "61": {
+    "Level": 61,
+    "ExpOrMoney": 69999,
+    "ShopIncome": 14,
+    "ShopSkin": 7
+  },
+  "62": {
+    "Level": 62,
+    "ExpOrMoney": 70999,
+    "ShopIncome": 14,
+    "ShopSkin": 7
+  },
+  "63": {
+    "Level": 63,
+    "ExpOrMoney": 71999,
+    "ShopIncome": 14,
+    "ShopSkin": 7
+  },
+  "64": {
+    "Level": 64,
+    "ExpOrMoney": 72999,
+    "ShopIncome": 14,
+    "ShopSkin": 7
+  },
+  "65": {
+    "Level": 65,
+    "ExpOrMoney": 73999,
+    "ShopIncome": 14,
+    "ShopSkin": 7
+  },
+  "66": {
+    "Level": 66,
+    "ExpOrMoney": 74999,
+    "ShopIncome": 14,
+    "ShopSkin": 7
+  },
+  "67": {
+    "Level": 67,
+    "ExpOrMoney": 75999,
+    "ShopIncome": 15,
+    "ShopSkin": 7
+  },
+  "68": {
+    "Level": 68,
+    "ExpOrMoney": 76999,
+    "ShopIncome": 15,
+    "ShopSkin": 7
+  },
+  "69": {
+    "Level": 69,
+    "ExpOrMoney": 77999,
+    "ShopIncome": 15,
+    "ShopSkin": 7
+  },
+  "70": {
+    "Level": 70,
+    "ExpOrMoney": 78999,
+    "ShopIncome": 15,
+    "ShopSkin": 7
+  },
+  "71": {
+    "Level": 71,
+    "ExpOrMoney": 79999,
+    "ShopIncome": 15,
+    "ShopSkin": 8
+  },
+  "72": {
+    "Level": 72,
+    "ExpOrMoney": 80999,
+    "ShopIncome": 15,
+    "ShopSkin": 8
+  },
+  "73": {
+    "Level": 73,
+    "ExpOrMoney": 81999,
+    "ShopIncome": 15,
+    "ShopSkin": 8
+  },
+  "74": {
+    "Level": 74,
+    "ExpOrMoney": 82999,
+    "ShopIncome": 15,
+    "ShopSkin": 8
+  },
+  "75": {
+    "Level": 75,
+    "ExpOrMoney": 83999,
+    "ShopIncome": 15,
+    "ShopSkin": 8
+  },
+  "76": {
+    "Level": 76,
+    "ExpOrMoney": 84999,
+    "ShopIncome": 15,
+    "ShopSkin": 8
+  },
+  "77": {
+    "Level": 77,
+    "ExpOrMoney": 85999,
+    "ShopIncome": 15,
+    "ShopSkin": 8
+  },
+  "78": {
+    "Level": 78,
+    "ExpOrMoney": 86999,
+    "ShopIncome": 15,
+    "ShopSkin": 8
+  },
+  "79": {
+    "Level": 79,
+    "ExpOrMoney": 87999,
+    "ShopIncome": 15,
+    "ShopSkin": 8
+  },
+  "80": {
+    "Level": 80,
+    "ExpOrMoney": 88999,
+    "ShopIncome": 15,
+    "ShopSkin": 8
+  },
+  "81": {
+    "Level": 81,
+    "ExpOrMoney": 89999,
+    "ShopIncome": 15,
+    "ShopSkin": 9
+  },
+  "82": {
+    "Level": 82,
+    "ExpOrMoney": 90999,
+    "ShopIncome": 15,
+    "ShopSkin": 9
+  },
+  "83": {
+    "Level": 83,
+    "ExpOrMoney": 91999,
+    "ShopIncome": 15,
+    "ShopSkin": 9
+  },
+  "84": {
+    "Level": 84,
+    "ExpOrMoney": 92999,
+    "ShopIncome": 15,
+    "ShopSkin": 9
+  },
+  "85": {
+    "Level": 85,
+    "ExpOrMoney": 93999,
+    "ShopIncome": 15,
+    "ShopSkin": 9
+  },
+  "86": {
+    "Level": 86,
+    "ExpOrMoney": 94999,
+    "ShopIncome": 15,
+    "ShopSkin": 9
+  },
+  "87": {
+    "Level": 87,
+    "ExpOrMoney": 95999,
+    "ShopIncome": 15,
+    "ShopSkin": 9
+  },
+  "88": {
+    "Level": 88,
+    "ExpOrMoney": 96999,
+    "ShopIncome": 15,
+    "ShopSkin": 9
+  },
+  "89": {
+    "Level": 89,
+    "ExpOrMoney": 97999,
+    "ShopIncome": 15,
+    "ShopSkin": 9
+  },
+  "90": {
+    "Level": 90,
+    "ExpOrMoney": 98999,
+    "ShopIncome": 15,
+    "ShopSkin": 9
+  },
+  "91": {
+    "Level": 91,
+    "ExpOrMoney": 99999,
+    "ShopIncome": 15,
+    "ShopSkin": 10
+  },
+  "92": {
+    "Level": 92,
+    "ExpOrMoney": 101000,
+    "ShopIncome": 15,
+    "ShopSkin": 10
+  },
+  "93": {
+    "Level": 93,
+    "ExpOrMoney": 102000,
+    "ShopIncome": 15,
+    "ShopSkin": 10
+  },
+  "94": {
+    "Level": 94,
+    "ExpOrMoney": 103000,
+    "ShopIncome": 15,
+    "ShopSkin": 10
+  },
+  "95": {
+    "Level": 95,
+    "ExpOrMoney": 104000,
+    "ShopIncome": 15,
+    "ShopSkin": 10
+  },
+  "96": {
+    "Level": 96,
+    "ExpOrMoney": 105000,
+    "ShopIncome": 16,
+    "ShopSkin": 10
+  },
+  "97": {
+    "Level": 97,
+    "ExpOrMoney": 106000,
+    "ShopIncome": 16,
+    "ShopSkin": 10
+  },
+  "98": {
+    "Level": 98,
+    "ExpOrMoney": 107000,
+    "ShopIncome": 16,
+    "ShopSkin": 10
+  },
+  "99": {
+    "Level": 99,
+    "ExpOrMoney": 108000,
+    "ShopIncome": 16,
+    "ShopSkin": 10
+  },
+  "100": {
+    "Level": 100,
+    "ExpOrMoney": 109000,
+    "ShopIncome": 16,
+    "ShopSkin": 10
+  }
+}

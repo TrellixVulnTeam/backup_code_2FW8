@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+</head>
+
+<body>
+  <h1>hello</h1>
+  <div id="sketch-holder">
+    <!-- Our sketch will go here! -->
+  </div>
+  <p>footer</p>
+  <script>
+    function setup() {
+      createCanvas(400, 400);
+      for (let x = 0; x < width; x += 10) {
+        for (let y = 0; y < height; y += 10) {
+          const n = noisex(x / 100, y / 100);
+          push();
+          fill(`rgba(0, 0, 0, ${n})`);
+          rect(x, y, 10, 10)
+          pop();
+        }
+      }
+    }
+
+    function draw() {
+      // background(220);
+    }
+
+    //随机值
+    const MAXSIZE = 512;
+    // p = new Array(MAXSIZE).fill(0).map(v => new Array(MAXSIZE).fill(0).map(v => Math.floor(Math.random() * 10000) / 10000));
+
+    function noisex(x, y) {
+      ix = Math.floor(x);
+      iy = Math.floor(y);
+      px = x - ix;
+      py = y - iy;
+
+      //缓动曲线值
+      fracX = fade(px);
+      fracY = fade(py);
+
+      //a点
+      // n1 = p[ix & (MAXSIZE - 1)][iy & (MAXSIZE - 1)]
+      // //b点
+      // n2 = p[(ix + 1) & (MAXSIZE - 1)][iy & (MAXSIZE - 1)]
+      // n3 = p[ix & (MAXSIZE - 1)][(iy + 1) & (MAXSIZE - 1)]
+      // n4 = p[(ix + 1) & (MAXSIZE - 1)][(iy + 1) & (MAXSIZE - 1)]
+
+      n1 = hash(ix, iy)
+      n2 = hash(ix + 1, iy)
+      n3 = hash(ix, iy + 1)
+      n4 = hash(ix + 1, iy + 1)
+
+      na = interpolate(n1, n2, fracX);
+      nb = interpolate(n3, n4, fracX);
+
+      return interpolate(na, nb, fracY);
+    }
+
+    //插值函数
+    function interpolate(a, b, t) {
+      return a + (b - a) * t;
+    }
+
+    //缓动函数
+    function fade(x) {
+      return (x * x * x * (x * (6 * x - 15) + 10));
+    }
+
+    function hash(i, j) {
+      const OFFSET_BASIS = 2166136261;
+      const FNV_PRIME = 1.6777619;
+      const t = ((OFFSET_BASIS ^ Math.floor(i)) ^ Math.floor(j)) * FNV_PRIME;
+      return t - Math.floor(t);
+    }
+  </script>
+</body>
+
+</html>

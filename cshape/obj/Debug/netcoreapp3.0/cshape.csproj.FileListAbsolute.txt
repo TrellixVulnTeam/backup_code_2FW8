@@ -1,0 +1,11 @@
+D:\code\cshape\bin\Debug\netcoreapp3.0\cshape.exe
+D:\code\cshape\bin\Debug\netcoreapp3.0\cshape.deps.json
+D:\code\cshape\bin\Debug\netcoreapp3.0\cshape.runtimeconfig.json
+D:\code\cshape\bin\Debug\netcoreapp3.0\cshape.runtimeconfig.dev.json
+D:\code\cshape\bin\Debug\netcoreapp3.0\cshape.dll
+D:\code\cshape\bin\Debug\netcoreapp3.0\cshape.pdb
+D:\code\cshape\obj\Debug\netcoreapp3.0\cshape.csprojAssemblyReference.cache
+D:\code\cshape\obj\Debug\netcoreapp3.0\cshape.AssemblyInfoInputs.cache
+D:\code\cshape\obj\Debug\netcoreapp3.0\cshape.AssemblyInfo.cs
+D:\code\cshape\obj\Debug\netcoreapp3.0\cshape.dll
+D:\code\cshape\obj\Debug\netcoreapp3.0\cshape.pdb

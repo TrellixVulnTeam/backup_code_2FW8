@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>合计项目</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background: #efefef;
+    }
+
+    .topic {
+      padding: .5rem;
+      background: white;
+      width: 600px;
+      border: 1px solid #aaa;
+      margin: 12px;
+      border-radius: 4px;
+    }
+
+    .topic h2 {
+      font-size: 1.2rem;
+      padding: .4rem 0;
+    }
+
+    .topic textarea {
+      width: 100%;
+      max-width: 100%;
+      height: 3em;
+      padding: .2em;
+      box-sizing: border-box;
+    }
+
+    #generator {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-size: 1.2rem;
+      padding: .4em;
+    }
+
+    .main {
+      display: flex;
+      flex-grow: 1;
+    }
+
+    #total {
+      padding: .4em;
+      margin: 12px;
+      background: white;
+      flex-grow: 1;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      word-wrap: break-word;
+      word-break: break-all;
+      overflow: hidden;
+    }
+
+    .topic .input {
+      font-size: 6px;
+      width: 40%;
+      height: 3em;
+    }
+
+    .topic .answer {
+      font-size: 6px;
+    }
+
+    #total_show {
+      font-size: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div class="topic">
+        <h2>题目1</h2>
+        <h4>数组</h4>
+        <textarea id="input"></textarea>
+        <h4>结果</h4>
+        <textarea id="answer"></textarea>
+    </div> -->
+  <div class="main">
+    <div id="content">
+
+    </div>
+    <div id="total">
+      <h2>总结果</h2>
+      <div id="total_show">
+
+      </div>
+    </div>
+  </div>
+
+
+  <button id="generator">
+    生成
+  </button>
+
+</body>
+<script>
+
+  function createElement(htmlText) {
+    const div = document.createElement('div');
+    div.innerHTML = htmlText;
+    return div.children[0];
+  }
+
+  const gD = (index, value) => ({
+    index,
+    value
+  });
+
+  const w = gD.bind(null, 0);
+  const q = gD.bind(null, 1);
+  const b = gD.bind(null, 2);
+  const s = gD.bind(null, 3);
+  const g = gD.bind(null, 4);
+
+  //统一的生成函数
+  const Topic = (function () {
+    const topics = [];
+    const c = document.querySelector("#content");
+    const temp = ({
+      topicTitle = "题目",
+      inputTitle = "数组",
+      answerTitle = "结果",
+    }) => `
+            <div class="topic">
+                <h2>${topicTitle}</h2>
+                <h4>${inputTitle}</h4>
+                <textarea class="input"></textarea>
+                <h4>${answerTitle}</h4>
+                <textarea class="answer"></textarea>
+            </div>
+        `
+    const generator = (calcFunc, tempOptions = {}) => {
+      const elem = createElement(temp(tempOptions));
+      const input = elem.querySelector(".input");
+      const answer = elem.querySelector(".answer");
+      topics.push({
+        input,
+        answer,
+        calcFunc,
+      });
+
+      c.appendChild(elem);
+    }
+
+    const run = () => {
+      const results = [];
+      topics.forEach(({
+        input,
+        answer,
+        calcFunc
+      }) => {
+        const inputArr = input.value.split(",");
+        if (input.value.trim() !== "") {
+          const result = calcFunc(inputArr, input.value);
+          answer.value = result;
+          results.push(...result);
+        }
+
+      });
+
+      return results;
+    }
+
+    return {
+      generator,
+      run,
+    }
+  }());
+
+  const units = [
+    "个", "十", "百", "千", "万"
+  ];
+
+  function analyNumber(num, nunits = units) {
+
+    if (!(nunits instanceof Array)) {
+      nunits = nunits.split("").reverse();
+    }
+
+    const nums = String(num).split("").reverse();
+
+    const result = {}
+    for (let i = 0; i < nums.length; i++) {
+      result[nunits[i]] = nums[i];
+    }
+
+    return result;
+  }
+
+  function unAnalyNumber(numObj) {
+    let s = "";
+    for (let unit of [...units].reverse()) {
+      if (!!numObj[unit] || numObj[unit] === 0) {
+        s += numObj[unit];
+      }
+    }
+    return s;
+  }
+
+  function getSectionNum(numObj, points) {
+    const result = {};
+    for (let p of points) {
+      result[p] = numObj[p];
+    }
+
+    return result;
+  }
+
+  function explandObj(arrs) {
+
+    const nowArr = [...arrs];
+    const currentArr = nowArr.shift();
+
+    return currentArr.map(val => {
+      if (nowArr.length === 0) {
+        return { ...val };
+      }
+
+      const r = explandObj(nowArr).map(v => {
+        return Object.assign({}, val, v)
+      });
+      return r;
+    }).flat();
+  }
+
+  function getAdjectNumObjs(numObj, count = 8, numKeys = []) {
+    let keys;
+    let num;
+
+    if (typeof numObj === 'string') {
+      num = numObj;
+      keys = numKeys;
+    } else {
+      num = unAnalyNumber(numObj);
+      keys = Object.keys(numObj);
+    }
+
+    const len = String(num).length
+    let start = parseInt(num) - Math.floor(count / 2);
+
+    if (start < 0) {
+      start += Math.pow(10, len);
+    }
+
+    const result = [];
+    for (let i = 0; i <= count; i++) {
+      const n = ("0".repeat(len) + String((start) + i)).slice(-len);
+
+      const answer = {};
+      for (let j = 0; j < keys.length; j++) {
+        if (n.length < 1) break;
+        answer[keys[j]] = n[j];
+      }
+
+      result.push(answer);
+    }
+    return result;
+  }
+
+
+  function expland(arrs) {
+
+    const nowArr = [...arrs];
+    const currentArr = nowArr.shift();
+
+    return currentArr.map(val => {
+      if (nowArr.length === 0) {
+        return val;
+      }
+      return expland(nowArr).map(v => `${val}${v}`);
+    }).flat();
+  }
+
+  function analyNumberQuene(nums, points) {
+    const nums_arr = points.split("").map(i => nums.split(""))
+    const expland_nums = expland(nums_arr)
+    const localUnits = points.split("")
+    return expland_nums.map(num => {
+      const r = {}
+      for (let i = 0; i < localUnits.length; i++) {
+        r[localUnits[i]] = num[i]
+      }
+      return r;
+    });
+  }
+
+  function incrementBit(valStr, inc) {
+    const vals = valStr.split("")
+    for (let i = 0; i < vals.length; i++) {
+      if (inc < 0) {
+        vals[i] = (parseInt(vals[i]) + 10 + inc) % 10;
+      } else {
+        vals[i] = (parseInt(vals[i]) + inc) % 10;
+      }
+    }
+
+    return vals.join("");
+  }
+
+  function SuppleNumObj(numObj) {
+    const key = Object.keys(numObj);
+    const noUnit = units.filter(unit => key.indexOf(unit) === -1);
+    const results = noUnit.reduce((arr, unit) => {
+      return new Array(10).fill(0).map(($, i) => {
+        return arr.map(num => Object.assign({}, num, { [`${unit}`]: i }))
+      }).flat();
+    }, [numObj]);
+
+    return results.map(v => unAnalyNumber(v));
+  }
+
+  function calcInterNum(a, b) {
+    const len = String(a).length
+    return ("0".repeat(len) + Math.abs(parseInt(b) - parseInt(a))).slice(-len)
+  }
+
+  function toLenString(str, len) {
+    return ("0".repeat(len) + str).slice(-len)
+  }
+  //计算差值
+  function handleInterpolate(nums) {
+    if (nums.length < 1) {
+      return "0";
+    }
+    const [first, ...rest] = nums;
+    const result = rest.reduce((a, num) => a - parseInt(num), parseInt(first));
+
+    return Math.abs(result);
+  }
+
+  //计算平均值
+  function calcAvg(nums) {
+    const total = nums.reduce((a, v) => a + parseInt(v), 0);
+    return Math.floor(total / nums.length);
+  }
+
+  //计算数组之间的关系
+  function calcArr(arr, calcFunc, count = 2, digit_count = 4) {
+    let result = [];
+    for (let i = 0; i < arr.length - count + 1; i++) {
+      const nums = arr.slice(i, i + count);
+      const r = calcFunc(nums)
+      result.push(`${'0'.repeat(digit_count)}${r}`.slice(-digit_count));
+    }
+
+    return result;
+  }
+
+  //计算差值
+  const calcInter = (a, b) => {
+    let keys = Object.keys(a);
+
+    const results = ("0".repeat(keys.length) + Math.abs(parseInt(unAnalyNumber(a)) - parseInt(unAnalyNumber(b)))).slice(-keys.length).split("");
+
+    const answer = {};
+    for (let i = 0; i < keys.length; i++) {
+      if (results.length < 1) break;
+      answer[keys[i]] = results[i];
+    }
+
+    return answer;
+  }
+
+  //计算和值
+  const calcSumInter = (a, b) => {
+    let keys = Object.keys(a);
+    let len = keys.length
+    const results = ("0".repeat(len) + (parseInt(unAnalyNumber(a)) + parseInt(unAnalyNumber(b)))).slice(-len)
+    const answer = {};
+    for (let i = 0; i < keys.length; i++) {
+      if (results.length < 1) break;
+      answer[keys[i]] = results[i];
+    }
+
+    return answer;
+  }
+
+  //计算几何平均数
+  function calcSqrtAvgToObj(a, b) {
+    let keys = Object.keys(a);
+    const ra = parseInt(unAnalyNumber(a));
+    const rb = parseInt(unAnalyNumber(b));
+    const results = ("0".repeat(keys.length) + Math.floor(Math.sqrt(ra * rb))).slice(-keys.length).split("");
+
+    const answer = {};
+    for (let i = 0; i < keys.length; i++) {
+      if (results.length < 1) break;
+      answer[keys[i]] = results[i];
+    }
+
+    return answer;
+  }
+
+  function calcAvgToObj(...arr) {
+    let keys = Object.keys(arr[0]);
+
+    const total = arr.reduce((a, v) => a + parseInt(unAnalyNumber(v)), 0);
+    const results = ("0".repeat(keys.length) + parseInt(total / arr.length)).slice(-keys.length).split("");
+
+    const answer = {};
+    for (let i = 0; i < keys.length; i++) {
+      if (results.length < 1) break;
+      answer[keys[i]] = results[i];
+    }
+
+    return answer;
+  }
+
+
+  const handleSequence = [
+    ["万千", "百十", "个"],
+    ["万百", "千十", "个"],
+    ["万十", "千百", "个"],
+    ["万千", "百个", "十"],
+    ["万百", "千个", "十"],
+    ["万个", "千百", "十"],
+    ["万千", "十个", "百"],
+    ["万十", "千个", "百"],
+    ["万个", "千十", "百"],
+    ["万百", "十个", "千"],
+    ["万十", "百个", "千"],
+    ["万个", "百十", "千"],
+    ["千百", "十个", "万"],
+    ["千十", "百个", "万"],
+    ["千个", "百十", "万"],
+  ];
+
+  const handleSequence2 = [
+    ["万千", "百", "十", "个"],
+    ["万百", "千", "十", "个"],
+    ["万十", "千", "百", "个"],
+    ["万个", "千", "百", "十"],
+    ["千百", "万", "十", "个"],
+    ["千十", "万", "百", "个"],
+    ["千个", "万", "百", "十"],
+    ["百十", "万", "千", "个"],
+    ["百个", "万", "千", "十"],
+    ["十个", "万", "千", "百"],
+  ];
+
+  const handleSequence4 = [
+    ["万千百十", "个"],
+    ["万千百个", "十"],
+    ["万千十个", "百"],
+    ["万百十个", "千"],
+    ["千百十个", "万"],
+  ];
+
+  const handleSequence2m3 = [
+    ["万千", "百十个"],
+    ["万百", "千十个"],
+    ["万十", "千百个"],
+    ["万个", "千百十"],
+    ["千百", "万十个"],
+    ["千十", "万百个"],
+    ["千个", "万百十"],
+    ["百十", "万千个"],
+    ["百个", "万千十"],
+    ["十个", "万千百"],
+  ];
+
+  const handleSequence2a2 = [
+    ["万千", "百十", "个"],
+    ["万百", "千十", "个"],
+    ["千百", "万十", "个"],
+    ["百十", "万千", "个"],
+    ["百个", "万千", "十"],
+    ["十个", "万千", "百"],
+  ];
+
+  const handleSequence3 = [
+    ["万千百", "十个"],
+    ["万千十", "百个"],
+    ["万千个", "百十"],
+    ["万百十", "千个"],
+    ["万百个", "千十"],
+    ["万十个", "千百"],
+    ["千百十", "万个"],
+    ["千百个", "万十"],
+    ["千十个", "万百"],
+    ["百十个", "万千"],
+  ];
+
+  function d12(valuesObjs) {
+    const size = valuesObjs.length;
+    const maps = {};
+    [["万千", 4], ["十个", 4], ["百十个", size], ["万千百", size]].forEach(([seq, size]) => {
+      const r = valuesObjs.slice(0, size).map(valObj => {
+        const r = unAnalyNumber(getSectionNum(valObj, seq)).split("").reverse();
+        return analyNumber(r.join(""), seq);
+      });
+      maps[seq] = r;
+    });
+
+    return [
+      ["万千", "百十个"],
+      ["十个", "万千百"],
+    ].map(([a, b]) => {
+      return explandObj([
+        maps[a],
+        maps[b]
+      ])
+    }).flat().map(v => unAnalyNumber(v));
+  }
+
+  function d10(arrText) {
+    const values = arrText.trim().split(",").map(v => v.split("").reverse().join(""));
+    if (values.length < 1) {
+      return [];
+    }
+    const valueObjs = values.map(v => analyNumber(v))
+    const valMap = {};
+    ["万千", "百十", "百个", "千百", "十个", "万百"].forEach((units) => {
+      const r = valueObjs.map(valObj => {
+        return getSectionNum(valObj, units);
+      });
+      valMap[units] = r;
+    });
+    const es = [["万千", "百十"],
+    ["万千", "百个"],
+    ["万千", "十个"],
+    ["万百", "十个"],
+    ["千百", "十个"]].map(([a, b]) => {
+
+      const r = explandObj([
+        valMap[a],
+        valMap[b]
+      ]);
+      return r.map(v => SuppleNumObj(v));
+    });
+    return es;
+  }
+
+  function d13(valuesObjs) {
+    const maps = {};
+    const vals = handleSequence2a2.forEach(([sa]) => {
+      const rs = valuesObjs.map(v => {
+        const r = unAnalyNumber(getSectionNum(v, sa)).split("").reverse();
+        return analyNumber(r.join(""), sa)
+      });
+      maps[sa] = rs;
+    });
+
+    return [
+      ["万千", "百十"],
+      ["万千", "百个"],
+      ["万千", "十个"],
+      ["万百", "十个"],
+      ["千百", "十个"],
+    ]
+      .map(([sa, sb]) => {
+        return explandObj([
+          maps[sa],
+          maps[sb]
+        ]).map(v => SuppleNumObj(v));
+      });
+  }
+
+  function d17(valuesObjs) {
+    const valMaps = {};
+
+    const datas = ["万千", "万百", "千百", "百十", "百个", "十个"].map((unit) => {
+      const vals = valuesObjs.map(valObj => getSectionNum(valObj, unit)).map(v => unAnalyNumber(v));
+
+      valMaps[unit] = [];
+      for (let i = 0; i < vals.length - 1; i++) {
+        const r = ("00" + Math.abs(parseInt(vals[i + 1]) - parseInt(vals[i]))).slice(-2);
+        valMaps[unit].push(analyNumber(r, unit));
+      }
+    });
+
+    console.log(valMaps);
+
+
+    return [
+      ["万千", "百十"],
+      ["万千", "百个"],
+      ["万千", "十个"],
+      ["万百", "十个"],
+      ["千百", "十个"]
+    ].map(([a, b]) => {
+      return explandObj([
+        valMaps[a],
+        valMaps[b]
+      ]).map(v => SuppleNumObj(v));
+    });
+
+  }
+
+  function d18(valuesObjs) {
+    const valMaps = {};
+
+    const datas = ["万千", "万百", "千百", "百十", "百个", "十个"].map((unit) => {
+      const vals = valuesObjs.map(valObj => getSectionNum(valObj, unit)).map(v => unAnalyNumber(v));
+
+      valMaps[unit] = [];
+      for (let i = 0; i < vals.length - 1; i++) {
+        const r = ("00" + Math.floor((parseInt(vals[i + 1]) + parseInt(vals[i])) / 2)).slice(-2);
+        valMaps[unit].push(analyNumber(r, unit));
+      }
+    });
+
+    return [
+      ["万千", "百十"],
+      ["万千", "百个"],
+      ["万千", "十个"],
+      ["万百", "十个"],
+      ["千百", "十个"],
+    ].map(([a, b]) => {
+      return explandObj([
+        valMaps[a],
+        valMaps[b]
+      ]).map(v => SuppleNumObj(v));
+    });
+
+  }
+
+  function m23(valuesObjs) {
+    const size = valuesObjs.length;
+    const maps = {};
+    [["万千", 4], ["十个", 4], ["百十个", size], ["万千百", size]].forEach(([seq, size]) => {
+      const r = valuesObjs.slice(0, size).map(valObj => {
+        return getSectionNum(valObj, seq);
+      });
+      maps[seq] = r;
+    });
+
+
+    const nums = [
+      ["万千", "百十个"],
+      ["十个", "万千百"],
+    ].map(([a, b]) => {
+      return explandObj([
+        maps[a],
+        maps[b]
+      ])
+    }).flat()
+      .map(v => unAnalyNumber(v));
+
+    return nums.map(v => {
+
+      const results = [incrementBit(v, 0)];
+      for (let i = 1; i < 5; i++) {
+        results.push(incrementBit(v, i));
+        results.push(incrementBit(v, -i));
+      }
+      results.push(incrementBit(v, 5));
+      return results;
+    }).flat()
+  }
+
+  function hbd13_17_23_10(valuesObjs) {
+    return [
+      ...d13(valuesObjs.slice(0, 3)),
+      ...d17(valuesObjs.slice(0, 3)),
+      ...d18(valuesObjs.slice(0, 3)),
+      ...m23(valuesObjs.splice(0, 5))
+    ];
+  }
+
+  //3位数差值|b数组
+  function swsczbsz(groupObjs, contrastObj) {
+    const results = handleSequence3.map(hs => {
+      const a_arr = [];
+      for (let i = 0; i < groupObjs.length - 1; i++) {
+        const a1 = getSectionNum(groupObjs[i], hs[0]);
+        const a2 = getSectionNum(groupObjs[i + 1], hs[0]);
+        console.log(a1, a2, calcInter(a1, a2));
+
+        a_arr.push(calcInter(a1, a2));
+      }
+
+      const c = [getSectionNum(contrastObj, hs[1])];
+      const r = explandObj([a_arr, c]);
+      return r;
+    });
+
+    return results.flat().map(v => unAnalyNumber(v));
+  }
+
+  function swspjsbsz(groupObjs, contrastObj) {
+    const results = handleSequence3.map(hs => {
+
+      const a_arr = [];
+      for (let i = 0; i < groupObjs.length - 1; i++) {
+        const a1 = getSectionNum(groupObjs[i], hs[0]);
+        const a2 = getSectionNum(groupObjs[i + 1], hs[0]);
+        a_arr.push(calcAvgToObj(a1, a2));
+      }
+
+      const c = [getSectionNum(contrastObj, hs[1])];
+      const r = explandObj([a_arr, c]);
+      return r;
+    });
+    return results.flat().map(v => unAnalyNumber(v));
+  }
+
+  function swsszpjsbsz(groupObjs, contrastObj) {
+
+    const results = handleSequence3.map(hs => {
+
+      const a_arr = [];
+      for (let i = 0; i < groupObjs.length - 2; i++) {
+        const a1 = getSectionNum(groupObjs[i], hs[0]);
+        const a2 = getSectionNum(groupObjs[i + 1], hs[0]);
+        const a3 = getSectionNum(groupObjs[i + 2], hs[0]);
+        a_arr.push(calcAvgToObj(a1, a2, a3));
+      }
+
+      const c = [getSectionNum(contrastObj, hs[1])];
+      const r = explandObj([a_arr, c]);
+      return r;
+    });
+    return results.flat().map(v => unAnalyNumber(v));
+  }
+
+  function swsljwgsczbsz(valueObj, contrastObj) {
+    const results = handleSequence3.map(hs => {
+
+      const a = getSectionNum(valueObj, hs[0]);
+      const c = [getSectionNum(contrastObj, hs[1])];
+
+      const a_arr = getAdjectNumObjs(a, 10);
+      console.log(a_arr, c);
+
+      const r = explandObj([a_arr, c]);
+      return r;
+    });
+
+    return results.flat().map(v => unAnalyNumber(v));
+  }
+
+  function zxcachy4(totalDatas) {
+    const valueArr = totalDatas[0].split(",")
+
+    const results = [];
+    for (let i = 0; i < 3; i++) {
+      const values = Array.from(new Set(valueArr.slice(i).join("").split(""))).slice(0, 3);
+      const vals = analyNumberQuene(values.join(""), "万千百")
+        .map(v => unAnalyNumber(v))
+        .filter(v => {
+          const s = new Set(v);
+          return s.size !== 1;
+        });
+
+      const result = handleSequence3.map(seq => {
+        const valObjs = vals.map(val => analyNumber(val, seq[0]));
+        const cObjs = totalDatas[1].split(",").map(v => getSectionNum(analyNumber(v), seq[1]));
+        return explandObj([valObjs, cObjs]);
+      });
+      results.push(result.flat());
+    }
+    console.log(results);
+
+    return results.flat().map(v => unAnalyNumber(v));
+  }
+
+  function fxcachy4(totalDatas) {
+
+    const valueArr = totalDatas[0].split(",")
+
+    const results = [];
+    for (let i = 0; i < 3; i++) {
+      const values = Array.from(new Set(valueArr.slice(i).join("").split(""))).slice(-3);
+      const vals = analyNumberQuene(values.join(""), "万千百")
+        .map(v => unAnalyNumber(v))
+        .filter(v => {
+          const s = new Set(v);
+          return s.size !== 1;
+        });
+
+      const result = handleSequence3.map(seq => {
+        const valObjs = vals.map(val => analyNumber(val, seq[0]));
+        const cObjs = totalDatas[1].split(",").map(v => getSectionNum(analyNumber(v), seq[1]));
+        return explandObj([valObjs, cObjs]);
+      });
+      results.push(result.flat());
+    }
+    console.log(results);
+
+    return results.flat().map(v => unAnalyNumber(v));
+  }
+
+  function calcAvg(...nums) {
+    const count = nums.length
+    const total = nums.reduce((r, v) => r + parseInt(v), 0)
+
+    return Math.floor(total / count)
+  }
+
+  function calcAvgObj(...numObjs) {
+    const nums = numObjs.map(v => unAnalyNumber(v))
+    if (nums.length < 1) {
+      return 0
+    }
+    const len = nums[0].length
+
+    return ('0'.repeat(len) + calcAvg(...nums)).slice(-len)
+  }
+
+  function calcInterx(a, b) {
+    let r = parseInt(a) - parseInt(b)
+    r = Math.abs(r)
+    return r
+  }
+
+  function calcInterObj(aObj, bObj) {
+    const a = unAnalyNumber(aObj)
+    const b = unAnalyNumber(bObj)
+
+    const len = a.length
+
+    return ('0'.repeat(len) + calcInterx(a, b)).slice(-len)
+  }
+
+  Topic.generator(function (arr, arrText) {
+    const totalData = arrText.trim().split("|")
+    if (totalData.length < 2) {
+      return [];
+    }
+
+    const [a_values, b_values] = totalData.map(v => v.split(",").map(v => analyNumber(v)))
+    return handleSequence4.map(([aunit, bunit]) => {
+      let a_arr = []
+      for (let i = 0; i < a_values.length; i++) {
+        const aa = getSectionNum(a_values[i], aunit)
+        let a = calcAdditiveNum(aa)
+        a_arr.push(a)
+      }
+
+      let b_arr = b_values.map(v => getSectionNum(v, bunit))
+
+      return explandObj([
+        a_arr, b_arr
+      ])
+    }).flat().map(v => unAnalyNumber(v))
+
+  }, {
+    topicTitle: '相反数',
+  });
+
+  //计算和值
+  const calcAdditiveNum = (a) => {
+    let keys = Object.keys(a);
+    let len = keys.length
+    let additiveKeys = [...keys].reverse()
+
+    let answer = {}
+
+    while (keys.length > 0) {
+      let key = keys.shift()
+      let aKey = additiveKeys.shift()
+      answer[aKey] = a[key]
+    }
+
+    return answer;
+  }
+
+
+  Topic.generator(function (arr, arrText) {
+    const totalData = arrText.trim().split("|")
+    if (totalData.length < 2) {
+      return [];
+    }
+
+    const [a_values, b_values] = totalData.map(v => v.split(",").map(v => analyNumber(v)))
+
+    return handleSequence4.map(([aunit, bunit]) => {
+      let a_arr = []
+      for (let i = 0; i < a_values.length - 1; i++) {
+        const aa = getSectionNum(a_values[i], aunit)
+        const ab = getSectionNum(a_values[i + 1], aunit)
+        const a = calcSumInter(aa, ab)
+        a_arr.push(a)
+      }
+
+      let b_arr = b_values.map(v => getSectionNum(v, bunit))
+      return explandObj([
+        a_arr, b_arr
+      ])
+    }).flat().map(v => unAnalyNumber(v))
+  }, {
+    topicTitle: '和值',
+  });
+
+  //计算逆数
+  const calcReciprocalNum = (a) => {
+    let keys = Object.keys(a);
+    let len = keys.length
+
+    let results = ("0".repeat(len) + (Math.pow(10, len) - unAnalyNumber(a))).slice(-len)
+    let answer = {}
+    for (let i = 0; i < keys.length; i++) {
+      if (results.length < 1) break;
+      answer[keys[i]] = results[i];
+    }
+
+    return answer;
+  }
+
+  Topic.generator(function (arr, arrText) {
+    const totalData = arrText.trim().split("|")
+    if (totalData.length < 2) {
+      return [];
+    }
+
+    const [a_values, b_values] = totalData.map(v => v.split(",").map(v => analyNumber(v)))
+
+    return handleSequence4.map(([aunit, bunit]) => {
+      let a_arr = []
+      for (let i = 0; i < a_values.length; i++) {
+        const aa = getSectionNum(a_values[i], aunit)
+        let a = calcReciprocalNum(aa)
+        a_arr.push(a)
+      }
+
+      let b_arr = b_values.map(v => getSectionNum(v, bunit))
+      return explandObj([
+        a_arr, b_arr
+      ])
+    }).flat().map(v => unAnalyNumber(v))
+  }, {
+    topicTitle: '逆数值',
+  });
+
+  Topic.generator(function (arr, arrText) {
+    const totalData = arrText.trim().split("|")
+    if (totalData.length < 2) {
+      return [];
+    }
+
+    const [a_values, b_values] = totalData.map(v => v.split(",").map(v => analyNumber(v)))
+
+    return handleSequence4.map(([aunit, bunit]) => {
+      let a_arr = a_values.map(v => getSectionNum(v, aunit))
+      let b_arr = b_values.map(v => getSectionNum(v, bunit))
+
+      return explandObj([
+        a_arr, b_arr
+      ])
+    }).flat().map(v => unAnalyNumber(v))
+  }, {
+    topicTitle: '普通值',
+  });
+
+
+  Topic.generator(function (arr, arrText) {
+    const totalData = arrText.trim().split("|")
+    if (totalData.length < 2) {
+      return [];
+    }
+
+    const [a_values, b_values] = totalData.map(v => v.split(",").map(v => analyNumber(v)))
+
+    return handleSequence4.map(([aunit, bunit]) => {
+      let a_arr = []
+      for (let i = 0; i < a_values.length - 1; i++) {
+        const aa = getSectionNum(a_values[i], aunit)
+        const ab = getSectionNum(a_values[i + 1], aunit)
+        const a = calcInter(aa, ab)
+        a_arr.push(a)
+      }
+
+      let b_arr = b_values.map(v => getSectionNum(v, bunit))
+      return explandObj([
+        a_arr, b_arr
+      ])
+    }).flat().map(v => unAnalyNumber(v))
+  }, {
+    topicTitle: '差值',
+  });
+
+  
+  Topic.generator(function (arr, arrText) {
+    const totalData = arrText.trim().split("|")
+    if (totalData.length < 2) {
+      return [];
+    }
+
+    const [a_values, b_values] = totalData.map(v => v.split(",").map(v => analyNumber(v)))
+
+    return handleSequence4.map(([aunit, bunit]) => {
+      let a_arr = []
+      for (let i = 0; i < a_values.length - 1; i++) {
+        const aa = getSectionNum(a_values[i], aunit)
+        const ab = getSectionNum(a_values[i + 1], aunit)
+        const a = calcAvgToObj(aa, ab)
+        a_arr.push(a)
+      }
+
+      let b_arr = b_values.map(v => getSectionNum(v, bunit))
+      return explandObj([
+        a_arr, b_arr
+      ])
+    }).flat().map(v => unAnalyNumber(v))
+  }, {
+    topicTitle: '平均值',
+  });
+
+  let ns = [0, 1, -1, 2, -2, 3, -3, 4, -4]
+
+  function calcNsNums(a) {
+    return ns.map(n => calcNsIter(a, n))
+  }
+
+  function calcNsIter(a, n) {
+    let keys = Object.keys(a)
+    let rs = { ...a }
+    for (let key of keys) {
+      rs[key] = parseInt(rs[key]) + n
+      if (rs[key] < 0) {
+        rs[key] += 10
+      }
+      rs[key] = String(rs[key]).slice(-1)
+    }
+
+    return rs
+  }
+
+  const btn = document.querySelector("#generator");
+  const totalShow = document.querySelector("#total_show");
+  btn.addEventListener('click', () => {
+    const totalResult = Topic.run();
+    totalShow.innerHTML = totalResult.join(",");
+  });
+</script>
+
+</html>

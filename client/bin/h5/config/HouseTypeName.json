@@ -1,0 +1,162 @@
+[
+  {
+    "HouseType": 60100,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60101,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60102,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60400,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60401,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60402,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60403,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60404,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60405,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60406,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60407,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60408,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60409,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60411,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60413,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60414,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60415,
+    "TypeName": "Shop"
+  },
+  {
+    "HouseType": 60103,
+    "TypeName": "Store"
+  },
+  {
+    "HouseType": 60200,
+    "TypeName": "Store"
+  },
+  {
+    "HouseType": 60201,
+    "TypeName": "Store"
+  },
+  {
+    "HouseType": 60202,
+    "TypeName": "Store"
+  },
+  {
+    "HouseType": 120000,
+    "TypeName": "Building"
+  },
+  {
+    "HouseType": 120100,
+    "TypeName": "Building"
+  },
+  {
+    "HouseType": 120200,
+    "TypeName": "Building"
+  },
+  {
+    "HouseType": 120201,
+    "TypeName": "Building"
+  },
+  {
+    "HouseType": 120202,
+    "TypeName": "Building"
+  },
+  {
+    "HouseType": 120203,
+    "TypeName": "Building"
+  },
+  {
+    "HouseType": 120300,
+    "TypeName": "House"
+  },
+  {
+    "HouseType": 120301,
+    "TypeName": "House"
+  },
+  {
+    "HouseType": 120302,
+    "TypeName": "House"
+  },
+  {
+    "HouseType": 120303,
+    "TypeName": "House"
+  },
+  {
+    "HouseType": 120304,
+    "TypeName": "House"
+  },
+  {
+    "HouseType": 100100,
+    "TypeName": "Hotel"
+  },
+  {
+    "HouseType": 100101,
+    "TypeName": "Hotel"
+  },
+  {
+    "HouseType": 100102,
+    "TypeName": "Hotel"
+  },
+  {
+    "HouseType": 100103,
+    "TypeName": "Hotel"
+  },
+  {
+    "HouseType": 100104,
+    "TypeName": "Hotel"
+  },
+  {
+    "HouseType": 100105,
+    "TypeName": "Hotel"
+  },
+  {
+    "HouseType": 100200,
+    "TypeName": "Hotel"
+  },
+  {
+    "HouseType": 100201,
+    "TypeName": "Hotel"
+  }
+]

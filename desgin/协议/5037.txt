@@ -1,0 +1,34 @@
+5037 取员工信息
+        /// <summary>
+        /// 楼层所有者ID
+        /// </summary>
+        public int UserID = 0;
+        /// <summary>
+        /// 员工ID
+        /// </summary>
+        public int StaffID = 0;
+
+
+5038 返回员工信息
+        public SendStaffInfo StaffInfo = new SendStaffInfo();
+
+
+    /// <summary>
+    /// 员工信息
+    /// </summary>
+    public class SendStaffInfo
+    {
+        /// <summary>
+        /// 顾客类型ID
+        /// </summary>
+        public int TypeID = 0;
+        /// <summary>
+        /// 员工经验
+        /// </summary>
+        public int Exp = 0;
+    }
+
+
+
+
+

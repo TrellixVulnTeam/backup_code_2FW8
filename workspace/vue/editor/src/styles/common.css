@@ -1,0 +1,36 @@
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.layout {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.layout > .item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 0.5em;
+}
+
+.editor {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.editor:focus {
+    outline: none;
+}
+
+#app::-webkit-scrollbar {
+    display: none;
+    overflow: hidden;
+}

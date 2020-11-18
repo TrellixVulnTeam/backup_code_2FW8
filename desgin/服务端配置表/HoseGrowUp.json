@@ -1,0 +1,596 @@
+{
+  "1": {
+    "HouseLevel": 1,
+    "HouseExp": 10000,
+    "HouseMoney": 100,
+    "HouseIncomeCoefficient": 1
+  },
+  "2": {
+    "HouseLevel": 2,
+    "HouseExp": 13310,
+    "HouseMoney": 121,
+    "HouseIncomeCoefficient": 1.1
+  },
+  "3": {
+    "HouseLevel": 3,
+    "HouseExp": 17280,
+    "HouseMoney": 144,
+    "HouseIncomeCoefficient": 1.2
+  },
+  "4": {
+    "HouseLevel": 4,
+    "HouseExp": 21970,
+    "HouseMoney": 169,
+    "HouseIncomeCoefficient": 1.3
+  },
+  "5": {
+    "HouseLevel": 5,
+    "HouseExp": 27440,
+    "HouseMoney": 196,
+    "HouseIncomeCoefficient": 1.4
+  },
+  "6": {
+    "HouseLevel": 6,
+    "HouseExp": 33750,
+    "HouseMoney": 225,
+    "HouseIncomeCoefficient": 1.5
+  },
+  "7": {
+    "HouseLevel": 7,
+    "HouseExp": 40960,
+    "HouseMoney": 256,
+    "HouseIncomeCoefficient": 1.6
+  },
+  "8": {
+    "HouseLevel": 8,
+    "HouseExp": 49130,
+    "HouseMoney": 289,
+    "HouseIncomeCoefficient": 1.7
+  },
+  "9": {
+    "HouseLevel": 9,
+    "HouseExp": 58320,
+    "HouseMoney": 324,
+    "HouseIncomeCoefficient": 1.8
+  },
+  "10": {
+    "HouseLevel": 10,
+    "HouseExp": 68590,
+    "HouseMoney": 361,
+    "HouseIncomeCoefficient": 1.9
+  },
+  "11": {
+    "HouseLevel": 11,
+    "HouseExp": 80000,
+    "HouseMoney": 400,
+    "HouseIncomeCoefficient": 2
+  },
+  "12": {
+    "HouseLevel": 12,
+    "HouseExp": 92610,
+    "HouseMoney": 441,
+    "HouseIncomeCoefficient": 2.1
+  },
+  "13": {
+    "HouseLevel": 13,
+    "HouseExp": 106480,
+    "HouseMoney": 484,
+    "HouseIncomeCoefficient": 2.2
+  },
+  "14": {
+    "HouseLevel": 14,
+    "HouseExp": 121670,
+    "HouseMoney": 529,
+    "HouseIncomeCoefficient": 2.3
+  },
+  "15": {
+    "HouseLevel": 15,
+    "HouseExp": 138240,
+    "HouseMoney": 576,
+    "HouseIncomeCoefficient": 2.4
+  },
+  "16": {
+    "HouseLevel": 16,
+    "HouseExp": 156250,
+    "HouseMoney": 625,
+    "HouseIncomeCoefficient": 2.5
+  },
+  "17": {
+    "HouseLevel": 17,
+    "HouseExp": 175760,
+    "HouseMoney": 676,
+    "HouseIncomeCoefficient": 2.6
+  },
+  "18": {
+    "HouseLevel": 18,
+    "HouseExp": 196830,
+    "HouseMoney": 729,
+    "HouseIncomeCoefficient": 2.7
+  },
+  "19": {
+    "HouseLevel": 19,
+    "HouseExp": 219520,
+    "HouseMoney": 784,
+    "HouseIncomeCoefficient": 2.8
+  },
+  "20": {
+    "HouseLevel": 20,
+    "HouseExp": 243890,
+    "HouseMoney": 841,
+    "HouseIncomeCoefficient": 2.9
+  },
+  "21": {
+    "HouseLevel": 21,
+    "HouseExp": 270000,
+    "HouseMoney": 900,
+    "HouseIncomeCoefficient": 3
+  },
+  "22": {
+    "HouseLevel": 22,
+    "HouseExp": 297910,
+    "HouseMoney": 961,
+    "HouseIncomeCoefficient": 3.1
+  },
+  "23": {
+    "HouseLevel": 23,
+    "HouseExp": 327680,
+    "HouseMoney": 1024,
+    "HouseIncomeCoefficient": 3.2
+  },
+  "24": {
+    "HouseLevel": 24,
+    "HouseExp": 359370,
+    "HouseMoney": 1089,
+    "HouseIncomeCoefficient": 3.3
+  },
+  "25": {
+    "HouseLevel": 25,
+    "HouseExp": 393040,
+    "HouseMoney": 1156,
+    "HouseIncomeCoefficient": 3.4
+  },
+  "26": {
+    "HouseLevel": 26,
+    "HouseExp": 428750,
+    "HouseMoney": 1225,
+    "HouseIncomeCoefficient": 3.5
+  },
+  "27": {
+    "HouseLevel": 27,
+    "HouseExp": 466560,
+    "HouseMoney": 1296,
+    "HouseIncomeCoefficient": 3.6
+  },
+  "28": {
+    "HouseLevel": 28,
+    "HouseExp": 506530,
+    "HouseMoney": 1369,
+    "HouseIncomeCoefficient": 3.7
+  },
+  "29": {
+    "HouseLevel": 29,
+    "HouseExp": 548720,
+    "HouseMoney": 1444,
+    "HouseIncomeCoefficient": 3.8
+  },
+  "30": {
+    "HouseLevel": 30,
+    "HouseExp": 593190,
+    "HouseMoney": 1521,
+    "HouseIncomeCoefficient": 3.9
+  },
+  "31": {
+    "HouseLevel": 31,
+    "HouseExp": 640000,
+    "HouseMoney": 1600,
+    "HouseIncomeCoefficient": 4
+  },
+  "32": {
+    "HouseLevel": 32,
+    "HouseExp": 689210,
+    "HouseMoney": 1681,
+    "HouseIncomeCoefficient": 4.1
+  },
+  "33": {
+    "HouseLevel": 33,
+    "HouseExp": 740880,
+    "HouseMoney": 1764,
+    "HouseIncomeCoefficient": 4.2
+  },
+  "34": {
+    "HouseLevel": 34,
+    "HouseExp": 795070,
+    "HouseMoney": 1849,
+    "HouseIncomeCoefficient": 4.3
+  },
+  "35": {
+    "HouseLevel": 35,
+    "HouseExp": 851840,
+    "HouseMoney": 1936,
+    "HouseIncomeCoefficient": 4.4
+  },
+  "36": {
+    "HouseLevel": 36,
+    "HouseExp": 911250,
+    "HouseMoney": 2025,
+    "HouseIncomeCoefficient": 4.5
+  },
+  "37": {
+    "HouseLevel": 37,
+    "HouseExp": 973360,
+    "HouseMoney": 2116,
+    "HouseIncomeCoefficient": 4.6
+  },
+  "38": {
+    "HouseLevel": 38,
+    "HouseExp": 1038230,
+    "HouseMoney": 2209,
+    "HouseIncomeCoefficient": 4.7
+  },
+  "39": {
+    "HouseLevel": 39,
+    "HouseExp": 1105920,
+    "HouseMoney": 2304,
+    "HouseIncomeCoefficient": 4.8
+  },
+  "40": {
+    "HouseLevel": 40,
+    "HouseExp": 1176490,
+    "HouseMoney": 2401,
+    "HouseIncomeCoefficient": 4.9
+  },
+  "41": {
+    "HouseLevel": 41,
+    "HouseExp": 1250000,
+    "HouseMoney": 2500,
+    "HouseIncomeCoefficient": 5
+  },
+  "42": {
+    "HouseLevel": 42,
+    "HouseExp": 1326510,
+    "HouseMoney": 2601,
+    "HouseIncomeCoefficient": 5.1
+  },
+  "43": {
+    "HouseLevel": 43,
+    "HouseExp": 1406080,
+    "HouseMoney": 2704,
+    "HouseIncomeCoefficient": 5.2
+  },
+  "44": {
+    "HouseLevel": 44,
+    "HouseExp": 1488770,
+    "HouseMoney": 2809,
+    "HouseIncomeCoefficient": 5.3
+  },
+  "45": {
+    "HouseLevel": 45,
+    "HouseExp": 1574640,
+    "HouseMoney": 2916,
+    "HouseIncomeCoefficient": 5.4
+  },
+  "46": {
+    "HouseLevel": 46,
+    "HouseExp": 1663750,
+    "HouseMoney": 3025,
+    "HouseIncomeCoefficient": 5.5
+  },
+  "47": {
+    "HouseLevel": 47,
+    "HouseExp": 1756160,
+    "HouseMoney": 3136,
+    "HouseIncomeCoefficient": 5.6
+  },
+  "48": {
+    "HouseLevel": 48,
+    "HouseExp": 1851930,
+    "HouseMoney": 3249,
+    "HouseIncomeCoefficient": 5.7
+  },
+  "49": {
+    "HouseLevel": 49,
+    "HouseExp": 1951120,
+    "HouseMoney": 3364,
+    "HouseIncomeCoefficient": 5.8
+  },
+  "50": {
+    "HouseLevel": 50,
+    "HouseExp": 2053790,
+    "HouseMoney": 3481,
+    "HouseIncomeCoefficient": 5.9
+  },
+  "51": {
+    "HouseLevel": 51,
+    "HouseExp": 2160000,
+    "HouseMoney": 3600,
+    "HouseIncomeCoefficient": 6
+  },
+  "52": {
+    "HouseLevel": 52,
+    "HouseExp": 2269809,
+    "HouseMoney": 3720,
+    "HouseIncomeCoefficient": 6.1
+  },
+  "53": {
+    "HouseLevel": 53,
+    "HouseExp": 2383279,
+    "HouseMoney": 3843,
+    "HouseIncomeCoefficient": 6.2
+  },
+  "54": {
+    "HouseLevel": 54,
+    "HouseExp": 2500469,
+    "HouseMoney": 3968,
+    "HouseIncomeCoefficient": 6.3
+  },
+  "55": {
+    "HouseLevel": 55,
+    "HouseExp": 2621439,
+    "HouseMoney": 4095,
+    "HouseIncomeCoefficient": 6.4
+  },
+  "56": {
+    "HouseLevel": 56,
+    "HouseExp": 2746249,
+    "HouseMoney": 4224,
+    "HouseIncomeCoefficient": 6.5
+  },
+  "57": {
+    "HouseLevel": 57,
+    "HouseExp": 2874959,
+    "HouseMoney": 4355,
+    "HouseIncomeCoefficient": 6.6
+  },
+  "58": {
+    "HouseLevel": 58,
+    "HouseExp": 3007629,
+    "HouseMoney": 4488,
+    "HouseIncomeCoefficient": 6.7
+  },
+  "59": {
+    "HouseLevel": 59,
+    "HouseExp": 3144319,
+    "HouseMoney": 4623,
+    "HouseIncomeCoefficient": 6.8
+  },
+  "60": {
+    "HouseLevel": 60,
+    "HouseExp": 3285089,
+    "HouseMoney": 4760,
+    "HouseIncomeCoefficient": 6.9
+  },
+  "61": {
+    "HouseLevel": 61,
+    "HouseExp": 3429999,
+    "HouseMoney": 4899,
+    "HouseIncomeCoefficient": 7
+  },
+  "62": {
+    "HouseLevel": 62,
+    "HouseExp": 3579109,
+    "HouseMoney": 5040,
+    "HouseIncomeCoefficient": 7.1
+  },
+  "63": {
+    "HouseLevel": 63,
+    "HouseExp": 3732479,
+    "HouseMoney": 5183,
+    "HouseIncomeCoefficient": 7.2
+  },
+  "64": {
+    "HouseLevel": 64,
+    "HouseExp": 3890169,
+    "HouseMoney": 5328,
+    "HouseIncomeCoefficient": 7.3
+  },
+  "65": {
+    "HouseLevel": 65,
+    "HouseExp": 4052239,
+    "HouseMoney": 5475,
+    "HouseIncomeCoefficient": 7.4
+  },
+  "66": {
+    "HouseLevel": 66,
+    "HouseExp": 4218749,
+    "HouseMoney": 5624,
+    "HouseIncomeCoefficient": 7.5
+  },
+  "67": {
+    "HouseLevel": 67,
+    "HouseExp": 4389759,
+    "HouseMoney": 5775,
+    "HouseIncomeCoefficient": 7.6
+  },
+  "68": {
+    "HouseLevel": 68,
+    "HouseExp": 4565329,
+    "HouseMoney": 5928,
+    "HouseIncomeCoefficient": 7.7
+  },
+  "69": {
+    "HouseLevel": 69,
+    "HouseExp": 4745519,
+    "HouseMoney": 6083,
+    "HouseIncomeCoefficient": 7.8
+  },
+  "70": {
+    "HouseLevel": 70,
+    "HouseExp": 4930389,
+    "HouseMoney": 6240,
+    "HouseIncomeCoefficient": 7.9
+  },
+  "71": {
+    "HouseLevel": 71,
+    "HouseExp": 5119999,
+    "HouseMoney": 6399,
+    "HouseIncomeCoefficient": 8
+  },
+  "72": {
+    "HouseLevel": 72,
+    "HouseExp": 5314409,
+    "HouseMoney": 6560,
+    "HouseIncomeCoefficient": 8.1
+  },
+  "73": {
+    "HouseLevel": 73,
+    "HouseExp": 5513679,
+    "HouseMoney": 6723,
+    "HouseIncomeCoefficient": 8.2
+  },
+  "74": {
+    "HouseLevel": 74,
+    "HouseExp": 5717869,
+    "HouseMoney": 6888,
+    "HouseIncomeCoefficient": 8.3
+  },
+  "75": {
+    "HouseLevel": 75,
+    "HouseExp": 5927039,
+    "HouseMoney": 7055,
+    "HouseIncomeCoefficient": 8.4
+  },
+  "76": {
+    "HouseLevel": 76,
+    "HouseExp": 6141249,
+    "HouseMoney": 7224,
+    "HouseIncomeCoefficient": 8.5
+  },
+  "77": {
+    "HouseLevel": 77,
+    "HouseExp": 6360559,
+    "HouseMoney": 7395,
+    "HouseIncomeCoefficient": 8.6
+  },
+  "78": {
+    "HouseLevel": 78,
+    "HouseExp": 6585029,
+    "HouseMoney": 7568,
+    "HouseIncomeCoefficient": 8.7
+  },
+  "79": {
+    "HouseLevel": 79,
+    "HouseExp": 6814719,
+    "HouseMoney": 7743,
+    "HouseIncomeCoefficient": 8.8
+  },
+  "80": {
+    "HouseLevel": 80,
+    "HouseExp": 7049689,
+    "HouseMoney": 7920,
+    "HouseIncomeCoefficient": 8.9
+  },
+  "81": {
+    "HouseLevel": 81,
+    "HouseExp": 7289999,
+    "HouseMoney": 8099,
+    "HouseIncomeCoefficient": 9
+  },
+  "82": {
+    "HouseLevel": 82,
+    "HouseExp": 7535709,
+    "HouseMoney": 8280,
+    "HouseIncomeCoefficient": 9.1
+  },
+  "83": {
+    "HouseLevel": 83,
+    "HouseExp": 7786879,
+    "HouseMoney": 8463,
+    "HouseIncomeCoefficient": 9.2
+  },
+  "84": {
+    "HouseLevel": 84,
+    "HouseExp": 8043569,
+    "HouseMoney": 8648,
+    "HouseIncomeCoefficient": 9.3
+  },
+  "85": {
+    "HouseLevel": 85,
+    "HouseExp": 8305839,
+    "HouseMoney": 8835,
+    "HouseIncomeCoefficient": 9.4
+  },
+  "86": {
+    "HouseLevel": 86,
+    "HouseExp": 8573749,
+    "HouseMoney": 9024,
+    "HouseIncomeCoefficient": 9.5
+  },
+  "87": {
+    "HouseLevel": 87,
+    "HouseExp": 8847359,
+    "HouseMoney": 9215,
+    "HouseIncomeCoefficient": 9.6
+  },
+  "88": {
+    "HouseLevel": 88,
+    "HouseExp": 9126729,
+    "HouseMoney": 9408,
+    "HouseIncomeCoefficient": 9.7
+  },
+  "89": {
+    "HouseLevel": 89,
+    "HouseExp": 9411919,
+    "HouseMoney": 9603,
+    "HouseIncomeCoefficient": 9.8
+  },
+  "90": {
+    "HouseLevel": 90,
+    "HouseExp": 9702989,
+    "HouseMoney": 9800,
+    "HouseIncomeCoefficient": 9.9
+  },
+  "91": {
+    "HouseLevel": 91,
+    "HouseExp": 9999999,
+    "HouseMoney": 9999,
+    "HouseIncomeCoefficient": 10
+  },
+  "92": {
+    "HouseLevel": 92,
+    "HouseExp": 10303009,
+    "HouseMoney": 10201,
+    "HouseIncomeCoefficient": 10.1
+  },
+  "93": {
+    "HouseLevel": 93,
+    "HouseExp": 10612079,
+    "HouseMoney": 10404,
+    "HouseIncomeCoefficient": 10.2
+  },
+  "94": {
+    "HouseLevel": 94,
+    "HouseExp": 10927269,
+    "HouseMoney": 10609,
+    "HouseIncomeCoefficient": 10.3
+  },
+  "95": {
+    "HouseLevel": 95,
+    "HouseExp": 11248639,
+    "HouseMoney": 10816,
+    "HouseIncomeCoefficient": 10.4
+  },
+  "96": {
+    "HouseLevel": 96,
+    "HouseExp": 11576249,
+    "HouseMoney": 11025,
+    "HouseIncomeCoefficient": 10.5
+  },
+  "97": {
+    "HouseLevel": 97,
+    "HouseExp": 11910159,
+    "HouseMoney": 11236,
+    "HouseIncomeCoefficient": 10.6
+  },
+  "98": {
+    "HouseLevel": 98,
+    "HouseExp": 12250429,
+    "HouseMoney": 11449,
+    "HouseIncomeCoefficient": 10.7
+  },
+  "99": {
+    "HouseLevel": 99,
+    "HouseExp": 12597119,
+    "HouseMoney": 11664,
+    "HouseIncomeCoefficient": 10.8
+  }
+}

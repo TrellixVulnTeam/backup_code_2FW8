@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PIXI Demo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            height: 99vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        canvas {
+            
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <script src="./js/pixi.js"></script>
+    <script type="text/javascript">
+        const loader = PIXI.loader
+        const Sprite = PIXI.Sprite
+        const Res = loader.resources
+
+        const app = new PIXI.Application({
+            width: 300,
+            height: 300
+        })
+        loader.add("./img/dxx.png").load(setup)
+
+        function setup() {
+            let sprite = new PIXI.Sprite(Res['./img/dxx.png'].texture)
+            app.stage.addChild(sprite)
+            app.stage.rotation = Math.PI / 2
+            app.stage.x = app.view.width
+            app.renderer.backgroundColor = 0x061639
+            document.body.appendChild(app.view)
+        }
+    </script>
+</body>
+
+</html>

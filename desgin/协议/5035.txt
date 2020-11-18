@@ -1,0 +1,33 @@
+5035 员工列表
+
+5036 返回员工列表
+    public List<StaffInfo> StaffList = new List<StaffInfo>();
+
+
+    /// <summary>
+    /// 员工信息
+    /// </summary>
+    [Serializable]
+    public class StaffInfo
+    {
+        /// <summary>
+        /// 员工id
+        /// </summary>
+        public int ID = 0;
+        /// <summary>
+        /// 顾客类型ID
+        /// </summary>
+        public int TypeID = 0;
+        /// <summary>
+        /// 员工经验
+        /// </summary>
+        public int Exp = 0;
+        /// <summary>
+        /// 房产ID
+        /// </summary>
+        public string HouseID = "";
+        /// <summary>
+        /// 楼层ID
+        /// </summary>
+        public int FloorID = 0;
+     }

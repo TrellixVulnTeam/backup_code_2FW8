@@ -1,0 +1,220 @@
+[2019-05-09T12:29:24.862] [INFO] pinus - [room-server-1 application.js] application inited: "room-server-1"
+[2019-05-09T12:29:24.873] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter before start...
+[2019-05-09T12:29:24.874] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:29:24.885] [INFO] pinus-admin - [room-server-1 consoleService.js] try to connect master: "room", "127.0.0.1", 3005
+[2019-05-09T12:29:24.965] [ERROR] pinus-admin - [room-server-1 monitorAgent.js] server "room-server-1" "room" register master failed:{"code":-1,"msg":"server auth failed"}Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at MqttClient.<anonymous> (D:\workspace\pinus\demo1\game-server\node_modules\pinus-admin\lib\monitor\monitorAgent.ts:88:24)
+    at MqttClient.emit (events.js:193:13)
+    at Connection.<anonymous> (D:\workspace\pinus\demo1\game-server\node_modules\pinus-admin\lib\protocol\mqtt\mqttClient.ts:104:18)
+    at Connection.emit (events.js:193:13)
+    at Connection.emitPacket (D:\workspace\pinus\demo1\game-server\node_modules\mqtt-connection\connection.js:10:8)
+    at Connection.emit (events.js:193:13)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:291:12)
+    at readableAddChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:278:11)
+    at Connection.Readable.push (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:245:10)
+    at Connection.Duplexify._forward (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:170:26)
+    at DestroyableTransform.onreadable (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:134:10)
+    at DestroyableTransform.emit (events.js:193:13)
+    at emitReadable_ (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:504:10)
+    at emitReadable (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:498:62)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:298:29)
+[2019-05-09T12:29:24.969] [ERROR] pinus-admin - [room-server-1 mqttClient.js] mqtt socket is disconnect, remote server host: 127.0.0.1, port: 3005Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at Connection.<anonymous> (D:\workspace\pinus\demo1\game-server\node_modules\pinus-admin\lib\protocol\mqtt\mqttClient.ts:123:20)
+    at Connection.emit (events.js:193:13)
+    at Connection.emitPacket (D:\workspace\pinus\demo1\game-server\node_modules\mqtt-connection\connection.js:10:8)
+    at Connection.emit (events.js:193:13)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:291:12)
+    at readableAddChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:278:11)
+    at Connection.Readable.push (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:245:10)
+    at Connection.Duplexify._forward (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:170:26)
+    at DestroyableTransform.onreadable (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:134:10)
+    at DestroyableTransform.emit (events.js:193:13)
+    at emitReadable_ (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:504:10)
+    at emitReadable (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:498:62)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:298:29)
+    at readableAddChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:278:11)
+    at DestroyableTransform.Readable.push (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:245:10)
+[2019-05-09T12:29:25.973] [INFO] pinus-admin - [room-server-1 mqttClient.js] reconnect delay 1 s
+[2019-05-09T12:29:25.992] [DEBUG] pinus - [room-server-1 monitorwatcher.js] room-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"room-server-1":{"main":"D:\\workspace\\pinus\\demo1\\game-server\\dist\\app.js","env":"development","id":"room-server-1","host":"127.0.0.1","port":3160,"serverType":"room","remoterPaths":[{"namespace":"sys","serverType":"room","path":"D:\\workspace\\pinus\\demo1\\game-server\\node_modules\\pinus\\dist\\lib\\common\\remote\\backend"}],"handlerPaths":[]}}}
+[2019-05-09T12:29:25.997] [DEBUG] pinus - [room-server-1 monitorwatcher.js] room-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"room-server-1":{"main":"D:\\workspace\\pinus\\demo1\\game-server\\dist\\app.js","env":"development","id":"room-server-1","host":"127.0.0.1","port":3160,"serverType":"room","remoterPaths":[{"namespace":"sys","serverType":"room","path":"D:\\workspace\\pinus\\demo1\\game-server\\node_modules\\pinus\\dist\\lib\\common\\remote\\backend"}],"handlerPaths":[]}}}
+[2019-05-09T12:30:56.493] [INFO] pinus - [room-server-1 application.js] application inited: "room-server-1"
+[2019-05-09T12:30:56.505] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter before start...
+[2019-05-09T12:30:56.506] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:30:56.516] [INFO] pinus-admin - [room-server-1 consoleService.js] try to connect master: "room", "127.0.0.1", 3005
+[2019-05-09T12:30:56.609] [ERROR] pinus-admin - [room-server-1 monitorAgent.js] server "room-server-1" "room" register master failed:{"code":-1,"msg":"server auth failed"}Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at MqttClient.<anonymous> (D:\workspace\pinus\demo1\game-server\node_modules\pinus-admin\lib\monitor\monitorAgent.ts:88:24)
+    at MqttClient.emit (events.js:193:13)
+    at Connection.<anonymous> (D:\workspace\pinus\demo1\game-server\node_modules\pinus-admin\lib\protocol\mqtt\mqttClient.ts:104:18)
+    at Connection.emit (events.js:193:13)
+    at Connection.emitPacket (D:\workspace\pinus\demo1\game-server\node_modules\mqtt-connection\connection.js:10:8)
+    at Connection.emit (events.js:193:13)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:291:12)
+    at readableAddChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:278:11)
+    at Connection.Readable.push (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:245:10)
+    at Connection.Duplexify._forward (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:170:26)
+    at DestroyableTransform.onreadable (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:134:10)
+    at DestroyableTransform.emit (events.js:193:13)
+    at emitReadable_ (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:504:10)
+    at emitReadable (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:498:62)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:298:29)
+[2019-05-09T12:30:56.613] [ERROR] pinus-admin - [room-server-1 mqttClient.js] mqtt socket is disconnect, remote server host: 127.0.0.1, port: 3005Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at Connection.<anonymous> (D:\workspace\pinus\demo1\game-server\node_modules\pinus-admin\lib\protocol\mqtt\mqttClient.ts:123:20)
+    at Connection.emit (events.js:193:13)
+    at Connection.emitPacket (D:\workspace\pinus\demo1\game-server\node_modules\mqtt-connection\connection.js:10:8)
+    at Connection.emit (events.js:193:13)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:291:12)
+    at readableAddChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:278:11)
+    at Connection.Readable.push (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:245:10)
+    at Connection.Duplexify._forward (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:170:26)
+    at DestroyableTransform.onreadable (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:134:10)
+    at DestroyableTransform.emit (events.js:193:13)
+    at emitReadable_ (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:504:10)
+    at emitReadable (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:498:62)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:298:29)
+    at readableAddChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:278:11)
+    at DestroyableTransform.Readable.push (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:245:10)
+[2019-05-09T12:30:57.617] [INFO] pinus-admin - [room-server-1 mqttClient.js] reconnect delay 1 s
+[2019-05-09T12:30:57.626] [DEBUG] pinus - [room-server-1 monitorwatcher.js] room-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"room-server-1":{"main":"D:\\workspace\\pinus\\demo1\\game-server\\dist\\app.js","env":"development","id":"room-server-1","host":"127.0.0.1","port":3160,"args":"--inspect=10002","serverType":"room","remoterPaths":[{"namespace":"sys","serverType":"room","path":"D:\\workspace\\pinus\\demo1\\game-server\\node_modules\\pinus\\dist\\lib\\common\\remote\\backend"}],"handlerPaths":[]}}}
+[2019-05-09T12:30:57.629] [DEBUG] pinus - [room-server-1 monitorwatcher.js] room-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"room-server-1":{"main":"D:\\workspace\\pinus\\demo1\\game-server\\dist\\app.js","env":"development","id":"room-server-1","host":"127.0.0.1","port":3160,"args":"--inspect=10002","serverType":"room","remoterPaths":[{"namespace":"sys","serverType":"room","path":"D:\\workspace\\pinus\\demo1\\game-server\\node_modules\\pinus\\dist\\lib\\common\\remote\\backend"}],"handlerPaths":[]}}}
+[2019-05-09T12:32:11.981] [INFO] pinus - [room-server-1 application.js] application inited: "room-server-1"
+[2019-05-09T12:32:11.991] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter before start...
+[2019-05-09T12:32:11.993] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:32:12.004] [INFO] pinus-admin - [room-server-1 consoleService.js] try to connect master: "room", "127.0.0.1", 3005
+[2019-05-09T12:32:12.091] [ERROR] pinus-admin - [room-server-1 monitorAgent.js] server "room-server-1" "room" register master failed:{"code":-1,"msg":"server auth failed"}Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at MqttClient.<anonymous> (D:\workspace\pinus\demo1\game-server\node_modules\pinus-admin\lib\monitor\monitorAgent.ts:88:24)
+    at MqttClient.emit (events.js:193:13)
+    at Connection.<anonymous> (D:\workspace\pinus\demo1\game-server\node_modules\pinus-admin\lib\protocol\mqtt\mqttClient.ts:104:18)
+    at Connection.emit (events.js:193:13)
+    at Connection.emitPacket (D:\workspace\pinus\demo1\game-server\node_modules\mqtt-connection\connection.js:10:8)
+    at Connection.emit (events.js:193:13)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:291:12)
+    at readableAddChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:278:11)
+    at Connection.Readable.push (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:245:10)
+    at Connection.Duplexify._forward (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:170:26)
+    at DestroyableTransform.onreadable (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:134:10)
+    at DestroyableTransform.emit (events.js:193:13)
+    at emitReadable_ (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:504:10)
+    at emitReadable (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:498:62)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:298:29)
+[2019-05-09T12:32:12.097] [ERROR] pinus-admin - [room-server-1 mqttClient.js] mqtt socket is disconnect, remote server host: 127.0.0.1, port: 3005Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at Connection.<anonymous> (D:\workspace\pinus\demo1\game-server\node_modules\pinus-admin\lib\protocol\mqtt\mqttClient.ts:123:20)
+    at Connection.emit (events.js:193:13)
+    at Connection.emitPacket (D:\workspace\pinus\demo1\game-server\node_modules\mqtt-connection\connection.js:10:8)
+    at Connection.emit (events.js:193:13)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:291:12)
+    at readableAddChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:278:11)
+    at Connection.Readable.push (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:245:10)
+    at Connection.Duplexify._forward (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:170:26)
+    at DestroyableTransform.onreadable (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:134:10)
+    at DestroyableTransform.emit (events.js:193:13)
+    at emitReadable_ (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:504:10)
+    at emitReadable (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:498:62)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:298:29)
+    at readableAddChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:278:11)
+    at DestroyableTransform.Readable.push (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:245:10)
+[2019-05-09T12:32:13.100] [INFO] pinus-admin - [room-server-1 mqttClient.js] reconnect delay 1 s
+[2019-05-09T12:32:13.119] [DEBUG] pinus - [room-server-1 monitorwatcher.js] room-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"room-server-1":{"main":"D:\\workspace\\pinus\\demo1\\game-server\\dist\\app.js","env":"development","id":"room-server-1","host":"127.0.0.1","port":3160,"args":"--inspect=10002","serverType":"room","remoterPaths":[{"namespace":"sys","serverType":"room","path":"D:\\workspace\\pinus\\demo1\\game-server\\node_modules\\pinus\\dist\\lib\\common\\remote\\backend"},{"namespace":"user","serverType":"room","path":"D:\\workspace\\pinus\\demo1\\game-server\\dist\\app\\servers\\room\\remote"}],"handlerPaths":[]}}}
+[2019-05-09T12:32:13.125] [DEBUG] pinus - [room-server-1 monitorwatcher.js] room-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"room-server-1":{"main":"D:\\workspace\\pinus\\demo1\\game-server\\dist\\app.js","env":"development","id":"room-server-1","host":"127.0.0.1","port":3160,"args":"--inspect=10002","serverType":"room","remoterPaths":[{"namespace":"sys","serverType":"room","path":"D:\\workspace\\pinus\\demo1\\game-server\\node_modules\\pinus\\dist\\lib\\common\\remote\\backend"},{"namespace":"user","serverType":"room","path":"D:\\workspace\\pinus\\demo1\\game-server\\dist\\app\\servers\\room\\remote"}],"handlerPaths":[]}}}
+[2019-05-09T12:43:03.768] [INFO] pinus - [room-server-1 application.js] application inited: "room-server-1"
+[2019-05-09T12:43:03.781] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter before start...
+[2019-05-09T12:43:03.782] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:43:03.796] [INFO] pinus-admin - [room-server-1 consoleService.js] try to connect master: "room", "127.0.0.1", 3005
+[2019-05-09T12:43:03.881] [ERROR] pinus-admin - [room-server-1 monitorAgent.js] server "room-server-1" "room" register master failed:{"code":-1,"msg":"server auth failed"}Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at MqttClient.<anonymous> (D:\workspace\pinus\demo1\game-server\node_modules\pinus-admin\lib\monitor\monitorAgent.ts:88:24)
+    at MqttClient.emit (events.js:193:13)
+    at Connection.<anonymous> (D:\workspace\pinus\demo1\game-server\node_modules\pinus-admin\lib\protocol\mqtt\mqttClient.ts:104:18)
+    at Connection.emit (events.js:193:13)
+    at Connection.emitPacket (D:\workspace\pinus\demo1\game-server\node_modules\mqtt-connection\connection.js:10:8)
+    at Connection.emit (events.js:193:13)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:291:12)
+    at readableAddChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:278:11)
+    at Connection.Readable.push (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:245:10)
+    at Connection.Duplexify._forward (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:170:26)
+    at DestroyableTransform.onreadable (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:134:10)
+    at DestroyableTransform.emit (events.js:193:13)
+    at emitReadable_ (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:504:10)
+    at emitReadable (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:498:62)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:298:29)
+[2019-05-09T12:43:03.885] [ERROR] pinus-admin - [room-server-1 mqttClient.js] mqtt socket is disconnect, remote server host: 127.0.0.1, port: 3005Error: 
+    at Object.pLogger.(anonymous function) [as error] (D:\workspace\pinus\demo1\game-server\node_modules\pinus-logger\lib\logger.ts:72:34)
+    at Connection.<anonymous> (D:\workspace\pinus\demo1\game-server\node_modules\pinus-admin\lib\protocol\mqtt\mqttClient.ts:123:20)
+    at Connection.emit (events.js:193:13)
+    at Connection.emitPacket (D:\workspace\pinus\demo1\game-server\node_modules\mqtt-connection\connection.js:10:8)
+    at Connection.emit (events.js:193:13)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:291:12)
+    at readableAddChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:278:11)
+    at Connection.Readable.push (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:245:10)
+    at Connection.Duplexify._forward (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:170:26)
+    at DestroyableTransform.onreadable (D:\workspace\pinus\demo1\game-server\node_modules\duplexify\index.js:134:10)
+    at DestroyableTransform.emit (events.js:193:13)
+    at emitReadable_ (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:504:10)
+    at emitReadable (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:498:62)
+    at addChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:298:29)
+    at readableAddChunk (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:278:11)
+    at DestroyableTransform.Readable.push (D:\workspace\pinus\demo1\game-server\node_modules\readable-stream\lib\_stream_readable.js:245:10)
+[2019-05-09T12:43:04.888] [INFO] pinus-admin - [room-server-1 mqttClient.js] reconnect delay 1 s
+[2019-05-09T12:43:04.897] [DEBUG] pinus - [room-server-1 monitorwatcher.js] room-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"room-server-1":{"main":"D:\\workspace\\pinus\\demo1\\game-server\\dist\\app.js","env":"development","id":"room-server-1","host":"127.0.0.1","port":3160,"args":"--inspect=10003","serverType":"room","remoterPaths":[{"namespace":"sys","serverType":"room","path":"D:\\workspace\\pinus\\demo1\\game-server\\node_modules\\pinus\\dist\\lib\\common\\remote\\backend"},{"namespace":"user","serverType":"room","path":"D:\\workspace\\pinus\\demo1\\game-server\\dist\\app\\servers\\room\\remote"}],"handlerPaths":["D:\\workspace\\pinus\\demo1\\game-server\\dist\\app\\servers\\room\\handler"]}}}
+[2019-05-09T12:43:04.901] [DEBUG] pinus - [room-server-1 monitorwatcher.js] room-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"room-server-1":{"main":"D:\\workspace\\pinus\\demo1\\game-server\\dist\\app.js","env":"development","id":"room-server-1","host":"127.0.0.1","port":3160,"args":"--inspect=10003","serverType":"room","remoterPaths":[{"namespace":"sys","serverType":"room","path":"D:\\workspace\\pinus\\demo1\\game-server\\node_modules\\pinus\\dist\\lib\\common\\remote\\backend"},{"namespace":"user","serverType":"room","path":"D:\\workspace\\pinus\\demo1\\game-server\\dist\\app\\servers\\room\\remote"}],"handlerPaths":["D:\\workspace\\pinus\\demo1\\game-server\\dist\\app\\servers\\room\\handler"]}}}
+[2019-05-09T12:44:59.655] [INFO] pinus - [room-server-1 application.js] application inited: "room-server-1"
+[2019-05-09T12:44:59.666] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter before start...
+[2019-05-09T12:44:59.666] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:44:59.677] [INFO] pinus-admin - [room-server-1 consoleService.js] try to connect master: "room", "127.0.0.1", 3005
+[2019-05-09T12:44:59.735] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:44:59.736] [INFO] pinus - [room-server-1 application.js] "room-server-1" finish start
+[2019-05-09T12:44:59.736] [INFO] pinus - [room-server-1 application.js] "room-server-1" startup in 74 ms
+[2019-05-09T12:45:28.288] [INFO] pinus - [room-server-1 application.js] application inited: "room-server-1"
+[2019-05-09T12:45:28.299] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter before start...
+[2019-05-09T12:45:28.300] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:45:28.314] [INFO] pinus-admin - [room-server-1 consoleService.js] try to connect master: "room", "127.0.0.1", 3005
+[2019-05-09T12:45:28.379] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:45:28.380] [INFO] pinus - [room-server-1 application.js] "room-server-1" finish start
+[2019-05-09T12:45:28.380] [INFO] pinus - [room-server-1 application.js] "room-server-1" startup in 84 ms
+[2019-05-09T12:47:43.597] [INFO] pinus - [room-server-1 application.js] application inited: "room-server-1"
+[2019-05-09T12:47:43.610] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter before start...
+[2019-05-09T12:47:43.611] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:47:43.622] [INFO] pinus-admin - [room-server-1 consoleService.js] try to connect master: "room", "127.0.0.1", 3005
+[2019-05-09T12:47:43.685] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:47:43.686] [INFO] pinus - [room-server-1 application.js] "room-server-1" finish start
+[2019-05-09T12:47:43.686] [INFO] pinus - [room-server-1 application.js] "room-server-1" startup in 82 ms
+[2019-05-09T12:48:54.383] [INFO] pinus - [room-server-1 application.js] application inited: "room-server-1"
+[2019-05-09T12:48:54.392] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter before start...
+[2019-05-09T12:48:54.393] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:48:54.406] [INFO] pinus-admin - [room-server-1 consoleService.js] try to connect master: "room", "127.0.0.1", 3005
+[2019-05-09T12:48:54.473] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:48:54.475] [INFO] pinus - [room-server-1 application.js] "room-server-1" finish start
+[2019-05-09T12:48:54.475] [INFO] pinus - [room-server-1 application.js] "room-server-1" startup in 86 ms
+[2019-05-09T12:53:38.522] [INFO] pinus - [room-server-1 application.js] application inited: "room-server-1"
+[2019-05-09T12:53:38.532] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter before start...
+[2019-05-09T12:53:38.532] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:53:38.545] [INFO] pinus-admin - [room-server-1 consoleService.js] try to connect master: "room", "127.0.0.1", 3005
+[2019-05-09T12:53:38.601] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:53:38.602] [INFO] pinus - [room-server-1 application.js] "room-server-1" finish start
+[2019-05-09T12:53:38.602] [INFO] pinus - [room-server-1 application.js] "room-server-1" startup in 74 ms
+[2019-05-09T12:55:53.391] [INFO] pinus - [room-server-1 application.js] application inited: "room-server-1"
+[2019-05-09T12:55:53.401] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter before start...
+[2019-05-09T12:55:53.402] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:55:53.416] [INFO] pinus-admin - [room-server-1 consoleService.js] try to connect master: "room", "127.0.0.1", 3005
+[2019-05-09T12:55:53.475] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:55:53.477] [INFO] pinus - [room-server-1 application.js] "room-server-1" finish start
+[2019-05-09T12:55:53.477] [INFO] pinus - [room-server-1 application.js] "room-server-1" startup in 80 ms
+[2019-05-09T12:58:09.234] [INFO] pinus - [room-server-1 application.js] application inited: "room-server-1"
+[2019-05-09T12:58:09.244] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter before start...
+[2019-05-09T12:58:09.245] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:58:09.259] [INFO] pinus-admin - [room-server-1 consoleService.js] try to connect master: "room", "127.0.0.1", 3005
+[2019-05-09T12:58:09.317] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:58:09.318] [INFO] pinus - [room-server-1 application.js] "room-server-1" finish start
+[2019-05-09T12:58:09.319] [INFO] pinus - [room-server-1 application.js] "room-server-1" startup in 78 ms
+[2019-05-09T12:58:50.054] [INFO] pinus - [room-server-1 application.js] application inited: "room-server-1"
+[2019-05-09T12:58:50.064] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter before start...
+[2019-05-09T12:58:50.065] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:58:50.077] [INFO] pinus-admin - [room-server-1 consoleService.js] try to connect master: "room", "127.0.0.1", 3005
+[2019-05-09T12:58:50.136] [INFO] pinus - [room-server-1 application.js] "room-server-1" enter after start...
+[2019-05-09T12:58:50.137] [INFO] pinus - [room-server-1 application.js] "room-server-1" finish start
+[2019-05-09T12:58:50.137] [INFO] pinus - [room-server-1 application.js] "room-server-1" startup in 76 ms

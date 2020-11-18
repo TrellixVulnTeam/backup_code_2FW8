@@ -1,0 +1,24 @@
+5033 员工操作
+        /// <summary>
+        /// 操作类型 1=招募 2=上岗
+        /// </summary>
+        public int OperType = 0;
+        /// <summary>
+        /// 顾客ID/员工ID
+        /// </summary>
+        public int ID = 0;
+        /// <summary>
+        /// 取房产ID
+        /// </summary>
+        public string HouseID = "";
+        /// <summary>
+        /// 楼层ID
+        /// </summary>
+        public int FloorID = 0;
+
+5034 返回员工操作状态
+        /// <summary>
+        /// 0=成功 1=失败
+        /// </summary>
+        public byte Code = 0;
+

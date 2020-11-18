@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Basic</title>
+  <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/timeline.css" />
+</head>
+
+<body>
+  <header>
+    <div class="big-frame">
+      <h1>Great Tang</h1>
+    </div>
+    <nav>
+      <% links.forEach(function(link){ %>
+      <div>
+        <a class="link" href="<%= link.href %>"><%= link.title %></a>
+        <% if (link.subs) { %>
+        <div class="sub-menu">
+          <% link.subs.forEach(function(sl) { %>
+          <a class="link" href="<%= sl.href %>"><%= sl.title %></a>
+          <% }); %>
+        </div>
+        <% } %>
+      </div>
+      <% }); %>
+    </nav>
+  </header>
+  <div class="container">

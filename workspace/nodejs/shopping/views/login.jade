@@ -1,0 +1,21 @@
+extends layout
+block head
+  link(rel='stylesheet', href='/stylesheets/form.css')
+
+block content
+  main.d-flex.justify-content-center.align-items-center.flex-grow-1
+    sectioncard.card.form-card.border-secondary.mb-3
+      .card-header Login
+      .card-body
+        form(method='post')
+          .form-group
+            label Username
+            input.form-control(type="text", name='username')
+            small.form-text.text-muted Please input your Username
+
+          .form-group
+            label Password
+            input.form-control(type="password", name='password')
+            small.form-text.text-muted Please input your Password
+
+          button.btn.btn-primary(type="submit") Submit

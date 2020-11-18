@@ -1,0 +1,1 @@
+flexbox布局中flex-grow属性是针对单个项目来设置的,auto为自动扩容,<number>为占比

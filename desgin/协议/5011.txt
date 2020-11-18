@@ -1,0 +1,14 @@
+5011 创建房产
+
+        /// <summary>
+        /// 房产id
+        /// </summary>
+        public string HouseId = "";
+
+
+5012返回创建房产状态
+
+        /// <summary>
+        /// 0=成功 1=该建筑点不对 2=该建筑点已激活 3=钻石不够 4=取配置出错
+        /// </summary>
+        public byte Code = 0;

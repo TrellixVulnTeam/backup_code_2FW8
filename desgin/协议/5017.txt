@@ -1,0 +1,80 @@
+5017 取房产楼层信息
+        /// <summary>
+        /// 房产ID
+        /// </summary>
+        public string HouseId = "";
+
+5018 返回房产楼层信息
+        /// <summary>
+        /// 房产楼层信息
+        /// </summary>
+        public List<HouseFloorInfo> HouseFloorObj = new List<HouseFloorInfo>();
+
+
+
+    /// <summary>
+    /// 房产楼层信息
+    /// </summary>
+    public class HouseFloorInfo
+    {
+        /// <summary>
+        /// 楼层id
+        /// </summary>
+        public int id = 0;
+        /// <summary>
+        /// 楼层等级
+        /// </summary>
+        public int Level = 1;
+        /// <summary>
+        /// 所有者id
+        /// </summary>
+        public int CId = 0;
+        /// <summary>
+        /// 房东名称
+        /// </summary>
+        public string CName = "";
+        /// <summary>
+        /// 承租者id
+        /// </summary>
+        public int ZId = 0;
+        /// <summary>
+        /// 租户名称
+        /// </summary>
+        public string ZName = "";
+        /// <summary>
+        /// 入住者id
+        /// </summary>
+        public int LZId = 0;
+        /// <summary>
+        /// 入住者名称
+        /// </summary>
+        public string LZName = "";
+        /// <summary>
+        /// 购买价格（钻石）
+        /// </summary>
+        public int Money = 0;
+        /// <summary>
+        /// 出售价格(钻石)
+        /// </summary>
+        public int SellMoney = 0;
+        /// <summary>
+        /// 开店铺类型
+        /// </summary>
+        public int OpenShopType = 0;
+        /// <summary>
+        /// 用户提取房产店铺收入时间
+        /// </summary>
+        public string Rtime = "";
+        /// <summary>
+        /// 用户提取租房收入时间
+        /// </summary>
+        public string ZUtime = "";
+        /// <summary>
+        /// 上岗员工ID
+        /// </summary>
+        public int StaffID = 0;
+
+    }
+
+
+

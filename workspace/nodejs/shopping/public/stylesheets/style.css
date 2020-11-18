@@ -1,0 +1,77 @@
+#app {
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.gallery {
+  margin-top: 20px;
+  position: relative;
+  flex-grow: 1;
+}
+
+.gallery-img {
+  width: 128px;
+  height: 128px;
+}
+
+.gallery-detail {
+  padding-left: 12px;
+  margin-bottom: 0;
+  position: relative;
+  max-height: 128px;
+}
+
+.gallery-detail button {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+}
+
+.gallery-detail p {
+  text-overflow: clip;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+
+footer {
+  border-top: 2px solid #aaa;
+  padding-top: 1em;
+}
+
+.footer-item {
+  margin-right: 12px;
+}
+
+.preview {
+  width: 180px;
+  height: 256px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 3rem;
+  padding-left: .6rem;
+  line-height: 1.2em;
+  height: 1.2em;
+  border-left: .4rem solid #df691a;
+}
+
+.empty {
+  background: rgba(225, 255, 255, 0.5);
+  font-size: 1.3rem;
+  padding: 12px;
+}
+
+.items {
+  margin-bottom: 8px;
+}
+
+.items .count {
+  padding-left: 8px;
+}
+
+.total-price {
+  font-size: 1.6rem;
+  color: #df691a;
+}

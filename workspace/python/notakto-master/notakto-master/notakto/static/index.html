@@ -1,0 +1,56 @@
+<html >
+<head>
+  <meta charset="UTF-8" name="viewport" content="initial-scale=1, user-scalable=0">
+  <title>NoTakTo</title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="shortcut icon" type ="image/x-icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+  <a href="../index.html"><img id="hslogo" src="images/HS.gif" alt="Go to Hurd-Sullivan.com"/></a>
+  <div class="btn-toolbar" role="toolbar" aria-label=
+    "Toolbar with button groups">
+      <div class="btn-group-lg mr-2" role="group" aria-label="First group">
+        <button id="gameStatus" type="button" class="btn btn-outline-primary">
+          Start</button>
+        <button id="minus" type="button" class="btn btn-outline-primary">-</button>
+        <button id="plus" type="button" class="btn btn-outline-primary">+</button>
+      </div>
+  </div>
+  <div>
+      <span id="humanScore" class="scores">Human: 0</span>
+      <span id="computerScore" class="scores">Computer: 0</span>
+  </div>
+  </div>
+  <div id="frame">
+    <div class="boards">
+        <canvas id="0" width=186 height=186 class="board">
+            Your browser does not support HTML5.
+        </canvas>
+        <div class="label">
+        </div>
+    </div>
+  </div>
+  <div id="explanation">
+  <p class="rules">
+    <ul>
+      <li>Red and Blue take turns playing X's.</li>
+      <li>A board with three X's in a row (irrespective of color) is dead.</li>
+      <li>Whoever kills the last board loses.</li>
+      <li><a href="discussion.html">More discussion.</a></li>
+    </ul>
+  </p>
+</div>
+    <script src="js/monoid.js"></script>
+    <script src="js/notakto.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

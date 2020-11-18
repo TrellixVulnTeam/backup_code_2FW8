@@ -1,0 +1,584 @@
+{
+    "extension": "linecount",
+    "version": "0.1.7",
+    "workspace": "d:\\code\\sss\\play-demo1\\FullBottle",
+    "linecount": [
+        {
+            "version": "0.1.7",
+            "counttime": "2019-10-31 01:38:32",
+            "filesum": 41,
+            "codesum": 7753,
+            "commentsum": 114,
+            "blanksum": 174,
+            "filelist": [
+                {
+                    "blank": 5,
+                    "code": 164,
+                    "comment": 0,
+                    "filename": "dist\\flywar.html"
+                },
+                {
+                    "filename": "dist\\imgs\\bullet.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\imgs\\sc_01.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\imgs\\sc_02.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\imgs\\sc_03.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\imgs\\sc_04.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\imgs\\sc_05.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\imgs\\sc_06.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\imgs\\sc_07.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\imgs\\sc_08.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\imgs\\sc_09.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\imgs\\sc_10.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\imgs\\sc_11.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\imgs\\sc_12.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 6,
+                    "code": 83,
+                    "comment": 0,
+                    "filename": "dist\\index.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "dist\\main.bundle.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 6794,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\behaviors\\behaviorTypes.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\behaviors\\BoundToLayout.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 5,
+                    "filename": "src\\behaviors\\Bullet.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\behaviors\\DestoryByOutSide.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 43,
+                    "comment": 3,
+                    "filename": "src\\behaviors\\Direction4.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "src\\core\\behavior.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 40,
+                    "comment": 3,
+                    "filename": "src\\core\\camera.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 22,
+                    "comment": 19,
+                    "filename": "src\\core\\collider.js"
+                },
+                {
+                    "blank": 20,
+                    "code": 66,
+                    "comment": 12,
+                    "filename": "src\\core\\game.js"
+                },
+                {
+                    "blank": 23,
+                    "code": 85,
+                    "comment": 18,
+                    "filename": "src\\core\\gObject.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\core\\index.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 35,
+                    "comment": 10,
+                    "filename": "src\\core\\scene.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 38,
+                    "comment": 14,
+                    "filename": "src\\events\\index.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 30,
+                    "comment": 0,
+                    "filename": "src\\inputs\\keyword.js"
+                },
+                {
+                    "blank": 14,
+                    "code": 55,
+                    "comment": 7,
+                    "filename": "src\\inputs\\mouse.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 51,
+                    "comment": 4,
+                    "filename": "src\\main.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 12,
+                    "comment": 4,
+                    "filename": "src\\sprite\\animation.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 33,
+                    "comment": 7,
+                    "filename": "src\\sprite\\index.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 53,
+                    "comment": 4,
+                    "filename": "src\\sprite\\transform.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 21,
+                    "comment": 0,
+                    "filename": "src\\utils\\AnimationManager.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\utils\\Options.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 3,
+                    "filename": "src\\utils\\types.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "webpack.config.js"
+                }
+            ]
+        },
+        {
+            "version": "0.1.7",
+            "counttime": "2019-10-31 01:39:56",
+            "filesum": 25,
+            "codesum": 7505,
+            "commentsum": 113,
+            "blanksum": 163,
+            "filelist": [
+                {
+                    "blank": 0,
+                    "code": 6794,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\behaviors\\behaviorTypes.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\behaviors\\BoundToLayout.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 5,
+                    "filename": "src\\behaviors\\Bullet.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\behaviors\\DestoryByOutSide.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 43,
+                    "comment": 3,
+                    "filename": "src\\behaviors\\Direction4.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "src\\core\\behavior.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 40,
+                    "comment": 3,
+                    "filename": "src\\core\\camera.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 22,
+                    "comment": 19,
+                    "filename": "src\\core\\collider.js"
+                },
+                {
+                    "blank": 20,
+                    "code": 66,
+                    "comment": 12,
+                    "filename": "src\\core\\game.js"
+                },
+                {
+                    "blank": 23,
+                    "code": 85,
+                    "comment": 18,
+                    "filename": "src\\core\\gObject.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\core\\index.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 35,
+                    "comment": 10,
+                    "filename": "src\\core\\scene.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 38,
+                    "comment": 14,
+                    "filename": "src\\events\\index.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 30,
+                    "comment": 0,
+                    "filename": "src\\inputs\\keyword.js"
+                },
+                {
+                    "blank": 14,
+                    "code": 55,
+                    "comment": 7,
+                    "filename": "src\\inputs\\mouse.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 51,
+                    "comment": 4,
+                    "filename": "src\\main.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 12,
+                    "comment": 4,
+                    "filename": "src\\sprite\\animation.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 33,
+                    "comment": 7,
+                    "filename": "src\\sprite\\index.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 53,
+                    "comment": 4,
+                    "filename": "src\\sprite\\transform.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 21,
+                    "comment": 0,
+                    "filename": "src\\utils\\AnimationManager.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\utils\\Options.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 3,
+                    "filename": "src\\utils\\types.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "webpack.config.js"
+                }
+            ]
+        },
+        {
+            "version": "0.1.7",
+            "counttime": "2019-10-31 01:40:21",
+            "filesum": 23,
+            "codesum": 685,
+            "commentsum": 113,
+            "blanksum": 163,
+            "filelist": [
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\behaviors\\behaviorTypes.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\behaviors\\BoundToLayout.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 5,
+                    "filename": "src\\behaviors\\Bullet.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\behaviors\\DestoryByOutSide.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 43,
+                    "comment": 3,
+                    "filename": "src\\behaviors\\Direction4.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "src\\core\\behavior.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 40,
+                    "comment": 3,
+                    "filename": "src\\core\\camera.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 22,
+                    "comment": 19,
+                    "filename": "src\\core\\collider.js"
+                },
+                {
+                    "blank": 20,
+                    "code": 66,
+                    "comment": 12,
+                    "filename": "src\\core\\game.js"
+                },
+                {
+                    "blank": 23,
+                    "code": 85,
+                    "comment": 18,
+                    "filename": "src\\core\\gObject.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\core\\index.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 35,
+                    "comment": 10,
+                    "filename": "src\\core\\scene.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 38,
+                    "comment": 14,
+                    "filename": "src\\events\\index.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 30,
+                    "comment": 0,
+                    "filename": "src\\inputs\\keyword.js"
+                },
+                {
+                    "blank": 14,
+                    "code": 55,
+                    "comment": 7,
+                    "filename": "src\\inputs\\mouse.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 51,
+                    "comment": 4,
+                    "filename": "src\\main.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 12,
+                    "comment": 4,
+                    "filename": "src\\sprite\\animation.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 33,
+                    "comment": 7,
+                    "filename": "src\\sprite\\index.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 53,
+                    "comment": 4,
+                    "filename": "src\\sprite\\transform.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 21,
+                    "comment": 0,
+                    "filename": "src\\utils\\AnimationManager.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\utils\\Options.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 3,
+                    "filename": "src\\utils\\types.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "webpack.config.js"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TableSkin"
+	 width="1280"
+	height="720" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect id="abc" left="-1" right="1" top="2" bottom="-2" fillColor="0x269FFA"/>
+	<e:Image width="112.755" height="112.755" x="213.613" y="569.531" source="role_boy_png" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image width="112.755" height="112.755" x="40.206" y="135.897" source="role_boy_png" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image width="112.755" height="112.755" x="1117.669" y="133.684" anchorOffsetX="0" anchorOffsetY="0" source="role_girl_png"/>
+	<e:Image width="120.513" height="120.513" x="565.813" y="557.277" source="heart_png" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image width="120.513" height="120.513" x="607.143" y="557.207" source="heart_png" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image width="120.513" height="120.513" x="648.524" y="556.735" anchorOffsetX="0" anchorOffsetY="0" source="club_png"/>
+	<e:Image width="120.513" height="120.513" x="688.798" y="557.004" anchorOffsetX="0" anchorOffsetY="0" source="spade_png"/>
+	<e:Image width="120.513" height="120.513" x="515.691" y="280.027" anchorOffsetX="0" anchorOffsetY="0" source="h5_png"/>
+	<e:Image width="120.513" height="120.513" x="555.966" y="280.297" anchorOffsetX="0" anchorOffsetY="0" source="s5_png"/>
+	<e:Image width="120.513" height="120.513" x="598.402" y="279.485" anchorOffsetX="0" anchorOffsetY="0" source="d5_png"/>
+	<e:Image width="120.513" height="120.513" x="638.676" y="279.754" anchorOffsetX="0" anchorOffsetY="0" source="h3_png"/>
+	<e:Image width="120.513" height="120.513" x="679.85" y="279.733" anchorOffsetX="0" anchorOffsetY="0" source="h7_png"/>
+	<e:Image width="120.513" height="120.513" x="212.877" y="84.431" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="212.857" y="104.451" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="211.724" y="128.924" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="211.704" y="152.284" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="209.457" y="175.644" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="211.743" y="193.518" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="948.773" y="136.738" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="948.753" y="156.758" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="947.62" y="181.231" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="947.6" y="204.591" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="945.353" y="227.951" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="947.639" y="245.825" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="211.723" y="213.538" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="210.59" y="238.011" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="210.57" y="261.371" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Image width="120.513" height="120.513" x="208.323" y="284.731" anchorOffsetX="0" anchorOffsetY="0" source="back_png"/>
+	<e:Button label="出牌" x="545.213" y="480.061"/>
+	<e:Button label="不要" x="687.868" y="479.702"/>
+</e:Skin>

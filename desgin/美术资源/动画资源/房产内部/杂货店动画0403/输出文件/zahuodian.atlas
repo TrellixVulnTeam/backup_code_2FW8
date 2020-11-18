@@ -1,0 +1,104 @@
+
+zahuodian.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+beibao
+  rotate: true
+  xy: 821, 246
+  size: 35, 90
+  orig: 35, 90
+  offset: 0, 0
+  index: -1
+chuwujia
+  rotate: false
+  xy: 285, 133
+  size: 215, 130
+  orig: 215, 130
+  offset: 0, 0
+  index: -1
+chuwuxiang
+  rotate: false
+  xy: 195, 2
+  size: 71, 94
+  orig: 71, 94
+  offset: 0, 0
+  index: -1
+fangjian
+  rotate: false
+  xy: 2, 265
+  size: 759, 213
+  orig: 759, 213
+  offset: 0, 0
+  index: -1
+jiazi
+  rotate: false
+  xy: 763, 283
+  size: 192, 195
+  orig: 192, 195
+  offset: 0, 0
+  index: -1
+maozi
+  rotate: false
+  xy: 766, 146
+  size: 43, 49
+  orig: 43, 49
+  offset: 0, 0
+  index: -1
+men
+  rotate: true
+  xy: 502, 133
+  size: 130, 184
+  orig: 130, 184
+  offset: 0, 0
+  index: -1
+wupin1
+  rotate: true
+  xy: 728, 124
+  size: 139, 36
+  orig: 139, 36
+  offset: 0, 0
+  index: -1
+wupin2
+  rotate: true
+  xy: 688, 123
+  size: 140, 38
+  orig: 140, 38
+  offset: 0, 0
+  index: -1
+wuping3
+  rotate: true
+  xy: 957, 329
+  size: 149, 32
+  orig: 149, 32
+  offset: 0, 0
+  index: -1
+xiaoxiong1
+  rotate: true
+  xy: 2, 5
+  size: 91, 191
+  orig: 91, 191
+  offset: 0, 0
+  index: -1
+xiaoxiong2
+  rotate: false
+  xy: 766, 197
+  size: 53, 84
+  orig: 53, 84
+  offset: 0, 0
+  index: -1
+zhahuodian
+  rotate: false
+  xy: 2, 98
+  size: 281, 165
+  orig: 281, 165
+  offset: 0, 0
+  index: -1
+zhuzi
+  rotate: true
+  xy: 285, 109
+  size: 22, 213
+  orig: 22, 213
+  offset: 0, 0
+  index: -1

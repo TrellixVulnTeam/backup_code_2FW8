@@ -1,0 +1,28 @@
+extends layout
+block head
+  link(rel='stylesheet', href='/stylesheets/detail.css')
+
+block content
+  main.d-flex.flex-grow-1.max
+    form.container(method='post', enctype='multipart/form-data')
+      fieldset
+        legend.page-title Add New Product
+        .form-group
+          div
+            img#preview.preview
+          input#upload(type='file', name='image')
+        .form-group
+          label.col-form-label Name
+          input#staticEmail.form-control(type='text', name='name')
+        .form-group
+          label.col-form-label Type
+          input.form-control(type='text', name='type')
+        .form-group
+          label.col-form-label Price
+          input.form-control(type='number', min="0", name='price')
+        .form-group
+          button.btn.btn-primary Save
+          a.btn.btn-success.ml-4(href="/shopping") Back    
+
+block script
+  script(src='/javascripts/imgUpload.js')

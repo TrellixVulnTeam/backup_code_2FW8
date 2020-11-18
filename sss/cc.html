@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- include A-Frame obviously -->
+  <script src="./aframe.min.js"></script>
+  <!-- include ar.js for A-Frame -->
+  <script src="./aframe-ar.min.js"></script>
+  <script src="./aframe-extras.loaders.min.js"></script>
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+    <a-assets>
+      <img id="transpImage" src="./dog.png">
+    </a-assets>
+    <a-image width="1" height="1" src="#transpImage"></a-image>
+    <a-marker-camera preset='hiro'></a-marker-camera>
+  </a-scene>
+</body>
+
+</html>

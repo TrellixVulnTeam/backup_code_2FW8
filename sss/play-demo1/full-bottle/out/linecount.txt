@@ -1,0 +1,125 @@
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2019-10-31 01:38:32
+count workspace : d:\code\sss\play-demo1\FullBottle
+total files : 41
+total code lines : 7753
+total comment lines : 114
+total blank lines : 174
+
+dist\flywar.html, code is 164, comment is 0, blank is 5.
+dist\imgs\bullet.png, it is a binary file.
+dist\imgs\sc_01.png, it is a binary file.
+dist\imgs\sc_02.png, it is a binary file.
+dist\imgs\sc_03.png, it is a binary file.
+dist\imgs\sc_04.png, it is a binary file.
+dist\imgs\sc_05.png, it is a binary file.
+dist\imgs\sc_06.png, it is a binary file.
+dist\imgs\sc_07.png, it is a binary file.
+dist\imgs\sc_08.png, it is a binary file.
+dist\imgs\sc_09.png, it is a binary file.
+dist\imgs\sc_10.png, it is a binary file.
+dist\imgs\sc_11.png, it is a binary file.
+dist\imgs\sc_12.png, it is a binary file.
+dist\index.html, code is 83, comment is 0, blank is 6.
+dist\main.bundle.js, code is 1, comment is 1, blank is 0.
+package-lock.json, code is 6794, comment is 0, blank is 0.
+package.json, code is 26, comment is 0, blank is 0.
+src\behaviors\behaviorTypes.js, code is 10, comment is 0, blank is 1.
+src\behaviors\BoundToLayout.js, code is 15, comment is 0, blank is 3.
+src\behaviors\Bullet.js, code is 11, comment is 5, blank is 2.
+src\behaviors\DestoryByOutSide.js, code is 14, comment is 0, blank is 2.
+src\behaviors\Direction4.js, code is 43, comment is 3, blank is 7.
+src\core\behavior.js, code is 18, comment is 0, blank is 11.
+src\core\camera.js, code is 40, comment is 3, blank is 7.
+src\core\collider.js, code is 22, comment is 19, blank is 4.
+src\core\game.js, code is 66, comment is 12, blank is 20.
+src\core\gObject.js, code is 85, comment is 18, blank is 23.
+src\core\index.js, code is 5, comment is 0, blank is 0.
+src\core\scene.js, code is 35, comment is 10, blank is 11.
+src\events\index.js, code is 38, comment is 14, blank is 10.
+src\inputs\keyword.js, code is 30, comment is 0, blank is 6.
+src\inputs\mouse.js, code is 55, comment is 7, blank is 14.
+src\main.js, code is 51, comment is 4, blank is 12.
+src\sprite\animation.js, code is 12, comment is 4, blank is 2.
+src\sprite\index.js, code is 33, comment is 7, blank is 9.
+src\sprite\transform.js, code is 53, comment is 4, blank is 13.
+src\utils\AnimationManager.js, code is 21, comment is 0, blank is 4.
+src\utils\Options.js, code is 9, comment is 0, blank is 0.
+src\utils\types.js, code is 6, comment is 3, blank is 1.
+webpack.config.js, code is 13, comment is 0, blank is 1.
+===============================================================================
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2019-10-31 01:39:56
+count workspace : d:\code\sss\play-demo1\FullBottle
+total files : 25
+total code lines : 7505
+total comment lines : 113
+total blank lines : 163
+
+package-lock.json, code is 6794, comment is 0, blank is 0.
+package.json, code is 26, comment is 0, blank is 0.
+src\behaviors\behaviorTypes.js, code is 10, comment is 0, blank is 1.
+src\behaviors\BoundToLayout.js, code is 15, comment is 0, blank is 3.
+src\behaviors\Bullet.js, code is 11, comment is 5, blank is 2.
+src\behaviors\DestoryByOutSide.js, code is 14, comment is 0, blank is 2.
+src\behaviors\Direction4.js, code is 43, comment is 3, blank is 7.
+src\core\behavior.js, code is 18, comment is 0, blank is 11.
+src\core\camera.js, code is 40, comment is 3, blank is 7.
+src\core\collider.js, code is 22, comment is 19, blank is 4.
+src\core\game.js, code is 66, comment is 12, blank is 20.
+src\core\gObject.js, code is 85, comment is 18, blank is 23.
+src\core\index.js, code is 5, comment is 0, blank is 0.
+src\core\scene.js, code is 35, comment is 10, blank is 11.
+src\events\index.js, code is 38, comment is 14, blank is 10.
+src\inputs\keyword.js, code is 30, comment is 0, blank is 6.
+src\inputs\mouse.js, code is 55, comment is 7, blank is 14.
+src\main.js, code is 51, comment is 4, blank is 12.
+src\sprite\animation.js, code is 12, comment is 4, blank is 2.
+src\sprite\index.js, code is 33, comment is 7, blank is 9.
+src\sprite\transform.js, code is 53, comment is 4, blank is 13.
+src\utils\AnimationManager.js, code is 21, comment is 0, blank is 4.
+src\utils\Options.js, code is 9, comment is 0, blank is 0.
+src\utils\types.js, code is 6, comment is 3, blank is 1.
+webpack.config.js, code is 13, comment is 0, blank is 1.
+===============================================================================
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2019-10-31 01:40:21
+count workspace : d:\code\sss\play-demo1\FullBottle
+total files : 23
+total code lines : 685
+total comment lines : 113
+total blank lines : 163
+
+src\behaviors\behaviorTypes.js, code is 10, comment is 0, blank is 1.
+src\behaviors\BoundToLayout.js, code is 15, comment is 0, blank is 3.
+src\behaviors\Bullet.js, code is 11, comment is 5, blank is 2.
+src\behaviors\DestoryByOutSide.js, code is 14, comment is 0, blank is 2.
+src\behaviors\Direction4.js, code is 43, comment is 3, blank is 7.
+src\core\behavior.js, code is 18, comment is 0, blank is 11.
+src\core\camera.js, code is 40, comment is 3, blank is 7.
+src\core\collider.js, code is 22, comment is 19, blank is 4.
+src\core\game.js, code is 66, comment is 12, blank is 20.
+src\core\gObject.js, code is 85, comment is 18, blank is 23.
+src\core\index.js, code is 5, comment is 0, blank is 0.
+src\core\scene.js, code is 35, comment is 10, blank is 11.
+src\events\index.js, code is 38, comment is 14, blank is 10.
+src\inputs\keyword.js, code is 30, comment is 0, blank is 6.
+src\inputs\mouse.js, code is 55, comment is 7, blank is 14.
+src\main.js, code is 51, comment is 4, blank is 12.
+src\sprite\animation.js, code is 12, comment is 4, blank is 2.
+src\sprite\index.js, code is 33, comment is 7, blank is 9.
+src\sprite\transform.js, code is 53, comment is 4, blank is 13.
+src\utils\AnimationManager.js, code is 21, comment is 0, blank is 4.
+src\utils\Options.js, code is 9, comment is 0, blank is 0.
+src\utils\types.js, code is 6, comment is 3, blank is 1.
+webpack.config.js, code is 13, comment is 0, blank is 1.
+===============================================================================

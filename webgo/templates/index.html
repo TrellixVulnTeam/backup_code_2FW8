@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block head %}
+    <script src="{{ url_for('static', filename='Swiper.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<!--轮播图-->
+<section>
+    <div id="pets" class="swiper">
+      <ul>
+          {% for image in images %}
+            <li><img src="{{ url_for('static', filename=image) }}" alt=""></li>
+          {% endfor %}
+      </ul>
+    </div>
+
+</section>
+{% endblock %}
+
+
+{% block footer %}
+    <script>
+        window.addEventListener('load', function() {
+            var swiper = new Swiper("#pets", 2000);
+            swiper.run()
+        })
+    </script>
+{% endblock %}

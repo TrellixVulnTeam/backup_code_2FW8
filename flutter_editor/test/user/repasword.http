@@ -1,0 +1,8 @@
+POST http://127.0.0.1:5000/user/repassword
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzUzNzExNzYsIm5iZiI6MTU3NTM3MTE3NiwianRpIjoiZmNlYzQ5YjctY2ZiZi00YWRlLWEyNWMtY2U5MzQ0NGRlZjIzIiwiZXhwIjoxNTc1MzcyMDc2LCJpZGVudGl0eSI6ImhmakBrZGlmLmNvbSIsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7InVzZXJuYW1lIjoiYWNsZG0iLCJwYXNzd29yZCI6ImFhYWFhYSIsImVtYWlsIjoiaGZqQGtkaWYuY29tIn19.bQuvIxM1fB_1QGjT0_tPRh5DsiXIOTqxly3UPSscL6I
+
+{
+  "old_password": "aaaaaa",
+  "new_password": "abcabcabc"
+}

@@ -1,0 +1,38 @@
+5019 房产楼层操作
+        /// <summary>
+        /// 1=修改卖出价格 2=购买楼层 3=租住楼层 4=解除租住楼层 5=入住（只能住宅楼）6=开店 7=关闭店铺 8=提取开店收益 9=提取租房收益 10=点赞 11=增加楼层 12=店铺升级
+        /// </summary>
+        public int Operation = 0;
+        /// <summary>
+        /// 房产ID
+        /// </summary>
+        public string HouseId = "";
+        /// <summary>
+        /// 房产楼层id
+        /// </summary>
+        public int FloorId = 0;
+        /// <summary>
+        /// 卖出价格
+        /// </summary>
+        public int SellMoney = 0;
+        /// <summary>
+        /// 开店铺类型ID
+        /// </summary>
+        public int ShopTypeID = 0;
+
+
+5020 返回房产楼层操作状态
+        /// <summary>
+        /// 0=成功 1=钱不够 2=一周只能修改一次 3=上传数据不对 4=入住只能是住宅楼 5=操作类型不对 6=价格已变化 7=已被人入住 8=出售价格不对 9=不是房东或者租房 10=不能购买自已的房产 11=已被租住 12=没有人租住
+        /// 13=用户等级开店数量限制 14=开店铺类型未解锁 15=已开店 16=不是房东 17=收获时间末到 18=该房产不能开店 19=违约金不够 20=不能购买房东自住住房 21=入住的房子才能点赞 22=点赞超过次数 23=每天只能点赞一次
+        /// 24=增加楼层上限 25=升级店铺等级上限
+        /// </summary>
+        public int Code = 0;
+        /// <summary>
+        /// 收的钱
+        /// </summary>
+        public int Money = 0;
+        /// <summary>
+        /// 更新时间
+        /// </summary>
+        public string RefreshTime = "";

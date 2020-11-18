@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FIND YOUR MEANINGFUL PLACE</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/input.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/vue-style.css'>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <input type="range" class="mute" />
+            <button class="btn">MUTE</button>
+        </header>
+        <div class="title">
+            <h1>FIND YOUR MEANINGFUL PLACE</h1>
+            <p>Ambient sounds to wash away distraction.</p>
+        </div>
+        <div class="fluit space-between">
+            <button class="image-btn" @click="reset">
+                <span class="i i-trash">
+                </span>
+            </button>
+            <div @click="control">
+                <img class="image" src="./img/pause.png" v-if="isplay" />
+                <img class="image" src="./img/play.png" v-else />
+            </div>
+        </div>
+        <div class="fluit box">
+            <button class="btn" @click="setMode('timers')">TIMERS</button>
+            <button class="btn" @click="setMode('mixes')">MIXES</button>
+            <!-- <button class="btn" @click="setMode('share')">SHARE</button> -->
+        </div>
+        <div class="box">
+            <transition name="fade">
+                <Timers v-show="mode == 'timers'"
+                    @start="timerStart"
+                    @stop="timerStop" />
+            </transition>
+            <transition name="fade">
+                <Mixes v-show="mode=='mixes'" />
+            </transition>
+        </div>
+        <div class="fluit">
+            <mixin-audio v-for="(a, index) in audioRes" :key="index" :isplay="isplay" :aname="a[0]"
+                :source="'./res/' + a[1]" ref="audio">
+            </mixin-audio>
+        </div>
+    </div>
+
+    <script src="./js/vue.js"></script>
+    <script src="./js/util.js"></script>
+    <script src="./js/components.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

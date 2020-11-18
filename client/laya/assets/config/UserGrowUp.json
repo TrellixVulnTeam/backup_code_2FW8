@@ -1,0 +1,695 @@
+{
+  "1": {
+    "Lv": 1,
+    "Exp": 300,
+    "LevelCoefficient": 1,
+    "AddPopularity": 1,
+    "ShopLimit": 1
+  },
+  "2": {
+    "Lv": 2,
+    "Exp": 663,
+    "LevelCoefficient": 1.2,
+    "AddPopularity": 1,
+    "ShopLimit": 1
+  },
+  "3": {
+    "Lv": 3,
+    "Exp": 1095,
+    "LevelCoefficient": 1.4,
+    "AddPopularity": 1,
+    "ShopLimit": 1
+  },
+  "4": {
+    "Lv": 4,
+    "Exp": 1602,
+    "LevelCoefficient": 1.7,
+    "AddPopularity": 1,
+    "ShopLimit": 1
+  },
+  "5": {
+    "Lv": 5,
+    "Exp": 2190,
+    "LevelCoefficient": 2,
+    "AddPopularity": 1,
+    "ShopLimit": 1
+  },
+  "6": {
+    "Lv": 6,
+    "Exp": 2865,
+    "LevelCoefficient": 2.3,
+    "AddPopularity": 1,
+    "ShopLimit": 1
+  },
+  "7": {
+    "Lv": 7,
+    "Exp": 3633,
+    "LevelCoefficient": 2.6,
+    "AddPopularity": 1,
+    "ShopLimit": 1
+  },
+  "8": {
+    "Lv": 8,
+    "Exp": 4500,
+    "LevelCoefficient": 2.9,
+    "AddPopularity": 1,
+    "ShopLimit": 1
+  },
+  "9": {
+    "Lv": 9,
+    "Exp": 5472,
+    "LevelCoefficient": 3.2,
+    "AddPopularity": 1,
+    "ShopLimit": 1
+  },
+  "10": {
+    "Lv": 10,
+    "Exp": 6555,
+    "LevelCoefficient": 3.6,
+    "AddPopularity": 2,
+    "ShopLimit": 1
+  },
+  "11": {
+    "Lv": 11,
+    "Exp": 7755,
+    "LevelCoefficient": 4,
+    "AddPopularity": 2,
+    "ShopLimit": 1
+  },
+  "12": {
+    "Lv": 12,
+    "Exp": 9078,
+    "LevelCoefficient": 4.4,
+    "AddPopularity": 2,
+    "ShopLimit": 1
+  },
+  "13": {
+    "Lv": 13,
+    "Exp": 10530,
+    "LevelCoefficient": 4.8,
+    "AddPopularity": 2,
+    "ShopLimit": 1
+  },
+  "14": {
+    "Lv": 14,
+    "Exp": 12117,
+    "LevelCoefficient": 5.3,
+    "AddPopularity": 2,
+    "ShopLimit": 1
+  },
+  "15": {
+    "Lv": 15,
+    "Exp": 13845,
+    "LevelCoefficient": 5.8,
+    "AddPopularity": 2,
+    "ShopLimit": 1
+  },
+  "16": {
+    "Lv": 16,
+    "Exp": 15720,
+    "LevelCoefficient": 6.3,
+    "AddPopularity": 2,
+    "ShopLimit": 1
+  },
+  "17": {
+    "Lv": 17,
+    "Exp": 17748,
+    "LevelCoefficient": 6.8,
+    "AddPopularity": 2,
+    "ShopLimit": 1
+  },
+  "18": {
+    "Lv": 18,
+    "Exp": 19935,
+    "LevelCoefficient": 7.3,
+    "AddPopularity": 2,
+    "ShopLimit": 1
+  },
+  "19": {
+    "Lv": 19,
+    "Exp": 22287,
+    "LevelCoefficient": 7.8,
+    "AddPopularity": 2,
+    "ShopLimit": 1
+  },
+  "20": {
+    "Lv": 20,
+    "Exp": 24810,
+    "LevelCoefficient": 8.4,
+    "AddPopularity": 3,
+    "ShopLimit": 2
+  },
+  "21": {
+    "Lv": 21,
+    "Exp": 27510,
+    "LevelCoefficient": 9,
+    "AddPopularity": 3,
+    "ShopLimit": 2
+  },
+  "22": {
+    "Lv": 22,
+    "Exp": 30393,
+    "LevelCoefficient": 9.6,
+    "AddPopularity": 3,
+    "ShopLimit": 2
+  },
+  "23": {
+    "Lv": 23,
+    "Exp": 33465,
+    "LevelCoefficient": 10.2,
+    "AddPopularity": 3,
+    "ShopLimit": 2
+  },
+  "24": {
+    "Lv": 24,
+    "Exp": 36732,
+    "LevelCoefficient": 10.9,
+    "AddPopularity": 3,
+    "ShopLimit": 2
+  },
+  "25": {
+    "Lv": 25,
+    "Exp": 40200,
+    "LevelCoefficient": 11.6,
+    "AddPopularity": 3,
+    "ShopLimit": 2
+  },
+  "26": {
+    "Lv": 26,
+    "Exp": 43875,
+    "LevelCoefficient": 12.3,
+    "AddPopularity": 3,
+    "ShopLimit": 2
+  },
+  "27": {
+    "Lv": 27,
+    "Exp": 47763,
+    "LevelCoefficient": 13,
+    "AddPopularity": 3,
+    "ShopLimit": 2
+  },
+  "28": {
+    "Lv": 28,
+    "Exp": 51870,
+    "LevelCoefficient": 13.7,
+    "AddPopularity": 3,
+    "ShopLimit": 2
+  },
+  "29": {
+    "Lv": 29,
+    "Exp": 56202,
+    "LevelCoefficient": 14.4,
+    "AddPopularity": 3,
+    "ShopLimit": 2
+  },
+  "30": {
+    "Lv": 30,
+    "Exp": 60765,
+    "LevelCoefficient": 15.2,
+    "AddPopularity": 4,
+    "ShopLimit": 2
+  },
+  "31": {
+    "Lv": 31,
+    "Exp": 65565,
+    "LevelCoefficient": 16,
+    "AddPopularity": 4,
+    "ShopLimit": 2
+  },
+  "32": {
+    "Lv": 32,
+    "Exp": 70608,
+    "LevelCoefficient": 16.8,
+    "AddPopularity": 4,
+    "ShopLimit": 2
+  },
+  "33": {
+    "Lv": 33,
+    "Exp": 75900,
+    "LevelCoefficient": 17.6,
+    "AddPopularity": 4,
+    "ShopLimit": 2
+  },
+  "34": {
+    "Lv": 34,
+    "Exp": 81447,
+    "LevelCoefficient": 18.5,
+    "AddPopularity": 4,
+    "ShopLimit": 2
+  },
+  "35": {
+    "Lv": 35,
+    "Exp": 87255,
+    "LevelCoefficient": 19.4,
+    "AddPopularity": 4,
+    "ShopLimit": 2
+  },
+  "36": {
+    "Lv": 36,
+    "Exp": 93330,
+    "LevelCoefficient": 20.3,
+    "AddPopularity": 4,
+    "ShopLimit": 2
+  },
+  "37": {
+    "Lv": 37,
+    "Exp": 99678,
+    "LevelCoefficient": 21.2,
+    "AddPopularity": 4,
+    "ShopLimit": 2
+  },
+  "38": {
+    "Lv": 38,
+    "Exp": 106305,
+    "LevelCoefficient": 22.1,
+    "AddPopularity": 4,
+    "ShopLimit": 2
+  },
+  "39": {
+    "Lv": 39,
+    "Exp": 113217,
+    "LevelCoefficient": 23,
+    "AddPopularity": 4,
+    "ShopLimit": 2
+  },
+  "40": {
+    "Lv": 40,
+    "Exp": 120420,
+    "LevelCoefficient": 24,
+    "AddPopularity": 5,
+    "ShopLimit": 3
+  },
+  "41": {
+    "Lv": 41,
+    "Exp": 127920,
+    "LevelCoefficient": 25,
+    "AddPopularity": 5,
+    "ShopLimit": 3
+  },
+  "42": {
+    "Lv": 42,
+    "Exp": 135723,
+    "LevelCoefficient": 26,
+    "AddPopularity": 5,
+    "ShopLimit": 3
+  },
+  "43": {
+    "Lv": 43,
+    "Exp": 143835,
+    "LevelCoefficient": 27,
+    "AddPopularity": 5,
+    "ShopLimit": 3
+  },
+  "44": {
+    "Lv": 44,
+    "Exp": 152262,
+    "LevelCoefficient": 28.1,
+    "AddPopularity": 5,
+    "ShopLimit": 3
+  },
+  "45": {
+    "Lv": 45,
+    "Exp": 161010,
+    "LevelCoefficient": 29.2,
+    "AddPopularity": 5,
+    "ShopLimit": 3
+  },
+  "46": {
+    "Lv": 46,
+    "Exp": 170085,
+    "LevelCoefficient": 30.3,
+    "AddPopularity": 5,
+    "ShopLimit": 3
+  },
+  "47": {
+    "Lv": 47,
+    "Exp": 179493,
+    "LevelCoefficient": 31.4,
+    "AddPopularity": 5,
+    "ShopLimit": 3
+  },
+  "48": {
+    "Lv": 48,
+    "Exp": 189240,
+    "LevelCoefficient": 32.5,
+    "AddPopularity": 5,
+    "ShopLimit": 3
+  },
+  "49": {
+    "Lv": 49,
+    "Exp": 199332,
+    "LevelCoefficient": 33.6,
+    "AddPopularity": 5,
+    "ShopLimit": 3
+  },
+  "50": {
+    "Lv": 50,
+    "Exp": 209775,
+    "LevelCoefficient": 34.8,
+    "AddPopularity": 6,
+    "ShopLimit": 3
+  },
+  "51": {
+    "Lv": 51,
+    "Exp": 220575,
+    "LevelCoefficient": 36,
+    "AddPopularity": 6,
+    "ShopLimit": 3
+  },
+  "52": {
+    "Lv": 52,
+    "Exp": 231738,
+    "LevelCoefficient": 37.2,
+    "AddPopularity": 6,
+    "ShopLimit": 3
+  },
+  "53": {
+    "Lv": 53,
+    "Exp": 243270,
+    "LevelCoefficient": 38.4,
+    "AddPopularity": 6,
+    "ShopLimit": 3
+  },
+  "54": {
+    "Lv": 54,
+    "Exp": 255177,
+    "LevelCoefficient": 39.7,
+    "AddPopularity": 6,
+    "ShopLimit": 3
+  },
+  "55": {
+    "Lv": 55,
+    "Exp": 267465,
+    "LevelCoefficient": 41,
+    "AddPopularity": 6,
+    "ShopLimit": 3
+  },
+  "56": {
+    "Lv": 56,
+    "Exp": 280140,
+    "LevelCoefficient": 42.2,
+    "AddPopularity": 6,
+    "ShopLimit": 3
+  },
+  "57": {
+    "Lv": 57,
+    "Exp": 293208,
+    "LevelCoefficient": 43.6,
+    "AddPopularity": 6,
+    "ShopLimit": 3
+  },
+  "58": {
+    "Lv": 58,
+    "Exp": 306675,
+    "LevelCoefficient": 44.9,
+    "AddPopularity": 6,
+    "ShopLimit": 3
+  },
+  "59": {
+    "Lv": 59,
+    "Exp": 320547,
+    "LevelCoefficient": 46.2,
+    "AddPopularity": 6,
+    "ShopLimit": 3
+  },
+  "60": {
+    "Lv": 60,
+    "Exp": 334830,
+    "LevelCoefficient": 47.6,
+    "AddPopularity": 7,
+    "ShopLimit": 4
+  },
+  "61": {
+    "Lv": 61,
+    "Exp": 349530,
+    "LevelCoefficient": 49,
+    "AddPopularity": 7,
+    "ShopLimit": 4
+  },
+  "62": {
+    "Lv": 62,
+    "Exp": 364653,
+    "LevelCoefficient": 50.4,
+    "AddPopularity": 7,
+    "ShopLimit": 4
+  },
+  "63": {
+    "Lv": 63,
+    "Exp": 380205,
+    "LevelCoefficient": 51.8,
+    "AddPopularity": 7,
+    "ShopLimit": 4
+  },
+  "64": {
+    "Lv": 64,
+    "Exp": 396192,
+    "LevelCoefficient": 53.3,
+    "AddPopularity": 7,
+    "ShopLimit": 4
+  },
+  "65": {
+    "Lv": 65,
+    "Exp": 412619,
+    "LevelCoefficient": 54.8,
+    "AddPopularity": 7,
+    "ShopLimit": 4
+  },
+  "66": {
+    "Lv": 66,
+    "Exp": 429494,
+    "LevelCoefficient": 56.2,
+    "AddPopularity": 7,
+    "ShopLimit": 4
+  },
+  "67": {
+    "Lv": 67,
+    "Exp": 446821,
+    "LevelCoefficient": 57.8,
+    "AddPopularity": 7,
+    "ShopLimit": 4
+  },
+  "68": {
+    "Lv": 68,
+    "Exp": 464607,
+    "LevelCoefficient": 59.3,
+    "AddPopularity": 7,
+    "ShopLimit": 4
+  },
+  "69": {
+    "Lv": 69,
+    "Exp": 482858,
+    "LevelCoefficient": 60.8,
+    "AddPopularity": 7,
+    "ShopLimit": 4
+  },
+  "70": {
+    "Lv": 70,
+    "Exp": 501580,
+    "LevelCoefficient": 62.4,
+    "AddPopularity": 8,
+    "ShopLimit": 4
+  },
+  "71": {
+    "Lv": 71,
+    "Exp": 520779,
+    "LevelCoefficient": 64,
+    "AddPopularity": 8,
+    "ShopLimit": 4
+  },
+  "72": {
+    "Lv": 72,
+    "Exp": 540462,
+    "LevelCoefficient": 65.6,
+    "AddPopularity": 8,
+    "ShopLimit": 4
+  },
+  "73": {
+    "Lv": 73,
+    "Exp": 560633,
+    "LevelCoefficient": 67.2,
+    "AddPopularity": 8,
+    "ShopLimit": 4
+  },
+  "74": {
+    "Lv": 74,
+    "Exp": 581299,
+    "LevelCoefficient": 68.9,
+    "AddPopularity": 8,
+    "ShopLimit": 4
+  },
+  "75": {
+    "Lv": 75,
+    "Exp": 602466,
+    "LevelCoefficient": 70.6,
+    "AddPopularity": 8,
+    "ShopLimit": 4
+  },
+  "76": {
+    "Lv": 76,
+    "Exp": 624140,
+    "LevelCoefficient": 72.2,
+    "AddPopularity": 8,
+    "ShopLimit": 4
+  },
+  "77": {
+    "Lv": 77,
+    "Exp": 646327,
+    "LevelCoefficient": 74,
+    "AddPopularity": 8,
+    "ShopLimit": 4
+  },
+  "78": {
+    "Lv": 78,
+    "Exp": 669033,
+    "LevelCoefficient": 75.7,
+    "AddPopularity": 8,
+    "ShopLimit": 4
+  },
+  "79": {
+    "Lv": 79,
+    "Exp": 692264,
+    "LevelCoefficient": 77.4,
+    "AddPopularity": 8,
+    "ShopLimit": 4
+  },
+  "80": {
+    "Lv": 80,
+    "Exp": 716026,
+    "LevelCoefficient": 79.2,
+    "AddPopularity": 9,
+    "ShopLimit": 5
+  },
+  "81": {
+    "Lv": 81,
+    "Exp": 740325,
+    "LevelCoefficient": 81,
+    "AddPopularity": 9,
+    "ShopLimit": 5
+  },
+  "82": {
+    "Lv": 82,
+    "Exp": 765167,
+    "LevelCoefficient": 82.8,
+    "AddPopularity": 9,
+    "ShopLimit": 5
+  },
+  "83": {
+    "Lv": 83,
+    "Exp": 790558,
+    "LevelCoefficient": 84.6,
+    "AddPopularity": 9,
+    "ShopLimit": 5
+  },
+  "84": {
+    "Lv": 84,
+    "Exp": 816504,
+    "LevelCoefficient": 86.5,
+    "AddPopularity": 9,
+    "ShopLimit": 5
+  },
+  "85": {
+    "Lv": 85,
+    "Exp": 843011,
+    "LevelCoefficient": 88.4,
+    "AddPopularity": 9,
+    "ShopLimit": 5
+  },
+  "86": {
+    "Lv": 86,
+    "Exp": 870085,
+    "LevelCoefficient": 90.2,
+    "AddPopularity": 9,
+    "ShopLimit": 5
+  },
+  "87": {
+    "Lv": 87,
+    "Exp": 897732,
+    "LevelCoefficient": 92.2,
+    "AddPopularity": 9,
+    "ShopLimit": 5
+  },
+  "88": {
+    "Lv": 88,
+    "Exp": 925958,
+    "LevelCoefficient": 94.1,
+    "AddPopularity": 9,
+    "ShopLimit": 5
+  },
+  "89": {
+    "Lv": 89,
+    "Exp": 954769,
+    "LevelCoefficient": 96,
+    "AddPopularity": 9,
+    "ShopLimit": 5
+  },
+  "90": {
+    "Lv": 90,
+    "Exp": 984171,
+    "LevelCoefficient": 98,
+    "AddPopularity": 10,
+    "ShopLimit": 5
+  },
+  "91": {
+    "Lv": 91,
+    "Exp": 1014170,
+    "LevelCoefficient": 100,
+    "AddPopularity": 10,
+    "ShopLimit": 5
+  },
+  "92": {
+    "Lv": 92,
+    "Exp": 1044773,
+    "LevelCoefficient": 102,
+    "AddPopularity": 10,
+    "ShopLimit": 5
+  },
+  "93": {
+    "Lv": 93,
+    "Exp": 1075985,
+    "LevelCoefficient": 104,
+    "AddPopularity": 10,
+    "ShopLimit": 5
+  },
+  "94": {
+    "Lv": 94,
+    "Exp": 1107812,
+    "LevelCoefficient": 106.1,
+    "AddPopularity": 10,
+    "ShopLimit": 5
+  },
+  "95": {
+    "Lv": 95,
+    "Exp": 1140260,
+    "LevelCoefficient": 108.2,
+    "AddPopularity": 10,
+    "ShopLimit": 5
+  },
+  "96": {
+    "Lv": 96,
+    "Exp": 1173335,
+    "LevelCoefficient": 110.3,
+    "AddPopularity": 10,
+    "ShopLimit": 5
+  },
+  "97": {
+    "Lv": 97,
+    "Exp": 1207043,
+    "LevelCoefficient": 112.4,
+    "AddPopularity": 10,
+    "ShopLimit": 5
+  },
+  "98": {
+    "Lv": 98,
+    "Exp": 1241390,
+    "LevelCoefficient": 114.5,
+    "AddPopularity": 10,
+    "ShopLimit": 5
+  },
+  "99": {
+    "Lv": 99,
+    "Exp": 1276382,
+    "LevelCoefficient": 116.6,
+    "AddPopularity": 10,
+    "ShopLimit": 5
+  }
+}

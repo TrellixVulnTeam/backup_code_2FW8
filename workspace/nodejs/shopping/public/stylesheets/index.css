@@ -1,0 +1,41 @@
+.cards {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.cards > * {
+  padding: 0 20px;
+}
+
+.show-image img {
+  height: 256px;
+  width: 80%;
+  object-fit: cover;
+}
+
+.shop-card-wrapper {
+  padding: 12px;
+}
+
+.shop-card {
+  display: flex;
+  flex-direction: row;
+  background: #4E5D6C;
+  padding: 12px;
+  height: 128px;
+  box-sizing: content-box;
+}
+
+.shop-card > img {
+  width: 128px;
+  height: 128px;
+  margin-right: 12px;
+}
+
+.shop-card > section {
+  flex-grow: 1;
+}
+
+.new-product {
+  margin: 20px 0;
+}

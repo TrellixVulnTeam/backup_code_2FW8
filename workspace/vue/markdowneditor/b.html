@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>auto-complete</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <v-app id="app">
+        <v-content>
+            <v-autocomplete v-model="model" :items="states">
+        </v-content>
+    </v-app>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                model: "",
+                states: [
+                    'Alabama', 'Alaska', 'American Samoa', 'Arizona',
+                    'Arkansas', 'California', 'Colorado', 'Connecticut',
+                    'Delaware', 'District of Columbia', 'Federated States of Micronesia',
+                    'Florida', 'Georgia', 'Guam', 'Hawaii', 'Idaho',
+                    'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky',
+                    'Louisiana', 'Maine', 'Marshall Islands', 'Maryland',
+                    'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi',
+                    'Missouri', 'Montana', 'Nebraska', 'Nevada',
+                    'New Hampshire', 'New Jersey', 'New Mexico', 'New York',
+                    'North Carolina', 'North Dakota', 'Northern Mariana Islands', 'Ohio',
+                    'Oklahoma', 'Oregon', 'Palau', 'Pennsylvania', 'Puerto Rico',
+                    'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee',
+                    'Texas', 'Utah', 'Vermont', 'Virgin Island', 'Virginia',
+                    'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
+                ]
+            },
+
+        })
+    </script>
+</body>
+
+</html>
